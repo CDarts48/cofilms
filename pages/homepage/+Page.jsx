@@ -1,12 +1,19 @@
+import React from 'react';
+import Content from './Content';
+import NewsletterForm from './NewsletterForm';
+import './code.css';
+
 function Page() {
     return (
-        <>
-            <h1>Colorado Films</h1>
-            <p>Showcasing films with Colorado connection.</p>
-            <p>Coming soon...</p>
-            <img src="/flag.png" alt="Colorado Flag" />
-        </>
-    )   
+        <div id="react-root">
+            <div className="top-half">
+                <Content />
+            </div>
+            <div className="bottom-half">
+                <NewsletterForm />
+            </div>
+        </div>
+    );
 }
 
-export { Page }
+export { Page };

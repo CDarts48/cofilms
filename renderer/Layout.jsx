@@ -28,13 +28,7 @@ Frame.propTypes = {
 
 function Frame({ children }) {
   return (
-    <div
-      style={{
-        display: 'flex',
-        maxWidth: 900,
-        margin: 'auto'
-      }}
-    >
+    <div className="frame">
       {children}
     </div>
   )
