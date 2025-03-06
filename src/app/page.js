@@ -1,5 +1,5 @@
 import React from 'react';
-import HeroSection from '../sections/hero/HeroSection';
+import HeroSection from '../sections/hero/+Page';
 import ContactSection from '../sections/ContactSection';
 import MovieSlider from '@/sections/film/slider/Slider';
 
