@@ -10,7 +10,7 @@ export default function Home() {
     <div className="page">
       <Sidebar/>
       <HeroSection />
-      <MovieSlider />
+      {/* <MovieSlider /> */}
       <ContactSection />
     </div>
   );
