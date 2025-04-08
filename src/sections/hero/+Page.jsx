@@ -16,7 +16,7 @@ function HeroSection() {
       <div className="hero-content">
         <h1 className="hero-title">Colorado Films</h1>
         <p className="hero-description">
-        Colorado Film is your gateway to discovering movies shaped by the spirit of Colorado.</p>
+        Colorado Films is your gateway to discovering movies shaped by the spirit of Colorado.</p>
         <a href="#explore" className="explore-button">
           Explore Now
         </a>

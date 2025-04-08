@@ -1,0 +1,39 @@
+.header {
+    width: 100%;
+    background-color: #222;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .header-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .header-menu {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Lay out the header sections in a row */
+  .header-content {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  
+  .header-link {
+    display: flex;
+    align-items: left;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .header-icon {
+    margin-right: 0.5rem;
+  }
