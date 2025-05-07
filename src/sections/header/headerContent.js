@@ -61,13 +61,13 @@ function HeaderContent() {
                 <p className="header-description">Explore music in film production.</p>
             </div>
             <div className="header-section">
-                <Link href="/camera">
+                <Link href="/News">
                     <div className="header-link">
                         <Camera className="header-icon" />
-                        <h3 className="header-title">Camera</h3>
+                        <h3 className="header-title">News</h3>
                     </div>
                 </Link>
-                <p className="header-description">Learn about camera techniques.</p>
+                <p className="header-description">Hot off the Press.</p>
             </div>
         </div>
     );

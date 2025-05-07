@@ -49,15 +49,18 @@ function filterAndScoreArticles(items, minScore = 6) {
 
 export default async function handler(req, res) {
   const rssFeeds = [
-   
     'https://www.westword.com/denver/Rss.xml',
     'https://www.5280.com/feed/',
     'https://www.cpr.org/rss/arts-and-culture/',
     'https://www.rmpbs.org/rss/',
     'https://patch.com/colorado/denver/rss.xml',
     'https://coloradosun.com/feed/',
-    'https://news.google.com/rss/search?q=colorado+film+OR+tv+OR+television+OR+media+OR+entertainment+when:7d&hl=en-US&gl=US&ceid=US:en'
+    'https://news.google.com/rss/search?q=colorado+film+OR+tv+OR+television+OR+media+OR+entertainment+when:7d&hl=en-US&gl=US&ceid=US:en',
+    'https://letterboxd.com/DenverFilm/rss/',
+    'https://rss.art19.com/sundancetv-at-the-sundance-film-festival',
+    'https://www.filmfestivals.com/syndication'
   ];
+  
 
   try {
     // Fetch and parse all RSS feeds
