@@ -61,6 +61,9 @@ export default function NewsPage() {
             <p style={{ margin: '0', fontSize: '14px', color: '#555' }}>
               Published: {article.published_at ? new Date(article.published_at).toLocaleString() : 'Unknown'}
             </p>
+            <p style={{ margin: '0', fontSize: '14px', color: '#555' }}>
+              Source: {article.source || 'Unknown'}
+            </p>
           </div>
         ))}
       </div>

@@ -2,7 +2,19 @@ import Parser from 'rss-parser';
 
 const parser = new Parser();
 
-// Keyword scoring system
+const rssFeeds = [
+  { url: 'https://www.denverpost.com/feed/', name: 'Denver Post' },
+  { url: 'https://www.5280.com/feed/', name: '5280 Magazine' },
+  { url: 'https://www.cpr.org/rss/arts-and-culture/', name: 'Colorado Public Radio' },
+  { url: 'https://www.rmpbs.org/rss/', name: 'Rocky Mountain PBS' },
+  { url: 'https://patch.com/colorado/denver/rss.xml', name: 'Patch Denver' },
+  { url: 'https://coloradosun.com/feed/', name: 'Colorado Sun' },
+  { url: 'https://news.google.com/rss/search?q=colorado+film+OR+tv+OR+television+OR+media+OR+entertainment+when:7d&hl=en-US&gl=US&ceid=US:en', name: 'Google News' },
+  { url: 'https://www.westword.com/denver/Rss.xml', name: 'Westword' },
+  { url: 'https://www.boulderweekly.com/feed/', name: 'Boulder Weekly' }
+];
+
+// Keyword weights for scoring relevance
 const KEYWORD_SCORES = {
   colorado: 3,
   film: 5,
@@ -23,7 +35,7 @@ const KEYWORD_SCORES = {
   boulder: 1
 };
 
-// Calculate a relevance score for each article
+// Score content based on weighted keyword matches
 function calculateRelevanceScore(content) {
   let score = 0;
   for (const [keyword, weight] of Object.entries(KEYWORD_SCORES)) {
@@ -36,39 +48,28 @@ function calculateRelevanceScore(content) {
 }
 
 // Filter and score articles, keeping those above a threshold
-function filterAndScoreArticles(items, minScore = 6) {
+function filterRelevant(items, minScore = 7) {
   return items
-    .map(item => {
+    .map((item) => {
       const content = `${item.title} ${item.contentSnippet || ''}`.toLowerCase();
       const score = calculateRelevanceScore(content);
       return { ...item, relevanceScore: score };
     })
-    .filter(item => item.relevanceScore >= minScore)
+    .filter((item) => item.relevanceScore >= minScore)
     .sort((a, b) => b.relevanceScore - a.relevanceScore);
 }
 
 export default async function handler(req, res) {
-  const rssFeeds = [
-    'https://www.westword.com/denver/Rss.xml',
-    'https://www.5280.com/feed/',
-    'https://www.cpr.org/rss/arts-and-culture/',
-    'https://www.rmpbs.org/rss/',
-    'https://patch.com/colorado/denver/rss.xml',
-    'https://coloradosun.com/feed/',
-    'https://news.google.com/rss/search?q=colorado+film+OR+tv+OR+television+OR+media+OR+entertainment+when:7d&hl=en-US&gl=US&ceid=US:en',
-    'https://letterboxd.com/DenverFilm/rss/',
-    'https://rss.art19.com/sundancetv-at-the-sundance-film-festival',
-    'https://www.filmfestivals.com/syndication'
-  ];
-  
-
   try {
-    // Fetch and parse all RSS feeds
     const rssResults = await Promise.all(
-      rssFeeds.map(async (url) => {
+      rssFeeds.map(async ({ url, name }) => {
         try {
           const feed = await parser.parseURL(url);
-          return filterAndScoreArticles(feed.items);
+          const relevantItems = filterRelevant(feed.items);
+          return relevantItems.map((item) => ({
+            ...item,
+            source: name
+          }));
         } catch (err) {
           console.error(`Failed to parse RSS from ${url}`, err);
           return [];
@@ -78,17 +79,15 @@ export default async function handler(req, res) {
 
     const allRssArticles = rssResults.flat();
 
-    // Normalize structure
-    const normalize = (article, source = 'rss') => ({
+    // Normalize the structure
+    const normalizedData = allRssArticles.map((article) => ({
       title: article.title,
-      description: article.description || article.contentSnippet,
+      description: article.contentSnippet || article.description || '',
       url: article.link,
-      source,
+      source: article.source,
       published_at: article.pubDate || null,
-      relevanceScore: article.relevanceScore || null
-    });
-
-    const normalizedData = allRssArticles.map((a) => normalize(a, 'rss'));
+      relevanceScore: article.relevanceScore
+    }));
 
     res.status(200).json(normalizedData);
   } catch (error) {
