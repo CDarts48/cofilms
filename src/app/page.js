@@ -2,7 +2,7 @@ import React from 'react';
 import HeroSection from '../sections/hero/+Page';
 import ContactSection from '../sections/ContactSection';
 // import MovieSlider from '@/sections/film/slider/Slider';
-import Header from '../sections/header/Header'; // Changed here
+import Header from '../sections/header/Header'; 
 
 export default function Home() {
   return (
