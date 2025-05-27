@@ -32,7 +32,13 @@ const KEYWORD_SCORES = {
   actors: 2,
   denver: 2,
   aurora: 1,
-  boulder: 1
+  boulder: 1,
+  trump: -5,
+  rockies: -1
+  Nuggets: -1,
+  Broncos: -1,
+  Avalanche: -1,
+  Rapids: -1,
 };
 
 // Score content based on weighted keyword matches
