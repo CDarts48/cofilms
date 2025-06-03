@@ -34,13 +34,13 @@ function HeaderContent() {
                 <p className="header-description">Find the perfect shooting locations.</p>
             </div>
             <div className="header-section">
-                <Link href="/events">
+                <Link href="/FilmFestivals">
                     <div className="header-link">
                         <Calendar className="header-icon" />
-                        <h3 className="header-title">Events</h3>
+                        <h3 className="header-title">Film Festivals</h3>
                     </div>
                 </Link>
-                <p className="header-description">Stay updated with film events.</p>
+                <p className="header-description">Stay updated with film festivals.</p>
             </div>
             <div className="header-section">
                 <Link href="/play">
