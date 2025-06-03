@@ -9,7 +9,6 @@ function Header() {
     <header className="header">
       <div className="header-top">
         <div className="header-brand">
-          {/* You can put your logo or site title here */}
           <h1>Colorado Films</h1>
         </div>
       </div>

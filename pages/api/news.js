@@ -34,11 +34,16 @@ const KEYWORD_SCORES = {
   aurora: 1,
   boulder: 1,
   trump: -5,
-  rockies: -1
+  rockies: -1,
+  Deion: -1,
   Nuggets: -1,
   Broncos: -1,
   Avalanche: -1,
   Rapids: -1,
+  Buffaloes: -4,
+  Rams: -1,
+  Rockies: -1,
+  Football: -3,
 };
 
 // Score content based on weighted keyword matches
