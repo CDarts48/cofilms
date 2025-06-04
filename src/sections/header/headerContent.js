@@ -6,14 +6,14 @@ import './code.css';
 function HeaderContent() {
     return (
         <div className="header-content">
-            <div className="header-section">
+                <div className="header-section">
                 <Link href="/film">
                     <div className="header-link">
-                        <Film className="header-icon" />
-                        <h3 className="header-title">Film</h3>
+                        <Play className="header-icon" />
+                        <h3 className="header-title">Filmed Here</h3>
                     </div>
                 </Link>
-                <p className="header-description">Explore the world of film production.</p>
+                <p className="header-description">Movies filmed in Colorado.</p>
             </div>
             <div className="header-section">
                 <Link href="/television">
@@ -22,13 +22,13 @@ function HeaderContent() {
                         <h3 className="header-title">Television</h3>
                     </div>
                 </Link>
-                <p className="header-description">Discover television production insights.</p>
+                <p className="header-description">Television Shows filmed in Colorado.</p>
             </div>
             <div className="header-section">
                 <Link href="/locations">
                     <div className="header-link">
                         <MapPin className="header-icon" />
-                        <h3 className="header-title">Locations</h3>
+                        <h3 className="header-title">Shows</h3>
                     </div>
                 </Link>
                 <p className="header-description">Find the perfect shooting locations.</p>
@@ -41,15 +41,6 @@ function HeaderContent() {
                     </div>
                 </Link>
                 <p className="header-description">Stay updated with film festivals.</p>
-            </div>
-            <div className="header-section">
-                <Link href="/play">
-                    <div className="header-link">
-                        <Play className="header-icon" />
-                        <h3 className="header-title">Play</h3>
-                    </div>
-                </Link>
-                <p className="header-description">Enjoy the latest film releases.</p>
             </div>
             <div className="header-section">
                 <Link href="/music">
