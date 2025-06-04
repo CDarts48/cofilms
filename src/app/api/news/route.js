@@ -70,7 +70,7 @@ function filterRelevant(items, minScore = 7) {
     .sort((a, b) => b.relevanceScore - a.relevanceScore);
 }
 
-export default async function handler(req, res) {
+export async function GET(req, res) {
   try {
     const rssResults = await Promise.all(
       rssFeeds.map(async ({ url, name }) => {
@@ -100,9 +100,9 @@ export default async function handler(req, res) {
       relevanceScore: article.relevanceScore
     }));
 
-    res.status(200).json(normalizedData);
+    return Response.json(normalizedData);
   } catch (error) {
     console.error('Error fetching or merging data:', error);
-    res.status(500).json({ error: 'Failed to fetch entertainment news.' });
+    return Response.json({ error: 'Failed to fetch entertainment news.' }, { status: 500 });
   }
 }
