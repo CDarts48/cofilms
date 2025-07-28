@@ -63,7 +63,6 @@ export default function MovieSlider() {
     );
   }
 
-  // Inline styles
   const containerStyle = {
     maxWidth: 520,
     margin: '40px auto',
