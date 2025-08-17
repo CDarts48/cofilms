@@ -74,7 +74,7 @@ export default function FilmFestivalsPage() {
                     {/* April */}
                     <li style={festivalItemStyle}>
                         <a href="https://aspenfilm.org/our-festivals/shortsfest/" target="_blank" rel="noopener noreferrer" style={festivalLinkStyle}>
-                            Aspen Shortsfest
+                            Aspen Short's Fest
                         </a>
                         <span style={festivalMetaStyle}> – Aspen <span style={festivalDateStyle}>(April)</span></span>
                     </li>
