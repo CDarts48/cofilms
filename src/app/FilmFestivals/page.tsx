@@ -1,6 +1,35 @@
-import React from 'react';
+import React, { CSSProperties } from 'react';
 
-export default function FilmFestivalsPage() {
+// Inline styles
+const festivalItemStyle: CSSProperties = {
+    marginBottom: 18,
+    background: '#23283a',
+    borderRadius: 8,
+    padding: '14px 18px',
+    boxShadow: '0 2px 8px #0002',
+    display: 'flex',
+    alignItems: 'center',
+};
+
+const festivalLinkStyle: CSSProperties = {
+    color: '#ffb400',
+    fontWeight: 600,
+    fontSize: '1.08rem',
+    textDecoration: 'none',
+    marginRight: 6,
+};
+
+const festivalMetaStyle: CSSProperties = {
+    color: '#fff',
+    fontWeight: 400,
+};
+
+const festivalDateStyle: CSSProperties = {
+    color: '#bbb',
+    fontStyle: 'italic',
+};
+
+export default function FilmFestivalsPage(): React.ReactElement {
     return (
         <main
             style={{
@@ -12,9 +41,9 @@ export default function FilmFestivalsPage() {
                 boxShadow: '0 4px 24px rgba(0,0,0,0.18)',
                 padding: '32px 24px',
                 fontFamily: 'Segoe UI, Arial, sans-serif',
-            }}
+            } as CSSProperties}
         >
-            <section style={{ marginBottom: 32 }}>
+            <section style={{ marginBottom: 32 } as CSSProperties}>
                 <h1
                     style={{
                         fontSize: '2.5rem',
@@ -22,11 +51,11 @@ export default function FilmFestivalsPage() {
                         letterSpacing: 1,
                         color: '#ffb400',
                         textShadow: '1px 2px 8px #0008',
-                    }}
+                    } as CSSProperties}
                 >
                     🎬 Colorado Film Festivals Guide
                 </h1>
-                <p style={{ fontSize: '1.15rem', color: '#e0e0e0', marginBottom: 0 }}>
+                <p style={{ fontSize: '1.15rem', color: '#e0e0e0', marginBottom: 0 } as CSSProperties}>
                     Explore the vibrant film festival scene in Colorado, showcasing local talent and cinematic creativity.<br />
                     <span style={{ color: '#ffb400' }}>Stay tuned for upcoming festivals, events, and opportunities to celebrate film in the heart of Colorado.</span>
                 </p>
@@ -40,11 +69,11 @@ export default function FilmFestivalsPage() {
                         borderBottom: '2px solid #ffb400',
                         paddingBottom: 6,
                         letterSpacing: 0.5,
-                    }}
+                    } as CSSProperties}
                 >
                     Film Festivals in Colorado <span style={{ fontWeight: 400, color: '#ffb400' }}>(by Month)</span>
                 </h2>
-                <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                <ul style={{ listStyle: 'none', padding: 0, margin: 0 } as CSSProperties}>
                     {/* February */}
                     <li style={festivalItemStyle}>
                         <a href="https://ceff.net/" target="_blank" rel="noopener noreferrer" style={festivalLinkStyle}>
@@ -126,7 +155,7 @@ export default function FilmFestivalsPage() {
                     </li>
                     <li style={festivalItemStyle}>
                         <a href="https://rmwfilm.org/" target="_blank" rel="noopener noreferrer" style={festivalLinkStyle}>
-                            Rocky Mountain Women’s Film Festival
+                            Rocky Mountain Women's Film Festival
                         </a>
                         <span style={festivalMetaStyle}> – Colorado Springs <span style={festivalDateStyle}>(November)</span></span>
                     </li>
@@ -149,32 +178,3 @@ export default function FilmFestivalsPage() {
         </main>
     );
 }
-
-// Inline styles
-const festivalItemStyle = {
-    marginBottom: 18,
-    background: '#23283a',
-    borderRadius: 8,
-    padding: '14px 18px',
-    boxShadow: '0 2px 8px #0002',
-    display: 'flex',
-    alignItems: 'center',
-};
-
-const festivalLinkStyle = {
-    color: '#ffb400',
-    fontWeight: 600,
-    fontSize: '1.08rem',
-    textDecoration: 'none',
-    marginRight: 6,
-};
-
-const festivalMetaStyle = {
-    color: '#fff',
-    fontWeight: 400,
-};
-
-const festivalDateStyle = {
-    color: '#bbb',
-    fontStyle: 'italic',
-};

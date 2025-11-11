@@ -3,10 +3,10 @@ import Link from 'next/link';
 import { Film, Monitor, MapPin, Calendar, Play, Mic, Camera } from 'lucide-react';
 import './code.css';
 
-function HeaderContent() {
+export default function HeaderContent(): React.ReactElement {
     return (
         <div className="header-content">
-                <div className="header-section">
+            <div className="header-section">
                 <Link href="/film">
                     <div className="header-link">
                         <Play className="header-icon" />
@@ -63,5 +63,3 @@ function HeaderContent() {
         </div>
     );
 }
-
-export default HeaderContent;
