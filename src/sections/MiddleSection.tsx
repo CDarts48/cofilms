@@ -2,7 +2,7 @@ import React from 'react';
 import { Film, MapPin, Calendar } from 'lucide-react';
 import '../app/homepage.css';
 
-function MiddleSection() {
+export default function MiddleSection(): React.ReactElement {
     return (
         <section className="section bg-white text-gray-900 py-20">
             <div className="container mx-auto px-4">
@@ -34,5 +34,3 @@ function MiddleSection() {
         </section>
     );
 }
-
-export default MiddleSection;

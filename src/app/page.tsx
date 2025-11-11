@@ -2,14 +2,16 @@ import React from 'react';
 import HeroSection from '../sections/hero/+Page';
 import ContactSection from '../sections/ContactSection';
 import Header from '../sections/header/Header'; 
-import MovieSlider from './film/slider/Slider';
+import WesternFeaturesSection from '../sections/WesternFeaturesSection';
+import CategorySliders from '../sections/CategorySliders';
 
-export default function Home() {
+export default function Home(): JSX.Element {
   return (
     <div className="page">
       <Header />
-      <MovieSlider /> 
       <HeroSection />
+      <WesternFeaturesSection />
+      <CategorySliders />
       <ContactSection />
     </div>
   );
