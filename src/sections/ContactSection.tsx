@@ -13,7 +13,7 @@ interface Styles {
     [key: string]: CSSProperties;
 }
 
-function ContactSection(): JSX.Element {
+function ContactSection(): React.ReactElement {
     const [formData, setFormData] = useState<FormData>({
         name: '',
         email: '',
