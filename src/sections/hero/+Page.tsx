@@ -3,7 +3,7 @@
 import React from 'react';
 import { Film, Mountain, Star, ChevronDown } from 'lucide-react';
 
-function HeroSection(): JSX.Element {
+function HeroSection(): React.ReactElement {
   return (
     <section className="hero">
       <div className="hero-content">
