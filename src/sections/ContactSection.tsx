@@ -2,6 +2,7 @@
 
 import React, { useState, ChangeEvent, FormEvent, CSSProperties } from 'react';
 import { Mail, User, MessageSquare, Send } from 'lucide-react';
+import emailjs from '@emailjs/browser';
 
 interface FormData {
     name: string;
@@ -19,10 +20,37 @@ function ContactSection(): React.ReactElement {
         email: '',
         message: ''
     });
+    const [showConfirmation, setShowConfirmation] = useState<boolean>(false);
+    const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
 
-    const handleSubmit = (e: FormEvent<HTMLFormElement>): void => {
+    const handleSubmit = async (e: FormEvent<HTMLFormElement>): Promise<void> => {
         e.preventDefault();
-        console.log('Form submitted:', formData);
+        setIsSubmitting(true);
+
+        try {
+            // Send email using EmailJS
+            await emailjs.send(
+                process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+                process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+                {
+                    from_name: formData.name,
+                    from_email: formData.email,
+                    message: formData.message,
+                    to_email: 'info@coloradofilms.com',
+                },
+                process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+            );
+
+            // Show confirmation message
+            setShowConfirmation(true);
+            // Clear form
+            setFormData({ name: '', email: '', message: '' });
+        } catch (error) {
+            console.error('Error sending message:', error);
+            alert('Failed to send message. Please try again.');
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>): void => {
@@ -51,7 +79,12 @@ function ContactSection(): React.ReactElement {
                                 </div>
                                 <div>
                                     <h3 style={styles.featureTitle}>Email Us</h3>
-                                    <p style={styles.featureText}>info@coloradofilms.com</p>
+                                    <a
+                                        href="mailto:info@coloradofilms.com"
+                                        style={styles.emailLink}
+                                    >
+                                        info@coloradofilms.com
+                                    </a>
                                 </div>
                             </div>
 
@@ -117,10 +150,20 @@ function ContactSection(): React.ReactElement {
                                 />
                             </div>
 
-                            <button type="submit" style={styles.submitButton}>
+                            <button
+                                type="submit"
+                                style={styles.submitButton}
+                                disabled={isSubmitting}
+                            >
                                 <Send size={20} />
-                                Send Message
+                                {isSubmitting ? 'Sending...' : 'Send Message'}
                             </button>
+
+                            {showConfirmation && (
+                                <div style={styles.confirmationMessage}>
+                                    ✓ Message sent successfully! We'll get back to you soon.
+                                </div>
+                            )}
                         </form>
                     </div>
                 </div>
@@ -197,6 +240,13 @@ const styles: Styles = {
         color: '#8B7355',
         fontSize: '1rem',
     },
+    emailLink: {
+        color: '#8B7355',
+        fontSize: '1rem',
+        textDecoration: 'none',
+        transition: 'color 0.3s ease',
+        cursor: 'pointer',
+    },
     formSide: {
         background: 'rgba(245, 230, 211, 0.8)',
         backdropFilter: 'blur(10px)',
@@ -266,6 +316,19 @@ const styles: Styles = {
         transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
         boxShadow: '0 4px 12px rgba(139, 115, 85, 0.4)',
         marginTop: '1rem',
+    },
+    confirmationMessage: {
+        marginTop: '1.5rem',
+        padding: '1rem 1.5rem',
+        background: 'linear-gradient(135deg, #2d5016 0%, #3d6b1f 100%)',
+        color: '#FFFFFF',
+        borderRadius: '6px',
+        fontSize: '1rem',
+        textAlign: 'center',
+        fontWeight: '600',
+        border: '2px solid #4a7f26',
+        boxShadow: '0 4px 12px rgba(45, 80, 22, 0.3)',
+        animation: 'slideIn 0.3s ease-out',
     },
 };
 

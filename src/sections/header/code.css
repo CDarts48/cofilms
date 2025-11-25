@@ -1,52 +1,292 @@
 .header {
-    width: 100%;
-    background-color: #B31942;
-    color: gold;
-    padding: 1rem 2rem;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .header-top {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .header-menu {
-    margin-top: 1rem;
-    display: flex;
-    justify-content: center;
-  }
-  
-  /* Lay out the header sections in a row */
-  .header-content {
-    display: flex;
-    gap: 2rem;
-    align-items: center;
-  }
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background:
+    radial-gradient(ellipse at top, rgba(20, 20, 20, 0.95) 0%, transparent 70%),
+    linear-gradient(180deg, #050505 0%, #0d0d0d 30%, transparent 100%);
+  color: gold;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: visible;
+  min-height: 200px;
+  z-index: 20;
+}
 
-  
-  .header-link {
-    display: flex;
-    align-items: left;
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  .header-icon {
-    margin-right: 0.5rem;
-  }
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .header-section a {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #0A3161;
-  }
+.header-menu {
+  display: flex;
+  justify-content: center;
+  padding: 2.5rem 0 5rem 0;
+  position: relative;
+}
 
-  .header-brand {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    color: white
-  }
+/* Industrial ceiling with pipes */
+.header-content {
+  display: flex;
+  gap: 2.5rem;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  padding-top: 30px;
+}
+
+/* Heavy duty lighting truss */
+.header-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50px;
+  right: -50px;
+  height: 20px;
+  background:
+    repeating-linear-gradient(90deg,
+      #1a1a1a 0px,
+      #252525 10px,
+      #1a1a1a 20px,
+      #151515 30px);
+  box-shadow:
+    inset 0 3px 6px rgba(0, 0, 0, 0.9),
+    inset 0 -2px 4px rgba(255, 255, 255, 0.05),
+    0 6px 20px rgba(0, 0, 0, 0.8);
+  border-top: 2px solid #0a0a0a;
+  border-bottom: 2px solid #2a2a2a;
+}
+
+/* Modern LED Par Can fixtures */
+.header-section {
+  position: relative;
+  padding: 0;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Hanging cables */
+.header-section::before {
+  content: '';
+  position: absolute;
+  top: -28px;
+  left: 50%;
+  width: 3px;
+  height: 25px;
+  background: linear-gradient(180deg, #1a1a1a 0%, #0a0a0a 100%);
+  box-shadow:
+    1px 0 2px rgba(0, 0, 0, 0.8),
+    -1px 0 1px rgba(255, 255, 255, 0.05);
+  z-index: 1;
+}
+
+/* Stagger cable positions */
+.header-section:nth-child(1)::before,
+.header-section:nth-child(3)::before,
+.header-section:nth-child(5)::before {
+  left: 45%;
+}
+
+.header-section:nth-child(2)::before,
+.header-section:nth-child(4)::before,
+.header-section:nth-child(6)::before {
+  left: 55%;
+}
+
+/* Light fixture body - circular LED par can */
+.header-link::before {
+  content: '';
+  position: absolute;
+  top: -85px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 80px;
+  background:
+    radial-gradient(circle at 30% 30%,
+      #3a3a3a 0%,
+      #252525 30%,
+      #1a1a1a 60%,
+      #0a0a0a 100%);
+  border-radius: 50%;
+  border: 4px solid #151515;
+  box-shadow:
+    /* Outer shadow */
+    0 10px 30px rgba(0, 0, 0, 0.9),
+    0 5px 15px rgba(0, 0, 0, 0.7),
+    /* Inner depth */
+    inset 0 5px 15px rgba(0, 0, 0, 0.8),
+    inset 0 -5px 15px rgba(255, 255, 255, 0.05),
+    /* Rim light */
+    inset 0 0 0 2px rgba(255, 255, 255, 0.03),
+    /* LED glow */
+    inset 0 0 40px rgba(255, 215, 0, 0.2);
+  transition: all 0.5s ease;
+  z-index: 2;
+}
+
+/* LED lens inside fixture */
+.header-link::after {
+  content: '';
+  position: absolute;
+  top: -70px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 50px;
+  background:
+    radial-gradient(circle at center,
+      rgba(255, 245, 200, 0.8) 0%,
+      rgba(255, 225, 100, 0.6) 30%,
+      rgba(255, 200, 50, 0.3) 60%,
+      transparent 100%);
+  border-radius: 50%;
+  filter: blur(2px);
+  opacity: 0.6;
+  transition: all 0.5s ease;
+  z-index: 3;
+}
+
+/* Brighter glow on hover */
+.header-section:hover .header-link::before {
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.9),
+    0 5px 15px rgba(0, 0, 0, 0.7),
+    inset 0 5px 15px rgba(0, 0, 0, 0.8),
+    inset 0 -5px 15px rgba(255, 255, 255, 0.05),
+    inset 0 0 0 2px rgba(255, 215, 0, 0.2),
+    inset 0 0 50px rgba(255, 235, 120, 0.5),
+    0 0 60px rgba(255, 215, 0, 0.3);
+}
+
+.header-section:hover .header-link::after {
+  opacity: 1;
+  filter: blur(1px);
+  width: 55px;
+  height: 55px;
+  top: -72px;
+}
+
+/* Focused LED beam cones */
+.header-section::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 500px;
+  background:
+    radial-gradient(ellipse at top,
+      rgba(255, 250, 200, 0.4) 0%,
+      rgba(255, 235, 120, 0.25) 10%,
+      rgba(255, 215, 0, 0.15) 25%,
+      rgba(255, 215, 0, 0.08) 45%,
+      rgba(255, 215, 0, 0.03) 70%,
+      transparent 100%);
+  clip-path: polygon(45% 0%, 55% 0%, 100% 100%, 0% 100%);
+  pointer-events: none;
+  opacity: 0.8;
+  transition: all 0.5s ease;
+  filter: blur(12px);
+  mix-blend-mode: screen;
+}
+
+/* Intensify beams on hover */
+.header-section:hover::after {
+  opacity: 1;
+  filter: blur(10px);
+  background:
+    radial-gradient(ellipse at top,
+      rgba(255, 255, 220, 0.6) 0%,
+      rgba(255, 245, 150, 0.4) 10%,
+      rgba(255, 230, 100, 0.25) 25%,
+      rgba(255, 215, 0, 0.12) 45%,
+      rgba(255, 215, 0, 0.05) 70%,
+      transparent 100%);
+}
+
+/* Brighter beam on hover */
+.header-section:hover::after {
+  opacity: 1;
+  filter: blur(6px);
+  background:
+    linear-gradient(180deg,
+      rgba(255, 245, 150, 0.6) 0%,
+      rgba(255, 235, 120, 0.4) 15%,
+      rgba(255, 215, 0, 0.3) 30%,
+      rgba(255, 215, 0, 0.15) 50%,
+      rgba(255, 215, 0, 0.05) 70%,
+      transparent 100%);
+}
+
+/* Bulb glow inside fixture */
+.header-section:hover::before {
+  box-shadow:
+    inset -2px -2px 8px rgba(255, 255, 255, 0.1),
+    inset 2px 2px 8px rgba(0, 0, 0, 0.8),
+    0 8px 16px rgba(0, 0, 0, 0.6),
+    0 0 40px rgba(255, 215, 0, 0.4),
+    inset 0 -10px 30px rgba(255, 215, 0, 0.3);
+}
+
+.header-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  padding: 2rem 1.8rem 1.5rem 1.8rem;
+  position: relative;
+  z-index: 4;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  min-width: 110px;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+/* Icons illuminated by spotlight */
+.header-icon {
+  width: 48px;
+  height: 48px;
+  color: #FFD700;
+  filter:
+    drop-shadow(0 0 12px rgba(255, 215, 0, 0.8)) drop-shadow(0 0 24px rgba(255, 215, 0, 0.4));
+  transition: all 0.4s ease;
+  margin-bottom: 0.75rem;
+  position: relative;
+  z-index: 2;
+}
+
+.header-section:hover .header-icon {
+  filter:
+    drop-shadow(0 0 20px rgba(255, 235, 120, 1)) drop-shadow(0 0 40px rgba(255, 215, 0, 0.8)) drop-shadow(0 0 60px rgba(255, 215, 0, 0.4));
+  transform: scale(1.15);
+  color: #FFFACD;
+}
+
+/* Title lit by spotlight */
+.header-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #FFD700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow:
+    0 0 10px rgba(255, 215, 0, 0.6),
+    0 2px 4px rgba(0, 0, 0, 0.8);
+  margin: 0;
+  transition: all 0.4s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+}
