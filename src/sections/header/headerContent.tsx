@@ -13,7 +13,6 @@ export default function HeaderContent(): React.ReactElement {
                         <h3 className="header-title">Filmed Here</h3>
                     </div>
                 </Link>
-                <p className="header-description">Movies filmed in Colorado.</p>
             </div>
             <div className="header-section">
                 <Link href="/television">
@@ -22,7 +21,6 @@ export default function HeaderContent(): React.ReactElement {
                         <h3 className="header-title">Television</h3>
                     </div>
                 </Link>
-                <p className="header-description">Television Shows filmed in Colorado.</p>
             </div>
             <div className="header-section">
                 <Link href="/locations">
@@ -31,7 +29,6 @@ export default function HeaderContent(): React.ReactElement {
                         <h3 className="header-title">Shows</h3>
                     </div>
                 </Link>
-                <p className="header-description">Find the perfect shooting locations.</p>
             </div>
             <div className="header-section">
                 <Link href="/FilmFestivals">
@@ -40,7 +37,6 @@ export default function HeaderContent(): React.ReactElement {
                         <h3 className="header-title">Film Festivals</h3>
                     </div>
                 </Link>
-                <p className="header-description">Stay updated with film festivals.</p>
             </div>
             <div className="header-section">
                 <Link href="/music">
@@ -49,7 +45,6 @@ export default function HeaderContent(): React.ReactElement {
                         <h3 className="header-title">Music</h3>
                     </div>
                 </Link>
-                <p className="header-description">Explore music in film production.</p>
             </div>
             <div className="header-section">
                 <Link href="/news">
@@ -58,7 +53,6 @@ export default function HeaderContent(): React.ReactElement {
                         <h3 className="header-title">News</h3>
                     </div>
                 </Link>
-                <p className="header-description">Hot off the Press.</p>
             </div>
         </div>
     );

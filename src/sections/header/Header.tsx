@@ -9,7 +9,6 @@ export default function Header(): React.ReactElement {
         <header className="header">
             <div className="header-top">
                 <div className="header-brand">
-                    <h1>Colorado Films</h1>
                 </div>
             </div>
             <nav className="header-menu">

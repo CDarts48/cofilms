@@ -64,41 +64,216 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url("https://sjc.microlink.io/79Lmp9i1n3KtyLEI7DCQbHNVMSIxdL3QDGNFYoHIjSpaDSRKE4GTKZJHp875SK5qSFwSB-ZHYb3QT4qXaATFGw.jpeg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background:
+    /* Stage floor at bottom */
+    linear-gradient(180deg, transparent 85%, #1a1410 85%),
+    /* Deep burgundy curtain background */
+    linear-gradient(135deg, #5a1a1a 0%, #8b1c1c 25%, #5a1a1a 50%, #8b1c1c 75%, #5a1a1a 100%);
   color: var(--text-light);
   overflow: hidden;
 }
 
+/* Left curtain panel with pleats - framing the screen */
 .hero::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(180deg,
-      rgba(92, 64, 51, 0.5) 0%,
-      rgba(139, 115, 85, 0.7) 50%,
-      rgba(92, 64, 51, 0.85) 100%);
-  z-index: 1;
+  width: 15%;
+  height: 100%;
+  background:
+    /* Curtain pleats using repeating gradients */
+    repeating-linear-gradient(90deg,
+      #6b1f1f 0px,
+      #8b2020 15px,
+      #5a1515 30px,
+      #721d1d 45px,
+      #6b1f1f 60px),
+    /* Velvet texture */
+    linear-gradient(180deg, #4a1010 0%, #6b1f1f 20%, #5a1515 80%, #3a0f0f 100%);
+  box-shadow:
+    inset -40px 0 80px rgba(0, 0, 0, 0.6),
+    inset -10px 0 30px rgba(0, 0, 0, 0.4),
+    20px 0 40px rgba(0, 0, 0, 0.5);
+  z-index: 5;
+  transform-origin: top left;
+  animation: curtainSway 6s ease-in-out infinite;
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
 }
 
+/* Right curtain panel with pleats - framing the screen */
 .hero::after {
   content: "";
   position: absolute;
   top: 0;
+  right: 0;
+  width: 15%;
+  height: 100%;
+  background:
+    /* Curtain pleats using repeating gradients */
+    repeating-linear-gradient(90deg,
+      #6b1f1f 0px,
+      #8b2020 15px,
+      #5a1515 30px,
+      #721d1d 45px,
+      #6b1f1f 60px),
+    /* Velvet texture */
+    linear-gradient(180deg, #4a1010 0%, #6b1f1f 20%, #5a1515 80%, #3a0f0f 100%);
+  box-shadow:
+    inset 40px 0 80px rgba(0, 0, 0, 0.6),
+    inset 10px 0 30px rgba(0, 0, 0, 0.4),
+    -20px 0 40px rgba(0, 0, 0, 0.5);
+  z-index: 5;
+  transform-origin: top right;
+  animation: curtainSway 6s ease-in-out infinite reverse;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
+}
+
+/* Curtain gentle sway animation */
+@keyframes curtainSway {
+
+  0%,
+  100% {
+    transform: rotateY(0deg);
+  }
+
+  50% {
+    transform: rotateY(-2deg);
+  }
+}
+
+/* Curtain valance at top */
+.curtain-valance {
+  position: absolute;
+  top: 0;
   left: 0;
   right: 0;
+  height: 100px;
+  background:
+    /* Scalloped edge pattern */
+    radial-gradient(circle at 50% 100%, transparent 30px, #5a1515 31px) 0 0 / 120px 100px repeat-x,
+    /* Velvet fabric with folds */
+    repeating-linear-gradient(90deg,
+      #6b1f1f 0px,
+      #8b2020 20px,
+      #5a1515 40px,
+      #721d1d 60px,
+      #6b1f1f 80px),
+    linear-gradient(180deg, #4a1010 0%, #6b1f1f 50%, #3a0f0f 100%);
+  box-shadow:
+    inset 0 -20px 40px rgba(0, 0, 0, 0.5),
+    0 10px 30px rgba(0, 0, 0, 0.6);
+  z-index: 15;
+  border-bottom: 3px solid #8b6914;
+}
+
+/* Gold trim on valance */
+.curtain-valance::before {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  height: 8px;
+  background:
+    repeating-linear-gradient(90deg,
+      #d4af37 0px,
+      #ffd700 5px,
+      #b8941e 10px,
+      #d4af37 15px);
+  box-shadow: 0 2px 8px rgba(212, 175, 55, 0.5);
+}
+
+/* Curtain rope tassels */
+.curtain-tassel {
+  position: absolute;
+  top: 80px;
+  width: 20px;
+  height: 60vh;
+  z-index: 10;
+}
+
+.curtain-tassel-left {
+  left: 13%;
+}
+
+.curtain-tassel-right {
+  right: 13%;
+}
+
+/* Rope */
+.curtain-tassel::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 12px;
+  height: 100%;
+  background:
+    repeating-linear-gradient(180deg,
+      #8b6914 0px,
+      #d4af37 3px,
+      #8b6914 6px);
+  box-shadow:
+    inset -2px 0 4px rgba(0, 0, 0, 0.4),
+    2px 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+}
+
+/* Decorative tassel at bottom */
+.curtain-tassel::after {
+  content: "";
+  position: absolute;
   bottom: 0;
-  background: radial-gradient(ellipse at center,
-      transparent 0%,
-      rgba(193, 154, 107, 0.1) 50%,
-      rgba(210, 105, 30, 0.15) 100%);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 80px;
+  background:
+    linear-gradient(180deg, #d4af37 0%, #8b6914 40%, #6b5410 100%);
+  clip-path: polygon(30% 0%, 70% 0%,
+      80% 20%, 75% 40%, 80% 60%, 75% 80%,
+      50% 100%,
+      25% 80%, 20% 60%, 25% 40%, 20% 20%);
+  box-shadow:
+    inset 0 -10px 20px rgba(0, 0, 0, 0.4),
+    0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Spotlights shining on stage from above */
+.hero-content::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 800px;
+  height: 300px;
+  background: radial-gradient(ellipse at center top,
+      rgba(255, 215, 0, 0.15) 0%,
+      rgba(255, 215, 0, 0.08) 30%,
+      transparent 70%);
+  filter: blur(20px);
+  pointer-events: none;
   z-index: 1;
-  animation: pulse 8s ease-in-out infinite;
+}
+
+/* Stage floor lighting */
+.hero-content::after {
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 100px;
+  background: radial-gradient(ellipse at center,
+      rgba(255, 215, 0, 0.1) 0%,
+      transparent 70%);
+  filter: blur(15px);
+  pointer-events: none;
+  z-index: 1;
 }
 
 @keyframes pulse {
@@ -212,9 +387,17 @@ body {
   position: relative;
   z-index: 10;
   text-align: center;
-  padding: 0 2rem;
+  padding: 3rem 4rem;
   max-width: 1000px;
   animation: fadeInUp 1s ease-out;
+  background:
+    linear-gradient(135deg, rgba(0, 0, 0, 0.95) 0%, rgba(10, 10, 10, 0.98) 100%);
+  border-radius: 8px;
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.9),
+    0 0 100px rgba(255, 215, 0, 0.15),
+    inset 0 0 80px rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(255, 215, 0, 0.2);
 }
 
 @keyframes fadeInUp {
