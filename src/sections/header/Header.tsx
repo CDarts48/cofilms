@@ -2,7 +2,6 @@
 
 import React from 'react';
 import './code.css';
-import HeaderContent from './headerContent';
 
 export default function Header(): React.ReactElement {
     return (
@@ -12,7 +11,6 @@ export default function Header(): React.ReactElement {
                 </div>
             </div>
             <nav className="header-menu">
-                <HeaderContent />
             </nav>
         </header>
     );
