@@ -7,22 +7,30 @@ import axios from 'axios';
 interface Movie {
     imageUrl: string;
     title: string;
-    year: string;
-    rating: string;
+    year?: string;
+    rating?: string;
+    description?: string;
+    wikipediaUrl?: string;
+    thumbnail?: string;
+    filmingLocations?: string;
 }
 
 interface StylesObject {
     [key: string]: CSSProperties;
 }
 
-export default function MovieSlider(): React.ReactElement {
+interface MovieSliderProps {
+    onImageChange?: (imageUrl: string) => void;
+}
+
+export default function MovieSlider({ onImageChange }: MovieSliderProps): React.ReactElement {
     const [currentIndex, setCurrentIndex] = useState<number>(0);
     const [movieData, setMovieData] = useState<Movie[]>([]);
 
     useEffect(() => {
         const fetchMovies = async (): Promise<void> => {
             try {
-                const response = await axios.get<Movie[]>('/movies.json');
+                const response = await axios.get<Movie[]>('/moviesWithDetails.json');
                 setMovieData(response.data);
             } catch (error) {
                 console.error('Failed to fetch movie data', error);
@@ -31,6 +39,12 @@ export default function MovieSlider(): React.ReactElement {
 
         fetchMovies();
     }, []);
+
+    useEffect(() => {
+        if (movieData.length > 0 && onImageChange) {
+            onImageChange(movieData[currentIndex].imageUrl);
+        }
+    }, [currentIndex, movieData, onImageChange]);
 
     const handleNext = (): void => {
         if (currentIndex < movieData.length - 1) {
@@ -75,12 +89,9 @@ export default function MovieSlider(): React.ReactElement {
     }
 
     const containerStyle: CSSProperties = {
-        maxWidth: 520,
-        margin: '40px auto',
-        background: 'linear-gradient(135deg, #181c24 70%, #23283a 100%)',
-        borderRadius: 18,
-        boxShadow: '0 6px 32px #0008',
-        padding: '32px 0 24px 0',
+        maxWidth: 900,
+        margin: '0 auto',
+        padding: '20px 0',
         position: 'relative',
         fontFamily: 'Segoe UI, Arial, sans-serif',
     };
@@ -93,33 +104,73 @@ export default function MovieSlider(): React.ReactElement {
     };
 
     const navButtonStyle: CSSProperties = {
-        background: 'rgba(24,28,36,0.7)',
+        background: 'rgba(24,28,36,0.85)',
         border: 'none',
         borderRadius: '50%',
-        width: 54,
-        height: 54,
+        width: 64,
+        height: 64,
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
         cursor: 'pointer',
         position: 'relative',
         zIndex: 2,
-        transition: 'background 0.2s',
-        boxShadow: '0 2px 8px #0005',
+        transition: 'all 0.3s',
+        boxShadow: '0 4px 16px #0008',
     };
 
     const posterContainerStyle: CSSProperties = {
         position: 'relative',
-        width: 320,
-        height: 480,
-        margin: '0 32px',
-        borderRadius: 12,
-        overflow: 'hidden',
-        boxShadow: '0 6px 32px #000a',
-        background: '#111',
+        width: 560,
+        margin: '0 48px',
         display: 'flex',
-        alignItems: 'flex-end',
-        justifyContent: 'center',
+        flexDirection: 'column',
+        alignItems: 'center',
+    };
+
+    const posterImageContainerStyle: CSSProperties = {
+        width: '100%',
+        height: 840,
+        borderRadius: 16,
+        overflow: 'hidden',
+        boxShadow: '0 12px 48px rgba(0,0,0,0.6)',
+        background: '#111',
+        transition: 'transform 0.3s ease',
+    };
+
+    const descriptionContainerStyle: CSSProperties = {
+        maxWidth: 900,
+        margin: '16px auto 0',
+        padding: '20px',
+        background: 'rgba(24,28,36,0.95)',
+        borderRadius: 12,
+        boxShadow: '0 4px 16px rgba(0,0,0,0.3)',
+        color: '#e0e0e0',
+        lineHeight: 1.6,
+        fontSize: '1rem',
+        animation: 'slideDown 0.3s ease-out',
+    };
+
+    const descriptionTitleStyle: CSSProperties = {
+        color: '#ffb400',
+        fontSize: '1.4rem',
+        fontWeight: 700,
+        marginBottom: '12px',
+        display: 'flex',
+        alignItems: 'center',
+        gap: '12px',
+    };
+
+    const wikipediaLinkStyle: CSSProperties = {
+        display: 'inline-block',
+        marginTop: '16px',
+        padding: '8px 16px',
+        background: '#ffb400',
+        color: '#181c24',
+        textDecoration: 'none',
+        borderRadius: 6,
+        fontWeight: 600,
+        transition: 'background 0.2s',
     };
 
     const posterImageStyle: CSSProperties = {
@@ -132,22 +183,16 @@ export default function MovieSlider(): React.ReactElement {
     };
 
     const movieInfoOverlayStyle: CSSProperties = {
-        position: 'absolute',
-        bottom: 0,
-        left: 0,
         width: '100%',
         background: 'rgba(24,28,36,0.92)',
-        borderRadius: '0 0 12px 12px',
-        padding: '18px 18px 14px 18px',
-        zIndex: 2,
-        boxShadow: '0 -2px 12px #0008',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'flex-start',
+        borderRadius: '12px',
+        padding: '14px 16px 12px',
+        marginBottom: '12px',
+        boxShadow: '0 2px 12px rgba(0,0,0,0.4)',
     };
 
     const movieTitleStyle: CSSProperties = {
-        fontSize: '1.35rem',
+        fontSize: '1.3rem',
         fontWeight: 700,
         margin: 0,
         color: '#ffb400',
@@ -159,8 +204,8 @@ export default function MovieSlider(): React.ReactElement {
         display: 'flex',
         alignItems: 'center',
         gap: 12,
-        marginTop: 8,
-        fontSize: '1.08rem',
+        marginTop: 6,
+        fontSize: '1rem',
         color: '#e0e0e0',
     };
 
@@ -201,19 +246,12 @@ export default function MovieSlider(): React.ReactElement {
                 </button>
 
                 <div style={posterContainerStyle}>
-                    <img
-                        src={movieData[currentIndex].imageUrl}
-                        style={posterImageStyle}
-                        alt={movieData[currentIndex].title}
-                    />
-                    <div style={movieInfoOverlayStyle}>
-                        <h2 style={movieTitleStyle}>{movieData[currentIndex].title}</h2>
-                        <div style={movieMetaStyle}>
-                            <span>{movieData[currentIndex].year}</span>
-                            <div style={ratingContainerStyle}>
-                                {movieData[currentIndex].rating}
-                            </div>
-                        </div>
+                    <div style={posterImageContainerStyle}>
+                        <img
+                            src={movieData[currentIndex].imageUrl}
+                            style={posterImageStyle}
+                            alt={movieData[currentIndex].title}
+                        />
                     </div>
                 </div>
 
@@ -221,6 +259,33 @@ export default function MovieSlider(): React.ReactElement {
                     <FaChevronRight size={32} color="white" />
                 </button>
             </div>
+
+            {movieData[currentIndex].description && (
+                <div style={descriptionContainerStyle}>
+                    <div style={movieInfoOverlayStyle}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap', justifyContent: 'center' }}>
+                            <h2 style={movieTitleStyle}>{movieData[currentIndex].title}</h2>
+                            {movieData[currentIndex].year && (
+                                <span style={{ fontSize: '1rem', color: '#e0e0e0' }}>{movieData[currentIndex].year}</span>
+                            )}
+                            {movieData[currentIndex].rating && (
+                                <div style={ratingContainerStyle}>
+                                    {movieData[currentIndex].rating}
+                                </div>
+                            )}
+                        </div>
+                    </div>
+                    <p style={{ margin: 0 }}>{movieData[currentIndex].description}</p>
+                    {movieData[currentIndex].filmingLocations && (
+                        <div style={{ marginTop: '12px', paddingTop: '12px', borderTop: '1px solid rgba(255, 180, 0, 0.2)' }}>
+                            <strong style={{ color: '#ffb400' }}>Filmed in Colorado:</strong>
+                            <p style={{ margin: '6px 0 0 0', color: '#e0e0e0' }}>
+                                {movieData[currentIndex].filmingLocations}
+                            </p>
+                        </div>
+                    )}
+                </div>
+            )}
 
             <div style={paginationStyle}>
                 {movieData.map((_: Movie, i: number) => (
