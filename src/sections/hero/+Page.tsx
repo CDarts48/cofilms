@@ -32,10 +32,10 @@ function HeroSection(): React.ReactElement {
               </Link>
             </div>
             <div className="header-section">
-              <Link href="/locations">
+              <Link href="/OurPodcast">
                 <div className="header-link">
                   <MapPin className="header-icon" />
-                  <h3 className="header-title">Shows</h3>
+                  <h3 className="header-title">Our Podcast</h3>
                 </div>
               </Link>
             </div>
