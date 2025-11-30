@@ -35,7 +35,7 @@ function HeroSection(): React.ReactElement {
               <Link href="/OurPodcast">
                 <div className="header-link">
                   <MapPin className="header-icon" />
-                  <h3 className="header-title">Our Podcast</h3>
+                  <h3 className="header-title">Colorado Films The Podcast</h3>
                 </div>
               </Link>
             </div>

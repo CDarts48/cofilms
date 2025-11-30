@@ -3,6 +3,7 @@
 import React, { useState, useEffect, CSSProperties } from 'react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import axios from 'axios';
+import WikiLink from '../../../components/WikiLink';
 
 interface Movie {
     imageUrl: string;
@@ -30,10 +31,12 @@ export default function MovieSlider({ onImageChange }: MovieSliderProps): React.
     useEffect(() => {
         const fetchMovies = async (): Promise<void> => {
             try {
+                console.log('Fetching movies from /moviesWithDetails.json');
                 const response = await axios.get<Movie[]>('/moviesWithDetails.json');
+                console.log('Movies loaded:', response.data.length);
                 setMovieData(response.data);
             } catch (error) {
-                console.error('Failed to fetch movie data', error);
+                console.error('Failed to fetch movie data:', error);
             }
         };
 
@@ -89,17 +92,18 @@ export default function MovieSlider({ onImageChange }: MovieSliderProps): React.
     }
 
     const containerStyle: CSSProperties = {
-        maxWidth: 900,
+        maxWidth: 1400,
         margin: '0 auto',
-        padding: '20px 0',
+        padding: '20px',
         position: 'relative',
         fontFamily: 'Segoe UI, Arial, sans-serif',
     };
 
     const sliderContainerStyle: CSSProperties = {
         display: 'flex',
-        alignItems: 'center',
+        alignItems: 'flex-start',
         justifyContent: 'center',
+        gap: '40px',
         position: 'relative',
     };
 
@@ -107,22 +111,34 @@ export default function MovieSlider({ onImageChange }: MovieSliderProps): React.
         background: 'rgba(24,28,36,0.85)',
         border: 'none',
         borderRadius: '50%',
-        width: 64,
-        height: 64,
+        width: 56,
+        height: 56,
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
         cursor: 'pointer',
-        position: 'relative',
-        zIndex: 2,
+        position: 'absolute',
+        top: '50%',
+        transform: 'translateY(-50%)',
+        zIndex: 10,
         transition: 'all 0.3s',
         boxShadow: '0 4px 16px #0008',
     };
 
+    const navButtonLeftStyle: CSSProperties = {
+        ...navButtonStyle,
+        left: '20px',
+    };
+
+    const navButtonRightStyle: CSSProperties = {
+        ...navButtonStyle,
+        right: '20px',
+    };
+
     const posterContainerStyle: CSSProperties = {
         position: 'relative',
-        width: 560,
-        margin: '0 48px',
+        width: 480,
+        flexShrink: 0,
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
@@ -130,7 +146,7 @@ export default function MovieSlider({ onImageChange }: MovieSliderProps): React.
 
     const posterImageContainerStyle: CSSProperties = {
         width: '100%',
-        height: 840,
+        height: 720,
         borderRadius: 16,
         overflow: 'hidden',
         boxShadow: '0 12px 48px rgba(0,0,0,0.6)',
@@ -139,8 +155,8 @@ export default function MovieSlider({ onImageChange }: MovieSliderProps): React.
     };
 
     const descriptionContainerStyle: CSSProperties = {
-        maxWidth: 900,
-        margin: '16px auto 0',
+        flex: 1,
+        maxWidth: 700,
         padding: '20px',
         background: 'rgba(24,28,36,0.95)',
         borderRadius: 12,
@@ -240,11 +256,15 @@ export default function MovieSlider({ onImageChange }: MovieSliderProps): React.
 
     return (
         <div style={containerStyle}>
-            <div style={sliderContainerStyle}>
-                <button style={navButtonStyle} onClick={handlePrev} aria-label="Previous">
-                    <FaChevronLeft size={32} color="white" />
-                </button>
+            <button style={navButtonLeftStyle} onClick={handlePrev} aria-label="Previous">
+                <FaChevronLeft size={28} color="white" />
+            </button>
 
+            <button style={navButtonRightStyle} onClick={handleNext} aria-label="Next">
+                <FaChevronRight size={28} color="white" />
+            </button>
+
+            <div style={sliderContainerStyle}>
                 <div style={posterContainerStyle}>
                     <div style={posterImageContainerStyle}>
                         <img
@@ -255,40 +275,44 @@ export default function MovieSlider({ onImageChange }: MovieSliderProps): React.
                     </div>
                 </div>
 
-                <button style={navButtonStyle} onClick={handleNext} aria-label="Next">
-                    <FaChevronRight size={32} color="white" />
-                </button>
+                {movieData[currentIndex].description && (
+                    <div style={descriptionContainerStyle}>
+                        <div style={movieInfoOverlayStyle}>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap', justifyContent: 'center' }}>
+                                <h2 style={movieTitleStyle}>{movieData[currentIndex].title}</h2>
+                                {movieData[currentIndex].year && (
+                                    <span style={{ fontSize: '1rem', color: '#e0e0e0' }}>{movieData[currentIndex].year}</span>
+                                )}
+                                {movieData[currentIndex].rating && (
+                                    <div style={ratingContainerStyle}>
+                                        {movieData[currentIndex].rating}
+                                    </div>
+                                )}
+                            </div>
+                        </div>
+                        <p style={{ margin: 0 }}>{movieData[currentIndex].description}</p>
+                        {movieData[currentIndex].filmingLocations && (
+                            <div style={{ marginTop: '12px', paddingTop: '12px', borderTop: '1px solid rgba(255, 180, 0, 0.2)' }}>
+                                <strong style={{ color: '#ffb400' }}>Filmed in Colorado:</strong>
+                                <p style={{ margin: '6px 0 0 0', color: '#e0e0e0' }}>
+                                    {movieData[currentIndex].filmingLocations}
+                                </p>
+                            </div>
+                        )}
+                        {process.env.NODE_ENV === 'development' && movieData[currentIndex].wikipediaUrl && (
+                            <div style={{ marginTop: '16px', display: 'flex', justifyContent: 'center' }}>
+                                <WikiLink
+                                    url={movieData[currentIndex].wikipediaUrl!}
+                                    title="View on Wikipedia"
+                                />
+                            </div>
+                        )}
+                    </div>
+                )}
             </div>
 
-            {movieData[currentIndex].description && (
-                <div style={descriptionContainerStyle}>
-                    <div style={movieInfoOverlayStyle}>
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap', justifyContent: 'center' }}>
-                            <h2 style={movieTitleStyle}>{movieData[currentIndex].title}</h2>
-                            {movieData[currentIndex].year && (
-                                <span style={{ fontSize: '1rem', color: '#e0e0e0' }}>{movieData[currentIndex].year}</span>
-                            )}
-                            {movieData[currentIndex].rating && (
-                                <div style={ratingContainerStyle}>
-                                    {movieData[currentIndex].rating}
-                                </div>
-                            )}
-                        </div>
-                    </div>
-                    <p style={{ margin: 0 }}>{movieData[currentIndex].description}</p>
-                    {movieData[currentIndex].filmingLocations && (
-                        <div style={{ marginTop: '12px', paddingTop: '12px', borderTop: '1px solid rgba(255, 180, 0, 0.2)' }}>
-                            <strong style={{ color: '#ffb400' }}>Filmed in Colorado:</strong>
-                            <p style={{ margin: '6px 0 0 0', color: '#e0e0e0' }}>
-                                {movieData[currentIndex].filmingLocations}
-                            </p>
-                        </div>
-                    )}
-                </div>
-            )}
-
             <div style={paginationStyle}>
-                {movieData.map((_: Movie, i: number) => (
+                {Array.isArray(movieData) && movieData.map((_: Movie, i: number) => (
                     <div
                         key={i}
                         style={paginationDotStyle(i === currentIndex)}

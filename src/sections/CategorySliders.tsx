@@ -7,6 +7,8 @@ import axios from 'axios';
 interface Movie {
     title: string;
     imageUrl: string;
+    filmingLocations?: string;
+    imdbUrl?: string;
 }
 
 interface Category {
@@ -32,33 +34,53 @@ interface Styles {
 const categories: Category[] = [
     {
         name: 'Western Films',
-        keywords: ['wide missouri', 'barquero', 'ballad', 'badlands', 'butch cassidy', 'true grit', 'silverado', 'cowboy'],
+        keywords: ['wide missouri', 'barquero', 'ballad', 'badlands', 'butch cassidy', 'true grit', 'cowboy', 'cat ballou', 'colorado territory', 'denver and rio grande', 'desert scorpion', 'devil\'s doorway', 'duchess and the dirtwater', 'every which way but loose', 'gold rush', 'great k & a train robbery', 'hateful eight', 'lone ranger', 'lone star', 'lucky luke', 'pat and mike', 'riders of the range', 'scarlet west', 'searchers', 'secret of convict lake', 'siege at red river', 'sons of katie elder', 'stagecoach', 'tall tale', 'ticket to tomahawk', 'trail of \'98', 'tracked by bloodhounds', 'unsinkable molly brown', 'vengeance valley', 'viva zapata', 'wolves of the street'],
         icon: '🤠'
     },
     {
-        name: 'Action & Adventure',
-        keywords: ['cliffhanger', 'art of flight', 'aspen extreme', 'red dawn', 'into the wild'],
-        icon: '⛰️'
+        name: 'Action & Thriller',
+        keywords: ['cliffhanger', 'die hard', 'fast and furious', 'furious 7', 'geostorm', 'indiana jones', 'lightning jack', 'cop car', 'runaway', 'switchback', 'under siege', 'wargames', 'dangerous love', 'detective pikachu', 'identity thief'],
+        icon: '💥'
+    },
+    {
+        name: 'Sports & Adventure',
+        keywords: ['art of flight', 'aspen extreme', 'climb dance', 'downhill racer', 'for love of the game', 'one on one', 'winter in vail', 'ice castles', 'bite the bullet'],
+        icon: '⛷️'
     },
     {
         name: 'Drama',
-        keywords: ['away we go', 'things to do', 'sleeper cell', 'term life'],
+        keywords: ['away we go', 'things to do in denver', 'arizona dream', 'broken roads', 'continental divide', 'dear eleanor', 'everybody\'s all-american', 'fidaa', 'frame', 'hacking at leaves', 'misled romance', 'nurse betty', 'on dangerous ground', 'our souls at night', 'out of the depths', 'over the edge', 'p.k. and the kid', 'prestige', 'rain people', 'razor\'s edge', 'rent-a-pal', 'scarecrow', 'silver city', 'stand up and be counted', 'starman', 'takkari donga', 'unglassed windows', 'vanishing point', 'one minute to zero'],
         icon: '🎭'
     },
     {
         name: 'Horror & Thriller',
-        keywords: ['shining', 'misery', 'anatomy', 'psycho'],
+        keywords: ['shining', 'anatomy of a psycho', 'decampitated', 'elevation', 'elves', 'frankenstein brothers', 'phantoms', 'snowbeast', 'throttle'],
         icon: '👻'
     },
     {
         name: 'Comedy',
-        keywords: ['dumb and dumber', 'catch and release', 'americana'],
+        keywords: ['dumb and dumber', 'catch and release', 'national lampoon', 'christmas vacation', 'sleeper', 'even hitler had a girlfriend', 'french gigolo'],
         icon: '😄'
     },
     {
-        name: 'Documentary',
-        keywords: ['armstrong lie', 'chasing ice', 'facing the giants'],
+        name: 'Family & Animation',
+        keywords: ['detective pikachu', 'wilderness family', 'mountain family robinson', 'new adventures of heidi'],
+        icon: '👨‍👩‍👧‍👦'
+    },
+    {
+        name: 'Science Fiction',
+        keywords: ['bill, the galactic hero', 'philadelphia experiment', 'star raiders', 'wargames'],
+        icon: '🚀'
+    },
+    {
+        name: 'Documentary & Experimental',
+        keywords: ['christo\'s valley curtain', 'anticipation of the night', 'aviation cocktail', 'bigger than us', 'fast food nation', 'winter of cyclists'],
         icon: '📹'
+    },
+    {
+        name: 'Independent & Indie',
+        keywords: ['colorado c.i.', 'ink', 'endangered species', 'miss arizona', 'finders keepers'],
+        icon: '🎬'
     }
 ];
 
@@ -122,26 +144,39 @@ function CategorySlider({ category, movies }: CategorySliderProps): React.ReactE
                             transform: `translateX(-${currentIndex * (100 / visibleCount)}%)`
                         }}
                     >
-                        {movies.map((movie, index) => (
-                            <div key={index} style={{
-                                ...styles.movieCard,
-                                width: `${100 / visibleCount}%`
-                            }}>
-                                <div style={styles.posterContainer}>
-                                    <img
-                                        src={movie.imageUrl}
-                                        alt={movie.title}
-                                        style={styles.poster as CSSProperties}
-                                        onError={(e: React.SyntheticEvent<HTMLImageElement>) => {
-                                            e.currentTarget.src = 'https://via.placeholder.com/220x330/5C4033/F5E6D3?text=No+Image';
-                                        }}
-                                    />
-                                    <div style={styles.overlay}>
-                                        <h4 style={styles.movieTitle}>{movie.title}</h4>
-                                    </div>
+                        {movies.map((movie, index) => {
+                            return (
+                                <div key={index} style={{
+                                    ...styles.movieCard,
+                                    width: `${100 / visibleCount}%`
+                                }}>
+                                    <a
+                                        href={movie.imdbUrl || '#'}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        style={styles.posterLink as CSSProperties}
+                                    >
+                                        <div style={styles.posterContainer}>
+                                            <img
+                                                src={movie.imageUrl}
+                                                alt={movie.title}
+                                                style={styles.poster as CSSProperties}
+                                                onError={(e: React.SyntheticEvent<HTMLImageElement>) => {
+                                                    e.currentTarget.src = 'https://via.placeholder.com/220x330/5C4033/F5E6D3?text=No+Image';
+                                                }}
+                                            />
+                                            <div style={styles.overlay}>
+                                                <h4 style={styles.movieTitle}>{movie.title}</h4>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <h4 style={styles.posterTitle}>{movie.title}</h4>
+                                    {movie.filmingLocations && (
+                                        <p style={styles.filmingLocation}>📍 {movie.filmingLocations.replace(', Colorado', '')}</p>
+                                    )}
                                 </div>
-                            </div>
-                        ))}
+                            );
+                        })}
                     </div>
                 </div>
 
@@ -165,7 +200,7 @@ export default function CategorySliders(): React.ReactElement {
     useEffect(() => {
         const fetchMovies = async (): Promise<void> => {
             try {
-                const response = await axios.get<Movie[]>('/movies.json');
+                const response = await axios.get<Movie[]>('/moviesWithDetails.json');
                 const movies = response.data;
                 setAllMovies(movies);
 
@@ -379,5 +414,36 @@ const styles: Styles = {
         fontSize: '1.5rem',
         color: '#8B7355',
         fontFamily: 'Georgia, serif',
+    },
+    posterTitle: {
+        color: '#5C4033',
+        fontSize: '0.9rem',
+        fontWeight: '600',
+        margin: '0.75rem 0 0 0',
+        padding: '0 0.5rem',
+        lineHeight: '1.3',
+        fontFamily: 'Georgia, serif',
+        textAlign: 'center',
+        overflow: 'hidden',
+        textOverflow: 'ellipsis',
+        display: '-webkit-box',
+        WebkitLineClamp: 2,
+        WebkitBoxOrient: 'vertical',
+    },
+    filmingLocation: {
+        color: '#8B7355',
+        fontSize: '0.75rem',
+        fontWeight: '500',
+        margin: '0.35rem 0 0 0',
+        padding: '0 0.5rem',
+        lineHeight: '1.2',
+        fontFamily: 'Georgia, serif',
+        textAlign: 'center',
+        fontStyle: 'italic',
+    },
+    posterLink: {
+        textDecoration: 'none',
+        display: 'block',
+        cursor: 'pointer',
     },
 };
