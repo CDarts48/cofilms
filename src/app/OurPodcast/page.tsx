@@ -2,58 +2,63 @@
 
 import React from 'react';
 import { Mic, Headphones, Play, Calendar } from 'lucide-react';
+import BasicHeader from '../../components/BasicHeader';
 
 export default function OurPodcast() {
     return (
-        <div style={styles.container}>
-            <div style={styles.hero}>
-                <Mic size={64} color="#FFD700" />
-                <h1 style={styles.title}>Our Podcast</h1>
-                <p style={styles.subtitle}>
-                    Conversations about Colorado's film industry, behind-the-scenes stories, 
-                    and interviews with filmmakers who call the Rockies home.
-                </p>
-            </div>
+        <>
+            <BasicHeader />
 
-            <div style={styles.content}>
-                <section style={styles.section}>
-                    <h2 style={styles.sectionTitle}>
-                        <Headphones size={32} style={{ marginRight: '1rem' }} />
-                        Coming Soon
-                    </h2>
-                    <p style={styles.text}>
-                        We're working on bringing you exclusive interviews, industry insights, 
-                        and captivating stories from Colorado's vibrant film community. 
-                        Stay tuned for our first episode!
+            <div style={styles.container}>
+                <div style={styles.hero}>
+                    <Mic size={64} color="#FFD700" />
+                    <h1 style={styles.title}>Colorado Films The Podcast</h1>
+                    <p style={styles.subtitle}>
+                        Conversations about Colorado's film industry, behind-the-scenes stories,
+                        and interviews with filmmakers who call the Rockies home.
                     </p>
-                </section>
+                </div>
 
-                <section style={styles.section}>
-                    <h2 style={styles.sectionTitle}>
-                        <Play size={32} style={{ marginRight: '1rem' }} />
-                        What to Expect
-                    </h2>
-                    <ul style={styles.list}>
-                        <li style={styles.listItem}>In-depth interviews with Colorado filmmakers</li>
-                        <li style={styles.listItem}>Behind-the-scenes stories from iconic films</li>
-                        <li style={styles.listItem}>Insights into Colorado's film industry</li>
-                        <li style={styles.listItem}>Location spotlight features</li>
-                        <li style={styles.listItem}>Film festival coverage and reviews</li>
-                    </ul>
-                </section>
+                <div style={styles.content}>
+                    <section style={styles.section}>
+                        <h2 style={styles.sectionTitle}>
+                            <Headphones size={32} style={{ marginRight: '1rem' }} />
+                            Coming Soon
+                        </h2>
+                        <p style={styles.text}>
+                            We're working on bringing you exclusive interviews, industry insights,
+                            and captivating stories from Colorado's vibrant film community.
+                            Stay tuned for our first episode!
+                        </p>
+                    </section>
 
-                <section style={styles.section}>
-                    <h2 style={styles.sectionTitle}>
-                        <Calendar size={32} style={{ marginRight: '1rem' }} />
-                        Subscribe for Updates
-                    </h2>
-                    <p style={styles.text}>
-                        Be the first to know when we launch! Follow us on social media 
-                        or check back here for the latest updates.
-                    </p>
-                </section>
+                    <section style={styles.section}>
+                        <h2 style={styles.sectionTitle}>
+                            <Play size={32} style={{ marginRight: '1rem' }} />
+                            What to Expect
+                        </h2>
+                        <ul style={styles.list}>
+                            <li style={styles.listItem}>In-depth interviews with Colorado filmmakers</li>
+                            <li style={styles.listItem}>Behind-the-scenes stories from iconic films</li>
+                            <li style={styles.listItem}>Insights into Colorado's film industry</li>
+                            <li style={styles.listItem}>Location spotlight features</li>
+                            <li style={styles.listItem}>Film festival coverage and reviews</li>
+                        </ul>
+                    </section>
+
+                    <section style={styles.section}>
+                        <h2 style={styles.sectionTitle}>
+                            <Calendar size={32} style={{ marginRight: '1rem' }} />
+                            Subscribe for Updates
+                        </h2>
+                        <p style={styles.text}>
+                            Be the first to know when we launch! Follow us on social media
+                            or check back here for the latest updates.
+                        </p>
+                    </section>
+                </div>
             </div>
-        </div>
+        </>
     );
 }
 
