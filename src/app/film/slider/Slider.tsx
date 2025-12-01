@@ -3,7 +3,6 @@
 import React, { useState, useEffect, CSSProperties } from 'react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import axios from 'axios';
-import WikiLink from '../../../components/WikiLink';
 
 interface Movie {
     imageUrl: string;
@@ -297,14 +296,6 @@ export default function MovieSlider({ onImageChange }: MovieSliderProps): React.
                                 <p style={{ margin: '6px 0 0 0', color: '#e0e0e0' }}>
                                     {movieData[currentIndex].filmingLocations}
                                 </p>
-                            </div>
-                        )}
-                        {process.env.NODE_ENV === 'development' && movieData[currentIndex].wikipediaUrl && (
-                            <div style={{ marginTop: '16px', display: 'flex', justifyContent: 'center' }}>
-                                <WikiLink
-                                    url={movieData[currentIndex].wikipediaUrl!}
-                                    title="View on Wikipedia"
-                                />
                             </div>
                         )}
                     </div>
