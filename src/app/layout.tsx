@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
     title: "Colorado Films",
     description: "Exploring Colorado's Entertainment Industry",
+    icons: {
+        icon: '/favicon.png',
+    },
 };
 
 export default function RootLayout({
