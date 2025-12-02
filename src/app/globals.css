@@ -51,6 +51,7 @@
 html {
   overflow-x: hidden;
   width: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -59,10 +60,13 @@ body {
   color: var(--text-dark);
   background: var(--background-light);
   overflow-x: hidden;
+  overflow-y: auto;
   width: 100%;
   max-width: 100vw;
   margin: 0;
   padding: 0;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-y;
 }
 
 .container {
@@ -85,7 +89,7 @@ body {
     /* Deep burgundy curtain background */
     linear-gradient(135deg, #5a1a1a 0%, #8b1c1c 25%, #5a1a1a 50%, #8b1c1c 75%, #5a1a1a 100%);
   color: var(--text-light);
-  overflow: hidden;
+  overflow: visible;
 }
 
 /* Left curtain panel with pleats - framing the screen */
@@ -677,6 +681,20 @@ html {
   /* Hide curtain valance on mobile/tablet */
   .curtain-valance {
     display: none;
+  }
+
+  /* Ensure scrolling works immediately on mobile */
+  html,
+  body {
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    touch-action: pan-y !important;
+    overscroll-behavior-y: none;
+  }
+
+  .hero {
+    overflow: visible;
+    touch-action: pan-y;
   }
 
   .hero-title {
