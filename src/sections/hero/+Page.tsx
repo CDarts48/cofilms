@@ -94,7 +94,7 @@ function HeroSection(): React.ReactElement {
       <div className="hero-content">
         <div className="hero-subtitle">
           <Mountain size={24} style={{ display: 'inline-block', marginRight: '0.5rem' }} />
-          Where Mountains Meet Cinema
+          Breathtaking Views, Unforgettable Entertainment
         </div>
 
         <h1 className="hero-title">
@@ -102,7 +102,7 @@ function HeroSection(): React.ReactElement {
         </h1>
 
         <p className="hero-description">
-          Your gateway to discovering extraordinary movies shaped by the spirit of Colorado.
+          Your gateway to discovering extraordinary entertainment shaped by the spirit of Colorado.
           From the Rocky Mountains to the Western plains, explore the cinematic landscape
           that makes Colorado a filmmaker's paradise.
         </p>
