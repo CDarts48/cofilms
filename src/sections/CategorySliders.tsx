@@ -91,11 +91,14 @@ function CategorySlider({ category, movies }: CategorySliderProps): React.ReactE
     useEffect(() => {
         const handleResize = (): void => {
             if (window.innerWidth < 480) {
-                setCardWidth(250); // Small phones
+                // Small phones - calculate width to show one full poster with small peek of next
+                // Account for: container padding (2rem = 32px each side), buttons (40px each), gaps (0.75rem = 12px each side), and card gap (1rem = 16px)
+                const availableWidth = window.innerWidth - 64 - 80 - 24 - 16; // padding, buttons, button gaps, card gap
+                setCardWidth(Math.min(availableWidth, 280)); // One full poster, max 280px
             } else if (window.innerWidth < 768) {
-                setCardWidth(280); // Larger phones/tablets
+                setCardWidth(200); // Larger phones/tablets - show ~2 posters
             } else {
-                setCardWidth(300); // Desktop
+                setCardWidth(220); // Desktop - show ~4-5 posters
             }
         };
 
@@ -133,7 +136,7 @@ function CategorySlider({ category, movies }: CategorySliderProps): React.ReactE
                     onMouseEnter={(e: MouseEvent<HTMLButtonElement>) => e.currentTarget.style.background = '#8B7355'}
                     onMouseLeave={(e: MouseEvent<HTMLButtonElement>) => e.currentTarget.style.background = '#C19A6B'}
                 >
-                    <ChevronLeft size={24} color="#2C1810" />
+                    <ChevronLeft size={20} color="#2C1810" />
                 </button>
 
                 <div style={styles.moviesWrapper} ref={sliderRef}>
@@ -180,7 +183,7 @@ function CategorySlider({ category, movies }: CategorySliderProps): React.ReactE
                     onMouseEnter={(e: MouseEvent<HTMLButtonElement>) => e.currentTarget.style.background = '#8B7355'}
                     onMouseLeave={(e: MouseEvent<HTMLButtonElement>) => e.currentTarget.style.background = '#C19A6B'}
                 >
-                    <ChevronRight size={24} color="#2C1810" />
+                    <ChevronRight size={20} color="#2C1810" />
                 </button>
             </div>
         </div>
@@ -314,14 +317,14 @@ const styles: Styles = {
     sliderContainer: {
         display: 'flex',
         alignItems: 'center',
-        gap: '1.5rem',
+        gap: '0.75rem',
     },
     navButton: {
         background: '#C19A6B',
         border: '2px solid #8B7355',
         borderRadius: '8px',
-        width: '50px',
-        height: '50px',
+        width: '40px',
+        height: '40px',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
