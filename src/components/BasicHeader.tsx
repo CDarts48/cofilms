@@ -3,77 +3,76 @@
 import React from 'react';
 import Link from 'next/link';
 
+const linkStyle: React.CSSProperties = {
+    color: '#FFD700',
+    textDecoration: 'none',
+    fontSize: '1rem',
+    fontWeight: '600',
+    transition: 'color 0.3s',
+    padding: '0.5rem 0.75rem',
+    whiteSpace: 'nowrap',
+};
+
 export default function BasicHeader(): React.ReactElement {
     return (
         <header style={{
-            background: 'rgba(0, 0, 0, 0.8)',
-            padding: '1rem 2rem',
+            background: 'rgba(0, 0, 0, 0.9)',
+            padding: '0.75rem 1rem',
             position: 'sticky',
             top: 0,
             zIndex: 100,
+            width: '100%',
+            boxSizing: 'border-box',
         }}>
             <nav style={{
                 display: 'flex',
-                gap: '2rem',
+                gap: '0.5rem',
                 alignItems: 'center',
                 justifyContent: 'center',
                 flexWrap: 'wrap',
+                maxWidth: '100%',
+                margin: '0 auto',
             }}>
-                <Link href="/" style={{
-                    color: '#FFD700',
-                    textDecoration: 'none',
-                    fontSize: '1.1rem',
-                    fontWeight: '600',
-                    transition: 'color 0.3s',
-                }}>
+                <Link href="/" style={linkStyle}>
                     Home
                 </Link>
-                <Link href="/film" style={{
-                    color: '#FFD700',
-                    textDecoration: 'none',
-                    fontSize: '1.1rem',
-                    fontWeight: '600',
-                    transition: 'color 0.3s',
-                }}>
+                <Link href="/film" style={linkStyle}>
                     Films
                 </Link>
-                <Link href="/television" style={{
-                    color: '#FFD700',
-                    textDecoration: 'none',
-                    fontSize: '1.1rem',
-                    fontWeight: '600',
-                    transition: 'color 0.3s',
-                }}>
-                    Television
+                <Link href="/television" style={linkStyle}>
+                    TV
                 </Link>
-                <Link href="/OurPodcast" style={{
-                    color: '#FFD700',
-                    textDecoration: 'none',
-                    fontSize: '1.1rem',
-                    fontWeight: '600',
-                    transition: 'color 0.3s',
-                }}>
-                    Colorado Films The Podcast
+                <Link href="/OurPodcast" style={linkStyle}>
+                    Podcast
                 </Link>
-                <Link href="/FilmFestivals" style={{
-                    color: '#FFD700',
-                    textDecoration: 'none',
-                    fontSize: '1.1rem',
-                    fontWeight: '600',
-                    transition: 'color 0.3s',
-                }}>
+                <Link href="/FilmFestivals" style={linkStyle}>
                     Festivals
                 </Link>
-                <Link href="/news" style={{
-                    color: '#FFD700',
-                    textDecoration: 'none',
-                    fontSize: '1.1rem',
-                    fontWeight: '600',
-                    transition: 'color 0.3s',
-                }}>
+                <Link href="/news" style={linkStyle}>
                     News
                 </Link>
             </nav>
+            <style jsx>{`
+                @media (max-width: 768px) {
+                    nav {
+                        gap: 0.25rem !important;
+                        padding: 0.25rem 0;
+                    }
+                    a {
+                        font-size: 0.85rem !important;
+                        padding: 0.4rem 0.5rem !important;
+                    }
+                }
+                @media (max-width: 480px) {
+                    nav {
+                        gap: 0.15rem !important;
+                    }
+                    a {
+                        font-size: 0.75rem !important;
+                        padding: 0.3rem 0.4rem !important;
+                    }
+                }
+            `}</style>
         </header>
     );
 }
