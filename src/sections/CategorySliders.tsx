@@ -85,15 +85,18 @@ const categories: Category[] = [
 ];
 
 function CategorySlider({ category, movies }: CategorySliderProps): React.ReactElement | null {
-    const [currentIndex, setCurrentIndex] = useState<number>(0);
-    const [visibleCount, setVisibleCount] = useState<number>(4);
+    const sliderRef = React.useRef<HTMLDivElement>(null);
+    const [cardWidth, setCardWidth] = useState<number>(280);
 
     useEffect(() => {
         const handleResize = (): void => {
-            if (window.innerWidth < 640) setVisibleCount(1);
-            else if (window.innerWidth < 1024) setVisibleCount(2);
-            else if (window.innerWidth < 1280) setVisibleCount(3);
-            else setVisibleCount(4);
+            if (window.innerWidth < 480) {
+                setCardWidth(250); // Small phones
+            } else if (window.innerWidth < 768) {
+                setCardWidth(280); // Larger phones/tablets
+            } else {
+                setCardWidth(300); // Desktop
+            }
         };
 
         handleResize();
@@ -101,19 +104,15 @@ function CategorySlider({ category, movies }: CategorySliderProps): React.ReactE
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
-    const handleNext = (): void => {
-        if (currentIndex < movies.length - visibleCount) {
-            setCurrentIndex(currentIndex + 1);
-        } else {
-            setCurrentIndex(0);
+    const scrollLeft = (): void => {
+        if (sliderRef.current) {
+            sliderRef.current.scrollLeft -= cardWidth + 16; // card width + gap
         }
     };
 
-    const handlePrev = (): void => {
-        if (currentIndex > 0) {
-            setCurrentIndex(currentIndex - 1);
-        } else {
-            setCurrentIndex(Math.max(0, movies.length - visibleCount));
+    const scrollRight = (): void => {
+        if (sliderRef.current) {
+            sliderRef.current.scrollLeft += cardWidth + 16; // card width + gap
         }
     };
 
@@ -129,7 +128,7 @@ function CategorySlider({ category, movies }: CategorySliderProps): React.ReactE
 
             <div style={styles.sliderContainer}>
                 <button
-                    onClick={handlePrev}
+                    onClick={scrollLeft}
                     style={styles.navButton as CSSProperties}
                     onMouseEnter={(e: MouseEvent<HTMLButtonElement>) => e.currentTarget.style.background = '#8B7355'}
                     onMouseLeave={(e: MouseEvent<HTMLButtonElement>) => e.currentTarget.style.background = '#C19A6B'}
@@ -137,51 +136,46 @@ function CategorySlider({ category, movies }: CategorySliderProps): React.ReactE
                     <ChevronLeft size={24} color="#2C1810" />
                 </button>
 
-                <div style={styles.moviesWrapper}>
-                    <div
-                        style={{
-                            ...styles.moviesTrack,
-                            transform: `translateX(-${currentIndex * (100 / visibleCount)}%)`
-                        }}
-                    >
-                        {movies.map((movie, index) => {
-                            return (
-                                <div key={index} style={{
-                                    ...styles.movieCard,
-                                    width: `${100 / visibleCount}%`
-                                }}>
-                                    <a
-                                        href={movie.imdbUrl || '#'}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        style={styles.posterLink as CSSProperties}
-                                    >
-                                        <div style={styles.posterContainer}>
-                                            <img
-                                                src={movie.imageUrl}
-                                                alt={movie.title}
-                                                style={styles.poster as CSSProperties}
-                                                onError={(e: React.SyntheticEvent<HTMLImageElement>) => {
-                                                    e.currentTarget.src = 'https://via.placeholder.com/220x330/5C4033/F5E6D3?text=No+Image';
-                                                }}
-                                            />
-                                            <div style={styles.overlay}>
-                                                <h4 style={styles.movieTitle}>{movie.title}</h4>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <h4 style={styles.posterTitle}>{movie.title}</h4>
-                                    {movie.filmingLocations && (
-                                        <p style={styles.filmingLocation}>📍 {movie.filmingLocations.replace(', Colorado', '')}</p>
-                                    )}
+                <div style={styles.moviesWrapper} ref={sliderRef}>
+                    {movies.map((movie, index) => (
+                        <div
+                            key={`${category.name}-${movie.title}-${index}`}
+                            style={{
+                                ...styles.movieCard,
+                                width: `${cardWidth}px`,
+                                minWidth: `${cardWidth}px`,
+                            }}
+                        >
+                            <a
+                                href={movie.imdbUrl || '#'}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                style={styles.posterLink as CSSProperties}
+                            >
+                                <div style={styles.posterContainer}>
+                                    <img
+                                        src={movie.imageUrl}
+                                        alt={movie.title}
+                                        style={styles.poster as CSSProperties}
+                                        onError={(e: React.SyntheticEvent<HTMLImageElement>) => {
+                                            e.currentTarget.src = 'https://via.placeholder.com/220x330/5C4033/F5E6D3?text=No+Image';
+                                        }}
+                                    />
+                                    <div style={styles.overlay}>
+                                        <h4 style={styles.movieTitle}>{movie.title}</h4>
+                                    </div>
                                 </div>
-                            );
-                        })}
-                    </div>
+                            </a>
+                            <h4 style={styles.posterTitle}>{movie.title}</h4>
+                            {movie.filmingLocations && (
+                                <p style={styles.filmingLocation}>📍 {movie.filmingLocations.replace(', Colorado', '')}</p>
+                            )}
+                        </div>
+                    ))}
                 </div>
 
                 <button
-                    onClick={handleNext}
+                    onClick={scrollRight}
                     style={styles.navButton as CSSProperties}
                     onMouseEnter={(e: MouseEvent<HTMLButtonElement>) => e.currentTarget.style.background = '#8B7355'}
                     onMouseLeave={(e: MouseEvent<HTMLButtonElement>) => e.currentTarget.style.background = '#C19A6B'}
@@ -338,15 +332,16 @@ const styles: Styles = {
     },
     moviesWrapper: {
         flex: 1,
-        overflow: 'hidden',
-        position: 'relative',
-    },
-    moviesTrack: {
         display: 'flex',
-        transition: 'transform 0.5s ease',
+        overflowX: 'auto',
+        overflowY: 'hidden',
+        scrollBehavior: 'smooth',
+        WebkitOverflowScrolling: 'touch',
+        scrollbarWidth: 'none',
+        msOverflowStyle: 'none',
+        gap: '1rem',
     },
     movieCard: {
-        padding: '0 0.5rem',
         flexShrink: 0,
     },
     posterContainer: {
@@ -364,6 +359,10 @@ const styles: Styles = {
         height: '100%',
         objectFit: 'cover',
         display: 'block',
+        backfaceVisibility: 'hidden',
+        WebkitBackfaceVisibility: 'hidden',
+        transform: 'translateZ(0)',
+        WebkitTransform: 'translateZ(0)',
     },
     overlay: {
         position: 'absolute',
