@@ -1,11 +1,17 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
-import { Film, Mountain, Star, ChevronDown, Monitor, MapPin, Calendar, Play, Mic, Camera } from 'lucide-react';
+import { Film, Mountain, Star, ChevronDown, Monitor, MapPin, Calendar, Play, Mic, Camera, Menu, X } from 'lucide-react';
 import '../header/code.css';
 
 function HeroSection(): React.ReactElement {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <section className="hero">
       {/* Stage lighting navigation at top */}
@@ -13,10 +19,21 @@ function HeroSection(): React.ReactElement {
         <div className="header-top">
           <div className="header-brand"></div>
         </div>
-        <nav className="header-menu">
+
+        {/* Mobile menu button */}
+        <button
+          className="mobile-menu-button"
+          onClick={toggleMenu}
+          aria-label="Toggle menu"
+        >
+          {menuOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
+
+        {/* Desktop navigation */}
+        <nav className={`header-menu ${menuOpen ? 'mobile-open' : ''}`}>
           <div className="header-content">
             <div className="header-section">
-              <Link href="/film">
+              <Link href="/film" onClick={() => setMenuOpen(false)}>
                 <div className="header-link">
                   <Play className="header-icon" />
                   <h3 className="header-title">Filmed Here</h3>
@@ -24,7 +41,7 @@ function HeroSection(): React.ReactElement {
               </Link>
             </div>
             <div className="header-section">
-              <Link href="/television">
+              <Link href="/television" onClick={() => setMenuOpen(false)}>
                 <div className="header-link">
                   <Monitor className="header-icon" />
                   <h3 className="header-title">Television</h3>
@@ -32,7 +49,7 @@ function HeroSection(): React.ReactElement {
               </Link>
             </div>
             <div className="header-section">
-              <Link href="/OurPodcast">
+              <Link href="/OurPodcast" onClick={() => setMenuOpen(false)}>
                 <div className="header-link">
                   <MapPin className="header-icon" />
                   <h3 className="header-title">Colorado Films The Podcast</h3>
@@ -40,7 +57,7 @@ function HeroSection(): React.ReactElement {
               </Link>
             </div>
             <div className="header-section">
-              <Link href="/FilmFestivals">
+              <Link href="/FilmFestivals" onClick={() => setMenuOpen(false)}>
                 <div className="header-link">
                   <Calendar className="header-icon" />
                   <h3 className="header-title">Film Festivals</h3>
@@ -48,7 +65,7 @@ function HeroSection(): React.ReactElement {
               </Link>
             </div>
             <div className="header-section">
-              <Link href="/music">
+              <Link href="/music" onClick={() => setMenuOpen(false)}>
                 <div className="header-link">
                   <Mic className="header-icon" />
                   <h3 className="header-title">Music</h3>
@@ -56,7 +73,7 @@ function HeroSection(): React.ReactElement {
               </Link>
             </div>
             <div className="header-section">
-              <Link href="/news">
+              <Link href="/news" onClick={() => setMenuOpen(false)}>
                 <div className="header-link">
                   <Camera className="header-icon" />
                   <h3 className="header-title">News</h3>

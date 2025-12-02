@@ -17,39 +17,33 @@ interface Styles {
 const features: Feature[] = [
     {
         icon: Film,
-        title: 'Film Productions',
-        description: 'Discover movies filmed in Colorado\'s breathtaking locations',
-        link: '/film'
-    },
-    {
-        icon: Calendar,
-        title: 'Film Festivals',
-        description: 'Explore Colorado\'s vibrant film festival scene year-round',
-        link: '/FilmFestivals'
+        title: 'Listen Now',
+        description: 'Tune in to our latest episodes exploring Colorado cinema',
+        link: '/OurPodcast'
     },
     {
         icon: MapPin,
-        title: 'Filming Locations',
-        description: 'Visit iconic Colorado locations featured in your favorite films',
-        link: '/locations'
+        title: 'Behind the Scenes',
+        description: 'Discover the stories behind Colorado\'s iconic filming locations',
+        link: '/OurPodcast'
     },
     {
         icon: Users,
-        title: 'Local Talent',
-        description: 'Meet the filmmakers, actors, and crews from Colorado',
-        link: '/talent'
+        title: 'Featured Guests',
+        description: 'Hear from filmmakers, actors, and industry professionals',
+        link: '/OurPodcast'
     },
     {
         icon: Mountain,
-        title: 'Western Heritage',
-        description: 'Experience the rich history of Western filmmaking in Colorado',
-        link: '/western'
+        title: 'Western Film History',
+        description: 'Deep dives into Colorado\'s legendary Western movie heritage',
+        link: '/OurPodcast'
     },
     {
         icon: Award,
-        title: 'Latest News',
-        description: 'Stay updated with Colorado film industry news and events',
-        link: '/news'
+        title: 'Subscribe',
+        description: 'Never miss an episode - subscribe on your favorite platform',
+        link: '/OurPodcast'
     }
 ];
 
@@ -61,9 +55,9 @@ function WesternFeaturesSection(): React.ReactElement {
                 <div style={styles.borderTop}></div>
 
                 <div style={styles.header}>
-                    <h2 style={styles.title}>Explore Colorado Cinema</h2>
+                    <h2 style={styles.title}>Colorado Films: The Podcast</h2>
                     <p style={styles.subtitle}>
-                        Discover everything the Colorado film industry has to offer
+                        Join us as we explore the stories behind Colorado's cinematic legacy
                     </p>
                 </div>
 
