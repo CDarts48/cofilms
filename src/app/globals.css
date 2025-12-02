@@ -674,6 +674,11 @@ html {
     display: none;
   }
 
+  /* Hide curtain valance on mobile/tablet */
+  .curtain-valance {
+    display: none;
+  }
+
   .hero-title {
     font-size: 2.5rem;
   }

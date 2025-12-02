@@ -160,6 +160,7 @@ function CategorySlider({ category, movies }: CategorySliderProps): React.ReactE
                                             <img
                                                 src={movie.imageUrl}
                                                 alt={movie.title}
+                                                loading="lazy"
                                                 style={styles.poster as CSSProperties}
                                                 onError={(e: React.SyntheticEvent<HTMLImageElement>) => {
                                                     e.currentTarget.src = 'https://via.placeholder.com/220x330/5C4033/F5E6D3?text=No+Image';
