@@ -91,10 +91,9 @@ function CategorySlider({ category, movies }: CategorySliderProps): React.ReactE
     useEffect(() => {
         const handleResize = (): void => {
             if (window.innerWidth < 480) {
-                // Small phones - calculate width to show one full poster with small peek of next
-                // Account for: container padding (2rem = 32px each side), buttons (40px each), gaps (0.75rem = 12px each side), and card gap (1rem = 16px)
-                const availableWidth = window.innerWidth - 64 - 80 - 24 - 16; // padding, buttons, button gaps, card gap
-                setCardWidth(Math.min(availableWidth, 280)); // One full poster, max 280px
+                // Small phones - one full width poster
+                // Width = screen width - container padding (4rem) - buttons (80px) - button gaps (1.5rem) - small margin
+                setCardWidth(window.innerWidth - 64 - 80 - 24 - 32); // Full width minus all spacing
             } else if (window.innerWidth < 768) {
                 setCardWidth(200); // Larger phones/tablets - show ~2 posters
             } else {
