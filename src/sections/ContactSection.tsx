@@ -62,109 +62,111 @@ function ContactSection(): React.ReactElement {
 
     return (
         <section style={styles.section}>
-            <div style={styles.container}>
-                <div style={styles.content}>
-                    <div style={styles.infoSide}>
-                        <h2 style={styles.title}>Get in Touch</h2>
-                        <p style={styles.description}>
-                            Have a question about Colorado films? Want to feature your production?
-                            We'd love to hear from you and help showcase Colorado's incredible
-                            film heritage.
-                        </p>
+            <div style={styles.wrapper}>
+                <div style={styles.container}>
+                    <div style={styles.content}>
+                        <div style={styles.infoSide}>
+                            <h2 style={styles.title}>Get in Touch</h2>
+                            <p style={styles.description}>
+                                Have a question about Colorado films? Want to feature your production?
+                                We'd love to hear from you and help showcase Colorado's incredible
+                                film heritage.
+                            </p>
 
-                        <div style={styles.features}>
-                            <div style={styles.featureItem}>
-                                <div style={styles.featureIcon}>
-                                    <Mail size={24} color="#5C4033" />
+                            <div style={styles.features}>
+                                <div style={styles.featureItem}>
+                                    <div style={styles.featureIcon}>
+                                        <Mail size={24} color="#5C4033" />
+                                    </div>
+                                    <div>
+                                        <h3 style={styles.featureTitle}>Email Us</h3>
+                                        <a
+                                            href="mailto:info@coloradofilms.com"
+                                            style={styles.emailLink}
+                                        >
+                                            info@coloradofilms.com
+                                        </a>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h3 style={styles.featureTitle}>Email Us</h3>
-                                    <a
-                                        href="mailto:info@coloradofilms.com"
-                                        style={styles.emailLink}
-                                    >
-                                        info@coloradofilms.com
-                                    </a>
-                                </div>
-                            </div>
 
-                            <div style={styles.featureItem}>
-                                <div style={styles.featureIcon}>
-                                    <MessageSquare size={24} color="#5C4033" />
-                                </div>
-                                <div>
-                                    <h3 style={styles.featureTitle}>Quick Response</h3>
-                                    <p style={styles.featureText}>We respond within 24 hours</p>
+                                <div style={styles.featureItem}>
+                                    <div style={styles.featureIcon}>
+                                        <MessageSquare size={24} color="#5C4033" />
+                                    </div>
+                                    <div>
+                                        <h3 style={styles.featureTitle}>Quick Response</h3>
+                                        <p style={styles.featureText}>We respond within 24 hours</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div style={styles.formSide}>
-                        <form onSubmit={handleSubmit} style={styles.form}>
-                            <div style={styles.inputGroup}>
-                                <label style={styles.label}>
-                                    <User size={18} />
-                                    Name
-                                </label>
-                                <input
-                                    type="text"
-                                    name="name"
-                                    placeholder="Your name"
-                                    style={styles.input}
-                                    value={formData.name}
-                                    onChange={handleChange}
-                                    required
-                                />
-                            </div>
-
-                            <div style={styles.inputGroup}>
-                                <label style={styles.label}>
-                                    <Mail size={18} />
-                                    Email
-                                </label>
-                                <input
-                                    type="email"
-                                    name="email"
-                                    placeholder="your.email@example.com"
-                                    style={styles.input}
-                                    value={formData.email}
-                                    onChange={handleChange}
-                                    required
-                                />
-                            </div>
-
-                            <div style={styles.inputGroup}>
-                                <label style={styles.label}>
-                                    <MessageSquare size={18} />
-                                    Message
-                                </label>
-                                <textarea
-                                    name="message"
-                                    placeholder="Tell us about your inquiry..."
-                                    style={styles.textarea as CSSProperties}
-                                    value={formData.message}
-                                    onChange={handleChange}
-                                    rows={5}
-                                    required
-                                />
-                            </div>
-
-                            <button
-                                type="submit"
-                                style={styles.submitButton}
-                                disabled={isSubmitting}
-                            >
-                                <Send size={20} />
-                                {isSubmitting ? 'Sending...' : 'Send Message'}
-                            </button>
-
-                            {showConfirmation && (
-                                <div style={styles.confirmationMessage}>
-                                    ✓ Message sent successfully! We'll get back to you soon.
+                        <div style={styles.formSide}>
+                            <form onSubmit={handleSubmit} style={styles.form}>
+                                <div style={styles.inputGroup}>
+                                    <label style={styles.label}>
+                                        <User size={18} />
+                                        Name
+                                    </label>
+                                    <input
+                                        type="text"
+                                        name="name"
+                                        placeholder="Your name"
+                                        style={styles.input}
+                                        value={formData.name}
+                                        onChange={handleChange}
+                                        required
+                                    />
                                 </div>
-                            )}
-                        </form>
+
+                                <div style={styles.inputGroup}>
+                                    <label style={styles.label}>
+                                        <Mail size={18} />
+                                        Email
+                                    </label>
+                                    <input
+                                        type="email"
+                                        name="email"
+                                        placeholder="your.email@example.com"
+                                        style={styles.input}
+                                        value={formData.email}
+                                        onChange={handleChange}
+                                        required
+                                    />
+                                </div>
+
+                                <div style={styles.inputGroup}>
+                                    <label style={styles.label}>
+                                        <MessageSquare size={18} />
+                                        Message
+                                    </label>
+                                    <textarea
+                                        name="message"
+                                        placeholder="Tell us about your inquiry..."
+                                        style={styles.textarea as CSSProperties}
+                                        value={formData.message}
+                                        onChange={handleChange}
+                                        rows={5}
+                                        required
+                                    />
+                                </div>
+
+                                <button
+                                    type="submit"
+                                    style={styles.submitButton}
+                                    disabled={isSubmitting}
+                                >
+                                    <Send size={20} />
+                                    {isSubmitting ? 'Sending...' : 'Send Message'}
+                                </button>
+
+                                {showConfirmation && (
+                                    <div style={styles.confirmationMessage}>
+                                        ✓ Message sent successfully! We'll get back to you soon.
+                                    </div>
+                                )}
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -177,23 +179,39 @@ const styles: Styles = {
         padding: '8rem 0',
         background: 'linear-gradient(180deg, #E8D5C4 0%, #F5E6D3 100%)',
         position: 'relative',
+        width: '100%',
+        overflowX: 'hidden',
+    },
+    wrapper: {
+        width: '100%',
+        maxWidth: '100vw',
+        overflowX: 'hidden',
+        boxSizing: 'border-box',
     },
     container: {
         maxWidth: '1400px',
         margin: '0 auto',
-        padding: '0 2rem',
+        padding: '0 1rem',
+        width: '100%',
+        boxSizing: 'border-box',
     },
     content: {
-        display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))',
-        gap: '4rem',
-        alignItems: 'center',
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '3rem',
+        alignItems: 'stretch',
+        width: '100%',
+        maxWidth: '100%',
+        boxSizing: 'border-box',
     },
     infoSide: {
         padding: '2rem 0',
+        width: '100%',
+        maxWidth: '100%',
+        boxSizing: 'border-box',
     },
     title: {
-        fontSize: '3.5rem',
+        fontSize: 'clamp(2rem, 8vw, 3.5rem)',
         fontWeight: '700',
         color: '#5C4033',
         marginBottom: '1.5rem',
@@ -252,8 +270,11 @@ const styles: Styles = {
         backdropFilter: 'blur(10px)',
         border: '3px solid #8B7355',
         borderRadius: '12px',
-        padding: '3rem',
+        padding: 'clamp(1.5rem, 5vw, 3rem)',
         boxShadow: '0 8px 24px rgba(92, 64, 51, 0.2)',
+        width: '100%',
+        maxWidth: '100%',
+        boxSizing: 'border-box',
     },
     form: {
         display: 'flex',
@@ -285,6 +306,8 @@ const styles: Styles = {
         fontSize: '1rem',
         transition: 'all 0.3s ease',
         outline: 'none',
+        width: '100%',
+        boxSizing: 'border-box',
     },
     textarea: {
         padding: '1rem 1.25rem',
@@ -297,6 +320,8 @@ const styles: Styles = {
         outline: 'none',
         resize: 'vertical',
         fontFamily: 'inherit',
+        width: '100%',
+        boxSizing: 'border-box',
     },
     submitButton: {
         display: 'flex',
@@ -316,6 +341,8 @@ const styles: Styles = {
         transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
         boxShadow: '0 4px 12px rgba(139, 115, 85, 0.4)',
         marginTop: '1rem',
+        width: '100%',
+        boxSizing: 'border-box',
     },
     confirmationMessage: {
         marginTop: '1.5rem',
