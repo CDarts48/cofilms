@@ -3,6 +3,7 @@
 import React from 'react';
 import { Mic, Headphones, Play, Calendar } from 'lucide-react';
 import BasicHeader from '../../components/BasicHeader';
+import ContactSection from '../../components/ContactSection';
 
 export default function OurPodcast() {
     return (
@@ -58,6 +59,7 @@ export default function OurPodcast() {
                     </section>
                 </div>
             </div>
+            <ContactSection />
         </>
     );
 }

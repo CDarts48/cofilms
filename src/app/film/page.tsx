@@ -5,6 +5,7 @@ import './code.css';
 import '../../sections/header/code.css';
 import MovieSlider from './slider/Slider';
 import BasicHeader from '../../components/BasicHeader';
+import ContactSection from '../../components/ContactSection';
 
 export default function HeroSection(): React.ReactElement {
     const [backgroundImage, setBackgroundImage] = useState<string>('');
@@ -34,6 +35,7 @@ export default function HeroSection(): React.ReactElement {
                 <BasicHeader />
                 <MovieSlider onImageChange={setBackgroundImage} />
             </div>
+            <ContactSection />
         </div>
     );
 }

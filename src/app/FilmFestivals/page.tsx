@@ -2,6 +2,7 @@
 
 import React, { CSSProperties } from 'react';
 import BasicHeader from '../../components/BasicHeader';
+import ContactSection from '../../components/ContactSection';
 
 interface Festival {
     name: string;
@@ -158,6 +159,7 @@ export default function FilmFestivalsPage(): React.ReactElement {
                     </div>
                 </section>
             </main>
+            <ContactSection />
         </>
     );
 }

@@ -41,14 +41,6 @@ function HeroSection(): React.ReactElement {
               </Link>
             </div>
             <div className="header-section">
-              <Link href="/television" onClick={() => setMenuOpen(false)}>
-                <div className="header-link">
-                  <Monitor className="header-icon" />
-                  <h3 className="header-title">Television</h3>
-                </div>
-              </Link>
-            </div>
-            <div className="header-section">
               <Link href="/OurPodcast" onClick={() => setMenuOpen(false)}>
                 <div className="header-link">
                   <MapPin className="header-icon" />
@@ -94,7 +86,7 @@ function HeroSection(): React.ReactElement {
       <div className="hero-content">
         <div className="hero-subtitle">
           <Mountain size={24} style={{ display: 'inline-block', marginRight: '0.5rem' }} />
-          Breathtaking Views, Unforgettable Entertainment
+          Breathtaking Views, Unforgettable Films
         </div>
 
         <h1 className="hero-title">

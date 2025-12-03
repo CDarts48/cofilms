@@ -1,6 +1,6 @@
 import React from 'react';
 import HeroSection from '../sections/hero/+Page';
-import ContactSection from '../sections/ContactSection';
+import ContactSection from '../components/ContactSection';
 import WesternFeaturesSection from '../sections/WesternFeaturesSection';
 import CategorySliders from '../sections/CategorySliders';
 

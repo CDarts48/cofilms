@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState, CSSProperties } from 'react';
 import BasicHeader from '../../components/BasicHeader';
+import ContactSection from '../../components/ContactSection';
 
 interface Article {
     url: string;
@@ -176,6 +177,7 @@ export default function NewsPage(): React.ReactElement {
                         ))}
                     </div>
                 </section>
+                <ContactSection />
             </main>
         </>
     );
