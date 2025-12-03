@@ -13,6 +13,7 @@ interface Movie {
     wikipediaUrl?: string;
     thumbnail?: string;
     filmingLocations?: string;
+    imdbUrl?: string;
 }
 
 interface StylesObject {
@@ -297,6 +298,37 @@ export default function MovieSlider({ onImageChange }: MovieSliderProps): React.
                                     {movieData[currentIndex].filmingLocations}
                                 </p>
                             </div>
+                        )}
+                        {movieData[currentIndex].imdbUrl && (
+                            <a
+                                href={movieData[currentIndex].imdbUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                style={{
+                                    display: 'inline-block',
+                                    marginTop: '16px',
+                                    padding: '10px 20px',
+                                    background: '#ffb400',
+                                    color: '#181c24',
+                                    textDecoration: 'none',
+                                    borderRadius: 6,
+                                    fontWeight: 600,
+                                    transition: 'all 0.3s ease',
+                                    fontSize: '0.95rem',
+                                }}
+                                onMouseEnter={(e) => {
+                                    e.currentTarget.style.background = '#ffc733';
+                                    e.currentTarget.style.transform = 'translateY(-2px)';
+                                    e.currentTarget.style.boxShadow = '0 4px 12px rgba(255, 180, 0, 0.4)';
+                                }}
+                                onMouseLeave={(e) => {
+                                    e.currentTarget.style.background = '#ffb400';
+                                    e.currentTarget.style.transform = 'translateY(0)';
+                                    e.currentTarget.style.boxShadow = 'none';
+                                }}
+                            >
+                                Learn More on IMDB →
+                            </a>
                         )}
                     </div>
                 )}

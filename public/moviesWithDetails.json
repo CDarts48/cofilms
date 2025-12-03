@@ -208,14 +208,6 @@
     "imdbUrl": "https://www.imdb.com/title/tt0082200/"
   },
   {
-    "title": "Cop Car (film)",
-    "imageUrl": "https://m.media-amazon.com/images/M/MV5BOTMyMDc5OTUwMl5BMl5BanBnXkFtZTgwMjEwNjc3NTE@._V1_.jpg",
-    "description": "Cop Car is a 2015 American independent road-thriller film co-written and directed by Jon Watts and starring Kevin Bacon, Shea Whigham, Camryn Manheim, James Freedson-Jackson, and Hays Wellford. The film follows two young boys and juvenile delinquents who come across and hijack the abandoned police car of a corrupt sheriff. It premiered at the 2015 Sundance Film Festival and was released in the United States on August 7, 2015 by Focus World. The film received mainly positive reviews from critics but was commercially unsuccessful, earning $143,658 on a $5 million budget.",
-    "year": "2015",
-    "filmingLocations": "Colorado Springs, Fountain",
-    "imdbUrl": "https://www.imdb.com/title/tt3813310/"
-  },
-  {
     "title": "The Cowboys",
     "imageUrl": "https://m.media-amazon.com/images/M/MV5BNzMzODYyMTktOWE3Yy00ODM3LWI5MDctNzEzOTllMDQ3YTRiXkEyXkFqcGc@._V1_.jpg",
     "description": "The Cowboys is a 1972 American Western film starring John Wayne, Roscoe Lee Browne, and Bruce Dern, and featuring Colleen Dewhurst and Slim Pickens. It was the feature film debut of Robert Carradine. Based on the 1971 novel of the same name by William Dale Jennings, the screenplay was written by Irving Ravetch, Harriet Frank Jr., and Jennings and was directed by Mark Rydell.",
@@ -405,7 +397,7 @@
     "description": "The Frankenstein Brothers is a 2010 independent romantic comedy that takes place in Longmont, Colorado. The plot is centered on two orphan brothers, recently graduated from college, who inherit the Left Hand Brewing Company.",
     "year": "2010",
     "filmingLocations": "Denver, Longmont, Colorado",
-    "imdbUrl": "https://www.imdb.com/find?q=The%20Frankenstein%20Brothers&s=tt&exact=true"
+    "imdbUrl": "https://www.imdb.com/title/tt1510988/"
   },
   {
     "title": "A French Gigolo",
@@ -982,5 +974,13 @@
     "year": "1920",
     "filmingLocations": "Denver, Steamboat Springs, Colorado",
     "imdbUrl": "https://www.imdb.com/title/tt0203209/"
+  },
+  {
+    "title": "Cop Car (film)",
+    "imageUrl": "https://m.media-amazon.com/images/M/MV5BOTMyMDc5OTUwMl5BMl5BanBnXkFtZTgwMjEwNjc3NTE@._V1_.jpg",
+    "description": "Cop Car is a 2015 American independent road-thriller film co-written and directed by Jon Watts and starring Kevin Bacon, Shea Whigham, Camryn Manheim, James Freedson-Jackson, and Hays Wellford. The film follows two young boys and juvenile delinquents who come across and hijack the abandoned police car of a corrupt sheriff. It premiered at the 2015 Sundance Film Festival and was released in the United States on August 7, 2015 by Focus World. The film received mainly positive reviews from critics but was commercially unsuccessful, earning $143,658 on a $5 million budget.",
+    "year": "2015",
+    "filmingLocations": "Colorado Springs, Fountain",
+    "imdbUrl": "https://www.imdb.com/title/tt3813310/"
   }
 ]
