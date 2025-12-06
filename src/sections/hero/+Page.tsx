@@ -95,18 +95,18 @@ function HeroSection(): React.ReactElement {
 
         <p className="hero-description">
           Your gateway to discovering extraordinary entertainment shaped by the spirit of Colorado.
-          From the Rocky Mountains to the Western plains, explore the cinematic landscape
-          that makes Colorado a filmmaker's paradise.
+          From the Rocky Mountains to the Eastern plains, explore the cinematic landscape
+          that makes Colorado a film lover's paradise.
         </p>
 
         <div className="hero-buttons">
-          <a href="/film" className="button button-primary">
+          <a href="/FilmFestivals" className="button button-primary">
             <Film size={20} />
-            Explore Films
-          </a>
-          <a href="/FilmFestivals" className="button button-secondary">
-            <Star size={20} />
             Film Festivals
+          </a>
+          <a href="/OurPodcast" className="button button-secondary">
+            <Star size={20} />
+            The Podcast
           </a>
         </div>
       </div>
