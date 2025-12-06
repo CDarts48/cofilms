@@ -88,16 +88,6 @@ function ContactSection(): React.ReactElement {
                                         </a>
                                     </div>
                                 </div>
-
-                                <div style={styles.featureItem}>
-                                    <div style={styles.featureIcon}>
-                                        <MessageSquare size={24} color="#5C4033" />
-                                    </div>
-                                    <div>
-                                        <h3 style={styles.featureTitle}>Quick Response</h3>
-                                        <p style={styles.featureText}>We respond within 24 hours</p>
-                                    </div>
-                                </div>
                             </div>
                         </div>
 
