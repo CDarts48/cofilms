@@ -58,6 +58,15 @@ export default function UpcomingFilmFestivals(): React.ReactElement {
     const [nextFestival] = useState<Festival | null>(upcomingFestivals[0] || null);
     const sliderRef = React.useRef<HTMLDivElement>(null);
     const [cardWidth, setCardWidth] = useState<number>(320);
+    const [iframeLoaded, setIframeLoaded] = useState<boolean>(false);
+
+    useEffect(() => {
+        // Delay iframe loading to prevent auto-scroll
+        const timer = setTimeout(() => {
+            setIframeLoaded(true);
+        }, 500);
+        return () => clearTimeout(timer);
+    }, []);
 
     useEffect(() => {
         const handleResize = (): void => {
@@ -128,12 +137,17 @@ export default function UpcomingFilmFestivals(): React.ReactElement {
                             </a>
                         ) : (
                             <div style={styles.iframeContainer}>
-                                <iframe
-                                    src={nextFestival.url}
-                                    style={styles.festivalIframe}
-                                    title={nextFestival.name}
-                                    allowFullScreen
-                                />
+                                {iframeLoaded ? (
+                                    <iframe
+                                        src={nextFestival.url}
+                                        style={styles.festivalIframe}
+                                        title={nextFestival.name}
+                                        loading="lazy"
+                                        allowFullScreen
+                                    />
+                                ) : (
+                                    <div style={styles.iframeLoading}>Loading festival website...</div>
+                                )}
                                 <a
                                     href={nextFestival.url}
                                     target="_blank"
@@ -323,6 +337,18 @@ const styles: { [key: string]: CSSProperties } = {
         borderRadius: '12px',
         boxShadow: '0 8px 24px rgba(0, 0, 0, 0.3)',
         overflow: 'auto',
+    },
+    iframeLoading: {
+        width: '100%',
+        height: '800px',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        background: 'rgba(255, 180, 0, 0.1)',
+        border: '3px solid #FFB400',
+        borderRadius: '12px',
+        color: '#FFB400',
+        fontSize: '1.2rem',
     },
     featuredFestivalLinkSmall: {
         display: 'inline-flex',
