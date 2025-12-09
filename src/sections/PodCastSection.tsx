@@ -47,7 +47,7 @@ const features: Feature[] = [
     }
 ];
 
-function WesternFeaturesSection(): React.ReactElement {
+function PodCastSection(): React.ReactElement {
     return (
         <section style={styles.section}>
             <div style={styles.container}>
@@ -59,6 +59,20 @@ function WesternFeaturesSection(): React.ReactElement {
                     <p style={styles.subtitle}>
                         Join us as we explore the stories behind Colorado's cinematic legacy
                     </p>
+                </div>
+
+                {/* Freshest Episode Container */}
+                <div style={styles.freshestEpisodeContainer}>
+                    <h3 style={styles.freshestEpisodeTitle}>🎬 Freshest Episode</h3>
+                    <div style={styles.videoPlaceholder}>
+                        <iframe
+                            src="https://www.youtube.com/embed/K2enmqcur68"
+                            style={styles.videoIframe}
+                            title="Latest Podcast Episode"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                        />
+                    </div>
                 </div>
 
                 <div style={styles.grid}>
@@ -134,6 +148,51 @@ const styles: Styles = {
         color: '#8B7355',
         lineHeight: '1.7',
     },
+    freshestEpisodeContainer: {
+        maxWidth: '900px',
+        margin: '0 auto 5rem',
+        padding: '3rem',
+        background: 'linear-gradient(135deg, rgba(245, 230, 211, 0.95) 0%, rgba(232, 213, 196, 0.9) 100%)',
+        border: '4px solid #8B7355',
+        borderRadius: '16px',
+        boxShadow: '0 12px 40px rgba(92, 64, 51, 0.3)',
+        textAlign: 'center',
+    },
+    freshestEpisodeTitle: {
+        fontSize: '2.5rem',
+        fontWeight: '700',
+        color: '#5C4033',
+        marginBottom: '2rem',
+        fontFamily: 'Georgia, serif',
+        textShadow: '2px 2px 4px rgba(0, 0, 0, 0.1)',
+    },
+    videoPlaceholder: {
+        width: '100%',
+        minHeight: '500px',
+        background: '#000',
+        borderRadius: '12px',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        border: '3px solid #8B7355',
+        boxShadow: '0 4px 12px rgba(0, 0, 0, 0.3)',
+        overflow: 'hidden',
+    },
+    videoIframe: {
+        width: '100%',
+        height: '100%',
+        minHeight: '500px',
+        border: 'none',
+        borderRadius: '8px',
+    },
+    placeholderText: {
+        fontSize: '1.5rem',
+        color: '#2C1810',
+        fontWeight: '600',
+        textAlign: 'center',
+        padding: '2rem',
+        fontFamily: 'Georgia, serif',
+    },
     grid: {
         display: 'grid',
         gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
@@ -192,4 +251,4 @@ const styles: Styles = {
     },
 };
 
-export default WesternFeaturesSection;
+export default PodCastSection;
