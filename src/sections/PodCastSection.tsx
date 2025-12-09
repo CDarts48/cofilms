@@ -69,7 +69,7 @@ function PodCastSection(): React.ReactElement {
                             src="https://www.youtube.com/embed/K2enmqcur68"
                             style={styles.videoIframe}
                             title="Latest Podcast Episode"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
                         />
                     </div>
