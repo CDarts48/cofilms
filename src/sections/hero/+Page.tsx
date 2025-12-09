@@ -33,14 +33,6 @@ function HeroSection(): React.ReactElement {
         <nav className={`header-menu ${menuOpen ? 'mobile-open' : ''}`}>
           <div className="header-content">
             <div className="header-section">
-              <Link href="/film" onClick={() => setMenuOpen(false)}>
-                <div className="header-link">
-                  <Play className="header-icon" />
-                  <h3 className="header-title">Filmed Here</h3>
-                </div>
-              </Link>
-            </div>
-            <div className="header-section">
               <Link href="/OurPodcast" onClick={() => setMenuOpen(false)}>
                 <div className="header-link">
                   <MapPin className="header-icon" />
@@ -53,6 +45,14 @@ function HeroSection(): React.ReactElement {
                 <div className="header-link">
                   <Calendar className="header-icon" />
                   <h3 className="header-title">Film Festivals</h3>
+                </div>
+              </Link>
+            </div>
+            <div className="header-section">
+              <Link href="/film" onClick={() => setMenuOpen(false)}>
+                <div className="header-link">
+                  <Play className="header-icon" />
+                  <h3 className="header-title">Filmed Here</h3>
                 </div>
               </Link>
             </div>
