@@ -36,7 +36,100 @@ const organizations: Organization[] = [
         category: 'Permits'
     },
 
-    // Film Organizations & Festivals
+    // Regional Film Liaisons
+    {
+        name: 'Regional Film Liaisons Program',
+        url: 'https://oedit.colorado.gov/regional-film-liaisons',
+        description: 'Network of 15 volunteer regional partners who market Colorado\'s regions and help identify local support services for the film industry.',
+        location: 'Statewide',
+        category: 'Regional Liaison'
+    },
+    {
+        name: 'Aspen Film Commission',
+        url: 'https://www.aspenchamber.org/film-commission',
+        description: 'Regional film liaison serving the Aspen and Roaring Fork Valley area.',
+        location: 'Aspen',
+        category: 'Regional Liaison'
+    },
+    {
+        name: 'Boulder County Film Commission',
+        url: 'https://bouldercountyfilmcommission.com/',
+        description: 'Regional film liaison providing resources and support for productions in Boulder County.',
+        location: 'Boulder County',
+        category: 'Regional Liaison'
+    },
+    {
+        name: 'Breckenridge Film Commission',
+        url: 'https://www.gobreck.com/film-commission',
+        description: 'Regional film liaison for Breckenridge and Summit County film productions.',
+        location: 'Breckenridge',
+        category: 'Regional Liaison'
+    },
+    {
+        name: 'Colorado Springs Film Commission',
+        url: 'https://coloradospringsfilmcommission.com/',
+        description: 'Regional film liaison serving Colorado Springs and the Pikes Peak region.',
+        location: 'Colorado Springs',
+        category: 'Regional Liaison'
+    },
+    {
+        name: 'Crested Butte Film Commission',
+        url: 'https://www.crestedbuttefilmcommission.com/',
+        description: 'Regional film liaison for Crested Butte and Gunnison County.',
+        location: 'Crested Butte',
+        category: 'Regional Liaison'
+    },
+    {
+        name: 'Denver Film Commission',
+        url: 'https://www.denver.org/film/',
+        description: 'Regional film liaison for the Denver metro area and Colorado\'s capital city.',
+        location: 'Denver',
+        category: 'Regional Liaison'
+    },
+    {
+        name: 'Durango Film Commission',
+        url: 'https://www.durangofilmcommission.org/',
+        description: 'Regional film liaison serving Durango and Southwest Colorado.',
+        location: 'Durango',
+        category: 'Regional Liaison'
+    },
+    {
+        name: 'Estes Park Film Commission',
+        url: 'https://www.visitestespark.com/film-commission/',
+        description: 'Regional film liaison for Estes Park and Rocky Mountain National Park gateway.',
+        location: 'Estes Park',
+        category: 'Regional Liaison'
+    },
+    {
+        name: 'Fort Collins Film Commission',
+        url: 'https://www.visitftcollins.com/film-commission/',
+        description: 'Regional film liaison for Fort Collins and Northern Colorado.',
+        location: 'Fort Collins',
+        category: 'Regional Liaison'
+    },
+    {
+        name: 'Steamboat Springs Film Commission',
+        url: 'https://www.steamboatchamber.com/discover-steamboat/media/steamboat-springs-film-committee/',
+        description: 'Regional film liaison for Steamboat Springs and Northwest Colorado.',
+        location: 'Steamboat Springs',
+        category: 'Regional Liaison'
+    },
+    {
+        name: 'Telluride Film Commission',
+        url: 'https://www.telluridefilmcommission.com/',
+        description: 'Regional film liaison serving Telluride and the San Juan Mountains region.',
+        location: 'Telluride',
+        category: 'Regional Liaison'
+    },
+    {
+        name: 'Vail Film Commission',
+        url: 'https://www.vail.com/film-commission',
+        description: 'Regional film liaison for Vail Valley and Eagle County productions.',
+        location: 'Vail',
+        category: 'Regional Liaison'
+    },
+
+    // Film Organizations
     {
         name: 'Denver Film Society',
         url: 'https://denverfilm.org/',
@@ -50,20 +143,6 @@ const organizations: Organization[] = [
         description: 'Year-round film programming including festivals, screenings, and educational programs in the Aspen area.',
         location: 'Aspen',
         category: 'Arts Organization'
-    },
-    {
-        name: 'Boulder International Film Festival',
-        url: 'https://biff1.com/',
-        description: 'Annual film festival celebrating independent cinema with screenings, panels, and networking events.',
-        location: 'Boulder',
-        category: 'Film Festival'
-    },
-    {
-        name: 'Telluride Film Festival',
-        url: 'https://www.telluridefilmfestival.org/',
-        description: 'One of the world\'s most prestigious film festivals, showcasing premiere screenings over Labor Day weekend.',
-        location: 'Telluride',
-        category: 'Film Festival'
     },
     {
         name: 'Sie FilmCenter',
