@@ -22,13 +22,6 @@ const organizations: Organization[] = [
         category: 'Government'
     },
     {
-        name: 'City of Denver Office of Special Events',
-        url: 'https://www.denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Special-Events',
-        description: 'Free film permits for Denver. The cost does not cover additional expenses for closing streets or utilizing city resources.',
-        location: 'Denver',
-        category: 'Permits'
-    },
-    {
         name: 'Boulder County Film Commission',
         url: 'https://www.bouldercounty.org/property-and-land/land-use/special-permits/',
         description: 'Film permits for Boulder County. A damage deposit may be required.',
