@@ -45,8 +45,8 @@ export default function BasicHeader(): React.ReactElement {
                 <Link href="/FilmFestivals" style={linkStyle}>
                     Festivals
                 </Link>
-                <Link href="/news" style={linkStyle}>
-                    News
+                <Link href="/organizations" style={linkStyle}>
+                    Organizations
                 </Link>
             </nav>
             <style jsx>{`
