@@ -42,49 +42,7 @@ const organizations: Organization[] = [
         location: 'Colorado Springs',
         category: 'Permits'
     },
-    {
-        name: 'Colorado State Highways and State Patrol',
-        url: 'https://www.colorado.gov/csp',
-        description: 'Required permits for filming on state highways and roads.',
-        location: 'Statewide',
-        category: 'Permits'
-    },
-    {
-        name: 'Colorado Department of Transportation',
-        url: 'https://www.codot.gov/',
-        description: 'Transportation and highway filming permits and coordination.',
-        location: 'Statewide',
-        category: 'Permits'
-    },
-    {
-        name: 'Colorado Parks and Wildlife',
-        url: 'https://cpw.state.co.us/',
-        description: 'Required permits for filming in Colorado state parks and wildlife areas.',
-        location: 'Statewide',
-        category: 'Permits'
-    },
-    {
-        name: 'U.S. Forest Service',
-        url: 'https://www.fs.usda.gov/',
-        description: 'Federal permits required for filming in national forests.',
-        location: 'Federal',
-        category: 'Permits'
-    },
-    {
-        name: 'National Park Service',
-        url: 'https://www.nps.gov/',
-        description: 'Federal permits required for filming in national parks.',
-        location: 'Federal',
-        category: 'Permits'
-    },
-    {
-        name: 'Bureau of Land Management, Colorado',
-        url: 'https://www.blm.gov/colorado',
-        description: 'Federal permits for filming on BLM-managed public lands in Colorado.',
-        location: 'Federal',
-        category: 'Permits'
-    },
-    
+
     // Film Organizations & Festivals
     {
         name: 'Denver Film Society',
@@ -121,7 +79,7 @@ const organizations: Organization[] = [
         location: 'Denver',
         category: 'Venue'
     },
-    
+
     // Job & Crew Resources
     {
         name: 'StaffMeUp',
@@ -158,7 +116,7 @@ const organizations: Organization[] = [
         location: 'Denver',
         category: 'Job Resources'
     },
-    
+
     // Unions
     {
         name: 'Teamsters Local 17',
@@ -181,7 +139,7 @@ const organizations: Organization[] = [
         location: 'Colorado & Wyoming',
         category: 'Union'
     },
-    
+
     // Film Partners & Organizations
     {
         name: 'AD Club Colorado',
