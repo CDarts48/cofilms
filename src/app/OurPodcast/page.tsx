@@ -23,14 +23,32 @@ export default function OurPodcast() {
                 <div style={styles.content}>
                     <section style={styles.section}>
                         <h2 style={styles.sectionTitle}>
-                            <Headphones size={32} style={{ marginRight: '1rem' }} />
-                            Coming Soon
+                            <Play size={32} style={{ marginRight: '1rem' }} />
+                            First Episode
                         </h2>
                         <p style={styles.text}>
-                            We're working on bringing you exclusive interviews, industry insights,
-                            and captivating stories from Colorado's vibrant film community.
-                            Stay tuned for our first episode!
+                            Listen to our premiere episode now on Spotify!
                         </p>
+                        <div style={styles.episodeContainer}>
+                            <iframe
+                                style={styles.spotifyEmbed}
+                                src="https://open.spotify.com/embed/episode/3bGQHoPhjJDauQuDzLFQpY?utm_source=generator"
+                                width="100%"
+                                height="352"
+                                frameBorder="0"
+                                allowFullScreen
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                loading="lazy"
+                            />
+                        </div>
+                        <a
+                            href="https://open.spotify.com/episode/3bGQHoPhjJDauQuDzLFQpY?si=U9M3qM7BTjOmDpGrpYZl-g"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={styles.spotifyLink}
+                        >
+                            Open in Spotify →
+                        </a>
                     </section>
 
                     <section style={styles.section}>
@@ -132,5 +150,27 @@ const styles: { [key: string]: React.CSSProperties } = {
         paddingLeft: '2rem',
         position: 'relative',
         marginBottom: '0.75rem',
+    },
+    episodeContainer: {
+        marginTop: '1.5rem',
+        marginBottom: '1.5rem',
+        borderRadius: '12px',
+        overflow: 'hidden',
+    },
+    spotifyEmbed: {
+        borderRadius: '12px',
+    },
+    spotifyLink: {
+        display: 'inline-block',
+        marginTop: '1rem',
+        padding: '0.75rem 1.5rem',
+        backgroundColor: '#1DB954',
+        color: '#FFFFFF',
+        textDecoration: 'none',
+        borderRadius: '24px',
+        fontWeight: '600',
+        fontSize: '1rem',
+        transition: 'all 0.3s ease',
+        cursor: 'pointer',
     },
 };
