@@ -18,12 +18,12 @@ export const metadata: Metadata = {
     icons: {
         icon: [
             {
-                url: '/colorado-flag.png',
+                url: '/favicon.png',
                 type: 'image/png',
             }
         ],
-        shortcut: '/colorado-flag.png',
-        apple: '/colorado-flag.png',
+        shortcut: '/favicon.png',
+        apple: '/favicon.png',
     },
     openGraph: {
         title: 'Colorado Films',
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
         siteName: 'Colorado Films',
         images: [
             {
-                url: '/colorado-flag.png',
+                url: '/favicon.png',
                 width: 512,
                 height: 512,
             }
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
         card: 'summary',
         title: 'Colorado Films',
         description: "Exploring Colorado's Entertainment Industry",
-        images: ['/colorado-flag.png'],
+        images: ['/favicon.png'],
     },
     viewport: {
         width: 'device-width',
