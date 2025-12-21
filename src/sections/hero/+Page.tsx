@@ -1,89 +1,12 @@
 'use client';
 
-import React, { useState } from 'react';
-import Link from 'next/link';
-import { Film, Mountain, Star, ChevronDown, Monitor, MapPin, Calendar, Play, Mic, Camera, Menu, X, Mail } from 'lucide-react';
-import '../header/code.css';
+import React from 'react';
+import { Film, Mountain, Star } from 'lucide-react';
+import './code.css';
 
 function HeroSection(): React.ReactElement {
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
-
   return (
     <section className="hero">
-      {/* Stage lighting navigation at top */}
-      <header className="header">
-        <div className="header-top">
-          <div className="header-brand"></div>
-        </div>
-
-        {/* Mobile menu button */}
-        <button
-          className="mobile-menu-button"
-          onClick={toggleMenu}
-          aria-label="Toggle menu"
-        >
-          {menuOpen ? <X size={28} /> : <Menu size={28} />}
-        </button>
-
-        {/* Desktop navigation */}
-        <nav className={`header-menu ${menuOpen ? 'mobile-open' : ''}`}>
-          <div className="header-content">
-            <div className="header-section">
-              <Link href="/OurPodcast" onClick={() => setMenuOpen(false)}>
-                <div className="header-link">
-                  <MapPin className="header-icon" />
-                  <h3 className="header-title">Colorado Films The Podcast</h3>
-                </div>
-              </Link>
-            </div>
-            <div className="header-section">
-              <Link href="/FilmFestivals" onClick={() => setMenuOpen(false)}>
-                <div className="header-link">
-                  <Calendar className="header-icon" />
-                  <h3 className="header-title">Film Festivals</h3>
-                </div>
-              </Link>
-            </div>
-            <div className="header-section">
-              <Link href="/film" onClick={() => setMenuOpen(false)}>
-                <div className="header-link">
-                  <Play className="header-icon" />
-                  <h3 className="header-title">Filmed Here</h3>
-                </div>
-              </Link>
-            </div>
-            <div className="header-section">
-              <Link href="/scores" onClick={() => setMenuOpen(false)}>
-                <div className="header-link">
-                  <Mic className="header-icon" />
-                  <h3 className="header-title">Scores</h3>
-                </div>
-              </Link>
-            </div>
-            <div className="header-section">
-              <Link href="/organizations" onClick={() => setMenuOpen(false)}>
-                <div className="header-link">
-                  <Camera className="header-icon" />
-                  <h3 className="header-title">Organizations</h3>
-                </div>
-              </Link>
-            </div>
-            <div className="header-section">
-              <a href="#contact" onClick={() => setMenuOpen(false)}>
-                <div className="header-link">
-                  <Mail className="header-icon" />
-                  <h3 className="header-title">Contact</h3>
-                </div>
-              </a>
-            </div>
-          </div>
-        </nav>
-      </header>
-
       {/* Curtain valance at top */}
       <div className="curtain-valance"></div>
 
