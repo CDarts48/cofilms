@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { Film, Mountain, Star, ChevronDown, Monitor, MapPin, Calendar, Play, Mic, Camera, Menu, X } from 'lucide-react';
+import { Film, Mountain, Star, ChevronDown, Monitor, MapPin, Calendar, Play, Mic, Camera, Menu, X, Mail } from 'lucide-react';
 import '../header/code.css';
 
 function HeroSection(): React.ReactElement {
@@ -71,6 +71,14 @@ function HeroSection(): React.ReactElement {
                   <h3 className="header-title">Organizations</h3>
                 </div>
               </Link>
+            </div>
+            <div className="header-section">
+              <a href="#contact" onClick={() => setMenuOpen(false)}>
+                <div className="header-link">
+                  <Mail className="header-icon" />
+                  <h3 className="header-title">Contact</h3>
+                </div>
+              </a>
             </div>
           </div>
         </nav>

@@ -1,11 +1,46 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Mic, Headphones, Play, Calendar } from 'lucide-react';
 import BasicHeader from '../../components/BasicHeader';
 import ContactSection from '../../components/ContactSection';
+import emailjs from '@emailjs/browser';
 
 export default function OurPodcast() {
+    const [email, setEmail] = useState('');
+    const [name, setName] = useState('');
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [message, setMessage] = useState('');
+
+    const handleSubscribe = async (e: React.FormEvent) => {
+        e.preventDefault();
+        setIsSubmitting(true);
+        setMessage('');
+
+        try {
+            await emailjs.send(
+                process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+                process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+                {
+                    from_name: name,
+                    from_email: email,
+                    message: `New podcast subscriber: ${name} (${email})`,
+                    to_email: 'info@coloradofilms.com',
+                },
+                process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+            );
+
+            setMessage('✅ Thanks for subscribing! We\'ll keep you updated.');
+            setEmail('');
+            setName('');
+        } catch (error) {
+            console.error('Subscription error:', error);
+            setMessage('❌ Oops! Something went wrong. Please try again.');
+        } finally {
+            setIsSubmitting(false);
+        }
+    };
+
     return (
         <>
             <BasicHeader />
@@ -71,9 +106,38 @@ export default function OurPodcast() {
                             Subscribe for Updates
                         </h2>
                         <p style={styles.text}>
-                            Be the first to know when we launch! Follow us on social media
-                            or check back here for the latest updates.
+                            Be the first to know when we release new episodes!
                         </p>
+                        <form onSubmit={handleSubscribe} style={styles.subscribeForm}>
+                            <input
+                                type="text"
+                                placeholder="Your Name"
+                                value={name}
+                                onChange={(e) => setName(e.target.value)}
+                                required
+                                style={styles.input}
+                            />
+                            <input
+                                type="email"
+                                placeholder="Your Email"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                                required
+                                style={styles.input}
+                            />
+                            <button
+                                type="submit"
+                                disabled={isSubmitting}
+                                style={{
+                                    ...styles.subscribeButton,
+                                    opacity: isSubmitting ? 0.6 : 1,
+                                    cursor: isSubmitting ? 'not-allowed' : 'pointer',
+                                }}
+                            >
+                                {isSubmitting ? 'Subscribing...' : 'Subscribe'}
+                            </button>
+                        </form>
+                        {message && <p style={styles.message}>{message}</p>}
                     </section>
                 </div>
             </div>
@@ -172,5 +236,39 @@ const styles: { [key: string]: React.CSSProperties } = {
         fontSize: '1rem',
         transition: 'all 0.3s ease',
         cursor: 'pointer',
+    },
+    subscribeForm: {
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '1rem',
+        marginTop: '1.5rem',
+        maxWidth: '500px',
+    },
+    input: {
+        padding: '1rem',
+        fontSize: '1rem',
+        borderRadius: '8px',
+        border: '2px solid rgba(255, 215, 0, 0.3)',
+        backgroundColor: 'rgba(255, 255, 255, 0.05)',
+        color: '#FFFFFF',
+        outline: 'none',
+        transition: 'all 0.3s ease',
+    },
+    subscribeButton: {
+        padding: '1rem 2rem',
+        fontSize: '1.125rem',
+        fontWeight: '600',
+        backgroundColor: '#FFD700',
+        color: '#1a0000',
+        border: 'none',
+        borderRadius: '8px',
+        cursor: 'pointer',
+        transition: 'all 0.3s ease',
+    },
+    message: {
+        marginTop: '1rem',
+        fontSize: '1rem',
+        fontWeight: '500',
+        textAlign: 'center',
     },
 };

@@ -61,7 +61,7 @@ function ContactSection(): React.ReactElement {
     };
 
     return (
-        <section style={styles.section}>
+        <section id="contact" style={styles.section}>
             <div style={styles.wrapper}>
                 <div style={styles.container}>
                     <div style={styles.content}>
