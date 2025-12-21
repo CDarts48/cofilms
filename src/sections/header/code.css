@@ -343,7 +343,7 @@
     padding: 5rem 1.5rem 2rem 1.5rem;
     transition: right 0.4s ease;
     z-index: 999;
-    overflow-y: hidden;
+    overflow: hidden;
     box-shadow: -4px 0 20px rgba(0, 0, 0, 0.8);
   }
 
@@ -359,6 +359,9 @@
     padding-right: 0;
     justify-content: flex-start;
     align-items: stretch;
+    overflow: hidden;
+    height: auto;
+    max-height: calc(100vh - 7rem);
   }
 
   /* Hide decorative elements on mobile menu */
@@ -388,6 +391,8 @@
     width: 100%;
     gap: 1rem;
     transition: all 0.3s ease;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .header-link:hover {
@@ -412,7 +417,9 @@
     text-align: left;
     max-width: none;
     line-height: 1.4;
-    white-space: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 

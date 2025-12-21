@@ -57,10 +57,10 @@ function HeroSection(): React.ReactElement {
               </Link>
             </div>
             <div className="header-section">
-              <Link href="/music" onClick={() => setMenuOpen(false)}>
+              <Link href="/scores" onClick={() => setMenuOpen(false)}>
                 <div className="header-link">
                   <Mic className="header-icon" />
-                  <h3 className="header-title">Music</h3>
+                  <h3 className="header-title">Scores</h3>
                 </div>
               </Link>
             </div>
