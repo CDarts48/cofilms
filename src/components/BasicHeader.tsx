@@ -48,6 +48,9 @@ export default function BasicHeader(): React.ReactElement {
                 <Link href="/organizations" style={linkStyle}>
                     Organizations
                 </Link>
+                <Link href="#contact" style={linkStyle}>
+                    Contact
+                </Link>
             </nav>
             <style jsx>{`
                 @media (max-width: 768px) {
