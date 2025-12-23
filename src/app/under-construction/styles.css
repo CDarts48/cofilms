@@ -1,0 +1,21 @@
+/* @keyframes swing {
+
+    0%,
+    100% {
+        transform: rotate(-5deg);
+    }
+
+    50% {
+        transform: rotate(5deg);
+    }
+}
+
+@keyframes roll {
+    0% {
+        transform: translateX(0) rotate(0deg);
+    }
+
+    100% {
+        transform: translateX(100vw) rotate(360deg);
+    }
+} */

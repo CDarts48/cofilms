@@ -8,6 +8,7 @@ interface Feature {
     title: string;
     description: string;
     link: string;
+    badge?: string;
 }
 
 interface Styles {
@@ -22,21 +23,9 @@ const features: Feature[] = [
         link: '/OurPodcast'
     },
     {
-        icon: MapPin,
-        title: 'Behind the Scenes',
-        description: 'Discover the stories behind Colorado\'s iconic filming locations',
-        link: '/OurPodcast'
-    },
-    {
         icon: Users,
         title: 'Featured Guests',
         description: 'Hear from filmmakers, actors, and industry professionals',
-        link: '/OurPodcast'
-    },
-    {
-        icon: Mountain,
-        title: 'Western Film History',
-        description: 'Deep dives into Colorado\'s legendary Western movie heritage',
         link: '/OurPodcast'
     },
     {
@@ -44,6 +33,20 @@ const features: Feature[] = [
         title: 'Subscribe',
         description: 'Never miss an episode - subscribe on your favorite platform',
         link: '/OurPodcast'
+    },
+    {
+        icon: Mountain,
+        badge: 'In Production',
+        title: 'Western Film History',
+        description: 'Deep dives into Colorado\'s legendary Western movie heritage',
+        link: '/under-construction'
+    },
+    {
+        icon: MapPin,
+        badge: 'In Production',
+        title: 'Behind the Scenes',
+        description: 'Discover the stories behind Colorado\'s iconic filming locations',
+        link: '/under-construction'
     }
 ];
 
@@ -63,10 +66,10 @@ function PodCastSection(): React.ReactElement {
 
                 {/* Freshest Episode Container */}
                 <div style={styles.freshestEpisodeContainer}>
-                    <h3 style={styles.freshestEpisodeTitle}>🎬 Freshest Episode</h3>
+                    <h3 style={styles.freshestEpisodeTitle}>🎬 Most Recent Episode</h3>
                     <div style={styles.videoPlaceholder}>
                         <iframe
-                            src="https://www.youtube.com/embed/K2enmqcur68"
+                            src="https://open.spotify.com/embed/episode/5VU9e3jzptQE3cs9Yvi59M?utm_source=generator"
                             style={styles.videoIframe}
                             title="Latest Podcast Episode"
                             allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -93,6 +96,9 @@ function PodCastSection(): React.ReactElement {
                             <div style={styles.iconWrapper}>
                                 <feature.icon size={32} style={styles.icon} />
                             </div>
+                            {feature.badge && (
+                                <div style={styles.badge}>{feature.badge}</div>
+                            )}
                             <h3 style={styles.cardTitle}>{feature.title}</h3>
                             <p style={styles.cardDescription}>{feature.description}</p>
                             <div style={styles.arrow}>→</div>
@@ -168,7 +174,7 @@ const styles: Styles = {
     },
     videoPlaceholder: {
         width: '100%',
-        minHeight: '500px',
+        height: '352px',
         background: '#000',
         borderRadius: '12px',
         display: 'flex',
@@ -180,8 +186,7 @@ const styles: Styles = {
     },
     videoIframe: {
         width: '100%',
-        height: '100%',
-        minHeight: '500px',
+        height: '352px',
         border: 'none',
         borderRadius: '8px',
     },
@@ -228,6 +233,19 @@ const styles: Styles = {
     },
     icon: {
         color: '#2C1810',
+    },
+    badge: {
+        backgroundColor: '#FFD700',
+        color: '#5C4033',
+        padding: '0.5rem 1rem',
+        borderRadius: '20px',
+        fontSize: '0.875rem',
+        fontWeight: '700',
+        textTransform: 'uppercase',
+        letterSpacing: '0.05em',
+        marginBottom: '1rem',
+        border: '2px solid #8B7355',
+        boxShadow: '0 2px 8px rgba(92, 64, 51, 0.2)',
     },
     cardTitle: {
         fontSize: '1.5rem',
