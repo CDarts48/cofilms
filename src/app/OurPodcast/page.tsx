@@ -51,7 +51,7 @@ export default function OurPodcast() {
                     <h1 style={styles.title}>Colorado Films The Podcast</h1>
                     <p style={styles.subtitle}>
                         Conversations about Colorado's film industry, behind-the-scenes stories,
-                        and interviews with filmmakers who call the Rockies home.
+                        and interviews with filmmakers who create their art in Colorado.
                     </p>
                 </div>
 
@@ -59,11 +59,36 @@ export default function OurPodcast() {
                     <section style={styles.section}>
                         <h2 style={styles.sectionTitle}>
                             <Play size={32} style={{ marginRight: '1rem' }} />
-                            First Episode
+                            Newest Episode
                         </h2>
-                        <p style={styles.text}>
-                            Listen to our premiere episode now on Spotify!
-                        </p>
+                        <div style={styles.episodeContainer}>
+                            <iframe
+                                style={styles.spotifyEmbed}
+                                src="https://open.spotify.com/embed/episode/5VU9e3jzptQE3cs9Yvi59M?utm_source=generator"
+                                width="100%"
+                                height="352"
+                                frameBorder="0"
+                                allowFullScreen
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                loading="lazy"
+                            />
+                        </div>
+                        <a
+                            href="https://open.spotify.com/episode/5VU9e3jzptQE3cs9Yvi59M?si=NiC--adsSV6pUsm6n6wPEw"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={styles.spotifyLink}
+                        >
+                            Open in Spotify →
+                        </a>
+
+                    </section>
+
+                    <section style={styles.section}>
+                        <h2 style={styles.sectionTitle}>
+                            <Play size={32} style={{ marginRight: '1rem' }} />
+                            Archives
+                        </h2>
                         <div style={styles.episodeContainer}>
                             <iframe
                                 style={styles.spotifyEmbed}
@@ -84,20 +109,6 @@ export default function OurPodcast() {
                         >
                             Open in Spotify →
                         </a>
-                    </section>
-
-                    <section style={styles.section}>
-                        <h2 style={styles.sectionTitle}>
-                            <Play size={32} style={{ marginRight: '1rem' }} />
-                            What to Expect
-                        </h2>
-                        <ul style={styles.list}>
-                            <li style={styles.listItem}>In-depth interviews with Colorado filmmakers</li>
-                            <li style={styles.listItem}>Behind-the-scenes stories from iconic films</li>
-                            <li style={styles.listItem}>Insights into Colorado's film industry</li>
-                            <li style={styles.listItem}>Location spotlight features</li>
-                            <li style={styles.listItem}>Film festival coverage and reviews</li>
-                        </ul>
                     </section>
 
                     <section style={styles.section}>
@@ -141,7 +152,6 @@ export default function OurPodcast() {
                     </section>
                 </div>
             </div>
-            <ContactSection />
         </>
     );
 }
