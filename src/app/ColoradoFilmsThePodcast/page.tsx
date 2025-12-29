@@ -65,56 +65,51 @@ export default function ColoradoFilmsThePodcast() {
                     <section style={styles.section}>
                         <h2 style={styles.sectionTitle}>
                             <Play size={24} style={{ marginRight: '0.75rem' }} />
-                            Newest Episode
+                            Latest Episodes
                         </h2>
-                        <div style={styles.episodeContainer}>
-                            <iframe
-                                style={styles.spotifyEmbed}
-                                src="https://open.spotify.com/embed/episode/5VU9e3jzptQE3cs9Yvi59M?utm_source=generator"
-                                width="100%"
-                                height="352"
-                                frameBorder="0"
-                                allowFullScreen
-                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                                loading="lazy"
-                            />
+                        <p style={styles.text}>
+                            Listen to our podcast exploring Colorado's film industry, behind-the-scenes stories, and interviews with filmmakers.
+                        </p>
+
+                        <div style={styles.episodeCard}>
+                            <h3 style={styles.episodeTitle}>🎬 Episode 2: A Conversation with Bruce of BruceMichaelFilms</h3>
+                            <p style={styles.episodeDescription}>
+                                A chat with Colorado filmmaker Bruce Michael about his journey, creative process, and the unique challenges and opportunities of making films in Colorado. Discover how Bruce got started, his advice for aspiring filmmakers, and what inspires his work.
+                            </p>
+                            <a
+                                href="https://open.spotify.com/episode/5VU9e3jzptQE3cs9Yvi59M"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                style={styles.listenButton}
+                            >
+                                🎧 Listen on Spotify
+                            </a>
                         </div>
+
+                        <div style={styles.episodeCard}>
+                            <h3 style={styles.episodeTitle}>🎬 Episode 1: Colorado Films - An Introduction</h3>
+                            <p style={styles.episodeDescription}>
+                                Welcome to Colorado Films The Podcast! Join us as we begin our journey through the state's rich cinematic history.
+                            </p>
+                            <a
+                                href="https://open.spotify.com/episode/3bGQHoPhjJDauQuDzLFQpY"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                style={styles.listenButton}
+                            >
+                                🎧 Listen on Spotify
+                            </a>
+                        </div>
+
                         <a
-                            href="https://open.spotify.com/episode/5VU9e3jzptQE3cs9Yvi59M?si=NiC--adsSV6pUsm6n6wPEw"
+                            href="https://open.spotify.com/show/0iSGHDK46jWAjAdxVGsAhr"
                             target="_blank"
                             rel="noopener noreferrer"
-                            style={styles.spotifyLink}
+                            style={styles.viewAllButton}
                         >
-                            Open in Spotify →
+                            View All Episodes on Spotify →
                         </a>
 
-                    </section>
-
-                    <section style={styles.section}>
-                        <h2 style={styles.sectionTitle}>
-                            <Play size={24} style={{ marginRight: '0.75rem' }} />
-                            Archives
-                        </h2>
-                        <div style={styles.episodeContainer}>
-                            <iframe
-                                style={styles.spotifyEmbed}
-                                src="https://open.spotify.com/embed/episode/3bGQHoPhjJDauQuDzLFQpY?utm_source=generator"
-                                width="100%"
-                                height="352"
-                                frameBorder="0"
-                                allowFullScreen
-                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                                loading="lazy"
-                            />
-                        </div>
-                        <a
-                            href="https://open.spotify.com/episode/3bGQHoPhjJDauQuDzLFQpY?si=U9M3qM7BTjOmDpGrpYZl-g"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            style={styles.spotifyLink}
-                        >
-                            Open in Spotify →
-                        </a>
                     </section>
                     <section style={styles.sponsorSection}>
                         <h2 style={styles.sponsorTitle}>Sponsor / Hire Us</h2>
@@ -205,6 +200,65 @@ const styles: { [key: string]: React.CSSProperties } = {
         fontSize: '1.125rem',
         lineHeight: '1.8',
         color: '#E8E8E8',
+    },
+    loadingNote: {
+        fontSize: '0.9rem',
+        lineHeight: '1.6',
+        color: '#C19A6B',
+        fontStyle: 'italic',
+        marginTop: '1rem',
+        marginBottom: '0.5rem',
+        textAlign: 'center',
+    },
+    episodeCard: {
+        background: 'rgba(255, 255, 255, 0.08)',
+        borderRadius: '12px',
+        padding: '1.5rem',
+        marginTop: '1.5rem',
+        marginBottom: '1.5rem',
+        border: '2px solid rgba(255, 215, 0, 0.3)',
+        transition: 'all 0.3s ease',
+    },
+    episodeTitle: {
+        fontSize: '1.25rem',
+        fontWeight: '700',
+        color: '#FFD700',
+        marginBottom: '0.75rem',
+    },
+    episodeDescription: {
+        fontSize: '1rem',
+        lineHeight: '1.6',
+        color: '#E8E8E8',
+        marginBottom: '1.25rem',
+    },
+    listenButton: {
+        display: 'inline-block',
+        padding: '0.85rem 2rem',
+        backgroundColor: '#1DB954',
+        color: '#FFFFFF',
+        textDecoration: 'none',
+        borderRadius: '50px',
+        fontWeight: '700',
+        fontSize: '1rem',
+        transition: 'all 0.3s ease',
+        cursor: 'pointer',
+        border: '2px solid #1ed760',
+        boxShadow: '0 4px 16px rgba(29, 185, 84, 0.4)',
+    },
+    viewAllButton: {
+        display: 'inline-block',
+        marginTop: '1.5rem',
+        padding: '1rem 2.5rem',
+        backgroundColor: 'rgba(255, 215, 0, 0.1)',
+        color: '#FFD700',
+        textDecoration: 'none',
+        borderRadius: '50px',
+        fontWeight: '700',
+        fontSize: '1.1rem',
+        transition: 'all 0.3s ease',
+        cursor: 'pointer',
+        border: '2px solid #FFD700',
+        boxShadow: '0 4px 16px rgba(255, 215, 0, 0.3)',
     },
     list: {
         listStyle: 'none',
