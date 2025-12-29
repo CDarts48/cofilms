@@ -47,7 +47,7 @@ export default function ColoradoFilmsThePodcast() {
 
             <div style={styles.container}>
                 <div style={styles.hero}>
-                    <Mic size={64} color="#FFD700" />
+                    <Mic size={48} color="#FFD700" />
                     <h1 style={styles.title}>Colorado Films The Podcast</h1>
                     <p style={styles.subtitle}>
                         Conversations about Colorado's film industry, behind-the-scenes stories,
@@ -64,7 +64,7 @@ export default function ColoradoFilmsThePodcast() {
                 <div style={styles.content}>
                     <section style={styles.section}>
                         <h2 style={styles.sectionTitle}>
-                            <Play size={32} style={{ marginRight: '1rem' }} />
+                            <Play size={24} style={{ marginRight: '0.75rem' }} />
                             Newest Episode
                         </h2>
                         <div style={styles.episodeContainer}>
@@ -92,7 +92,7 @@ export default function ColoradoFilmsThePodcast() {
 
                     <section style={styles.section}>
                         <h2 style={styles.sectionTitle}>
-                            <Play size={32} style={{ marginRight: '1rem' }} />
+                            <Play size={24} style={{ marginRight: '0.75rem' }} />
                             Archives
                         </h2>
                         <div style={styles.episodeContainer}>
@@ -137,43 +137,44 @@ const styles: { [key: string]: React.CSSProperties } = {
         minHeight: '100vh',
         background: 'linear-gradient(135deg, #1a0000 0%, #2d0a0a 50%, #1a0000 100%)',
         color: '#FFFFFF',
-        paddingTop: '6rem',
+        paddingTop: '4rem',
+        paddingBottom: '2rem',
     },
     hero: {
         textAlign: 'center',
-        padding: '4rem 2rem',
+        padding: '2rem 1.5rem',
         maxWidth: '800px',
         margin: '0 auto',
     },
     title: {
-        fontSize: '3.5rem',
+        fontSize: '2.5rem',
         fontWeight: '900',
-        marginTop: '1.5rem',
-        marginBottom: '1rem',
+        marginTop: '1rem',
+        marginBottom: '0.75rem',
         background: 'linear-gradient(135deg, #FFD700 0%, #FFA500 100%)',
         WebkitBackgroundClip: 'text',
         WebkitTextFillColor: 'transparent',
         backgroundClip: 'text',
     },
     subtitle: {
-        fontSize: '1.25rem',
+        fontSize: '1rem',
         color: '#C19A6B',
-        lineHeight: '1.8',
+        lineHeight: '1.6',
         maxWidth: '600px',
         margin: '0 auto',
     },
     sponsorHeaderLink: {
         display: 'inline-block',
-        marginTop: '2rem',
-        padding: '1rem 2rem',
+        marginTop: '1.25rem',
+        padding: '0.75rem 1.5rem',
         backgroundColor: '#FFD700',
         color: '#1a0000',
         textDecoration: 'none',
         borderRadius: '50px',
-        fontSize: '1.125rem',
+        fontSize: '0.95rem',
         fontWeight: '700',
-        border: '3px solid #FFA500',
-        boxShadow: '0 6px 20px rgba(255, 215, 0, 0.4)',
+        border: '2px solid #FFA500',
+        boxShadow: '0 4px 16px rgba(255, 215, 0, 0.4)',
         transition: 'all 0.3s ease',
         cursor: 'pointer',
         textTransform: 'uppercase',
@@ -182,20 +183,20 @@ const styles: { [key: string]: React.CSSProperties } = {
     content: {
         maxWidth: '900px',
         margin: '0 auto',
-        padding: '2rem',
+        padding: '1rem',
     },
     section: {
         background: 'rgba(255, 255, 255, 0.05)',
         borderRadius: '12px',
-        padding: '2.5rem',
-        marginBottom: '2rem',
+        padding: '1.5rem',
+        marginBottom: '1.25rem',
         border: '2px solid rgba(255, 215, 0, 0.2)',
         boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)',
     },
     sectionTitle: {
-        fontSize: '2rem',
+        fontSize: '1.5rem',
         fontWeight: '700',
-        marginBottom: '1.5rem',
+        marginBottom: '1rem',
         color: '#FFD700',
         display: 'flex',
         alignItems: 'center',
@@ -219,8 +220,8 @@ const styles: { [key: string]: React.CSSProperties } = {
         marginBottom: '0.75rem',
     },
     episodeContainer: {
-        marginTop: '1.5rem',
-        marginBottom: '1.5rem',
+        marginTop: '1rem',
+        marginBottom: '1rem',
         borderRadius: '12px',
         overflow: 'hidden',
     },
@@ -229,27 +230,27 @@ const styles: { [key: string]: React.CSSProperties } = {
     },
     spotifyLink: {
         display: 'inline-block',
-        marginTop: '1rem',
-        padding: '0.75rem 1.5rem',
+        marginTop: '0.75rem',
+        padding: '0.5rem 1.25rem',
         backgroundColor: '#1DB954',
         color: '#FFFFFF',
         textDecoration: 'none',
         borderRadius: '24px',
         fontWeight: '600',
-        fontSize: '1rem',
+        fontSize: '0.9rem',
         transition: 'all 0.3s ease',
         cursor: 'pointer',
     },
     subscribeForm: {
         display: 'flex',
         flexDirection: 'column',
-        gap: '1rem',
-        marginTop: '1.5rem',
+        gap: '0.75rem',
+        marginTop: '1rem',
         maxWidth: '500px',
     },
     input: {
-        padding: '1rem',
-        fontSize: '1rem',
+        padding: '0.75rem',
+        fontSize: '0.95rem',
         borderRadius: '8px',
         border: '2px solid rgba(255, 215, 0, 0.3)',
         backgroundColor: 'rgba(255, 255, 255, 0.05)',
@@ -258,8 +259,8 @@ const styles: { [key: string]: React.CSSProperties } = {
         transition: 'all 0.3s ease',
     },
     subscribeButton: {
-        padding: '1rem 2rem',
-        fontSize: '1.125rem',
+        padding: '0.75rem 1.5rem',
+        fontSize: '1rem',
         fontWeight: '600',
         backgroundColor: '#FFD700',
         color: '#1a0000',
@@ -269,48 +270,48 @@ const styles: { [key: string]: React.CSSProperties } = {
         transition: 'all 0.3s ease',
     },
     message: {
-        marginTop: '1rem',
-        fontSize: '1rem',
+        marginTop: '0.75rem',
+        fontSize: '0.95rem',
         fontWeight: '500',
         textAlign: 'center',
     },
     sponsorSection: {
         background: 'linear-gradient(135deg, rgba(255, 215, 0, 0.1) 0%, rgba(255, 165, 0, 0.1) 100%)',
         borderRadius: '12px',
-        padding: '3rem 2.5rem',
-        marginBottom: '2rem',
+        padding: '2rem 1.5rem',
+        marginBottom: '1.25rem',
         border: '3px solid rgba(255, 215, 0, 0.4)',
         boxShadow: '0 8px 32px rgba(255, 215, 0, 0.2)',
         textAlign: 'center',
     },
     sponsorTitle: {
-        fontSize: '2.5rem',
+        fontSize: '1.75rem',
         fontWeight: '800',
-        marginBottom: '1.5rem',
+        marginBottom: '1rem',
         background: 'linear-gradient(135deg, #FFD700 0%, #FFA500 100%)',
         WebkitBackgroundClip: 'text',
         WebkitTextFillColor: 'transparent',
         backgroundClip: 'text',
     },
     sponsorText: {
-        fontSize: '1.25rem',
-        lineHeight: '1.8',
+        fontSize: '1rem',
+        lineHeight: '1.6',
         color: '#E8E8E8',
-        marginBottom: '2rem',
+        marginBottom: '1.5rem',
         maxWidth: '600px',
-        margin: '0 auto 2rem',
+        margin: '0 auto 1.5rem',
     },
     sponsorButton: {
         display: 'inline-block',
-        padding: '1.25rem 3rem',
-        fontSize: '1.25rem',
+        padding: '0.85rem 2rem',
+        fontSize: '1rem',
         fontWeight: '700',
         backgroundColor: '#FFD700',
         color: '#1a0000',
         textDecoration: 'none',
         borderRadius: '50px',
-        border: '3px solid #FFA500',
-        boxShadow: '0 6px 20px rgba(255, 215, 0, 0.4)',
+        border: '2px solid #FFA500',
+        boxShadow: '0 4px 16px rgba(255, 215, 0, 0.4)',
         transition: 'all 0.3s ease',
         cursor: 'pointer',
         textTransform: 'uppercase',

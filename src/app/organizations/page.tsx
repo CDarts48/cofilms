@@ -21,7 +21,7 @@ const organizations: Organization[] = [
         location: 'Statewide',
         category: 'Government'
     },
- 
+
 
     // Regional Film Liaisons
     {
@@ -86,6 +86,13 @@ const organizations: Organization[] = [
         name: 'Denver Film Society',
         url: 'https://denverfilm.org/',
         description: 'A non-profit organization dedicated to bringing the best of independent, foreign, and classic cinema to Colorado audiences.',
+        location: 'Denver',
+        category: 'Arts Organization'
+    },
+    {
+        name: 'Denver Documentary Society',
+        url: 'https://denverdocsoc.org/',
+        description: 'Furthering the impact of documentary films through screenings, outreach and education.',
         location: 'Denver',
         category: 'Arts Organization'
     },
