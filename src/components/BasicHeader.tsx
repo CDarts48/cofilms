@@ -39,7 +39,7 @@ export default function BasicHeader(): React.ReactElement {
                 <Link href="/film" style={linkStyle}>
                     Films
                 </Link>
-                <Link href="/OurPodcast" style={linkStyle}>
+                <Link href="/ColoradoFilmsThePodcast" style={linkStyle}>
                     Podcast
                 </Link>
                 <Link href="/FilmFestivals" style={linkStyle}>

@@ -20,19 +20,19 @@ const features: Feature[] = [
         icon: Film,
         title: 'Listen Now',
         description: 'Tune in to our latest episodes exploring Colorado cinema',
-        link: '/OurPodcast'
+        link: '/ColoradoFilmsThePodcastcast'
     },
     {
         icon: Users,
         title: 'Featured Guests',
         description: 'Hear from filmmakers, actors, and industry professionals',
-        link: '/OurPodcast'
+        link: '/ColoradoFilmsThePodcastcast'
     },
     {
         icon: Award,
         title: 'Subscribe',
         description: 'Never miss an episode - subscribe on your favorite platform',
-        link: '/OurPodcast'
+        link: '/ColoradoFilmsThePodcastcast'
     },
     {
         icon: Mountain,

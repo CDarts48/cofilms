@@ -6,7 +6,7 @@ import BasicHeader from '../../components/BasicHeader';
 import ContactSection from '../../components/ContactSection';
 import emailjs from '@emailjs/browser';
 
-export default function OurPodcast() {
+export default function ColoradoFilmsThePodcast() {
     const [email, setEmail] = useState('');
     const [name, setName] = useState('');
     const [isSubmitting, setIsSubmitting] = useState(false);
@@ -53,6 +53,12 @@ export default function OurPodcast() {
                         Conversations about Colorado's film industry, behind-the-scenes stories,
                         and interviews with filmmakers who create their art in Colorado.
                     </p>
+                    <a
+                        href="mailto:info@coloradofilms.com?subject=Sponsorship/Collaboration Inquiry"
+                        style={styles.sponsorHeaderLink}
+                    >
+                        💼 Sponsor / Hire Us
+                    </a>
                 </div>
 
                 <div style={styles.content}>
@@ -110,45 +116,15 @@ export default function OurPodcast() {
                             Open in Spotify →
                         </a>
                     </section>
-
-                    <section style={styles.section}>
-                        <h2 style={styles.sectionTitle}>
-                            <Calendar size={32} style={{ marginRight: '1rem' }} />
-                            Subscribe for Updates
-                        </h2>
-                        <p style={styles.text}>
-                            Be the first to know when we release new episodes!
+                    <section style={styles.sponsorSection}>
+                        <h2 style={styles.sponsorTitle}>Sponsor / Hire Us</h2>
+                        <p style={styles.sponsorText}>
+                            Interested in sponsoring our podcast or hiring us for your project?
+                            We'd love to hear from you!
                         </p>
-                        <form onSubmit={handleSubscribe} style={styles.subscribeForm}>
-                            <input
-                                type="text"
-                                placeholder="Your Name"
-                                value={name}
-                                onChange={(e) => setName(e.target.value)}
-                                required
-                                style={styles.input}
-                            />
-                            <input
-                                type="email"
-                                placeholder="Your Email"
-                                value={email}
-                                onChange={(e) => setEmail(e.target.value)}
-                                required
-                                style={styles.input}
-                            />
-                            <button
-                                type="submit"
-                                disabled={isSubmitting}
-                                style={{
-                                    ...styles.subscribeButton,
-                                    opacity: isSubmitting ? 0.6 : 1,
-                                    cursor: isSubmitting ? 'not-allowed' : 'pointer',
-                                }}
-                            >
-                                {isSubmitting ? 'Subscribing...' : 'Subscribe'}
-                            </button>
-                        </form>
-                        {message && <p style={styles.message}>{message}</p>}
+                        <a href="mailto:info@coloradofilms.com?subject=Sponsorship/Collaboration Inquiry" style={styles.sponsorButton}>
+                            Get in Touch
+                        </a>
                     </section>
                 </div>
             </div>
@@ -185,6 +161,23 @@ const styles: { [key: string]: React.CSSProperties } = {
         lineHeight: '1.8',
         maxWidth: '600px',
         margin: '0 auto',
+    },
+    sponsorHeaderLink: {
+        display: 'inline-block',
+        marginTop: '2rem',
+        padding: '1rem 2rem',
+        backgroundColor: '#FFD700',
+        color: '#1a0000',
+        textDecoration: 'none',
+        borderRadius: '50px',
+        fontSize: '1.125rem',
+        fontWeight: '700',
+        border: '3px solid #FFA500',
+        boxShadow: '0 6px 20px rgba(255, 215, 0, 0.4)',
+        transition: 'all 0.3s ease',
+        cursor: 'pointer',
+        textTransform: 'uppercase',
+        letterSpacing: '0.05em',
     },
     content: {
         maxWidth: '900px',
@@ -280,5 +273,47 @@ const styles: { [key: string]: React.CSSProperties } = {
         fontSize: '1rem',
         fontWeight: '500',
         textAlign: 'center',
+    },
+    sponsorSection: {
+        background: 'linear-gradient(135deg, rgba(255, 215, 0, 0.1) 0%, rgba(255, 165, 0, 0.1) 100%)',
+        borderRadius: '12px',
+        padding: '3rem 2.5rem',
+        marginBottom: '2rem',
+        border: '3px solid rgba(255, 215, 0, 0.4)',
+        boxShadow: '0 8px 32px rgba(255, 215, 0, 0.2)',
+        textAlign: 'center',
+    },
+    sponsorTitle: {
+        fontSize: '2.5rem',
+        fontWeight: '800',
+        marginBottom: '1.5rem',
+        background: 'linear-gradient(135deg, #FFD700 0%, #FFA500 100%)',
+        WebkitBackgroundClip: 'text',
+        WebkitTextFillColor: 'transparent',
+        backgroundClip: 'text',
+    },
+    sponsorText: {
+        fontSize: '1.25rem',
+        lineHeight: '1.8',
+        color: '#E8E8E8',
+        marginBottom: '2rem',
+        maxWidth: '600px',
+        margin: '0 auto 2rem',
+    },
+    sponsorButton: {
+        display: 'inline-block',
+        padding: '1.25rem 3rem',
+        fontSize: '1.25rem',
+        fontWeight: '700',
+        backgroundColor: '#FFD700',
+        color: '#1a0000',
+        textDecoration: 'none',
+        borderRadius: '50px',
+        border: '3px solid #FFA500',
+        boxShadow: '0 6px 20px rgba(255, 215, 0, 0.4)',
+        transition: 'all 0.3s ease',
+        cursor: 'pointer',
+        textTransform: 'uppercase',
+        letterSpacing: '0.05em',
     },
 };

@@ -21,20 +21,7 @@ const organizations: Organization[] = [
         location: 'Statewide',
         category: 'Government'
     },
-    {
-        name: 'Boulder County Film Commission',
-        url: 'https://www.bouldercounty.org/property-and-land/land-use/special-permits/',
-        description: 'Film permits for Boulder County. A damage deposit may be required.',
-        location: 'Boulder',
-        category: 'Permits'
-    },
-    {
-        name: 'Colorado Springs Film Commission',
-        url: 'https://coloradospringsfilmcommission.com/',
-        description: 'Film permits for Colorado Springs. Cost varies by location.',
-        location: 'Colorado Springs',
-        category: 'Permits'
-    },
+ 
 
     // Regional Film Liaisons
     {
@@ -42,13 +29,6 @@ const organizations: Organization[] = [
         url: 'https://oedit.colorado.gov/regional-film-liaisons',
         description: 'Network of 15 volunteer regional partners who market Colorado\'s regions and help identify local support services for the film industry.',
         location: 'Statewide',
-        category: 'Regional Liaison'
-    },
-    {
-        name: 'Aspen Film Commission',
-        url: 'https://www.aspenchamber.org/film-commission',
-        description: 'Regional film liaison serving the Aspen and Roaring Fork Valley area.',
-        location: 'Aspen',
         category: 'Regional Liaison'
     },
     {
@@ -60,7 +40,7 @@ const organizations: Organization[] = [
     },
     {
         name: 'Breckenridge Film Commission',
-        url: 'https://www.gobreck.com/film-commission',
+        url: 'https://breckfilm.org/',
         description: 'Regional film liaison for Breckenridge and Summit County film productions.',
         location: 'Breckenridge',
         category: 'Regional Liaison'
@@ -73,38 +53,17 @@ const organizations: Organization[] = [
         category: 'Regional Liaison'
     },
     {
-        name: 'Crested Butte Film Commission',
-        url: 'https://www.crestedbuttefilmcommission.com/',
+        name: 'Gunnison County Film Commission',
+        url: 'https://gunnisoncrestedbutte.com/industry/film-commission/',
         description: 'Regional film liaison for Crested Butte and Gunnison County.',
         location: 'Crested Butte',
         category: 'Regional Liaison'
     },
     {
-        name: 'Denver Film Commission',
-        url: 'https://www.denver.org/film/',
-        description: 'Regional film liaison for the Denver metro area and Colorado\'s capital city.',
-        location: 'Denver',
-        category: 'Regional Liaison'
-    },
-    {
-        name: 'Durango Film Commission',
-        url: 'https://www.durangofilmcommission.org/',
-        description: 'Regional film liaison serving Durango and Southwest Colorado.',
+        name: 'The Four Corners Film Office',
+        url: 'https://www.4cornersfilmoffice.org/',
+        description: 'The 4CFO is proud to support the region’s film-friendly legacy, to assist production crews, and to increase the economic benefits of production for our communities.',
         location: 'Durango',
-        category: 'Regional Liaison'
-    },
-    {
-        name: 'Estes Park Film Commission',
-        url: 'https://www.visitestespark.com/film-commission/',
-        description: 'Regional film liaison for Estes Park and Rocky Mountain National Park gateway.',
-        location: 'Estes Park',
-        category: 'Regional Liaison'
-    },
-    {
-        name: 'Fort Collins Film Commission',
-        url: 'https://www.visitftcollins.com/film-commission/',
-        description: 'Regional film liaison for Fort Collins and Northern Colorado.',
-        location: 'Fort Collins',
         category: 'Regional Liaison'
     },
     {
@@ -116,16 +75,9 @@ const organizations: Organization[] = [
     },
     {
         name: 'Telluride Film Commission',
-        url: 'https://www.telluridefilmcommission.com/',
+        url: 'http://filmtelluride.com/',
         description: 'Regional film liaison serving Telluride and the San Juan Mountains region.',
         location: 'Telluride',
-        category: 'Regional Liaison'
-    },
-    {
-        name: 'Vail Film Commission',
-        url: 'https://www.vail.com/film-commission',
-        description: 'Regional film liaison for Vail Valley and Eagle County productions.',
-        location: 'Vail',
         category: 'Regional Liaison'
     },
 
@@ -144,157 +96,67 @@ const organizations: Organization[] = [
         location: 'Aspen',
         category: 'Arts Organization'
     },
-    {
-        name: 'Sie FilmCenter',
-        url: 'https://denverfilm.org/filmcenter/',
-        description: 'Denver\'s premier venue for independent and international films, operated by Denver Film Society.',
-        location: 'Denver',
-        category: 'Venue'
-    },
 
-    // Job & Crew Resources
-    {
-        name: 'StaffMeUp',
-        url: 'https://www.staffmeup.com/',
-        description: 'Entertainment industry job board for finding film crew positions.',
-        location: 'Online',
-        category: 'Job Resources'
-    },
-    {
-        name: 'Mandy',
-        url: 'https://www.mandy.com/',
-        description: 'International casting and crew database for film and TV jobs.',
-        location: 'Online',
-        category: 'Job Resources'
-    },
-    {
-        name: 'EntertainmentCareers.net',
-        url: 'https://www.entertainmentcareers.net/',
-        description: 'Job board specializing in entertainment industry positions.',
-        location: 'Online',
-        category: 'Job Resources'
-    },
-    {
-        name: 'ProductionHUB',
-        url: 'https://www.productionhub.com/',
-        description: 'Production directory and job board for film professionals.',
-        location: 'Online',
-        category: 'Job Resources'
-    },
-    {
-        name: 'The Denver Egotist',
-        url: 'https://www.thedenveregotist.com/',
-        description: 'Denver creative advertising and production industry news and jobs.',
-        location: 'Denver',
-        category: 'Job Resources'
-    },
+
+
+    // {
+    //     name: 'ProductionHUB',
+    //     url: 'https://www.productionhub.com/',
+    //     description: 'Production directory and job board for film professionals.',
+    //     location: 'Online',
+    //     category: 'Job Resources'
+    // },
 
     // Unions
     {
-        name: 'Teamsters Local 17',
-        url: 'https://teamsters17.org/',
-        description: 'Union representing drivers and transportation workers in Colorado and Wyoming film industry.',
-        location: 'Colorado & Wyoming',
-        category: 'Union'
-    },
-    {
         name: 'IATSE Local 7',
-        url: 'https://www.iatselocal7.org/',
+        url: 'https://www.iatse7denver.org/',
         description: 'Theatrical stage employees union serving Denver and Colorado film productions.',
         location: 'Denver',
         category: 'Union'
     },
-    {
-        name: 'SAG-AFTRA',
-        url: 'https://www.sagaftra.org/',
-        description: 'Actors union representing performers in Colorado and Wyoming.',
-        location: 'Colorado & Wyoming',
-        category: 'Union'
-    },
+    // {
+    //     name: 'SAG-AFTRA',
+    //     url: 'https://www.sagaftra.org/',
+    //     description: 'Actors union representing performers in Colorado and Wyoming.',
+    //     location: 'Colorado & Wyoming',
+    //     category: 'Union'
+    // }, Has contact not a website here in Colorado 
 
     // Film Partners & Organizations
     {
-        name: 'AD Club Colorado',
-        url: 'https://www.adclubcolorado.com/',
-        description: 'Professional organization for advertising and marketing professionals.',
-        location: 'Colorado',
-        category: 'Professional Org'
-    },
-    {
-        name: 'AD2 Colorado',
-        url: 'https://www.ad2colorado.org/',
-        description: 'Young professionals organization for advertising and marketing.',
-        location: 'Colorado',
-        category: 'Professional Org'
-    },
-    {
-        name: 'Black Actors Guild',
-        url: 'https://www.blackactorsguild.com/',
-        description: 'Organization supporting Black actors and performers.',
-        location: 'National',
-        category: 'Professional Org'
-    },
-    {
-        name: 'Black Public Media',
-        url: 'https://www.blackpublicmedia.org/',
-        description: 'Supporting Black content creators and filmmakers.',
-        location: 'National',
-        category: 'Professional Org'
-    },
-    {
         name: 'CASA Films Denver',
-        url: 'https://www.casafilmsdenver.org/',
+        url: 'https://www.facebook.com/groups/CASAfilmsDenver/',
         description: 'Supporting Latino filmmakers and content creators in Denver.',
         location: 'Denver',
         category: 'Professional Org'
     },
     {
         name: 'Colorado Film and Video Association',
-        url: 'https://www.cfva.biz/',
+        url: 'https://www.cfva.com/',
         description: 'Professional association for Colorado film and video professionals.',
         location: 'Colorado',
         category: 'Professional Org'
     },
     {
-        name: 'Colorado Filmmaking Incubator',
-        url: 'https://www.coloradofilmmakingincubator.com/',
-        description: 'Supporting emerging filmmakers with resources and mentorship.',
+        name: 'Cine Fe',
+        url: 'https://www.cinefe.org/',
+        description: 'Cine Fe’s mission is to make Colorado a place where filmmakers of all backgrounds can thrive, so our stories can be told, our voices heard, our people seen.',
         location: 'Colorado',
         category: 'Professional Org'
     },
-    {
-        name: 'Colorado Innovators of New Entertainment Media & Arts (CINEMA)',
-        url: 'https://www.cinemacolorado.org/',
-        description: 'Innovation and networking organization for Colorado entertainment professionals.',
-        location: 'Colorado',
-        category: 'Professional Org'
-    },
-    {
-        name: 'Colorado Professional Videographers Association',
-        url: 'https://www.cpva.org/',
-        description: 'Professional association for videographers and video production professionals.',
-        location: 'Colorado',
-        category: 'Professional Org'
-    },
+    // {
+    //     name: 'Colorado Innovators of New Entertainment Media & Arts (CINEMA)',
+    //     url: 'https://www.cinemacolorado.org/',
+    //     description: 'Innovation and networking organization for Colorado entertainment professionals.',
+    //     location: 'Colorado',
+    //     category: 'Professional Org'
+    // }, Old State campaign in order to attract filmmakers.
     {
         name: 'Colorado Resource for Entertainment Workers (C.R.E.W.)',
-        url: 'https://www.crewcolorado.org/',
+        url: 'https://www.facebook.com/groups/250448828366285/',
         description: 'Resources and networking for Colorado entertainment industry workers.',
         location: 'Colorado',
-        category: 'Professional Org'
-    },
-    {
-        name: 'Colorado UP',
-        url: 'https://www.coloradoup.com/',
-        description: 'Promoting Colorado as a premier production destination.',
-        location: 'Colorado',
-        category: 'Professional Org'
-    },
-    {
-        name: 'Denver Media Professionals',
-        url: 'https://www.denvermediaprofessionals.com/',
-        description: 'Networking organization for Denver media professionals.',
-        location: 'Denver',
         category: 'Professional Org'
     },
     {
@@ -304,37 +166,17 @@ const organizations: Organization[] = [
         location: 'Colorado',
         category: 'Professional Org'
     },
-    {
-        name: 'Film Industry Networking Denver (F.I.N.D.)',
-        url: 'https://www.finddenver.com/',
-        description: 'Networking events and resources for Denver film professionals.',
-        location: 'Denver',
-        category: 'Professional Org'
-    },
-    {
-        name: 'Latino Public Broadcasting',
-        url: 'https://www.lpbp.org/',
-        description: 'Supporting Latino content creators and public media.',
-        location: 'National',
-        category: 'Professional Org'
-    },
-    {
-        name: 'Motion Picture Association',
-        url: 'https://www.motionpictures.org/',
-        description: 'Advocacy organization for the film, TV, and streaming industry.',
-        location: 'National',
-        category: 'Professional Org'
-    },
+
     {
         name: 'National Association for Multi-ethnicity in Communications',
-        url: 'https://www.namic.com/',
+        url: 'https://www.namicdenver.com/',
         description: 'Advancing diversity and inclusion in communications industries.',
         location: 'National',
         category: 'Professional Org'
     },
     {
         name: 'Women in Film and Media Colorado',
-        url: 'https://womeninfilmandmediaco.org/',
+        url: 'https://www.wifmco.org/',
         description: 'Supporting women in film, television, and media industries.',
         location: 'Colorado',
         category: 'Professional Org'
