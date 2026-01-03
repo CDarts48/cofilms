@@ -100,7 +100,7 @@ export default function UpcomingFilmFestivals(): React.ReactElement {
         <section style={styles.section}>
             <div style={styles.header}>
                 <h2 style={styles.title}>
-                    🎬 Upcoming Film Festivals in Colorado
+                    Upcoming Film Festivals in Colorado
                 </h2>
                 <p style={styles.subtitle}>
                     Discover the vibrant film festival scene across Colorado's most scenic locations
@@ -110,7 +110,7 @@ export default function UpcomingFilmFestivals(): React.ReactElement {
             {/* Next Festival Feature Container */}
             {nextFestival && (
                 <div style={styles.nextFestivalContainer}>
-                    <h3 style={styles.nextFestivalTitle}>🌟 Next Film Festival</h3>
+                    <h3 style={styles.nextFestivalTitle}>Next Film Festival</h3>
                     <div style={styles.featuredFestivalContent}>
                         <h4 style={styles.featuredFestivalName}>{nextFestival.name}</h4>
                         <div style={styles.featuredDetails}>

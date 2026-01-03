@@ -72,23 +72,6 @@ function ContactSection(): React.ReactElement {
                                 We'd love to hear from you and help showcase Colorado's incredible
                                 film heritage.
                             </p>
-
-                            <div style={styles.features}>
-                                <div style={styles.featureItem}>
-                                    <div style={styles.featureIcon}>
-                                        <Mail size={24} color="#5C4033" />
-                                    </div>
-                                    <div>
-                                        <h3 style={styles.featureTitle}>Email Us</h3>
-                                        <a
-                                            href="mailto:info@coloradofilms.com"
-                                            style={styles.emailLink}
-                                        >
-                                            info@coloradofilms.com
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
 
                         <div style={styles.formSide}>
@@ -166,7 +149,7 @@ function ContactSection(): React.ReactElement {
 
 const styles: Styles = {
     section: {
-        padding: '8rem 0',
+        padding: '0rem 0',
         background: 'linear-gradient(180deg, #E8D5C4 0%, #F5E6D3 100%)',
         position: 'relative',
         width: '100%',
@@ -188,7 +171,6 @@ const styles: Styles = {
     content: {
         display: 'flex',
         flexDirection: 'column',
-        gap: '3rem',
         alignItems: 'stretch',
         width: '100%',
         maxWidth: '100%',
