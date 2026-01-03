@@ -16,7 +16,6 @@ function HeroSection(): React.ReactElement {
 
       <div className="hero-content">
         <div className="hero-subtitle">
-          <Mountain size={24} style={{ display: 'inline-block', marginRight: '0.5rem' }} />
           Breathtaking Views, Unforgettable Films
         </div>
 
@@ -32,11 +31,9 @@ function HeroSection(): React.ReactElement {
 
         <div className="hero-buttons">
           <a href="/FilmFestivals" className="button button-primary">
-            <Film size={20} />
             Film Festivals
           </a>
-          <a href="/ColoradoFilmsThePodcastcast" className="button button-secondary">
-            <Star size={20} />
+          <a href="/ColoradoFilmsThePodcastcast" className="button button-secondary"> 
             The Podcast
           </a>
         </div>

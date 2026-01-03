@@ -1,10 +1,8 @@
 'use client';
 
 import React, { CSSProperties, MouseEvent } from 'react';
-import { Film, Mountain, Users, Calendar, MapPin, Award, LucideIcon } from 'lucide-react';
 
 interface Feature {
-    icon: LucideIcon;
     title: string;
     description: string;
     link: string;
@@ -17,32 +15,27 @@ interface Styles {
 
 const features: Feature[] = [
     {
-        icon: Film,
         title: 'Listen Now',
         description: 'Tune in to our latest episodes exploring Colorado cinema',
         link: '/ColoradoFilmsThePodcast'
     },
     {
-        icon: Users,
         title: 'Featured Guests',
         description: 'Hear from filmmakers, actors, and industry professionals',
         link: '/ColoradoFilmsThePodcast'
     },
     {
-        icon: Award,
         title: 'Subscribe',
         description: 'Never miss an episode - subscribe on your favorite platform',
         link: 'https://open.spotify.com/show/0iSGHDK46jWAjAdxVGsAhr'
     },
     {
-        icon: Mountain,
         badge: 'In Production',
         title: 'Western Film History',
         description: 'Deep dives into Colorado\'s legendary Western movie heritage',
         link: '/under-construction'
     },
     {
-        icon: MapPin,
         badge: 'In Production',
         title: 'Behind the Scenes',
         description: 'Discover the stories behind Colorado\'s iconic filming locations',
@@ -66,7 +59,7 @@ function PodCastSection(): React.ReactElement {
 
                 {/* Freshest Episode Container */}
                 <div style={styles.freshestEpisodeContainer}>
-                    <h3 style={styles.freshestEpisodeTitle}>🎬 Most Recent Episode</h3>
+                    <h3 style={styles.freshestEpisodeTitle}>Most Recent Episode</h3>
                     <div style={styles.episodeCard}>
                         <h4 style={styles.episodeTitle}>Episode 2: A Conversation with Bruce of BruceMichaelFilms</h4>
                         <p style={styles.episodeDescription}>
@@ -108,9 +101,6 @@ function PodCastSection(): React.ReactElement {
                                     key={index}
                                     style={styles.card as CSSProperties}
                                 >
-                                    <div style={styles.iconWrapper}>
-                                        <feature.icon size={32} style={styles.icon} />
-                                    </div>
                                     <h3 style={styles.cardTitle}>{feature.title}</h3>
                                     <p style={styles.cardDescription}>{feature.description}</p>
                                     <div style={styles.subscribeButtonGroup}>
@@ -156,9 +146,6 @@ function PodCastSection(): React.ReactElement {
                                     e.currentTarget.style.boxShadow = '0 6px 16px rgba(92, 64, 51, 0.2)';
                                 }}
                             >
-                                <div style={styles.iconWrapper}>
-                                    <feature.icon size={32} style={styles.icon} />
-                                </div>
                                 {feature.badge && (
                                     <div style={styles.badge}>{feature.badge}</div>
                                 )}
