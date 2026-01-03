@@ -132,7 +132,7 @@ export default function UpcomingFilmFestivals(): React.ReactElement {
                                 rel="noopener noreferrer"
                                 style={styles.featuredFestivalLink}
                             >
-                                Get Tickets & Info
+                                More Info
                                 <ExternalLink size={20} />
                             </a>
                         ) : (

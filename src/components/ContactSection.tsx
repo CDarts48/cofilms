@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useState, ChangeEvent, FormEvent, CSSProperties } from 'react';
-import { Mail, User, MessageSquare, Send } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 
 interface FormData {
@@ -77,10 +76,6 @@ function ContactSection(): React.ReactElement {
                         <div style={styles.formSide}>
                             <form onSubmit={handleSubmit} style={styles.form}>
                                 <div style={styles.inputGroup}>
-                                    <label style={styles.label}>
-                                        <User size={18} />
-                                        Name
-                                    </label>
                                     <input
                                         type="text"
                                         name="name"
@@ -93,10 +88,6 @@ function ContactSection(): React.ReactElement {
                                 </div>
 
                                 <div style={styles.inputGroup}>
-                                    <label style={styles.label}>
-                                        <Mail size={18} />
-                                        Email
-                                    </label>
                                     <input
                                         type="email"
                                         name="email"
@@ -109,10 +100,7 @@ function ContactSection(): React.ReactElement {
                                 </div>
 
                                 <div style={styles.inputGroup}>
-                                    <label style={styles.label}>
-                                        <MessageSquare size={18} />
-                                        Message
-                                    </label>
+
                                     <textarea
                                         name="message"
                                         placeholder="Tell us about your inquiry..."
@@ -129,7 +117,7 @@ function ContactSection(): React.ReactElement {
                                     style={styles.submitButton}
                                     disabled={isSubmitting}
                                 >
-                                    <Send size={20} />
+                                    
                                     {isSubmitting ? 'Sending...' : 'Send Message'}
                                 </button>
 
