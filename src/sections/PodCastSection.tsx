@@ -29,18 +29,18 @@ const features: Feature[] = [
         description: 'Never miss an episode - subscribe on your favorite platform',
         link: 'https://open.spotify.com/show/0iSGHDK46jWAjAdxVGsAhr'
     },
-    {
-        badge: 'In Production',
-        title: 'Western Film History',
-        description: 'Deep dives into Colorado\'s legendary Western movie heritage',
-        link: '/under-construction'
-    },
-    {
-        badge: 'In Production',
-        title: 'Behind the Scenes',
-        description: 'Discover the stories behind Colorado\'s iconic filming locations',
-        link: '/under-construction'
-    }
+    // {
+    //     badge: 'In Production',
+    //     title: 'Western Film History',
+    //     description: 'Deep dives into Colorado\'s legendary Western movie heritage',
+    //     link: '/under-construction'
+    // },
+    // {
+    //     badge: 'In Production',
+    //     title: 'Behind the Scenes',
+    //     description: 'Discover the stories behind Colorado\'s iconic filming locations',
+    //     link: '/under-construction'
+    // }
 ];
 
 function PodCastSection(): React.ReactElement {

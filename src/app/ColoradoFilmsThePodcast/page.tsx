@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Mic, Headphones, Play, Calendar } from 'lucide-react';
 import BasicHeader from '../../components/BasicHeader';
 import ContactSection from '../../components/ContactSection';
 import emailjs from '@emailjs/browser';
@@ -48,24 +47,16 @@ export default function ColoradoFilmsThePodcast() {
 
             <div style={styles.container}>
                 <div style={styles.hero}>
-                    <Mic size={48} color="#FFD700" />
                     <h1 style={styles.title}>Colorado Films The Podcast</h1>
                     <p style={styles.subtitle}>
                         Conversations about Colorado's film industry, behind-the-scenes stories,
                         and interviews with filmmakers who create their art in Colorado.
                     </p>
-                    <a
-                        href="mailto:info@coloradofilms.com?subject=Sponsorship/Collaboration Inquiry"
-                        style={styles.sponsorHeaderLink}
-                    >
-                        💼 Sponsor / Hire Us
-                    </a>
                 </div>
 
                 <div style={styles.content}>
                     <section style={styles.section}>
                         <h2 style={styles.sectionTitle}>
-                            <Play size={24} style={{ marginRight: '0.75rem' }} />
                             Latest Episodes
                         </h2>
                         <p style={styles.text}>
@@ -73,10 +64,11 @@ export default function ColoradoFilmsThePodcast() {
                         </p>
 
                         <div style={styles.episodeCard}>
-                            <h3 style={styles.episodeTitle}>🎬 Episode 2: A Conversation with Bruce of BruceMichaelFilms</h3>
+                            <h3 style={styles.episodeTitle}> Episode 2: A Conversation with Bruce of BruceMichaelFilms</h3>
                             <p style={styles.episodeDescription}>
                                 A chat with Colorado filmmaker Bruce Michael about his journey, creative process, and the unique challenges and opportunities of making films in Colorado. Discover how Bruce got started, his advice for aspiring filmmakers, and what inspires his work.
                             </p>
+                            <p style={styles.listenLabel}>Listen here:</p>
                             <div style={styles.buttonGroup}>
                                 <a
                                     href="https://open.spotify.com/episode/5VU9e3jzptQE3cs9Yvi59M"
@@ -115,10 +107,11 @@ export default function ColoradoFilmsThePodcast() {
                         {showPastEpisodes && (
                             <div style={{ marginTop: '2rem' }}>
                                 <div style={styles.episodeCard}>
-                                    <h3 style={styles.episodeTitle}>🎬 Episode 1: Colorado Films - An Introduction</h3>
+                                    <h3 style={styles.episodeTitle}> Episode 1: Colorado Films - An Introduction</h3>
                                     <p style={styles.episodeDescription}>
                                         Welcome to Colorado Films The Podcast! Join us as we begin our journey through the state's rich cinematic history.
                                     </p>
+                                    <p style={styles.listenLabel}>Listen here:</p>
                                     <div style={styles.buttonGroup}>
                                         <a
                                             href="https://open.spotify.com/episode/3bGQHoPhjJDauQuDzLFQpY"
@@ -146,7 +139,7 @@ export default function ColoradoFilmsThePodcast() {
                                 </div>
                             </div>
                         )}
-    
+
                     </section>
                     <section style={styles.sponsorSection}>
                         <h2 style={styles.sponsorTitle}>Sponsor / Hire Us</h2>
@@ -268,6 +261,13 @@ const styles: { [key: string]: React.CSSProperties } = {
         color: '#E8E8E8',
         marginBottom: '1.25rem',
     },
+    listenLabel: {
+        fontSize: '1rem',
+        fontWeight: '600',
+        color: '#FFD700',
+        marginBottom: '0.75rem',
+        textAlign: 'center',
+    },
     listenButton: {
         display: 'inline-block',
         padding: '0.85rem 2rem',
@@ -306,15 +306,8 @@ const styles: { [key: string]: React.CSSProperties } = {
         display: 'inline-flex',
         alignItems: 'center',
         justifyContent: 'center',
-        padding: '0.5rem',
-        backgroundColor: 'rgba(255, 255, 255, 0.1)',
-        color: '#FFFFFF',
         textDecoration: 'none',
-        borderRadius: '50%',
-        transition: 'all 0.3s ease',
         cursor: 'pointer',
-        border: '2px solid rgba(255, 215, 0, 0.3)',
-        boxShadow: '0 4px 12px rgba(0, 0, 0, 0.3)',
     },
     loadAllButton: {
         display: 'inline-block',

@@ -1,7 +1,6 @@
 'use client';
 
 import React from 'react';
-import { Music, Headphones, Film, Award } from 'lucide-react';
 import BasicHeader from '../../components/BasicHeader';
 import ContactSection from '../../components/ContactSection';
 
@@ -12,7 +11,6 @@ export default function Scores() {
 
             <div style={styles.container}>
                 <div style={styles.hero}>
-                    <Music size={64} color="#FFD700" />
                     <h1 style={styles.title}>Film Scores of Colorado</h1>
                     <p style={styles.subtitle}>
                         Discover the composers, musicians, and orchestras that bring
@@ -23,7 +21,6 @@ export default function Scores() {
                 <div style={styles.content}>
                     <section style={styles.section}>
                         <h2 style={styles.sectionTitle}>
-                            <Headphones size={32} style={{ marginRight: '1rem' }} />
                             Coming Soon
                         </h2>
                         <p style={styles.text}>
@@ -36,7 +33,6 @@ export default function Scores() {
 
                     <section style={styles.section}>
                         <h2 style={styles.sectionTitle}>
-                            <Film size={32} style={{ marginRight: '1rem' }} />
                             What to Expect
                         </h2>
                         <ul style={styles.list}>
@@ -50,7 +46,6 @@ export default function Scores() {
 
                     <section style={styles.section}>
                         <h2 style={styles.sectionTitle}>
-                            <Award size={32} style={{ marginRight: '1rem' }} />
                             Featured Content
                         </h2>
                         <p style={styles.text}>
@@ -71,11 +66,10 @@ const styles: { [key: string]: React.CSSProperties } = {
         minHeight: '100vh',
         background: 'linear-gradient(135deg, #1a0000 0%, #2d0a0a 50%, #1a0000 100%)',
         color: '#FFFFFF',
-        paddingTop: '6rem',
+        paddingTop: '1rem',
     },
     hero: {
         textAlign: 'center',
-        padding: '4rem 2rem',
         maxWidth: '800px',
         margin: '0 auto',
     },

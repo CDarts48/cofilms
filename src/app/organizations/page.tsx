@@ -234,7 +234,7 @@ export default function OrganizationsPage(): React.ReactElement {
                             textShadow: '1px 2px 8px #0008',
                         } as CSSProperties}
                     >
-                        🎬 Colorado Film Organizations
+                         Colorado Film Organizations
                     </h1>
                     <p style={{ fontSize: '1.15rem', color: '#e0e0e0', marginBottom: 0 } as CSSProperties}>
                         Discover the key organizations supporting Colorado's vibrant film industry.<br />

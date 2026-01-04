@@ -33,7 +33,7 @@ function HeroSection(): React.ReactElement {
           <a href="/FilmFestivals" className="button button-primary">
             Film Festivals
           </a>
-          <a href="/ColoradoFilmsThePodcastcast" className="button button-secondary"> 
+          <a href="/ColoradoFilmsThePodcast" className="button button-secondary"> 
             The Podcast
           </a>
         </div>

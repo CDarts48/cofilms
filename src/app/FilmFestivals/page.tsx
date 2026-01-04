@@ -72,7 +72,7 @@ export default function FilmFestivalsPage(): React.ReactElement {
                             textShadow: '1px 2px 8px #0008',
                         } as CSSProperties}
                     >
-                        🎬 Colorado Film Festivals Guide
+                         Colorado Film Festivals Guide
                     </h1>
                     <p style={{ fontSize: '1.15rem', color: '#e0e0e0', marginBottom: 0 } as CSSProperties}>
                         Explore the vibrant film festival scene in Colorado, showcasing local talent and cinematic creativity.<br />
@@ -191,7 +191,7 @@ export default function FilmFestivalsPage(): React.ReactElement {
                                                 <div style={{
                                                     fontSize: '4rem',
                                                     filter: 'drop-shadow(0 4px 8px rgba(0,0,0,0.3))'
-                                                }}>🎬</div>
+                                                }}></div>
                                                 <div style={{
                                                     color: '#ffb400',
                                                     fontSize: '1.8rem',

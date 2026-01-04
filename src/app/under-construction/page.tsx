@@ -1,7 +1,6 @@
 'use client';
 
 import React from 'react';
-import { Hammer, Mountain, Film, ArrowLeft } from 'lucide-react';
 import BasicHeader from '../../components/BasicHeader';
 import './styles.css';
 
@@ -24,14 +23,11 @@ export default function UnderConstruction() {
 
                         {/* Content */}
                         <div style={styles.content}>
-                            <Hammer size={80} color="#8B4513" style={styles.hammer} />
 
                             <h1 style={styles.title}>Under Construction</h1>
 
                             <div style={styles.divider}>
-                                <Mountain size={32} color="#C19A6B" />
                                 <div style={styles.dividerLine}></div>
-                                <Film size={32} color="#C19A6B" />
                             </div>
 
                             <p style={styles.message}>
@@ -46,7 +42,6 @@ export default function UnderConstruction() {
                             </p>
 
                             <a href="/" style={styles.backButton}>
-                                <ArrowLeft size={20} />
                                 Back to Home
                             </a>
                         </div>
