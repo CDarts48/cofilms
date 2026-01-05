@@ -1,6 +1,6 @@
 'use client';
 
-import React, { CSSProperties } from 'react';
+import React, { CSSProperties, useState, useEffect } from 'react';
 import BasicHeader from '../../components/BasicHeader';
 import ContactSection from '../../components/ContactSection';
 
@@ -10,13 +10,13 @@ interface Festival {
     location: string;
     date: string;
     blocksIframe?: boolean;
+    previewImage?: string;
 }
 
 const festivals: Festival[] = [
-    { name: 'Colorado Environmental Film Festival', url: 'https://ceff.net/', location: 'Golden', date: 'February', blocksIframe: true },
-    { name: 'Boulder International Film Festival', url: 'https://biff1.com/', location: 'Boulder', date: 'March' },
-    { name: 'Durango Independent Film Festival', url: 'https://durangofilm.org/', location: 'Durango', date: 'March' },
-    { name: 'Frozen Dead Guy Days Film Festival', url: 'https://frozendeadguydays.com/', location: 'Nederland', date: 'March' },
+    { name: 'Colorado Environmental Film Festival', url: 'https://ceff.net/', location: 'Location: Golden', date: 'February 20th-22nd 2026', blocksIframe: true, previewImage: '/CEFF.png' },
+    { name: 'Durango Independent Film Festival', url: 'https://www.durangofilm.org/', location: 'Durango', date: 'March', blocksIframe: true, previewImage: '/diff.png' },
+    { name: 'Boulder International Film Festival', url: 'https://biff1.com/', location: 'Boulder', date: 'April 9th-12th' },
     { name: "Aspen Short's Fest", url: 'https://aspenfilm.org/our-festivals/shortsfest/', location: 'Aspen', date: 'April' },
     { name: 'Indie Spirit Film Festival', url: 'https://www.indiespiritfilmfestival.org/', location: 'Colorado Springs', date: 'April' },
     { name: 'Mountainfilm', url: 'https://www.mountainfilm.org/', location: 'Telluride', date: 'May - Memorial Day Weekend', blocksIframe: true },
@@ -72,7 +72,7 @@ export default function FilmFestivalsPage(): React.ReactElement {
                             textShadow: '1px 2px 8px #0008',
                         } as CSSProperties}
                     >
-                         Colorado Film Festivals Guide
+                        Colorado Film Festivals Guide
                     </h1>
                     <p style={{ fontSize: '1.15rem', color: '#e0e0e0', marginBottom: 0 } as CSSProperties}>
                         Explore the vibrant film festival scene in Colorado, showcasing local talent and cinematic creativity.<br />
@@ -134,6 +134,17 @@ export default function FilmFestivalsPage(): React.ReactElement {
                                                 background: 'rgba(0,0,0,0.1)'
                                             }} />
                                         </>
+                                    ) : festival.previewImage ? (
+                                        <img
+                                            src={festival.previewImage}
+                                            alt={`${festival.name} preview`}
+                                            style={{
+                                                width: '100%',
+                                                height: '100%',
+                                                objectFit: 'cover',
+                                                pointerEvents: 'none'
+                                            }}
+                                        />
                                     ) : (
                                         <div style={{
                                             display: 'flex',
@@ -215,7 +226,7 @@ export default function FilmFestivalsPage(): React.ReactElement {
                                                         textAlign: 'center',
                                                         marginBottom: '6px'
                                                     }}>
-                                                        📍 {festival.location}
+                                                        {festival.location}
                                                     </div>
                                                     <div style={{
                                                         color: '#bbb',
@@ -223,7 +234,7 @@ export default function FilmFestivalsPage(): React.ReactElement {
                                                         textAlign: 'center',
                                                         fontStyle: 'italic'
                                                     }}>
-                                                        📅 {festival.date}
+                                                        {festival.date}
                                                     </div>
                                                 </div>
                                                 <div style={{

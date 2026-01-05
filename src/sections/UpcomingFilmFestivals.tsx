@@ -1,7 +1,6 @@
 'use client';
 
 import React, { CSSProperties, useState, useEffect } from 'react';
-import { Calendar, MapPin, ExternalLink, ChevronLeft, ChevronRight } from 'lucide-react';
 
 interface Festival {
     name: string;
@@ -9,13 +8,13 @@ interface Festival {
     location: string;
     date: string;
     blocksIframe?: boolean;
+    previewImage?: string;
 }
 
 const festivals: Festival[] = [
-    { name: 'Colorado Environmental Film Festival', url: 'https://ceff.net/', location: 'Golden', date: 'February', blocksIframe: true },
-    { name: 'Boulder International Film Festival', url: 'https://biff1.com/', location: 'Boulder', date: 'March' },
+    { name: 'Colorado Environmental Film Festival', url: 'https://ceff.net/', location: 'Location: Golden', date: 'February 20th-22nd 2026', blocksIframe: true, previewImage: '/CEFF.png' },
     { name: 'Durango Independent Film Festival', url: 'https://durangofilm.org/', location: 'Durango', date: 'March' },
-    { name: 'Frozen Dead Guy Days Film Festival', url: 'https://frozendeadguydays.com/', location: 'Nederland', date: 'March' },
+    { name: 'Boulder International Film Festival', url: 'https://biff1.com/', location: 'Boulder', date: 'April 9th -12th' },
     { name: "Aspen Short's Fest", url: 'https://aspenfilm.org/our-festivals/shortsfest/', location: 'Aspen', date: 'April' },
     { name: 'Indie Spirit Film Festival', url: 'https://www.indiespiritfilmfestival.org/', location: 'Colorado Springs', date: 'April' },
     { name: 'Mountainfilm', url: 'https://www.mountainfilm.org/', location: 'Telluride', date: 'May - Memorial Day Weekend', blocksIframe: true },
@@ -59,6 +58,7 @@ export default function UpcomingFilmFestivals(): React.ReactElement {
     const sliderRef = React.useRef<HTMLDivElement>(null);
     const [cardWidth, setCardWidth] = useState<number>(320);
     const [iframeLoaded, setIframeLoaded] = useState<boolean>(false);
+    const [isLocationHovered, setIsLocationHovered] = useState<boolean>(false);
 
     useEffect(() => {
         // Delay iframe loading to prevent auto-scroll
@@ -102,39 +102,60 @@ export default function UpcomingFilmFestivals(): React.ReactElement {
                 <h2 style={styles.title}>
                     Upcoming Film Festivals in Colorado
                 </h2>
-                <p style={styles.subtitle}>
-                    Discover the vibrant film festival scene across Colorado's most scenic locations
-                </p>
             </div>
 
             {/* Next Festival Feature Container */}
             {nextFestival && (
                 <div style={styles.nextFestivalContainer}>
-                    <h3 style={styles.nextFestivalTitle}>Next Film Festival</h3>
                     <div style={styles.featuredFestivalContent}>
                         <h4 style={styles.featuredFestivalName}>{nextFestival.name}</h4>
                         <div style={styles.featuredDetails}>
                             <div style={styles.featuredDetailRow}>
-                                <MapPin size={28} style={styles.featuredIcon} />
-                                <span style={styles.featuredDetailText}>{nextFestival.location}</span>
-                            </div>
-                            <div style={styles.featuredDetailRow}>
-                                <Calendar size={28} style={styles.featuredIcon} />
+                                <a
+                                    href="https://www.visitgolden.com/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    style={{
+                                        ...styles.locationLink,
+                                        color: isLocationHovered ? '#FFB400' : '#e0e0e0',
+                                        textDecorationColor: isLocationHovered ? '#FFB400' : 'rgba(255, 180, 0, 0.5)',
+                                    }}
+                                    onMouseEnter={() => setIsLocationHovered(true)}
+                                    onMouseLeave={() => setIsLocationHovered(false)}
+                                >
+                                    {nextFestival.location}
+                                </a>
+                                <span style={{ color: '#e0e0e0', margin: '0 0.5rem' }}>•</span>
                                 <span style={styles.featuredDetailText}>{nextFestival.date}</span>
                             </div>
                         </div>
 
                         {/* Show iframe if website allows, otherwise show fallback */}
                         {nextFestival.blocksIframe ? (
-                            <a
-                                href={nextFestival.url}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                style={styles.featuredFestivalLink}
-                            >
-                                More Info
-                                <ExternalLink size={20} />
-                            </a>
+                            <div style={styles.previewContainer}>
+                                {nextFestival.previewImage && (
+                                    <a
+                                        href={nextFestival.url}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        style={{ textDecoration: 'none', display: 'block', width: '100%' }}
+                                    >
+                                        <img
+                                            src={nextFestival.previewImage}
+                                            alt={`${nextFestival.name} preview`}
+                                            style={styles.previewImage}
+                                        />
+                                    </a>
+                                )}
+                                <a
+                                    href={nextFestival.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    style={styles.featuredFestivalLink}
+                                >
+                                    Visit Festival Website
+                                </a>
+                            </div>
                         ) : (
                             <div style={styles.iframeContainer}>
                                 {iframeLoaded ? (
@@ -155,7 +176,6 @@ export default function UpcomingFilmFestivals(): React.ReactElement {
                                     style={styles.featuredFestivalLinkSmall}
                                 >
                                     Open in New Tab
-                                    <ExternalLink size={16} />
                                 </a>
                             </div>
                         )}
@@ -169,45 +189,43 @@ export default function UpcomingFilmFestivals(): React.ReactElement {
                     style={styles.navButton}
                     aria-label="Scroll left"
                 >
-                    <ChevronLeft size={24} />
                 </button>
 
                 <div style={styles.festivalsWrapper} ref={sliderRef}>
-                    {upcomingFestivals.map((festival, index) => (
-                        <div
-                            key={index}
-                            style={{
-                                ...styles.festivalCard,
-                                width: `${cardWidth}px`,
-                                minWidth: `${cardWidth}px`,
-                            }}
-                        >
-                            <div style={styles.cardContent}>
-                                <h3 style={styles.festivalName}>{festival.name}</h3>
+                    {upcomingFestivals
+                        .filter(festival => festival.name !== nextFestival?.name)
+                        .map((festival, index) => (
+                            <div
+                                key={index}
+                                style={{
+                                    ...styles.festivalCard,
+                                    width: `${cardWidth}px`,
+                                    minWidth: `${cardWidth}px`,
+                                }}
+                            >
+                                <div style={styles.cardContent}>
+                                    <h3 style={styles.festivalName}>{festival.name}</h3>
 
-                                <div style={styles.festivalDetails}>
-                                    <div style={styles.detailRow}>
-                                        <MapPin size={18} style={styles.icon} />
-                                        <span style={styles.detailText}>{festival.location}</span>
+                                    <div style={styles.festivalDetails}>
+                                        <div style={styles.detailRow}>
+                                            <span style={styles.detailText}>{festival.location}</span>
+                                        </div>
+                                        <div style={styles.detailRow}>
+                                            <span style={styles.detailText}>{festival.date}</span>
+                                        </div>
                                     </div>
-                                    <div style={styles.detailRow}>
-                                        <Calendar size={18} style={styles.icon} />
-                                        <span style={styles.detailText}>{festival.date}</span>
-                                    </div>
+
+                                    <a
+                                        href={festival.url}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        style={styles.festivalLink}
+                                    >
+                                        Visit Festival Site
+                                    </a>
                                 </div>
-
-                                <a
-                                    href={festival.url}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    style={styles.festivalLink}
-                                >
-                                    Visit Festival Site
-                                    <ExternalLink size={16} />
-                                </a>
                             </div>
-                        </div>
-                    ))}
+                        ))}
                 </div>
 
                 <button
@@ -215,7 +233,6 @@ export default function UpcomingFilmFestivals(): React.ReactElement {
                     style={styles.navButton}
                     aria-label="Scroll right"
                 >
-                    <ChevronRight size={24} />
                 </button>
             </div>
 
@@ -307,6 +324,17 @@ const styles: { [key: string]: CSSProperties } = {
         fontWeight: 500,
         lineHeight: 1.4,
     },
+    locationLink: {
+        color: '#e0e0e0',
+        fontSize: 'clamp(1.1rem, 2.5vw, 1.4rem)',
+        fontWeight: 600,
+        lineHeight: 1.4,
+        textDecoration: 'underline',
+        textDecorationColor: 'rgba(255, 180, 0, 0.5)',
+        textUnderlineOffset: '4px',
+        transition: 'all 0.3s ease',
+        cursor: 'pointer',
+    },
     featuredFestivalLink: {
         display: 'inline-flex',
         alignItems: 'center',
@@ -328,6 +356,23 @@ const styles: { [key: string]: CSSProperties } = {
         gap: '1rem',
         alignItems: 'center',
         width: '100%',
+    },
+    previewContainer: {
+        marginTop: '1.5rem',
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '1.5rem',
+        alignItems: 'center',
+        width: '100%',
+    },
+    previewImage: {
+        width: '100%',
+        height: '800px',
+        border: '3px solid #FFB400',
+        borderRadius: '12px',
+        boxShadow: '0 8px 24px rgba(255, 180, 0, 0.3)',
+        objectFit: 'cover',
+        cursor: 'pointer',
     },
     festivalIframe: {
         width: '100%',
