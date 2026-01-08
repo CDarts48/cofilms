@@ -15,13 +15,8 @@ interface Styles {
 
 const features: Feature[] = [
     {
-        title: 'Listen Now',
-        description: 'Tune in to our latest episodes exploring Colorado cinema',
-        link: '/ColoradoFilmsThePodcast'
-    },
-    {
-        title: 'Featured Guests',
-        description: 'Hear from filmmakers, actors, and industry professionals',
+        title: 'Past Episodes',
+        description: '',
         link: '/ColoradoFilmsThePodcast'
     },
     {
@@ -52,22 +47,20 @@ function PodCastSection(): React.ReactElement {
 
                 <div style={styles.header}>
                     <h2 style={styles.title}>Colorado Films: The Podcast</h2>
-                    <p style={styles.subtitle}>
-                        Join us as we explore the stories behind Colorado's cinematic legacy
-                    </p>
+
                 </div>
 
                 {/* Freshest Episode Container */}
                 <div style={styles.freshestEpisodeContainer}>
                     <h3 style={styles.freshestEpisodeTitle}>Most Recent Episode</h3>
                     <div style={styles.episodeCard}>
-                        <h4 style={styles.episodeTitle}>Episode 2: A Conversation with Bruce of BruceMichaelFilms</h4>
+                        <h4 style={styles.episodeTitle}>Episode 3: A Conversation with Justin Balog</h4>
                         <p style={styles.episodeDescription}>
-                            A chat with Colorado filmmaker Bruce Michael about his journey, creative process, and the unique challenges and opportunities of making films in Colorado.
+                            A conversation with Justin Balog about his work, the Colorado's film community, local projects, as well as the rewards & challenges of being a Director of Photography.
                         </p>
                         <div style={styles.buttonGroup}>
                             <a
-                                href="https://open.spotify.com/episode/5VU9e3jzptQE3cs9Yvi59M"
+                                href="https://open.spotify.com/episode/58VIortyTLDPjkPPWUdxNc"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 style={styles.iconButton}
@@ -78,7 +71,7 @@ function PodCastSection(): React.ReactElement {
                                 </svg>
                             </a>
                             <a
-                                href="https://podcasts.apple.com/us/podcast/colorado-films/id1860422839"
+                                href="https://podcasts.apple.com/us/podcast/a-conversation-with-justin-balog/id1860422839?i=1000744049253"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 style={styles.iconButton}
