@@ -64,14 +64,14 @@ export default function ColoradoFilmsThePodcast() {
                         </p>
 
                         <div style={styles.episodeCard}>
-                            <h3 style={styles.episodeTitle}> Episode 2: A Conversation with Bruce of BruceMichaelFilms</h3>
+                            <h3 style={styles.episodeTitle}> Episode 3: A Conversation with Justin Balog</h3>
                             <p style={styles.episodeDescription}>
-                                A chat with Colorado filmmaker Bruce Michael about his journey, creative process, and the unique challenges and opportunities of making films in Colorado. Discover how Bruce got started, his advice for aspiring filmmakers, and what inspires his work.
+                                A conversation with Justin Balog about his work in Colorado's film community, insights on producing and promoting local film, and reflections on recent projects. Justin shares stories from his career and advice for emerging filmmakers.
                             </p>
                             <p style={styles.listenLabel}>Listen here:</p>
                             <div style={styles.buttonGroup}>
                                 <a
-                                    href="https://open.spotify.com/episode/5VU9e3jzptQE3cs9Yvi59M"
+                                    href="https://open.spotify.com/episode/58VIortyTLDPjkPPWUdxNc"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     style={styles.iconButton}
@@ -82,7 +82,7 @@ export default function ColoradoFilmsThePodcast() {
                                     </svg>
                                 </a>
                                 <a
-                                    href="https://podcasts.apple.com/us/podcast/colorado-films/id1860422839"
+                                    href="https://podcasts.apple.com/us/podcast/a-conversation-with-justin-balog/id1860422839?i=1000744049253"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     style={styles.iconButton}
