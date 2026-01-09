@@ -5,6 +5,9 @@
         "date": "Wednesday Jan 14, 2026",
         "time": "6:30pm",
         "venue": "Cottonwood Center for the Arts",
+        "address":"427 E Colorado Ave, Colorado Springs",
+        "facebook":"http://facebook.com/ifsoc",
+        "instagram":"https://www.instagram.com/ifsoc",        
         "images": ["peak-film-forum-2026.png"],
         "description": "FREE and open to the public. This month we will present new films by independent filmmakers including Hadyn Winston, Jesse Pacheco & Catalina Dominick, Daniel Selk, Melissa Peltier, Josh Lindquist, and more!",
         "link": "#",
@@ -16,6 +19,7 @@
         "date": "Thursday Jan 15, 2026",
         "time": "Doors 6:00pm, Films 6:30pm",
         "venue": "Ivywild School",
+        "address":"1604 S Cascade Ave, Colorado Springs",
         "images": ["first-descents.png"],
         "logo": "/ifsoc-logo.png",
         "description": "Join us for two exhilarating films presented by The North Face and sponsored by Pikes Peak Alpine School. Travel from the Himalayas to The Great Trango Towers — featuring LHOTSE (2019) and TRANGO (2025). Food and drinks from Ivywild School establishments are welcome.",
@@ -25,10 +29,13 @@
     {
         "title": "The Colorado Premier of A Higher Power",
         "instagram": "https://www.instagram.com/p/DPhDK5Mkg4e/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-        "images": [],
+        "images": ["a-higher-power.jpg"],
         "link": "https://www.instagram.com/p/DPhDK5Mkg4e/",
-        "year": "January 22, 2026 at the Roxy",
-        "description": "Added from the Instagram post. Update title/description/images when you have the canonical movie metadata."
+        "date": "January 22, 2026",
+        "time": "5:30pm-10:00pm",
+        "venue":"The Roxy",
+        "address":"2549 Welton Street Denver",
+        "description": "Get ready for a new Chicano classic!."
     },
     {
         "title": "UCK Movie",

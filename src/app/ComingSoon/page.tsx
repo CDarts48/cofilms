@@ -15,9 +15,11 @@ interface ComingSoonItem {
     link?: string;
     year?: string;
     date?: string;
+    time?: string;
     type?: string;
     free?: boolean;
     logo?: string;
+    venue?: string;
     description?: string;
 }
 
@@ -126,7 +128,15 @@ function MovieCard({ item }: { item: ComingSoonItem }): React.ReactElement {
                 </div>
 
                 <div style={styles.info}>
-                    <h2 style={styles.movieTitle}>{item.title}{item.date ? ` (${item.date})` : ''}</h2>
+                    <h2 style={styles.movieTitle}>{item.title}</h2>
+                    {item.date ? (
+                        <div style={styles.meta}>{item.date}{item.time ? ` · ${item.time}` : ''}</div>
+                    ) : item.year ? (
+                        <div style={styles.meta}>{item.year}</div>
+                    ) : null}
+                    {item.venue && (
+                        <h3 style={styles.venue}>{item.venue}</h3>
+                    )}
                     {item.description && <p style={styles.description}>{item.description}</p>}
 
                     <div style={styles.controls}>
@@ -278,6 +288,17 @@ const styles: { [key: string]: CSSProperties } = {
     description: {
         margin: 0,
         color: '#4b3a2f',
+    },
+    meta: {
+        margin: 0,
+        color: '#6b6b6b',
+        fontSize: '0.95rem',
+    },
+    venue: {
+        margin: 0,
+        color: '#4b3a2f',
+        fontSize: '1rem',
+        fontWeight: 700,
     },
     controls: {
         display: 'flex',
