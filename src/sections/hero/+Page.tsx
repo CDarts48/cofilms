@@ -36,6 +36,9 @@ function HeroSection(): React.ReactElement {
           <a href="/ColoradoFilmsThePodcast" className="button button-secondary"> 
             The Podcast
           </a>
+          <a href="/ComingSoon" className="button button-secondary"> 
+            Films Coming Soon to Colorado!
+          </a>
         </div>
       </div>
 

@@ -2,7 +2,6 @@
 
 import React, { useState } from 'react';
 import BasicHeader from '../../components/BasicHeader';
-import ContactSection from '../../components/ContactSection';
 import emailjs from '@emailjs/browser';
 
 export default function ColoradoFilmsThePodcast() {

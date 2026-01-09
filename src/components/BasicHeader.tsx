@@ -36,20 +36,22 @@ export default function BasicHeader(): React.ReactElement {
                 <Link href="/" style={linkStyle}>
                     Home
                 </Link>
-                <Link href="/film" style={linkStyle}>
-                    Films
+                <Link href="ComingSoon" style={linkStyle}>
+                Coming Soon!</Link>
+                <Link href="/FilmFestivals" style={linkStyle}>
+                    Festivals
                 </Link>
                 <Link href="/ColoradoFilmsThePodcast" style={linkStyle}>
                     Podcast
                 </Link>
-                <Link href="/FilmFestivals" style={linkStyle}>
-                    Festivals
-                </Link>
+                
                 {/* <Link href="/scores" style={linkStyle}>
                     Scores
                 </Link> */}
                 <Link href="/organizations" style={linkStyle}>
                     Organizations
+                </Link><Link href="/film" style={linkStyle}>
+                    Films
                 </Link>
                 <Link href="#contact" style={linkStyle}>
                     Contact

@@ -1,0 +1,52 @@
+[
+    {
+        "title": "PEAK FILM FORUM — Show Us Your Shorts!",
+        "type": "event",
+        "date": "Wednesday Jan 14, 2026",
+        "time": "6:30pm",
+        "venue": "Cottonwood Center for the Arts",
+        "images": ["peak-film-forum-2026.png"],
+        "description": "FREE and open to the public. This month we will present new films by independent filmmakers including Hadyn Winston, Jesse Pacheco & Catalina Dominick, Daniel Selk, Melissa Peltier, Josh Lindquist, and more!",
+        "link": "#",
+        "free": true
+    },
+    {
+        "title": "The North Face Presents: FIRST DESCENTS",
+        "type": "event",
+        "date": "Thursday Jan 15, 2026",
+        "time": "Doors 6:00pm, Films 6:30pm",
+        "venue": "Ivywild School",
+        "images": ["first-descents.png"],
+        "logo": "/ifsoc-logo.png",
+        "description": "Join us for two exhilarating films presented by The North Face and sponsored by Pikes Peak Alpine School. Travel from the Himalayas to The Great Trango Towers — featuring LHOTSE (2019) and TRANGO (2025). Food and drinks from Ivywild School establishments are welcome.",
+        "facebook": "https://www.facebook.com/events/1197776999118155",
+        "link": "https://ifsoc-snow-ice.eventive.org"
+    },
+    {
+        "title": "The Colorado Premier of A Higher Power",
+        "instagram": "https://www.instagram.com/p/DPhDK5Mkg4e/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        "images": [],
+        "link": "https://www.instagram.com/p/DPhDK5Mkg4e/",
+        "year": "January 22, 2026 at the Roxy",
+        "description": "Added from the Instagram post. Update title/description/images when you have the canonical movie metadata."
+    },
+    {
+        "title": "UCK Movie",
+        "instagram": "https://www.instagram.com/uckmovie/",
+        "images": ["uck.png"],
+        "link": "https://www.uckmovie.com/",
+        "youtube": "https://www.youtube.com/@UCKmovie",
+        "tiktok": "https://www.tiktok.com/@uckmovie",
+        "facebook": "https://www.facebook.com/UCK.movie.page/",
+        "year": "2026",
+        "description": "In the small, sleepy town of Roswad, there’s only one carpet cleaner, named Henry - and Henry’s been shampooing up a lot of strange spots, which really shouldn’t be cleaned."
+    },
+    {
+        "title": "Devil In The Trunk",
+        "instagram": "https://www.instagram.com/devilinthetrunk/",
+        "images": ["devil-in-the-trunk.jpg"],
+        "link": "https://www.instagram.com/devilinthetrunk/",
+        "year": "2026",
+        "description": "Devil in The Trunk deals with a creature that has a little more humanity."
+    }
+]
