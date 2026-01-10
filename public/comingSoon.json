@@ -5,10 +5,12 @@
         "date": "Wednesday Jan 14, 2026",
         "time": "6:30pm",
         "venue": "Cottonwood Center for the Arts",
-        "address":"427 E Colorado Ave, Colorado Springs",
-        "facebook":"http://facebook.com/ifsoc",
-        "instagram":"https://www.instagram.com/ifsoc",        
-        "images": ["peak-film-forum-2026.png"],
+        "address": "427 E Colorado Ave, Colorado Springs",
+        "facebook": "http://facebook.com/ifsoc",
+        "instagram": "https://www.instagram.com/ifsoc",
+        "images": [
+            "peak-film-forum-2026.png"
+        ],
         "description": "FREE and open to the public. This month we will present new films by independent filmmakers including Hadyn Winston, Jesse Pacheco & Catalina Dominick, Daniel Selk, Melissa Peltier, Josh Lindquist, and more!",
         "link": "#",
         "free": true
@@ -19,8 +21,10 @@
         "date": "Thursday Jan 15, 2026",
         "time": "Doors 6:00pm, Films 6:30pm",
         "venue": "Ivywild School",
-        "address":"1604 S Cascade Ave, Colorado Springs",
-        "images": ["first-descents.png"],
+        "address": "1604 S Cascade Ave, Colorado Springs",
+        "images": [
+            "first-descents.png"
+        ],
         "logo": "/ifsoc-logo.png",
         "description": "Join us for two exhilarating films presented by The North Face and sponsored by Pikes Peak Alpine School. Travel from the Himalayas to The Great Trango Towers — featuring LHOTSE (2019) and TRANGO (2025). Food and drinks from Ivywild School establishments are welcome.",
         "facebook": "https://www.facebook.com/events/1197776999118155",
@@ -29,18 +33,34 @@
     {
         "title": "The Colorado Premier of A Higher Power",
         "instagram": "https://www.instagram.com/p/DPhDK5Mkg4e/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-        "images": ["a-higher-power.jpg"],
+        "images": [
+            "a-higher-power.jpg"
+        ],
         "link": "https://www.instagram.com/p/DPhDK5Mkg4e/",
         "date": "January 22, 2026",
         "time": "5:30pm-10:00pm",
-        "venue":"The Roxy",
-        "address":"2549 Welton Street Denver",
+        "venue": "The Roxy",
+        "address": "2549 Welton Street Denver",
         "description": "Get ready for a new Chicano classic!."
+    },  {
+        "title": "BLACK GOLD",
+        "type": "event",
+        "date": "May 9, 2026",
+        "time": "6:00 PM",
+        "venue": "The Bug Theatre",
+        "address":"3654 Navajo Street, Denver, CO 80211",
+        "images": [
+            "https://tickethookups.s3.us-west-1.amazonaws.com/aimgs/769836/1765548007216-Project_%2820251115115147%29.png"
+        ],
+        "description": "Black Gold follows the lives of four men as they reconnect and reclaim their stories. Presented at The Bug Theatre.",
+        "link": "https://ticketstripe.com/events/5653108209935433"
     },
     {
         "title": "UCK Movie",
         "instagram": "https://www.instagram.com/uckmovie/",
-        "images": ["Uck.png"],
+        "images": [
+            "Uck.png"
+        ],
         "link": "https://www.uckmovie.com/",
         "youtube": "https://www.youtube.com/@UCKmovie",
         "tiktok": "https://www.tiktok.com/@uckmovie",
@@ -51,7 +71,9 @@
     {
         "title": "Devil In The Trunk",
         "instagram": "https://www.instagram.com/devilinthetrunk/",
-        "images": ["devil-in-the-trunk.jpg"],
+        "images": [
+            "devil-in-the-trunk.jpg"
+        ],
         "link": "https://www.instagram.com/devilinthetrunk/",
         "year": "2026",
         "description": "Devil in The Trunk deals with a creature that has a little more humanity."

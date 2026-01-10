@@ -75,6 +75,63 @@ export default function ComingSoonPage(): React.ReactElement {
 
     return (
         <div style={styles.page}>
+            <style>{`
+                /* ComingSoon responsive helpers */
+                .cs-card { }
+                .cs-cardInner { }
+                .cs-media { }
+                .cs-image { }
+                .cs-info { }
+                .cs-visit { }
+                .cs-socials { }
+
+                @media (max-width: 720px) {
+                    .cs-cardInner {
+                        flex-direction: column !important;
+                        gap: 12px !important;
+                        align-items: stretch !important;
+                    }
+
+                    .cs-media {
+                        width: 100% !important;
+                        height: auto !important;
+                        min-height: 180px !important;
+                        border-radius: 8px !important;
+                    }
+
+                    .cs-image {
+                        width: 100% !important;
+                        height: auto !important;
+                        object-fit: contain !important;
+                    }
+
+                    .cs-info {
+                        padding: 8px 0 !important;
+                    }
+
+                    .cs-visit {
+                        display: block !important;
+                        width: 100% !important;
+                        box-sizing: border-box !important;
+                    }
+
+                    .cs-socials {
+                        flex-wrap: wrap !important;
+                        gap: 8px !important;
+                    }
+
+                    .cs-movieTitle { font-size: 1.25rem !important; }
+                    .cs-meta { font-size: 0.95rem !important; }
+                    .cs-venue { font-size: 1rem !important; }
+                }
+
+                @media (max-width: 420px) {
+                    .cs-media { min-height: 140px !important; }
+                    .cs-movieTitle { font-size: 1.1rem !important; }
+                    .cs-description { font-size: 0.95rem !important; }
+                    .cs-socials { justify-content: flex-start !important; }
+                }
+            `}</style>
             <BasicHeader />
 
             <main style={styles.container}>
@@ -112,13 +169,13 @@ function MovieCard({ item }: { item: ComingSoonItem }): React.ReactElement {
     const hasImage = images.length > 0;
 
     return (
-        <section style={styles.card}>
-            <div style={styles.cardInner}>
-                <div style={styles.media}>
+        <section style={styles.card} className="cs-card">
+            <div style={styles.cardInner} className="cs-cardInner">
+                <div style={styles.media} className="cs-media">
                     {hasImage ? (
-                        <img src={images[index]} alt={item.title} style={styles.image} />
+                        <img className="cs-image" src={images[index]} alt={item.title} style={styles.image} />
                     ) : (
-                        <div style={styles.placeholder}>
+                        <div style={styles.placeholder} className="cs-placeholder">
                             <div style={styles.placeholderText}>Image not available</div>
                             {item.instagram && (
                                 <a href={item.instagram} target="_blank" rel="noopener noreferrer" style={styles.linkText}>{item.instagram}</a>
@@ -127,27 +184,27 @@ function MovieCard({ item }: { item: ComingSoonItem }): React.ReactElement {
                     )}
                 </div>
 
-                <div style={styles.info}>
-                    <h2 style={styles.movieTitle}>{item.title}</h2>
+                <div style={styles.info} className="cs-info">
+                    <h2 style={styles.movieTitle} className="cs-movieTitle">{item.title}</h2>
                     {item.date ? (
-                        <div style={styles.meta}>{item.date}{item.time ? ` · ${item.time}` : ''}</div>
+                        <div style={styles.meta} className="cs-meta">{item.date}{item.time ? ` · ${item.time}` : ''}</div>
                     ) : item.year ? (
-                        <div style={styles.meta}>{item.year}</div>
+                        <div style={styles.meta} className="cs-meta">{item.year}</div>
                     ) : null}
                     {item.venue && (
-                        <h3 style={styles.venue}>{item.venue}</h3>
+                        <h3 style={styles.venue} className="cs-venue">{item.venue}</h3>
                     )}
-                    {item.description && <p style={styles.description}>{item.description}</p>}
+                    {item.description && <p style={styles.description} className="cs-description">{item.description}</p>}
 
                     <div style={styles.controls}>
 
                         <div style={{ marginLeft: 'auto' }}>
-                            <a href={item.link || '#'} target="_blank" rel="noopener noreferrer" style={styles.visitButton}>Visit film page</a>
+                            <a className="cs-visit" href={item.link || '#'} target="_blank" rel="noopener noreferrer" style={styles.visitButton}>Visit film page</a>
                         </div>
                     </div>
 
                     {/* Social links (SVGs) */}
-                    <div style={styles.socials}>
+                    <div style={styles.socials} className="cs-socials">
                         {item.youtube && (
                             <a href={item.youtube} target="_blank" rel="noopener noreferrer" style={styles.socialButton} aria-label="YouTube">
                                 <svg width="32" height="32" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
