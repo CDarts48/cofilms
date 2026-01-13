@@ -136,7 +136,7 @@ export default function ComingSoonPage(): React.ReactElement {
 
             <main style={styles.container}>
                 <h1 style={styles.title}>Coming Soon</h1>
-                <p style={styles.subtitle}>Films we have on the radar — click a title to go to the film page (link provided).</p>
+                <p style={styles.subtitle}>Films we have on the radar. If you would like your film added please message <a href="mailto:info@coloradofilms.com">info@coloradofilms.com</a></p>
 
                 <div style={styles.list}>
                     {items.length === 0 && (

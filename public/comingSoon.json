@@ -1,5 +1,20 @@
 [
     {
+        "title": "The North Face Presents: FIRST DESCENTS",
+        "type": "event",
+        "date": "Thursday Jan 15, 2026",
+        "time": "Doors 6:00pm, Films 6:30pm",
+        "venue": "Ivywild School",
+        "address": "1604 S Cascade Ave, Colorado Springs",
+        "images": [
+            "/first-descents.png"
+        ],
+        "logo": "/ifsoc-logo.png",
+        "description": "Join us for two exhilarating films presented by The North Face and sponsored by Pikes Peak Alpine School. Travel from the Himalayas to The Great Trango Towers — featuring LHOTSE (2019) and TRANGO (2025). Food and drinks from Ivywild School establishments are welcome.",
+        "facebook": "https://www.facebook.com/events/1197776999118155",
+        "link": "https://ifsoc-snow-ice.eventive.org"
+    },
+    {
         "title": "PEAK FILM FORUM — Show Us Your Shorts!",
         "type": "event",
         "date": "Wednesday Jan 14, 2026",
@@ -9,32 +24,17 @@
         "facebook": "http://facebook.com/ifsoc",
         "instagram": "https://www.instagram.com/ifsoc",
         "images": [
-            "peak-film-forum-2026.png"
+            "/peak-film-forum-2026.png"
         ],
         "description": "FREE and open to the public. This month we will present new films by independent filmmakers including Hadyn Winston, Jesse Pacheco & Catalina Dominick, Daniel Selk, Melissa Peltier, Josh Lindquist, and more!",
         "link": "#",
         "free": true
     },
     {
-        "title": "The North Face Presents: FIRST DESCENTS",
-        "type": "event",
-        "date": "Thursday Jan 15, 2026",
-        "time": "Doors 6:00pm, Films 6:30pm",
-        "venue": "Ivywild School",
-        "address": "1604 S Cascade Ave, Colorado Springs",
-        "images": [
-            "first-descents.png"
-        ],
-        "logo": "/ifsoc-logo.png",
-        "description": "Join us for two exhilarating films presented by The North Face and sponsored by Pikes Peak Alpine School. Travel from the Himalayas to The Great Trango Towers — featuring LHOTSE (2019) and TRANGO (2025). Food and drinks from Ivywild School establishments are welcome.",
-        "facebook": "https://www.facebook.com/events/1197776999118155",
-        "link": "https://ifsoc-snow-ice.eventive.org"
-    },
-    {
         "title": "The Colorado Premier of A Higher Power",
         "instagram": "https://www.instagram.com/p/DPhDK5Mkg4e/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
         "images": [
-            "a-higher-power.jpg"
+            "/a-higher-power.jpg"
         ],
         "link": "https://www.instagram.com/p/DPhDK5Mkg4e/",
         "date": "January 22, 2026",
@@ -42,13 +42,14 @@
         "venue": "The Roxy",
         "address": "2549 Welton Street Denver",
         "description": "Get ready for a new Chicano classic!."
-    },  {
+    },
+    {
         "title": "BLACK GOLD",
         "type": "event",
         "date": "May 9, 2026",
         "time": "6:00 PM",
         "venue": "The Bug Theatre",
-        "address":"3654 Navajo Street, Denver, CO 80211",
+        "address": "3654 Navajo Street, Denver, CO 80211",
         "images": [
             "https://tickethookups.s3.us-west-1.amazonaws.com/aimgs/769836/1765548007216-Project_%2820251115115147%29.png"
         ],
@@ -59,7 +60,7 @@
         "title": "UCK Movie",
         "instagram": "https://www.instagram.com/uckmovie/",
         "images": [
-            "Uck.png"
+            "/Uck.png"
         ],
         "link": "https://www.uckmovie.com/",
         "youtube": "https://www.youtube.com/@UCKmovie",
@@ -72,10 +73,298 @@
         "title": "Devil In The Trunk",
         "instagram": "https://www.instagram.com/devilinthetrunk/",
         "images": [
-            "devil-in-the-trunk.jpg"
+            "/devil-in-the-trunk.jpg"
         ],
         "link": "https://www.instagram.com/devilinthetrunk/",
         "year": "2026",
         "description": "Devil in The Trunk deals with a creature that has a little more humanity."
+    },
+    {
+        "title": "Urchin",
+        "type": "event",
+        "date": "January 11, 2026",
+        "time": "3:30 pm",
+        "venue": "The Dairy Arts Center — 2590 Walnut, Boulder, CO",
+        "link": "https://thedairy.org/event/urchin-jan-7-11/2026-01-11/",
+        "images": [
+            "/dairy-2026-01-11.webp"
+        ],
+        "description": "Urchin — On the streets of London, Mike is hustling to get by. Roadside evangelizers won’t let him sleep in peace, his slippery friend won’t pay up the money he stole, and before long, he finds himself in trouble with the law."
+    },
+    {
+        "title": "Timestamp",
+        "type": "event",
+        "date": "January 11, 2026",
+        "time": "6:00 pm",
+        "venue": "The Dairy Arts Center — 2590 Walnut, Boulder, CO",
+        "link": "https://thedairy.org/event/timestamp-jan-7-11/2026-01-11/",
+        "images": [
+            "/dairy-2026-01-11.jpg"
+        ],
+        "description": "Keeping schools open in Ukraine is an attempt to recreate at least some of the normal life they had before the war — until February 24, 2022 (and in some regions even earlier, in 2014). Without interviews, narration and reenactments, TIMESTAMP provides an insight into how the war is affecting the daily lives of students and teachers."
+    },
+    {
+        "title": "Science on Screen®: Fungal Frequencies",
+        "type": "event",
+        "date": "January 12, 2026",
+        "time": "6:30 pm",
+        "venue": "The Dairy Arts Center — 2590 Walnut, Boulder, CO",
+        "link": "https://thedairy.org/event/sos-fungi/",
+        "images": [
+            "/dairy-sos-fungi.png"
+        ],
+        "description": "Science on Screen®: Fungal Frequencies launches the Dairy Arts Center’s exploration of fungi as creative collaborators through movement film, and scientific discovery. This evening brings together artists, scientists, and short film to explore how fungi inspire new forms of artistic expression and ways of seeing."
+    },
+    {
+        "title": "Monkey Wrench Films presents “Preserved”",
+        "type": "event",
+        "date": "January 13, 2026",
+        "time": "5:30 pm",
+        "venue": "The Dairy Arts Center — 2590 Walnut, Boulder, CO",
+        "link": "https://thedairy.org/event/monkey-wrench-films-presents-preserved-2/",
+        "images": [
+            "/dairy-monkey-wrench-films-presents-preserved-2.jpg"
+        ],
+        "description": "Preserved takes viewers inside Vermejo—a 558,000-acre living laboratory where mountain lions, bears, and countless other species reveal how wildlife is adapting in a changing world. The film spotlights the stewards working to restore this landscape—and why what happens here matters everywhere. The planet can heal. It starts with us.\n\nFeaturing exclusive performance by musician MILCK and a panel discussion with: Craig Childs, Colorado author and Southwest expert; Erin Sprague, CEO Protect Our Winters; Bob Dineen, CEO Great Range Bison; Lance Bernal, Vermejo National Resources Manager; Louis Wertz, Western Landowners Alliance; Ben Clark, Director of Preserved."
+    },
+    {
+        "title": "You Got Gold: A Celebration of John Prine",
+        "type": "event",
+        "date": "January 14, 2026",
+        "time": "4:30 pm",
+        "venue": "The Dairy Arts Center — 2590 Walnut, Boulder, CO",
+        "link": "https://thedairy.org/event/you-got-gold-a-celebration-of-john-prine-jan-14-18/2026-01-14/",
+        "images": [
+            "/you-got-gold.png"
+        ],
+        "description": "Filmed in October 2022 at Nashville’s Ryman Auditorium, this movie captures a star-studded tribute to the legendary songwriter, . The event brought together acclaimed artists, friends, and family to share behind-the-scenes stories and perform classic songs, honoring Prine’s enduring legacy. Prine, widely celebrated as one of history’s greatest songwriters, captivated millions of fans and earned the admiration of icons such as Bonnie Raitt, Brandi Carlile, Tyler Childers, Lucinda Williams, Dwight Yoakam, Jason Isbell, and Bob Weir, amongst many others, are featured in the film performing on the Ryman stage for this special celebration of his life and music. (Michael John Warren, 2025, USA, 1:30, NR)"
+    },
+    {
+        "title": "Cactus Pears",
+        "type": "event",
+        "date": "January 14, 2026",
+        "time": "7:00 pm",
+        "venue": "The Dairy Arts Center — 2590 Walnut, Boulder, CO",
+        "link": "https://thedairy.org/event/cactus-pears-jan-14-18/2026-01-14/",
+        "images": [
+            "/cactus-pears.png"
+        ],
+        "description": "Anand, a 30-something city dweller compelled to spend a 10-day mourning period for his father in the rugged countryside of western India, tenderly bonds with a local farmer who is struggling to stay unmarried. As the mourning ends, forcing his return, Anand must decide the fate of his relationship born under duress. Winner, Grand Jury Prize (World Dramatic), Sundance Film Festival. (Rohan Kanawade,2025, India, 1:52, NR)"
+    },
+    {
+        "title": "Anchor Point Film Tour",
+        "type": "event",
+        "date": "January 16, 2026",
+        "time": "6:30 pm",
+        "venue": "The Dairy Arts Center — 2590 Walnut, Boulder, CO",
+        "link": "https://thedairy.org/event/anchor-point-film-tour/",
+        "images": [
+            "/dairy-anchor-point-film-tour.png"
+        ],
+        "description": "The Anchor Point Tour is a celebration of the fearless spirit and artistry of highlining documentaries. Our festival is dedicated to sharing all stories—big or small—that showcase the passion, creativity, and boundary-pushing endeavors of athletes within our community. Through this event we want to uplift all parts of our community and use a portion off the revenue to provide gear to underrepresented communities. Doors open at 5:30pm."
+    },
+    {
+        "title": "Obex",
+        "type": "event",
+        "date": "January 16, 2026",
+        "time": "8:30 pm",
+        "venue": "The Dairy Arts Center — 2590 Walnut, Boulder, CO",
+        "link": "https://thedairy.org/event/obex-jan-16/",
+        "images": [
+            "/dairy-obex-jan-16.jpg"
+        ],
+        "description": "In pre-internet 1987, Conor and his dog Sandy live a life of seclusion, lost in the slow-rendering graphics of early Macs and televisions aglow with late night horror movie marathons. But when he begins playing OBEX, a new and mysterious, state-of-the-art computer game, he finds himself trapped in a low-tech, but high-stakes analog hellscape as the line between reality and game blurs. Audacious and uncanny, writer-director Albert Birney’s OBEX is a delightfully skewed lo-fi fantasy. Shot in striking black and white, this surreally nostalgic nightmare revisits the dawn of personal computing to reflect on the loneliness of our always-online present day. (Albert Birney, 2025, USA, 1:30, NR)"
+    },
+    {
+        "title": "Classics with Jeffrey Kash: The Pajama Game",
+        "type": "event",
+        "date": "January 20, 2026",
+        "time": "7:00 pm",
+        "venue": "The Dairy Arts Center — 2590 Walnut, Boulder, CO",
+        "link": "https://thedairy.org/event/classics-with-jeffrey-kash-the-pajama-game/",
+        "images": [
+            "/dairy-classics-with-jeffrey-kash-the-pajama-game.webp"
+        ],
+        "description": "Doris Day stars in this lighthearted look at labor problems in a pajama factory. It features Bob Fosse choreography, and the Jerry Ross-Richard Adler score includes “Hey There,” “Steam Heat,” “Small Talk,” “Hernando’s Hideaway” and “Her Is.” (George Abbott & Stanley Donen, 1957, USA, 1:41, NR)"
+    },
+    {
+        "title": "The Little Things That Run the World",
+        "type": "event",
+        "date": "January 21, 2026",
+        "time": "4:30 pm",
+        "venue": "The Dairy Arts Center — 2590 Walnut, Boulder, CO",
+        "link": "https://thedairy.org/event/the-little-things-that-run-the-world-jan-21-25/2026-01-21/",
+        "images": [
+            "/little-things-that-run-the-world.png"
+        ],
+        "description": "Insects were the first animals to evolve flight nearly 440 million years ago, and they survived all five of the known mass extinctions since then. They have also been called the “glue of life” on Earth; they literally hold ecosystems together. But, there is evidence that the pace of decline among insects in parts of the world today is fast approaching the levels of previous catastrophes.\n\nWhat does this mean for the rest of life on Earth, including humans? What is causing this extinction crisis? What can be done to reverse the trend? Our new release The Little Things That Run the World introduces viewers to a diverse group of scientists, nature lovers, gardeners, farmers, and general bug enthusiasts in exploring the importance of flying insects amid rapid declines in their numbers. The film documents the mysteries of the declines alongside creative and heroic human efforts to change the course of evolutionary history. (Doug Hawes-Davis, 2025, USA, 1:45, NR)"
+    },
+    {
+        "title": "No Other Choice",
+        "type": "event",
+        "date": "January 21, 2026",
+        "time": "7:00 pm",
+        "venue": "The Dairy Arts Center — 2590 Walnut, Boulder, CO",
+        "link": "https://thedairy.org/event/no-other-choice-jan-21-25/2026-01-21/",
+        "images": [
+            "/dairy-2026-01-21.jpg"
+        ],
+        "description": "From director Park Chan-wook and based on Donald E. Westlake’s novel THE AX, the story follows Man-su on his desperate hunt for a new job after his abrupt layoff from the paper company he served for 25 years. He devises a unique plan to secure a new job: eliminate his competition. (Park Chan-wook, 2025, South Korea, 2:19, R)"
+    },
+    {
+        "title": "Radu Jude’s Dracula",
+        "type": "event",
+        "date": "January 23, 2026",
+        "time": "8:30 pm",
+        "venue": "The Dairy Arts Center — 2590 Walnut, Boulder, CO",
+        "link": "https://thedairy.org/event/radu-judes-dracula-jan-23/",
+        "images": [
+            "/dairy-radu-judes-dracula-jan-23.jpg"
+        ],
+        "description": "A frustrated filmmaker, facing creative paralysis, turns to an A.I. chatbot in order to make his latest movie a hit. The result is a series of increasingly outrageous vignettes exploring the myth of Dracula in all its forms. From a wild chase through the streets of modern Transylvania to eerie hauntings in the Romanian countryside, cinematic provocateur Radu Jude returns with another boundary-pushing epic featuring a union-busting Dracula breaking a strike, an adaptation of the first Romanian vampire novella, thwarted romance, fields of phalluses, lots of blood, and much more. (Radu Jude, 2025, Romania, 2:50, NR)."
+    },
+    {
+        "title": "Pieowa: A Piece of America",
+        "type": "event",
+        "date": "January 24, 2026",
+        "time": "1:00 pm",
+        "venue": "The Dairy Arts Center — 2590 Walnut, Boulder, CO",
+        "link": "https://thedairy.org/event/pieowa-a-piece-of-america-jan-24/",
+        "images": [
+            "/dairy-pieowa-a-piece-of-america-jan-24.png"
+        ],
+        "description": "PIEOWA celebrates the myriad ways pie is woven into Iowa’s (and America’s) culture, the lengths people will go to for a slice, and how this humble pastry can bake the world a better place. The film features comedian Tom Arnold, NPR economics correspondent Scott Horsley (NPR = No Pie Refused), Better Homes & Gardens food editor, among other notable names, alongside everyday people — church ladies, farm wives, pie shop owners, State Fair competitors, chefs, food historians, bike riders, and humanitarians. Wholesome and humorous, it will leave you feeling more hopeful about the world — and hungry for pie. (Beth M. Howard, 2025, USA, 1:16, NR)"
+    },
+    {
+        "title": "For The Living",
+        "type": "event",
+        "date": "January 26, 2026",
+        "time": "6:30 pm",
+        "venue": "The Dairy Arts Center — 2590 Walnut, Boulder, CO",
+        "link": "https://thedairy.org/event/for-the-living-3/",
+        "images": [
+            "/dairy-for-the-living-3.jpg"
+        ],
+        "description": "For centuries, Humankind has grappled with the tension between the two extremes of our nature: Dehumanization and Empathy. Darkness and Light. From the genocide of Indigenous peoples of the western hemisphere to the horrors of the Holocaust to the genocides in Bosnia and Rwanda we realize that numbers make us numb. The more who die, the less we care. But, in 2019 another journey from darkness to light called “Ride for the Living” offered a way forward. Originating at the universal symbol of absolute evil (Auschwitz-Birkenau) 250 cyclists from 12 different countries came together to re-trace the WWII liberation path of a single 10-year Holocaust survivor across the Polish countryside to reach a destination symbolizing our common humanity: Krakow, Poland. Alternating between the intimate story of this one Holocaust survivor and the startling similarities among individuals in all genocides, these parallel journeys bring to life how we can grow our empathy to encompass millions. And how the American educational system has long overlooked—and in 2025 now threatens to whitewash–these stories and the insights we need to prevent future genocides. Inciting the urgent conversation: When will we stop building monuments for the Dead and get busy re-humanizing the Living? When will we finally say NEVER AGAIN and truly mean it? (Marc Bennett & Tim Roper, 2024, USA, 1:57, NR)."
+    },
+    {
+        "title": "The Voice of Hind Rajab",
+        "type": "event",
+        "date": "January 29, 2024",
+        "link": "https://thedairy.org/event/the-voice-of-hind-rajab-jan-28-feb-1/2026-01-28/",
+        "images": [
+            "/dairy-2026-01-28.jpg"
+        ],
+        "description": "January 29, 2024. Red Crescent volunteers receive an emergency call. A 6-year old girl is trapped in a car under fire in Gaza, pleading for rescue. While trying to keep her on the line, they do everything they can to get an ambulance to her. Her name was Hind Rajab. The film recreates real events using actual audio recordings of the phone call. This Venice Silver Lion Grand Jury Prize winning film from twice Oscar-nominated filmmaker Kaouther Ben Hania is already being listed among the top 5 likely Oscar nominees for Best International Feature. (Kaouther Ben Hania, 2025, Tunisia, 1:29, NR)"
+    },
+    {
+        "title": "The Choral",
+        "type": "event",
+        "time":"7:00 pm",
+        "date": "January 28, 2026",
+        "link": "https://thedairy.org/event/the-choral-jan-28-feb-1/2026-01-28/",
+        "images": [
+            "/dairy-2026-01-28.jpeg"
+        ],
+        "description": "As war rages on the Western Front, the Choral Society in Ramsden, Yorkshire has lost most of its men to the army. The Choral’s ambitious committee, determined to press ahead, decides to recruit local young males to swell their ranks. They must also engage a new chorus master, and despite their suspicions that he has something to hide, their best bet seems to be Dr. Henry Guthrie (Ralph Fiennes) – driven, uncompromising, and recently returned from a career in Germany. As conscription papers start to arrive, the whole community discovers that the best response to the chaos that is laying waste to their lives is to make music together. (Nicholas Hytner, 2025, UK, 1:53, R)"
+    },
+    {
+        "title": "The Cathedral of New Emotions",
+        "type": "event",
+        "date": "January 30, 2026",
+        "time":"8:30 pm",
+        "link": "https://thedairy.org/event/the-cathedral-of-new-emotions-jan-30/",
+        "images": [
+            "/dairy-the-cathedral-of-new-emotions-jan-30.jpg"
+        ],
+        "description": "A psychedelic odyssey through animation with visuals that’ll melt your mental highways, THE CATHEDRAL OF NEW EMOTIONS is a surreal German film that’s truly out of this world. The story follows a group of Berlin intellectuals and stoners as they escape from the terrors and troubles of 1970s Earth in their giant hand spaceship. As time passes and ennui sets in, the zonked-out crew decides to search for the man who convinced them to flee to the stars in the first place. Thrillingly original, gorgeously stylized, and recently made available after years of obscurity, this marvel is ready to takey ou on a journey to places beyond imagination. (Helmut Herbst, 2006, Germany, 1:00, NR)"
+    },
+    {
+        "title": "Boulder Environmental Nature Outdoors Film Festival: The Road To Patagonia",
+        "type": "event",
+        "date": "February 1, 2026",
+        "time": "2:00 pm",
+        "link": "https://thedairy.org/event/boulder-environmental-nature-outdoors-film-festival-the-road-to-patagonia/2026-02-01/1/",
+        "images": [
+            "/dairy-1.webp"
+        ],
+        "description": "The Road to Patagonia is a stunning, intimate and unflinching series of love letters within a documentary – firstly a love between two people, and secondly between humanity and the Earth. We follow Matty Hannon on an incredible solo adventure, to surf the west coast of the Americas by motorbike, from the top of Alaska to the tip of Patagonia. But deep in the wilderness – alone with the wolves and the bears – the journeyer’s plans unexpectedly fall to pieces. After losing everything, and on the cusp of quitting he meets the girl of his dreams, a permaculture farmer named Heather Hillier who throws caution to the wind and sells her urban-farm to buy a bike of her own. Together riding south, the duo meet with Zapatista rebels, Amazonian shamans and Mapuche leaders whose salient words crack the adventurers’ cultural veneer, leaving them with existential questions.\n\nThe 50,000km surfing odyssey becomes beautifully complicated by their decision to downshift from motorcycles to horseback, presenting a relational approach to the breathtaking landscapes and a host of challenges that ultimately become extremely rewarding. Hannon and Hillier succeed in beautifully capturing deeply human moments during the world-first expedition, and the noticeable lack of camera-crew becomes The Road to Patagonia’s strength. The theme of deep ecology underpins the entire film, visually communicated through exquisite cinematography and emotional verité sequences. Shot over 16 years, the result is an adventurous exposé on the more-than-human world, offering a physical and spiritual odyssey to better understand our place in Nature.\n\nWinner – Best Film and Best Documentary – Byron Bay International Film Festival\n\nWinner – Audience Choice Award – Florida Surf Film Festival\n\nWinner – Audience Choice Award – Melbourne Documentary Film Festival\n\nWinner – Jury Award – Honolulu Surf Film Festival\n\nYear: 2024\n\nFilmmaker: Matty Hannon\n\nRuntime: 90 minutes\n\nPRODUCTION\n\n10 years\n\nWORLD PREMIERE\n\nByron Bay International F.F.\n\nPresented by the Boulder Environmental Nature Outdoors Film Festival AND DAIRY ARTS CENTER."
+    },
+    {
+        "title": "999: The Forgotten Girls",
+        "type": "event",
+        "date": "February 2, 2026",
+        "time": "6:30 pm",
+        "link": "https://thedairy.org/event/999-the-forgotten-girls/",
+        "images": [
+            "/dairy-999-the-forgotten-girls.webp"
+        ],
+        "description": "In partnership with the Boulder Jewish Community Center. This documentary film is based on an international best-selling book. 999 Slovak girls ordered to register for government service are secretly deported on the first Jewish transport to Auschwitz. This chronicles the untold story of these mostly teenage girls betrayed by their government. Told that by volunteering for “work” they would fulfill their patriotic duty, these innocent young women willingly bid their families farewell. Under the cloak of deceit, they were transported on a one-way ticket to Auschwitz. The few who survived endured more than three years in the death camp. Meet the last living survivors of the First Jewish Transport and learn their story. (Beatriz M.Calleja & Heather Dune Macadam, 2025, 1:30, USA, NR) We will be joined by the director and author Heather Dune Macadam at a reception before the screening and for a talk-back after the screening. "
+    },
+    {
+        "title": "Whispers of the Soul: Documentary Screening with Dr. Thomas E. Lockhart",
+        "type": "event",
+        "date": "February 3, 2026",
+        "time": "5:00 pm",
+        "link": "https://thedairy.org/event/whispers-of-the-soul-documentary-screening-with-dr-thomas-e-lockhart/",
+        "images": [
+            "/dairy-whispers-of-the-soul-documentary-screening-with-dr-thomas-e-lockhart.jpg"
+        ],
+        "description": "Whispers of the Soul: The Legacy of Dr. Thomas E. Lockhart is a featured episode from the documentary series Art Titans: Masters of the New Era, a visionary project directed by acclaimed art world figures Alan Grimandi and Viviana Puello. The series chronicles the journeys of ten master artists whose practices are shaping the contemporary art landscape, offering intimate portraits that explore creative process, cultural impact, and the evolving role of artists in society. Kicking off Black History Month at the Dairy Arts Center, this special event also serves as a precursor to the upcoming exhibition Black Futures in Art (opening February 20), in which Dr. Thomas E. Lockhart III will be one of the exhibiting artists. The screening centers on Dr. Thomas E. Lockhart III, a celebrated realist painter whose work captures the essence of his subjects with precision, grace, and emotional depth. Moving beyond representation, Lockhart’s practice engages in powerful social commentary, exploring themes of history, identity, and collective consciousness. His work invites viewers to question, confront, and reconsider both personal and societal narratives. Following the screening, guests are invited to stay for an artist talk and Q&A with Dr. Thomas E. Lockhart III, offering deeper insight into his creative practice, influences, and artistic vision."
+    },
+    {
+        "title": "Science on Screen® You Can't Miss What You Forget",
+        "type": "event",
+        "date": "February 8, 2026",
+        "time": "1:00 pm",
+        "link": "https://thedairy.org/event/science-on-screen/",
+        "images": [
+            "/dairy-science-on-screen.png"
+        ],
+        "description": "Science on Screen® You Can’t Miss What You Forget Digital Memory and the Trouble with Letting Go What happens when we try to move on, but our data won’t let us? Following Eternal Sunshine of the Spotless Mind, Dr. Anthony T. Pinter explores how our online “data shadows” preserve relationships, identities, and memories long after they’ve ended. As our lives change, the data that represents us often doesn’t, leaving behind digital versions of ourselves that no longer fit who we are now. The potential for incongruence between us and our online “data shadows” can be problematic during life transitions, or moments where our identities change significantly (e.g., coming out, dying, becoming a parent, amongst others). We may move on, but our data shadows follow; resurfacing data to make recommendations and encouraging us to reminisce. Much like sorting through the physical objects of sentimental value, our data must also be considered in the aftermath of life transitions; some want to delete everything, others prefer to keep and revisit it. Drawing from research on romantic breakups and digital identity, this talk looks at how people decide what to do with the data left behind after a relationship ends. From the framework of two curatorial philosophies – the archivist and revisionist – Dr. Pinter will discuss how people make decisions about what to do with their data, how they enact those decisions, and how to contend with the algorithmic curator. Blending themes of memory, loss, and control, this Science on Screen conversation asks a deceptively simple question: in a world where forgetting isn’t entirely up to us, what does it really mean to let go? Introduction & film screening: 1:00 PM; Scientific Lecture 3:00 PM"
+    },
+    {
+        "title": "Creative Connections: Elvis Sing-Along and Screening of Viva Las Vegas",
+        "type": "event",
+        "date": "February 1, 2026",
+        "time": "12:00–12:45 PM & Elvis Sing-Along (Dairy Lobby) 1:00–2:30 PM",
+        "link": "https://thedairy.org/event/creative-connections-elvis-songs-and-screening-of-viva-las-vegas/",
+        "images": [
+            "/dairy-creative-connections-elvis-songs-and-screening-of-viva-las-vegas.jpg"
+        ],
+        "description": "Join us for an afternoon of music, memories, and movie fun – this time celebrating the one and only Elvis Presley. We’ll start with a live pianist leading an Elvis-themed sing-along, followed by a private screening of Viva Las Vegas (1964) on the big screen. This free event is part of the Dairy Arts Center’s Creative Connections Series, designed to bring older adults together through shared arts experiences that inspire joy and connection. Schedule: 12:00–12:45 PM – Elvis Sing-Along (Dairy Lobby) 1:00–2:30 PM – Viva Las Vegas Screening (Boedecker Theater) In partnership with Circle of Care Project Mobilizing the Arts and Culture to Enrich the Lives of Older Adults"
+    },
+    {
+        "title": "BETC: Fireflies",
+        "type": "event",
+        "date": "February 14, 2026",
+        "time": "2:00 pm",
+        "link": "https://thedairy.org/event/betc-fireflies/2026-02-14/1/",
+        "images": [
+            "/dairy-1.jpg"
+        ],
+        "description": "A Valentine’s outing featuring champagne, roses, and Matthew Barber’s romantic comedy, Fireflies. Eleanor Bannister is a retired school teacher and a model of respectability. She lives a quiet and lonely life until Abel Brown comes to town. A handyman and drifter, the smooth-talking Brown does more than fix Eleanor’s roof. The town begins to talk. Can Abel be trusted?"
+    },
+    {
+        "title": "Daughtering",
+        "type": "event",
+        "date": "March 13, 2026",
+        "time": "7:30 pm",
+        "link": "https://thedairy.org/event/daughtering/2026-03-13/",
+        "images": [
+            "/dairy-2026-03-13.png"
+        ],
+        "description": "In “Daughtering,” three generations of women navigate living, dying and the dead when they are called home to appease unruly spirits. Sixteen to seventy-something, each carries her own idea of what it means to be a daughter: caregiver, rebel, keeper of the stories, breaker of the cycle. Over the course of three charged days and nights, the daughters navigate relationship, grief, and the business of the old house that contains them, alive in its own way with memory and an impressive population of mice. What unfolds is a darkly humorous, emotionally resonant exploration of identity, inheritance and the universal work of becoming who we are, despite (and because of) where we come from. The play culminates in DIY ceremony and catharsis – as tender, fierce and complicated as daughtering itself."
+    },
+    {
+        "title": "20th Anniversary of the Fly Fishing Film Tour",
+        "type": "event",
+        "date": "March 2, 2026",
+        "time": "7:00 pm",
+        "link": "https://thedairy.org/event/20th-anniversary-of-the-fly-fishing-film-tour/",
+        "images": [
+            "/dairy-20th-anniversary-of-the-fly-fishing-film-tour.jpg"
+        ],
+        "description": "The Fly Fishing Film Tour (F3T) is proud to celebrate its 20th anniversary in 2026, marking two decades of unforgettable stories, breathtaking landscapes, and a community bound by a passion for fly fishing. This milestone year promises to be a landmark event, as the tour kicks off with a fresh collection of the finest fly fishing films from across the globe. This year’s lineup dives deeper than ever, spotlighting wild places, inspiring conservation stories, and the dedicated individuals who live and breathe fly fishing. Whether you’re a lifelong angler or new to the sport, the 2026 tour delivers a cinematic journey that’s sure to cast a lasting impression. Presented by: Skwala, Yeti, Costa"
     }
 ]

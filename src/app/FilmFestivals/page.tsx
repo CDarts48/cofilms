@@ -76,7 +76,6 @@ export default function FilmFestivalsPage(): React.ReactElement {
                     </h1>
                     <p style={{ fontSize: '1.15rem', color: '#e0e0e0', marginBottom: 0 } as CSSProperties}>
                         Explore the vibrant film festival scene in Colorado, showcasing local talent and cinematic creativity.<br />
-                        <span style={{ color: '#ffb400' }}>Stay tuned for upcoming festivals, events, and opportunities to celebrate film in the heart of Colorado.</span>
                     </p>
                 </section>
                 <section>
