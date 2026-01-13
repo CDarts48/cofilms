@@ -13,6 +13,8 @@ export default function Home(): React.ReactElement {
       <PodCastSection />
       <UpcomingFilmFestivals />
       <ContactSection />
+      {/* Footer for Home page if not covered by layout */}
+      {typeof window !== 'undefined' && require('../components/Footer').default()}
     </div>
   );
 }

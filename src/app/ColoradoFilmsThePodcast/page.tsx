@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Footer from '../../components/Footer';
 import BasicHeader from '../../components/BasicHeader';
 import emailjs from '@emailjs/browser';
 

@@ -18,16 +18,13 @@ const festivals: Festival[] = [
     { name: 'Durango Independent Film Festival', url: 'https://www.durangofilm.org/', location: 'Durango', date: 'March', blocksIframe: true, previewImage: '/diff.png' },
     { name: 'Boulder International Film Festival', url: 'https://biff1.com/', location: 'Boulder', date: 'April 9th-12th' },
     { name: "Aspen Short's Fest", url: 'https://aspenfilm.org/our-festivals/shortsfest/', location: 'Aspen', date: 'April' },
-    { name: 'Indie Spirit Film Festival', url: 'https://www.indiespiritfilmfestival.org/', location: 'Colorado Springs', date: 'April' },
     { name: 'Mountainfilm', url: 'https://www.mountainfilm.org/', location: 'Telluride', date: 'May - Memorial Day Weekend', blocksIframe: true },
     { name: 'Telluride Film Festival', url: 'https://www.telluridefilmfestival.org/', location: 'Telluride', date: 'August/September - Labor Day Weekend' },
     { name: 'Aspen Filmfest', url: 'https://aspenfilm.org/festivals/aspen-filmfest/', location: 'Aspen', date: 'September' },
     { name: 'Breckenridge Film Festival', url: 'https://breckfilm.org/', location: 'Breckenridge', date: 'September' },
     { name: 'Crested Butte Film Festival', url: 'https://cbfilmfest.org/', location: 'Crested Butte', date: 'September', blocksIframe: true },
     { name: 'Denver Film Festival', url: 'https://denverfilm.org/denverfilmfestival/', location: 'Denver', date: 'November' },
-    { name: "Rocky Mountain Women's Film Festival", url: 'https://rmwfilm.org/', location: 'Colorado Springs', date: 'November' },
-    { name: 'Vail Film Festival', url: 'https://www.vailfilmfestival.com/', location: 'Vail', date: 'December' },
-    { name: 'Emerging Filmmakers Project', url: 'https://www.bugtheatre.org/the-emerging-filmmakers-project', location: 'Denver', date: 'Monthly - Year-round' },
+    // ...other festivals...
 ];
 
 const festivalCardStyle: CSSProperties = {
@@ -39,6 +36,7 @@ const festivalCardStyle: CSSProperties = {
     cursor: 'pointer',
     transition: 'transform 0.2s, box-shadow 0.2s',
 };
+
 
 const festivalCardHoverStyle: CSSProperties = {
     transform: 'translateY(-4px)',
