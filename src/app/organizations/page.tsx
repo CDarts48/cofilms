@@ -10,6 +10,7 @@ interface Organization {
     description: string;
     location: string;
     category: string;
+    image?: string;
 }
 
 const organizations: Organization[] = [
@@ -19,7 +20,7 @@ const organizations: Organization[] = [
         url: 'https://coloradofilm.org/',
         description: 'The official state film commission providing resources, locations, and support for film productions in Colorado. No state film permits required.',
         location: 'Statewide',
-        category: 'Government'
+        category: 'Government',
     },
 
 
@@ -29,7 +30,7 @@ const organizations: Organization[] = [
         url: 'https://oedit.colorado.gov/regional-film-liaisons',
         description: 'Network of 15 volunteer regional partners who market Colorado\'s regions and help identify local support services for the film industry.',
         location: 'Statewide',
-        category: 'Regional Liaison'
+        category: 'Regional Liaison',
     },
     {
         name: 'Boulder County Film Commission',
@@ -95,6 +96,14 @@ const organizations: Organization[] = [
         description: 'Furthering the impact of documentary films through screenings, outreach and education.',
         location: 'Denver',
         category: 'Arts Organization'
+    },
+    {
+        name: 'The Independent Film Society of Colorado',
+        url: 'https://ifsoc.org/',
+        description: 'The Independent Film Society of Colorado (IFSOC) is a 501(c)(3) nonprofit organization based in Colorado Springs, Colorado. Our mission is to promote independent filmmaking and support filmmakers in the state of Colorado.',
+        location: 'Colorado Springs',
+        category: 'Arts Organization',
+        // image: 'https://ifsoc.org/wp-content/uploads/2022/05/ifsoc-new-logo-final-800x600-1.png'
     },
     {
         name: 'Aspen Film',
@@ -234,7 +243,7 @@ export default function OrganizationsPage(): React.ReactElement {
                             textShadow: '1px 2px 8px #0008',
                         } as CSSProperties}
                     >
-                         Colorado Film Organizations
+                        Colorado Film Organizations
                     </h1>
                     <p style={{ fontSize: '1.15rem', color: '#e0e0e0', marginBottom: 0 } as CSSProperties}>
                         Discover the key organizations supporting Colorado's vibrant film industry.<br />
@@ -244,54 +253,83 @@ export default function OrganizationsPage(): React.ReactElement {
 
                 <section>
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
-                        {organizations.map((org: Organization, index: number) => (
-                            <div
-                                key={index}
-                                style={orgCardStyle}
-                                onClick={() => window.open(org.url, '_blank')}
-                                onMouseEnter={(e) => {
-                                    Object.assign(e.currentTarget.style, orgCardHoverStyle);
-                                }}
-                                onMouseLeave={(e) => {
-                                    Object.assign(e.currentTarget.style, orgCardStyle);
-                                }}
-                            >
-                                <h2 style={{
-                                    margin: '0 0 12px',
-                                    fontSize: '1.4rem',
-                                    color: '#ffb400',
-                                    fontWeight: 600,
-                                } as CSSProperties}>
-                                    {org.name}
-                                </h2>
-                                <p style={{
-                                    margin: '0 0 12px',
-                                    color: '#e0e0e0',
-                                    fontSize: '1.05rem',
-                                    lineHeight: 1.6
-                                } as CSSProperties}>
-                                    {org.description}
-                                </p>
-                                <div style={{
-                                    display: 'flex',
-                                    justifyContent: 'space-between',
-                                    fontSize: '0.95rem',
-                                    color: '#bbb',
-                                    marginTop: 12,
-                                    paddingTop: 12,
-                                    borderTop: '1px solid #333'
-                                } as CSSProperties}>
-                                    <span>
-                                        <span style={{ color: '#ffb400', fontWeight: 600 }}>Location:</span>{' '}
-                                        {org.location}
-                                    </span>
-                                    <span>
-                                        <span style={{ color: '#ffb400', fontWeight: 600 }}>Category:</span>{' '}
-                                        {org.category}
-                                    </span>
+                        {organizations.map((org: Organization, index: number) => {
+                            // Use the image as a background for any organization with an image
+                            const hasImage = !!org.image;
+                            const cardStyle = hasImage
+                                ? {
+                                    ...orgCardStyle,
+                                    backgroundImage: `url(${org.image})`,
+                                    backgroundSize: 'cover',
+                                    backgroundPosition: 'center',
+                                    color: '#fff',
+                                    position: 'relative' as 'relative',
+                                }
+                                : orgCardStyle;
+                            const overlayStyle = hasImage
+                                ? {
+                                    position: 'absolute' as 'absolute',
+                                    top: 0,
+                                    left: 0,
+                                    width: '100%',
+                                    height: '100%',
+                                    background: 'rgba(35,40,58,0.85)',
+                                    borderRadius: 12,
+                                    zIndex: 1,
+                                }
+                                : {};
+                            return (
+                                <div
+                                    key={index}
+                                    style={cardStyle}
+                                    onClick={() => window.open(org.url, '_blank')}
+                                    onMouseEnter={(e) => {
+                                        Object.assign(e.currentTarget.style, orgCardHoverStyle);
+                                    }}
+                                    onMouseLeave={(e) => {
+                                        Object.assign(e.currentTarget.style, cardStyle);
+                                    }}
+                                >
+                                    {hasImage && <div style={overlayStyle}></div>}
+                                    <div style={hasImage ? { position: 'relative', zIndex: 2 } : {}}>
+                                        <h2 style={{
+                                            margin: '0 0 12px',
+                                            fontSize: '1.4rem',
+                                            color: '#ffb400',
+                                            fontWeight: 600,
+                                        } as CSSProperties}>
+                                            {org.name}
+                                        </h2>
+                                        <p style={{
+                                            margin: '0 0 12px',
+                                            color: '#e0e0e0',
+                                            fontSize: '1.05rem',
+                                            lineHeight: 1.6
+                                        } as CSSProperties}>
+                                            {org.description}
+                                        </p>
+                                        <div style={{
+                                            display: 'flex',
+                                            justifyContent: 'space-between',
+                                            fontSize: '0.95rem',
+                                            color: '#bbb',
+                                            marginTop: 12,
+                                            paddingTop: 12,
+                                            borderTop: '1px solid #333'
+                                        } as CSSProperties}>
+                                            <span>
+                                                <span style={{ color: '#ffb400', fontWeight: 600 }}>Location:</span>{' '}
+                                                {org.location}
+                                            </span>
+                                            <span>
+                                                <span style={{ color: '#ffb400', fontWeight: 600 }}>Category:</span>{' '}
+                                                {org.category}
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        ))}
+                            );
+                        })}
                     </div>
                 </section>
                 <ContactSection />
