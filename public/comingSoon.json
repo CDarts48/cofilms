@@ -147,7 +147,7 @@
         "venue": "The Dairy Arts Center — 2590 Walnut, Boulder, CO",
         "link": "https://thedairy.org/event/cactus-pears-jan-14-18/2026-01-14/",
         "images": [
-            "/cactus-pears.png"
+            "https://thedairy.org/wp-content/uploads/2025/12/CactusPears_Poster_27x39.jpg"
         ],
         "description": "Anand, a 30-something city dweller compelled to spend a 10-day mourning period for his father in the rugged countryside of western India, tenderly bonds with a local farmer who is struggling to stay unmarried. As the mourning ends, forcing his return, Anand must decide the fate of his relationship born under duress. Winner, Grand Jury Prize (World Dramatic), Sundance Film Festival. (Rohan Kanawade,2025, India, 1:52, NR)"
     },
@@ -260,7 +260,7 @@
     {
         "title": "The Choral",
         "type": "event",
-        "time":"7:00 pm",
+        "time": "7:00 pm",
         "date": "January 28, 2026",
         "link": "https://thedairy.org/event/the-choral-jan-28-feb-1/2026-01-28/",
         "images": [
@@ -272,7 +272,7 @@
         "title": "The Cathedral of New Emotions",
         "type": "event",
         "date": "January 30, 2026",
-        "time":"8:30 pm",
+        "time": "8:30 pm",
         "link": "https://thedairy.org/event/the-cathedral-of-new-emotions-jan-30/",
         "images": [
             "/dairy-the-cathedral-of-new-emotions-jan-30.jpg"
