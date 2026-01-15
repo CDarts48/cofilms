@@ -48,7 +48,7 @@ const organizations: Organization[] = [
     },
     {
         name: 'Colorado Springs Film Commission',
-        url: 'https://coloradospringsfilmcommission.com/',
+        url: 'https://www.visitcos.com/film/',
         description: 'Regional film liaison serving Colorado Springs and the Pikes Peak region.',
         location: 'Colorado Springs',
         category: 'Regional Liaison'
