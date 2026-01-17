@@ -79,7 +79,7 @@ export default function ColoradoFilmsThePodcast() {
                                     </svg>
                                 </a>
                                 <a
-                                    href="https://podcasts.apple.com/us/podcast/conversation-with-ousmane-ndoye-askkanwii-filmmaking/id1860422839?i=1000745498909   "
+                                    href="https://podcasts.apple.com/us/podcast/conversation-with-ousmane-ndoye-askkanwii-filmmaking/id1860422839?i=1000745498909"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     style={styles.iconButton}
