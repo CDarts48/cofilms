@@ -17,6 +17,7 @@ const festivals: Festival[] = [
     { name: 'Colorado Environmental Film Festival', url: 'https://ceff.net/', location: 'Location: Golden', date: 'February 20th-22nd 2026', blocksIframe: true, previewImage: '/CEFF.png' },
     { name: 'Durango Independent Film Festival', url: 'https://www.durangofilm.org/', location: 'Durango', date: 'March', blocksIframe: true, previewImage: '/diff.png' },
     { name: 'Boulder International Film Festival', url: 'https://biff1.com/', location: 'Boulder', date: 'April 9th-12th' },
+    { name: 'Kickass Film Fest', url: 'https://www.kickassfilmfest.com/', location: 'Denver', date: 'April 2026' },
     { name: "Aspen Short's Fest", url: 'https://aspenfilm.org/our-festivals/shortsfest/', location: 'Aspen', date: 'April' },
     { name: 'Mountainfilm', url: 'https://www.mountainfilm.org/', location: 'Telluride', date: 'May - Memorial Day Weekend', blocksIframe: true },
     { name: 'Telluride Film Festival', url: 'https://www.telluridefilmfestival.org/', location: 'Telluride', date: 'August/September - Labor Day Weekend' },
