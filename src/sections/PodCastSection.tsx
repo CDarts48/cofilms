@@ -54,13 +54,13 @@ function PodCastSection(): React.ReactElement {
                 <div style={styles.freshestEpisodeContainer}>
                     <h3 style={styles.freshestEpisodeTitle}>Most Recent Episode</h3>
                     <div style={styles.episodeCard}>
-                        <h4 style={styles.episodeTitle}>Episode 3: A Conversation with Justin Balog</h4>
+                        <h4 style={styles.episodeTitle}>Conversation with Ousmane Ndoye Askkanwii Filmmaking Hub Incubator</h4>
                         <p style={styles.episodeDescription}>
-                            A conversation with Justin Balog about his work, the Colorado's film community, local projects, as well as the rewards & challenges of being a Director of Photography.
+                            On this episode of  Colorado Films: The Podcast, I speak with Ousmane Ndoye. Ousmane a social entrepreneur and philanthropist based in Denver, Colorado, founded Askkanwii Filmmaking Hub Incubator in 2013. Originally from Senegal, he has pursued various certifications and college degrees in Arts, organizational management, and filmmaking. Ndoye is currently involved in several projects, including documentaries, films, and TV series produced in collaboration with Askkanwii Hub groups in Africa and Denver. He is also working on two upcoming films, “Fishing For My Dreams” and “My African Dream” with his writing partners. With a passion for storytelling and community development, Ndoye is dedicated to empowering underrepresented groups in the film industry.
                         </p>
                         <div style={styles.buttonGroup}>
                             <a
-                                href="https://open.spotify.com/episode/58VIortyTLDPjkPPWUdxNc"
+                                href="https://open.spotify.com/episode/3PIeF2jrGADzDL7xqmBXrf?si=bpFTmZqoQWWIja1YCpxEEw&nd=1&dlsi=bf56a704cc82496d"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 style={styles.iconButton}
@@ -71,7 +71,7 @@ function PodCastSection(): React.ReactElement {
                                 </svg>
                             </a>
                             <a
-                                href="https://podcasts.apple.com/us/podcast/a-conversation-with-justin-balog/id1860422839?i=1000744049253"
+                                href="https://podcasts.apple.com/us/podcast/conversation-with-ousmane-ndoye-askkanwii-filmmaking/id1860422839?i=1000745498909"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 style={styles.iconButton}
@@ -109,7 +109,7 @@ function PodCastSection(): React.ReactElement {
                                             </svg>
                                         </a>
                                         <a
-                                            href="https://podcasts.apple.com/us/podcast/colorado-films/id1860422839"
+                                            href="https://open.spotify.com/episode/3PIeF2jrGADzDL7xqmBXrf?si=bpFTmZqoQWWIja1YCpxEEw&nd=1&dlsi=bf56a704cc82496d"
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             style={styles.subscribeButton}
