@@ -54,13 +54,13 @@ function PodCastSection(): React.ReactElement {
                 <div style={styles.freshestEpisodeContainer}>
                     <h3 style={styles.freshestEpisodeTitle}>Most Recent Episode</h3>
                     <div style={styles.episodeCard}>
-                        <h4 style={styles.episodeTitle}>Conversation with Ousmane Ndoye Askkanwii Filmmaking Hub Incubator</h4>
+                        <h4 style={styles.episodeTitle}>Conversation with Scott Crady</h4>
                         <p style={styles.episodeDescription}>
-                            On this episode of  Colorado Films: The Podcast, I speak with Ousmane Ndoye. Ousmane a social entrepreneur and philanthropist based in Denver, Colorado, founded Askkanwii Filmmaking Hub Incubator in 2013. Originally from Senegal, he has pursued various certifications and college degrees in Arts, organizational management, and filmmaking. Ndoye is currently involved in several projects, including documentaries, films, and TV series produced in collaboration with Askkanwii Hub groups in Africa and Denver. He is also working on two upcoming films, “Fishing For My Dreams” and “My African Dream” with his writing partners. With a passion for storytelling and community development, Ndoye is dedicated to empowering underrepresented groups in the film industry.
+                            Scott Crady details his career shift from graphic design to filmmaking, now balancing photography and filmmaking. Scott discussed his work in outdoor adventure filmmaking, including a two-year documentary project for HBO Max, Here to Climb, about athlete Sasha DiGiulian. As well as the technical aspects of filming extreme climbing, as well as their pivot from action sports to outdoor cooking and wild food, with an upcoming dream project focused on gaucho cooking. Scott shared his advice for pricing creative work, emphasized business literacy for filmmakers, and addressed the impact of short-form content, maintaining that AI will not replace human storytelling due to the enduring value of human narratives.
                         </p>
                         <div style={styles.buttonGroup}>
                             <a
-                                href="https://open.spotify.com/episode/3PIeF2jrGADzDL7xqmBXrf?si=bpFTmZqoQWWIja1YCpxEEw&nd=1&dlsi=bf56a704cc82496d"
+                                href="https://open.spotify.com/episode/7s0xdSwIZvKEU09Y5q6ULm?si=JYosHjDxTKyRPL45EMPlXA"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 style={styles.iconButton}
@@ -71,7 +71,7 @@ function PodCastSection(): React.ReactElement {
                                 </svg>
                             </a>
                             <a
-                                href="https://podcasts.apple.com/us/podcast/conversation-with-ousmane-ndoye-askkanwii-filmmaking/id1860422839?i=1000745498909"
+                                href="https://podcasts.apple.com/us/podcast/colorado-films-the-podcast/id1860422839"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 style={styles.iconButton}
@@ -79,6 +79,17 @@ function PodCastSection(): React.ReactElement {
                             >
                                 <svg width="32" height="32" viewBox="0 0 24 24" fill="#FC3C44">
                                     <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
+                                </svg>
+                            </a>
+                            <a
+                                href="https://youtu.be/AWIw6NQAxDw"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                style={styles.iconButton}
+                                title="Watch on YouTube"
+                            >
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="#FF0000">
+                                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
                                 </svg>
                             </a>
                         </div>
@@ -185,7 +196,7 @@ const styles: Styles = {
         margin: '0 auto 5rem',
     },
     title: {
-        fontSize: '3.5rem',
+        fontSize: '2.86rem',
         fontWeight: '700',
         color: '#5C4033',
         marginBottom: '1.5rem',
