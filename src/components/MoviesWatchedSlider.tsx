@@ -18,7 +18,7 @@ const movies = [
       youtube: '',
       spotify: '',
       linkedin: 'https://www.linkedin.com/feed/update/urn:li:activity:7422104385712832512',
-      bluesky: '',
+      bluesky: 'https://bsky.app/profile/coloradofilms.bsky.social/post/3mdez574zr22i',
       apple: '',
     }
   },
@@ -31,7 +31,7 @@ const movies = [
     socials: {
       facebook: 'https://www.facebook.com/permalink.php?story_fbid=pfbid02BSQEupbgyRUpNuhTeryzhG9QJF2hncn63xoEfcstNr3xavg4Xc4CwzoWiTEZoyakl&id=61585835874209',
       instagram: 'https://www.instagram.com/p/DT8fQssDmig/',
-      x: '',
+      x: 'https://x.com/AColoradoFilm/status/2015543492873957751',
       tiktok: '',
       youtube: '',
       spotify: '',
