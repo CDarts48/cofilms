@@ -44,7 +44,7 @@ const movies = [
     title: 'Amazing Beeches',
     year: '2025',
     imageUrl: ceffLogo, 
-    review: 'Beech trees are quite amazing, but sadly their very existence is at risk, as you’ll discover in this 3-minute film. They may not be around much longer so appreciate them while you can. Directed by: Sam Hay Kauffmann',
+    review: "Beech trees are quite amazing, but sadly their very existence is at risk, as you'll discover in this 3-minute film. They may not be around much longer so appreciate them while you can. Directed by: Sam Hay Kauffmann",
     watchUrl: 'https://www.youtube.com/watch?v=QCFUItK7shg',
     socials: {
       facebook: 'https://www.facebook.com/share/p/1DLGUpYWA5/',
@@ -55,6 +55,24 @@ const movies = [
       spotify: '',
       linkedin: 'https://www.linkedin.com/feed/update/urn:li:activity:7420887212411764736',
       bluesky: 'https://bsky.app/profile/coloradofilms.bsky.social/post/3md6ro3ldjs23',
+      apple: '',
+    }
+  },
+  {
+    title: 'Earth Looks For Insurance',
+    year: '2025',
+    imageUrl: ceffLogo,
+    review: 'Featured in 2025 CEFF 4 Classrooms Screening. Starring characters from multiple insurance commercials, this parody follows Earth as she attempts to acquire insurance coverage against climate change. Directed by: Max Hill, Khloe Dumlao, Kiara Vergara',
+    watchUrl: 'https://www.youtube.com/watch?v=eHA-dsf52Lk',
+    socials: {
+      facebook: 'https://www.facebook.com/share/p/17uLnJL7LB/',
+      instagram: 'https://www.instagram.com/p/DUCkVNajqvP/',
+      x: 'https://x.com/AColoradoFilm/status/2016650823997280608',
+      tiktok: '',
+      youtube: '',
+      spotify: '',
+      linkedin: 'https://www.linkedin.com/feed/update/urn:li:activity:7422291855268106240/',
+      bluesky: 'http://bsky.app/profile/coloradofilms.bsky.social/post/3mdjfnlp5ns2z',
       apple: '',
     }
   }
