@@ -18,6 +18,7 @@ const festivals: Festival[] = [
     { name: 'Scorpius Fest', url: 'https://scorpiusfest.com/', location: 'Boulder', date: 'Feb 28th-March 1st' },
     { name: 'Durango Independent Film Festival', url: 'https://www.durangofilm.org/', location: 'Durango', date: 'March', blocksIframe: true, previewImage: '/diff.png' },
     { name: 'Boulder International Film Festival', url: 'https://biff1.com/', location: 'Boulder', date: 'April 9th-12th' },
+    { name: 'ACT Human Rights Film Festival', url: 'https://actfilmfest.colostate.edu/', location: 'Fort Collins', date: 'April 9th-12th', blocksIframe: true },
     { name: 'Kickass Film Fest', url: 'https://www.kickassfilmfest.com/', location: 'Denver', date: 'April 2026' },
     { name: "Aspen Short's Fest", url: 'https://aspenfilm.org/our-festivals/shortsfest/', location: 'Aspen', date: 'April' },
     { name: 'Mountainfilm', url: 'https://www.mountainfilm.org/', location: 'Telluride', date: 'May - Memorial Day Weekend', blocksIframe: true },
