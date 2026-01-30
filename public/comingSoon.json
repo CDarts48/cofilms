@@ -365,6 +365,703 @@
         "images": [
             "/dairy-20th-anniversary-of-the-fly-fishing-film-tour.jpg"
         ],
-        "description": "The Fly Fishing Film Tour (F3T) is proud to celebrate its 20th anniversary in 2026, marking two decades of unforgettable stories, breathtaking landscapes, and a community bound by a passion for fly fishing. This milestone year promises to be a landmark event, as the tour kicks off with a fresh collection of the finest fly fishing films from across the globe. This year’s lineup dives deeper than ever, spotlighting wild places, inspiring conservation stories, and the dedicated individuals who live and breathe fly fishing. Whether you’re a lifelong angler or new to the sport, the 2026 tour delivers a cinematic journey that’s sure to cast a lasting impression. Presented by: Skwala, Yeti, Costa"
+        "description": "The Fly Fishing Film Tour (F3T) is proud to celebrate its 20th anniversary in 2026, marking two decades of unforgettable stories, breathtaking landscapes, and a community bound by a passion for fly fishing. This milestone year promises to be a landmark event, as the tour kicks off with a fresh collection of the finest fly fishing films from across the globe. This year's lineup dives deeper than ever, spotlighting wild places, inspiring conservation stories, and the dedicated individuals who live and breathe fly fishing. Whether you're a lifelong angler or new to the sport, the 2026 tour delivers a cinematic journey that's sure to cast a lasting impression. Presented by: Skwala, Yeti, Costa"
+    },
+    {
+        "title": "Armour of God",
+        "type": "event",
+        "date": "Tuesday January 13, 2026",
+        "time": "7:30 PM",
+        "venue": "Muenzinger Auditorium, CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11444/armour-of-god",
+        "images": [
+            "https://internationalfilmseries.com/resources.internationalfilmseries.com/photo_full/8349/AmourOfGod_400.jpg"
+        ],
+        "description": "An adventurer (Jackie Chan) and his friend (Alan Tam) aid a woman (Rosamund Kwan) kidnapped by cultists seeking a set of armor with mystical powers. (Hong Kong, Yugoslavia, Austria, 1986, in Cantonese, 97 min)"
+    },
+    {
+        "title": "The Mystery of Chess Boxing",
+        "type": "event",
+        "date": "Wednesday January 14, 2026",
+        "time": "7:30 PM",
+        "venue": "Muenzinger Auditorium, CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11447/wuxia-wednesday-secret-kung-fu",
+        "images": [
+            "https://internationalfilmseries.com/resources.internationalfilmseries.com/photo_full/8318/mystery-chessboxing.png"
+        ],
+        "description": "New restoration from RZA and Dan Halstead. (Hong Kong, 1979, Mandarin w/ English subtitles, Color, 90 min, 2.35:1)"
+    },
+    {
+        "title": "Infernal Affairs",
+        "type": "event",
+        "date": "Thursday January 15, 2026",
+        "time": "7:30 PM",
+        "venue": "Muenzinger Auditorium, CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11445/infernal-affairs",
+        "images": [
+            "https://internationalfilmseries.com/resources.internationalfilmseries.com/photo_full/8349/InfernalAffairs_40046.jpg"
+        ],
+        "description": "Idealistic police cadet Chan Wing-Yan (Tony Leung) is recruited by Police Superintendent Wong (Anthony Wong) to go deep undercover as a member of the criminal Triad society. Into the same cadet class, crime boss Hon Sam (Eric Tsang) installs new Triad member Lau Kin Ming (Andy Lau) to become a long-term mole for the gang. A decade later, both have risen through the ranks in their respective aliases -- but when both of their covers are in danger of being blown, a game of life and death ensues. (Hong Kong, 2002, in Cantonese, Mandarin, Thai, 101 min)"
+    },
+    {
+        "title": "2046",
+        "type": "event",
+        "date": "Friday January 16, 2026",
+        "time": "7:30 PM",
+        "venue": "Muenzinger Auditorium, CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11446/2046",
+        "images": [
+            "https://internationalfilmseries.com/resources.internationalfilmseries.com/photo_full/8349/2046_400.jpg"
+        ],
+        "description": "Women enter and exit a science fiction author's life over the course of a few years after the author loses the woman he considers his one true love. (Germany, Hong Kong, China, France, Italy, 2004, in Japanese, English, Mandarin, Cantonese, 128 min)"
+    },
+    {
+        "title": "My Darling Clementine",
+        "type": "event",
+        "date": "Sunday January 18, 2026",
+        "time": "2:00 PM",
+        "venue": "Muenzinger Auditorium, CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11448/my-darling-clementine",
+        "images": [
+            "https://internationalfilmseries.com/resources.internationalfilmseries.com/photo_full/8349/MyDarlingClementine_400.jpg"
+        ],
+        "description": "In the middle of a long cattle drive, Wyatt Earp (Henry Fonda) and his brothers stop off for a night in the town of Tombstone. The next morning they find their cattle stolen, and one of the brothers is dead. Earp suspects the Clanton family, owners of the O.K. Corral, but wants his revenge to be legal. Film discussion led by Boulder Film Critic Michael Casey. (USA, 1946, in English, French, Spanish, 97 min)"
+    },
+    {
+        "title": "Roofman",
+        "type": "event",
+        "date": "Wednesday January 21, 2026",
+        "time": "7:30 PM",
+        "venue": "Muenzinger Auditorium, CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11449/roofman",
+        "images": [
+            "https://internationalfilmseries.com/resources.internationalfilmseries.com/photo_full/8349/Roofman_400.jpg"
+        ],
+        "description": "Based on an unbelievable true story, Roofman follows Jeffrey Manchester (Channing Tatum), an Army veteran and struggling father who turns to robbing McDonald's restaurants by cutting holes in their roofs, earning him the nickname: Roofman. Director Derek Cianfrance in person. (USA, 2025, in English, 126 min)"
+    },
+    {
+        "title": "One Battle After Another",
+        "type": "event",
+        "date": "Friday January 23, 2026",
+        "time": "7:30 PM",
+        "venue": "Muenzinger Auditorium, CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11450/one-battle-after-another",
+        "images": [
+            "https://internationalfilmseries.com/resources.internationalfilmseries.com/photo_full/8349/OneBattleAfterAnother_400.jpg"
+        ],
+        "description": "Bob is a washed-up revolutionary who lives in a state of stoned paranoia, surviving off-grid with his spirited and self-reliant daughter, Willa. When his evil nemesis resurfaces and Willa goes missing, the former radical scrambles to find her as both father and daughter battle the consequences of their pasts. Editor Andy Jurgensen in person. (USA, 2025, in English, Spanish, Telugu, 162 min)"
+    },
+    {
+        "title": "Sentimental Value",
+        "type": "event",
+        "date": "Sunday January 25, 2026",
+        "time": "2:00 PM",
+        "venue": "Muenzinger Auditorium, CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11451/sentimental-value",
+        "images": [
+            "https://internationalfilmseries.com/resources.internationalfilmseries.com/photo_full/8349/SentimentalValue_400.jpg"
+        ],
+        "description": "Sisters Nora and Agnes reunite with their estranged father, the charismatic Gustav, a once-renowned director who offers stage actress Nora a role in what he hopes will be his comeback film. When Nora turns it down, she soon discovers he has given her part to an eager young Hollywood star. (Turkey, Norway, France, Denmark, Sweden, Germany, UK, 2025, in English, Danish, Norwegian, Swedish, 133 min)"
+    },
+    {
+        "title": "The Color of Pomegranates",
+        "type": "event",
+        "date": "Monday January 26, 2026",
+        "time": "7:30 PM",
+        "venue": "Muenzinger Auditorium, CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11452/the-color-of-pomegranates",
+        "images": [
+            "https://internationalfilmseries.com/resources.internationalfilmseries.com/photo_full/8349/ColorOfPomegranates_400.webp"
+        ],
+        "description": "This avant-garde film depicts the life of revered the 18th-century Armenian poet and musician Sayat-Nova (Vilen Galstyan). Portraying events in the life of the artist from childhood up to his death, the movie addresses in particular his relationships with women, including his muse (Sofiko Chiaureli). (Soviet Union, 1969, in Armenian, Azerbaijani, Georgian, 80 min)"
+    },
+    {
+        "title": "Portrait of a Lady on Fire",
+        "type": "event",
+        "date": "Tuesday January 27, 2026",
+        "time": "7:30 PM",
+        "venue": "Muenzinger Auditorium, CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11453/portrait-of-a-lady-on-fire",
+        "images": [
+            "https://internationalfilmseries.com/resources.internationalfilmseries.com/photo_full/8349/PortraitOfALadyOnFire_400.webp"
+        ],
+        "description": "In 1770 the young daughter of a French countess develops a mutual attraction to the female artist commissioned to paint her wedding portrait. Sponsored by Department of French & Italian. (France, 2019, in Italian, French, 121 min)"
+    },
+    {
+        "title": "Clerks",
+        "type": "event",
+        "date": "Wednesday January 28, 2026",
+        "time": "7:30 PM",
+        "venue": "Muenzinger Auditorium, CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11454/clerks",
+        "images": [
+            "https://internationalfilmseries.com/resources.internationalfilmseries.com/photo_full/8349/Clerks_400.webp"
+        ],
+        "description": "Dante (Brian O'Halloran) is called in to cover a shift at his New Jersey convenience store on his day off. His friend Randal (Jeff Anderson) helps him pass the time, neglecting his video-store customers next door to hang out in the Quick Stop. The uneventful day is disrupted by news that one of Dante's ex-girlfriends has died. (USA, 1994, in English, 92 min)"
+    },
+    {
+        "title": "Swiss Army Man",
+        "type": "event",
+        "date": "Thursday January 29, 2026",
+        "time": "7:30 PM",
+        "venue": "Muenzinger Auditorium, CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11455/swiss-army-man",
+        "images": [
+            "https://internationalfilmseries.com/resources.internationalfilmseries.com/photo_full/8349/SwissArmyMan_400.jpg"
+        ],
+        "description": "Being stranded on a deserted island leaves young Hank (Paul Dano) bored, lonely and without hope. Until he spots a man (Daniel Radcliffe) laying by the shore. Unfortunately, he is dead and quite flatulent. Using the gassy body to his advantage, Hank miraculously makes it back to the mainland with the talking corpse named Manny. (USA, 2016, 97 min)"
+    },
+    {
+        "title": "Short Film Tour",
+        "type": "event",
+        "date": "Friday January 30, 2026",
+        "time": "7:30 PM",
+        "venue": "Muenzinger Auditorium, CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11456/short-film-tour",
+        "images": [
+            "https://internationalfilmseries.com/resources.internationalfilmseries.com/photo_full/8349/SundanceShortsTour_40040.png"
+        ],
+        "description": "International Film Series Short Film Tour featuring a selection of short films."
+    },
+    {
+        "title": "π (Pi)",
+        "type": "event",
+        "date": "Saturday January 31, 2026",
+        "time": "7:30 PM",
+        "venue": "Muenzinger Auditorium, CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11457/pi",
+        "images": [
+            "https://internationalfilmseries.com/resources.internationalfilmseries.com/photo_full/8349/Pi_400.jpg"
+        ],
+        "description": "A paranoid mathematician searches for a key number that will unlock the universal patterns found in nature. Pushed to his limits, he spirals between brilliance and obsession. (USA, 1998, 84 min)"
+    },
+    {
+        "title": "Grizzly Man",
+        "type": "event",
+        "date": "Sunday February 1, 2026",
+        "time": "2:00 PM",
+        "venue": "Muenzinger Auditorium, CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11458/grizzly-man",
+        "images": [
+            "https://internationalfilmseries.com/resources.internationalfilmseries.com/photo_full/8349/GrizzlyMan_400.webp"
+        ],
+        "description": "Werner Herzog's remarkable documentary examines Timothy Treadwell's calling to live among wild grizzly bears on an Alaskan reserve. A devoted conservationist with a passion for adventure, Timothy believed he had bridged the gap between human and beast. (USA, 2005, 103 min)"
+    },
+    {
+        "title": "All That's Left of You",
+        "type": "event",
+        "date": "Saturday February 7, 2026",
+        "time": "7:30 PM",
+        "venue": "Muenzinger Auditorium, CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11459/all-thats-left-of-you",
+        "images": [
+            "https://internationalfilmseries.com/resources.internationalfilmseries.com/photo_full/8349/AllThatsLeftOfYou_400.jpg"
+        ],
+        "description": "An epic historical drama chronicling the story of one Palestinian family over three generations, examining the passage of trauma starting with displacement from Jaffa in 1948. (Germany, Cyprus, USA, 2025, 146 min)"
+    },
+    {
+        "title": "The Gunfighter",
+        "type": "event",
+        "date": "Sunday February 8, 2026",
+        "time": "2:00 PM",
+        "venue": "Muenzinger Auditorium, CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11460/the-gunfighter",
+        "images": [
+            "https://internationalfilmseries.com/resources.internationalfilmseries.com/photo_full/8349/TheGunfighter_400.jpg"
+        ],
+        "description": "Jimmy Ringo (Gregory Peck) is a veteran gunslinger known for being quick on the draw, but his talent inevitably leads to trouble. Film discussion led by Boulder film critic Michael Casey. (USA, 1950, 85 min, 35mm)"
+    },
+    {
+        "title": "It Was Just an Accident",
+        "type": "event",
+        "date": "Monday February 9, 2026",
+        "time": "7:30 PM",
+        "venue": "Muenzinger Auditorium, CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11461/it-was-just-an-accident",
+        "images": [
+            "https://internationalfilmseries.com/resources.internationalfilmseries.com/photo_full/8349/ItWasJustnAnAccident_400.jpg"
+        ],
+        "description": "Vahid, an Azerbaijani auto mechanic, was once imprisoned by Iranian authorities. One day, a man named Eqbal enters his workshop. His prosthetic leg creaks, and Vahid thinks he recognizes one of his former torturers. (Iran, France, Luxembourg, 2025, 103 min)"
+    },
+    {
+        "title": "Undercover Brother",
+        "type": "event",
+        "date": "Thursday February 12, 2026",
+        "time": "7:30 PM",
+        "venue": "VAC Basement Auditorium (1B20), CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11462/undercover-brother",
+        "images": [
+            "https://internationalfilmseries.com/resources.internationalfilmseries.com/photo_full/8349/UndercoverBrother_400.jpg"
+        ],
+        "description": "Blasted from the past and ready to take care of business, 'Undercover Brother' is recruited to infiltrate a sinister underground movement headed by The Man. (USA, 2002, 86 min)"
+    },
+    {
+        "title": "Watermelon Man",
+        "type": "event",
+        "date": "Friday February 13, 2026",
+        "time": "7:30 PM",
+        "venue": "Muenzinger Auditorium, CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11463/watermelon-man",
+        "images": [
+            "https://internationalfilmseries.com/resources.internationalfilmseries.com/photo_full/8349/WatermelonMan_400.jpg"
+        ],
+        "description": "A white insurance salesman, Jeff Gerber (Godfrey Cambridge), gets the surprise of his life when he wakes up and discovers that his skin now resembles a black man's. (USA, 1970, 100 min)"
+    },
+    {
+        "title": "IFS Underground #20",
+        "type": "event",
+        "date": "Friday February 13, 2026",
+        "time": "10:30 PM",
+        "venue": "Muenzinger Auditorium, CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11499/underground-blaxploitation-horror",
+        "images": [
+            "https://internationalfilmseries.com/resources.internationalfilmseries.com/photo_full/_boulder_poster.png"
+        ],
+        "description": "A 'blacksploitation' flick with the backbone of a horror film. Filled with odd set-pieces, hilariously bad science jargon, and a lumbering menace at the center, this movie might leave you in pieces. Free show!"
+    },
+    {
+        "title": "Get Out",
+        "type": "event",
+        "date": "Saturday February 14, 2026",
+        "time": "7:30 PM",
+        "venue": "Muenzinger Auditorium, CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11464/get-out",
+        "images": [
+            "https://internationalfilmseries.com/resources.internationalfilmseries.com/photo_full/8349/GetOut_400.jpg"
+        ],
+        "description": "Chris visits his girlfriend Rose's family for a weekend getaway. At first, he reads the family's overly accommodating behavior as nervous attempts to deal with their daughter's interracial relationship, but a series of disturbing discoveries leads him to a truth he never could have imagined. (USA, 2017, 104 min)"
+    },
+    {
+        "title": "Malcolm X",
+        "type": "event",
+        "date": "Sunday February 15, 2026",
+        "time": "2:00 PM",
+        "venue": "Muenzinger Auditorium, CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11465/malcolm-x",
+        "images": [
+            "https://internationalfilmseries.com/resources.internationalfilmseries.com/photo_full/8349/MalcolmX_400.jpg"
+        ],
+        "description": "A tribute to the controversial black activist and leader of the struggle for black liberation. His assassination in 1965 left a legacy of self-determination and racial pride. (USA, 1992, 202 min)"
+    },
+    {
+        "title": "Dreamgirls",
+        "type": "event",
+        "date": "Monday February 16, 2026",
+        "time": "7:30 PM",
+        "venue": "Muenzinger Auditorium, CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11466/dreamgirls",
+        "images": [
+            "https://internationalfilmseries.com/resources.internationalfilmseries.com/photo_full/8349/Dreamgirls_400.jpg"
+        ],
+        "description": "Deena (Beyoncé Knowles), Effie (Jennifer Hudson) and Lorrell (Anika Noni Rose) form a music trio called the Dreamettes. When ambitious manager Curtis Taylor Jr. (Jamie Foxx) spots the act, he offers the chance of a lifetime. (USA, 2006, 130 min)"
+    },
+    {
+        "title": "Blindspotting",
+        "type": "event",
+        "date": "Tuesday February 17, 2026",
+        "time": "7:30 PM",
+        "venue": "Muenzinger Auditorium, CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11467/blindspotting",
+        "images": [
+            "https://internationalfilmseries.com/resources.internationalfilmseries.com/photo_full/8349/Blindspotting_400.jpg"
+        ],
+        "description": "Collin must make it through his final three days of probation for a chance at a new beginning in his Oakland neighborhood. His bond with his volatile best friend gets tested when Collin sees a police officer shoot a suspect in the back. (USA, 2018, 95 min)"
+    },
+    {
+        "title": "Dope",
+        "type": "event",
+        "date": "Wednesday February 18, 2026",
+        "time": "7:30 PM",
+        "venue": "Muenzinger Auditorium, CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11468/dope",
+        "images": [
+            "https://internationalfilmseries.com/resources.internationalfilmseries.com/photo_full/8349/Dope_400.jpg"
+        ],
+        "description": "High-school senior Malcolm (Shameik Moore) and his friends bond over '90s hip-hop culture. A chance encounter with a drug dealer lands Malcolm with Ecstasy hidden in his backpack. A wild adventure ensues as they try to evade armed thugs. (USA, 2015, 103 min)"
+    },
+    {
+        "title": "Fruitvale Station",
+        "type": "event",
+        "date": "Thursday February 19, 2026",
+        "time": "7:30 PM",
+        "venue": "Muenzinger Auditorium, CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11469/fruitvale-station",
+        "images": [
+            "https://internationalfilmseries.com/resources.internationalfilmseries.com/photo_full/8349/FruitvaleStation_400.jpg"
+        ],
+        "description": "22-year-old Oscar Grant (Michael B. Jordan) is trying hard to live a clean life. Flashbacks reveal the last day in Oscar's life, in which he became swept up in an altercation with police that ended in tragedy. Based on a true story. (USA, 2013, 82 min)"
+    },
+    {
+        "title": "Moodswing Whiskey",
+        "type": "event",
+        "date": "Friday February 20, 2026",
+        "time": "7:30 PM",
+        "venue": "Muenzinger Auditorium, CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11470/moodswing-whiskey",
+        "images": [
+            "https://internationalfilmseries.com/resources.internationalfilmseries.com/photo_full/8349/MoodSwingWhiskey_Poster_400.jpeg"
+        ],
+        "description": "Leo, a husband, father and businessman, confronts the brutal realities of capitalism as he fights to reclaim what he believes are his inalienable rights. Filmmakers Skinner Myers and Jamal Sledge in person. (77 min)"
+    },
+    {
+        "title": "Marlee Matlin: Not Alone Anymore",
+        "type": "event",
+        "date": "Monday February 23, 2026",
+        "time": "7:30 PM",
+        "venue": "Muenzinger Auditorium, CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11471/marlee-matlin-not-alone-anymore",
+        "images": [
+            "https://internationalfilmseries.com/resources.internationalfilmseries.com/photo_full/8349/MarleeMatlinNotAloneAnymore_400.jpg"
+        ],
+        "description": "In 1987, Marlee Matlin became the first Deaf actor to win an Academy Award. Reflecting on her life in American Sign Language, Marlee explores the complexities of what it means to be a trailblazer. (USA, 2025, 98 min)"
+    },
+    {
+        "title": "No Other Choice (IFS)",
+        "type": "event",
+        "date": "Wednesday February 25, 2026",
+        "time": "7:30 PM",
+        "venue": "Muenzinger Auditorium, CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11472/no-other-choice",
+        "images": [
+            "https://internationalfilmseries.com/resources.internationalfilmseries.com/photo_full/8349/NoOtherChoice_400.jpg"
+        ],
+        "description": "After being laid off and humiliated by a ruthless job market, a veteran paper mill manager descends into violence in a desperate bid to reclaim his dignity. (South Korea, France, 2025, 139 min)"
+    },
+    {
+        "title": "Batman (1966)",
+        "type": "event",
+        "date": "Thursday February 26, 2026",
+        "time": "7:30 PM",
+        "venue": "Muenzinger Auditorium, CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11473/batman",
+        "images": [
+            "https://internationalfilmseries.com/resources.internationalfilmseries.com/photo_full/8349/Batman_400.jpg"
+        ],
+        "description": "The Dynamic Duo faces four super-villains who plan to hold the world for ransom with the help of a secret invention that instantly dehydrates people. (USA, 1966, 105 min)"
+    },
+    {
+        "title": "Oscar-Nominated Animated Shorts",
+        "type": "event",
+        "date": "Friday February 27, 2026",
+        "time": "7:30 PM",
+        "venue": "Muenzinger Auditorium, CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11497/oscar-nominated-animated-shorts",
+        "images": [
+            "https://internationalfilmseries.com/resources.internationalfilmseries.com/photo_full/_boulder_poster.png"
+        ],
+        "description": "The 2026 Oscar-Nominated Animated Short Films program."
+    },
+    {
+        "title": "IFS Underground #21",
+        "type": "event",
+        "date": "Friday February 27, 2026",
+        "time": "10:30 PM",
+        "venue": "Muenzinger Auditorium, CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11500/underground-bad-bond",
+        "images": [
+            "https://internationalfilmseries.com/wp-content/uploads/2024/12/Underground-267x400.jpg"
+        ],
+        "description": "This film is truly 'out there'! It's ultimately nothing more than a Philippine version of Bond, even down to the characters, the gadgets, the bedding of women in the middle of scenes, and the retro rip-off of John Barry's famous Bond theme tune. From clichéd characters, scene rip-offs from other films, continuity errors, stunt gaffs. It's all there!"
+    },
+    {
+        "title": "Oscar-Nominated Live-Action Shorts",
+        "type": "event",
+        "date": "Saturday February 28, 2026",
+        "time": "7:30 PM",
+        "venue": "Muenzinger Auditorium, CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11498/oscar-nominated-live-action-shorts",
+        "images": [
+            "https://internationalfilmseries.com/resources.internationalfilmseries.com/photo_full/_boulder_poster.png"
+        ],
+        "description": "The 2026 Oscar-Nominated Live-Action Short Films program."
+    },
+    {
+        "title": "Oscar-Nominated Documentary Shorts",
+        "type": "event",
+        "date": "Sunday March 1, 2026",
+        "time": "2:00 PM",
+        "venue": "Muenzinger Auditorium, CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11496/oscar-nominated-documentary-shorts",
+        "images": [
+            "https://internationalfilmseries.com/resources.internationalfilmseries.com/photo_full/_boulder_poster.png"
+        ],
+        "description": "The 2026 Oscar-Nominated Documentary Short Films program."
+    },
+    {
+        "title": "Kiss Me Deadly",
+        "type": "event",
+        "date": "Wednesday March 11, 2026",
+        "time": "7:30 PM",
+        "venue": "Muenzinger Auditorium, CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11474/kiss-me-deadly",
+        "images": [
+            "https://internationalfilmseries.com/resources.internationalfilmseries.com/photo_full/8349/KissMeDeadly_400.jpg"
+        ],
+        "description": "One evening, Hammer gives a ride to Christina, an attractive hitchhiker who has escaped from a lunatic asylum. Thugs waylay them and force his car to crash. Hammer decides to pursue the case, both for vengeance and hoping 'something big' is behind it all. (USA, 1955, 106 min)"
+    },
+    {
+        "title": "House of Gucci",
+        "type": "event",
+        "date": "Thursday March 12, 2026",
+        "time": "7:30 PM",
+        "venue": "Muenzinger Auditorium, CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11475/house-of-gucci",
+        "images": [
+            "https://internationalfilmseries.com/resources.internationalfilmseries.com/photo_full/8349/HouseOfGucci_400.jpg"
+        ],
+        "description": "When Patrizia Reggiani, an outsider from humble beginnings, marries into the Gucci family, her unbridled ambition begins to unravel the family legacy and triggers a reckless spiral of betrayal, decadence, revenge, and ultimately… murder. (Canada, USA, 2021, 158 min)"
+    },
+    {
+        "title": "The Flamingo",
+        "type": "event",
+        "date": "Friday March 13, 2026",
+        "time": "7:30 PM",
+        "venue": "Muenzinger Auditorium, CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11476/the-flamingo",
+        "images": [
+            "https://internationalfilmseries.com/resources.internationalfilmseries.com/photo_full/8349/TheFlamingo_400.jpg"
+        ],
+        "description": "A portrait of Mary Phillips, a 60-something divorcee who seeks intimacy, pleasure and freedom after 13 years of celibacy. Filmmaker Adam Sekuler in person. (2024, 77 min)"
+    },
+    {
+        "title": "IFS Underground #22",
+        "type": "event",
+        "date": "Friday March 13, 2026",
+        "time": "10:30 PM",
+        "venue": "Muenzinger Auditorium, CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11501/underground-lesbian-vampire-sov",
+        "images": [
+            "https://internationalfilmseries.com/resources.internationalfilmseries.com/photo_full/_boulder_poster.png"
+        ],
+        "description": "A trashy lesbian vampire love story soaked in grime and sex. Utilizing large settings and spaces in NYC, this movie feels bigger than a typical SOV horror feature. Gore effects are surprisingly good with kill scenes sporting arterial squirts, believable makeup appliances, and some shockingly good transformations during feeds. Credited with launching the lesbian vampire boom of the 1990s."
+    },
+    {
+        "title": "Redline",
+        "type": "event",
+        "date": "Monday March 23, 2026",
+        "time": "7:30 PM",
+        "venue": "Muenzinger Auditorium, CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11477/redline",
+        "images": [
+            "https://internationalfilmseries.com/resources.internationalfilmseries.com/photo_full/8349/Redline_400.jpg"
+        ],
+        "description": "A daredevil driver is determined to compete in Redline, the most popular race in the galaxy. The race only occurs every five years, but he must overcome the mafia, the government and even love. (Japan, 2009, 102 min)"
+    },
+    {
+        "title": "Jason and the Argonauts",
+        "type": "event",
+        "date": "Tuesday March 24, 2026",
+        "time": "7:30 PM",
+        "venue": "Muenzinger Auditorium, CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11478/jason-and-the-argonauts",
+        "images": [
+            "https://internationalfilmseries.com/resources.internationalfilmseries.com/photo_full/8349/JasonArgonauts_400.jpg"
+        ],
+        "description": "Jason, a fearless sailor and explorer, must find the magical Golden Fleece. He embarks on an epic quest fraught with fantastic monsters and terrible perils. (USA, 1963, 104 min)"
+    },
+    {
+        "title": "The Tale of Princess Kaguya",
+        "type": "event",
+        "date": "Wednesday March 25, 2026",
+        "time": "7:30 PM",
+        "venue": "Muenzinger Auditorium, CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11479/the-tale-of-princess-kaguya",
+        "images": [
+            "https://internationalfilmseries.com/resources.internationalfilmseries.com/photo_full/8349/TalePrincessKaguya_400.jpg"
+        ],
+        "description": "Found inside a shining stalk of bamboo by an old bamboo cutter, a tiny girl grows rapidly into an exquisite young lady. The mysterious young princess enthralls all who encounter her. But, ultimately, she must confront her fate. (Japan, 2013, 137 min)"
+    },
+    {
+        "title": "Boys Go to Jupiter",
+        "type": "event",
+        "date": "Thursday March 26, 2026",
+        "time": "7:30 PM",
+        "venue": "Muenzinger Auditorium, CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11480/boys-go-to-jupiter",
+        "images": [
+            "https://internationalfilmseries.com/resources.internationalfilmseries.com/photo_full/8349/BoysGoToJupiter_400.jpg"
+        ],
+        "description": "A teenager in suburban Florida desperately hustles to make $5,000 in this dreamy and surreal animated coming-of-age story. (USA, 2025, 87 min)"
+    },
+    {
+        "title": "Fantasia",
+        "type": "event",
+        "date": "Friday March 27, 2026",
+        "time": "7:30 PM",
+        "venue": "Muenzinger Auditorium, CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11481/fantasia",
+        "images": [
+            "https://internationalfilmseries.com/resources.internationalfilmseries.com/photo_full/8349/Fantasia_400.jpg"
+        ],
+        "description": "Released in 1940, Fantasia represented Disney's boldest experiment to date. Bringing to life his vision of blending animated imagery with classical music. (USA, 1940, 124 min)"
+    },
+    {
+        "title": "IFS Underground #23",
+        "type": "event",
+        "date": "Friday March 27, 2026",
+        "time": "10:30 PM",
+        "venue": "Muenzinger Auditorium, CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11502/underground-claymation-horror",
+        "images": [
+            "https://internationalfilmseries.com/resources.internationalfilmseries.com/photo_full/_boulder_poster.png"
+        ],
+        "description": "This is claymation cosmic horror that is as impressive as it is downright creepy. Gooey lovecraftian body horror meets Shiraishi's file series. Filled with tons of claymation creature transformations (bugs, aliens, mushroom mutants), miniature bloody eyeballs and beating hearts, tentacles. A very underrated hidden gem. Just an hour of beautifully crafted yet grotesque claymation. It's weird as hell but definitely worth watching."
+    },
+    {
+        "title": "Frankenstein (2025)",
+        "type": "event",
+        "date": "Saturday March 28, 2026",
+        "time": "7:30 PM",
+        "venue": "Muenzinger Auditorium, CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11482/frankenstein",
+        "images": [
+            "https://internationalfilmseries.com/resources.internationalfilmseries.com/photo_full/8349/Frankenstein_400.avif"
+        ],
+        "description": "Dr. Victor Frankenstein, a brilliant but egotistical scientist, brings a creature to life in a monstrous experiment that ultimately leads to the undoing of both the creator and his tragic creation. (USA, Canada, 2025, 150 min)"
+    },
+    {
+        "title": "The General",
+        "type": "event",
+        "date": "Sunday March 29, 2026",
+        "time": "2:00 PM",
+        "venue": "Muenzinger Auditorium, CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11483/the-general",
+        "images": [
+            "https://internationalfilmseries.com/resources.internationalfilmseries.com/photo_full/8349/TheGeneral_400.png"
+        ],
+        "description": "During America's Civil War, Union spies steal engineer Johnny Gray's beloved locomotive, 'The General'. Live musical accompaniment by Mont Alto Motion Picture Orchestra. (USA, 1926, 79 min)"
+    },
+    {
+        "title": "By Design",
+        "type": "event",
+        "date": "Tuesday March 31, 2026",
+        "time": "7:30 PM",
+        "venue": "Muenzinger Auditorium, CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11484/by-design",
+        "images": [
+            "https://internationalfilmseries.com/resources.internationalfilmseries.com/photo_full/8349/ByDesign_400.jpg"
+        ],
+        "description": "A woman (Juliette Lewis) swaps bodies with a chair, and everyone likes her better as a chair in a surreal, deadpan comedy from director Amanda Kramer. (USA, 2026, 91 min)"
+    },
+    {
+        "title": "Spaceballs",
+        "type": "event",
+        "date": "Wednesday April 1, 2026",
+        "time": "7:30 PM",
+        "venue": "Muenzinger Auditorium, CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11485/spaceballs",
+        "images": [
+            "https://internationalfilmseries.com/resources.internationalfilmseries.com/photo_full/8349/Spaceballs_400.jpg"
+        ],
+        "description": "When the nefarious Dark Helmet hatches a plan to snatch Princess Vespa and steal her planet's air, space-bum-for-hire Lone Starr and his clueless sidekick fly to the rescue. (USA, 1987, 96 min)"
+    },
+    {
+        "title": "All the President's Men",
+        "type": "event",
+        "date": "Friday April 3, 2026",
+        "time": "7:30 PM",
+        "venue": "Muenzinger Auditorium, CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11486/all-presidents-men-2026",
+        "images": [
+            "https://internationalfilmseries.com/resources.internationalfilmseries.com/photo_full/8332/all-the-presidents-men.jpg-400.jpg"
+        ],
+        "description": "Bob Woodward (Robert Redford) and Carl Bernstein (Dustin Hoffman) research the botched 1972 burglary of the Democratic Party Headquarters at the Watergate complex. With Deep Throat's help, they follow the money all the way to the top. (USA, 1976, 138 min)"
+    },
+    {
+        "title": "The Toxic Avenger (2025)",
+        "type": "event",
+        "date": "Saturday April 4, 2026",
+        "time": "7:30 PM",
+        "venue": "Muenzinger Auditorium, CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11487/the-toxic-avenger-unrated",
+        "images": [
+            "https://internationalfilmseries.com/resources.internationalfilmseries.com/photo_full/_boulder_poster.png"
+        ],
+        "description": "When a downtrodden janitor is exposed to a catastrophic toxic accident, he's transformed into The Toxic Avenger. Lloyd Kaufman in person; Q&A led by Mathew Klickstein. (USA, 2025, 102 min)"
+    },
+    {
+        "title": "Eastern Anthems",
+        "type": "event",
+        "date": "Saturday April 18, 2026",
+        "time": "7:30 PM",
+        "venue": "Muenzinger Auditorium, CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11489/eastern-anthems",
+        "images": [
+            "https://internationalfilmseries.com/resources.internationalfilmseries.com/photo_full/8349/EasternAnthems_400.jpg"
+        ],
+        "description": "An unfinished film is passed from one friend to another, invoking both the reflection of a post-pandemic present and our shared future. Filmmakers Matthew Woklow & Jean-Jacques Martinod in person. (Canada, USA, Ecuador, 2024, 76 min)"
+    },
+    {
+        "title": "Matti da slegare",
+        "type": "event",
+        "date": "Sunday April 19, 2026",
+        "time": "2:00 PM",
+        "venue": "Muenzinger Auditorium, CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11490/matti-da-slegare",
+        "images": [
+            "https://internationalfilmseries.com/resources.internationalfilmseries.com/photo_full/8349/FitToBeUntied_400.jpg"
+        ],
+        "description": "This documentary makes the point that many inmates now in mental hospitals could be released without harm to society. Discussion panel to follow. (Italy, 1975, 135 min)"
+    },
+    {
+        "title": "Reefer Madness",
+        "type": "event",
+        "date": "Monday April 20, 2026",
+        "time": "7:30 PM",
+        "venue": "Muenzinger Auditorium, CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11491/reefer-madness",
+        "images": [
+            "https://internationalfilmseries.com/resources.internationalfilmseries.com/photo_full/8349/ReeferMadness_400.jpg"
+        ],
+        "description": "High-school principal Dr. Alfred Carroll relates to an audience of parents that marijuana can have devastating effects on teens. A drug supplier entices several restless teens into frequenting a reefer house. (USA, 1938, 66 min)"
+    },
+    {
+        "title": "April",
+        "type": "event",
+        "date": "Tuesday April 21, 2026",
+        "time": "7:30 PM",
+        "venue": "Muenzinger Auditorium, CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11492/april",
+        "images": [
+            "https://internationalfilmseries.com/resources.internationalfilmseries.com/photo_full/8349/April_400.jpg"
+        ],
+        "description": "Nina works as an OB-GYN in a provincial town hospital. When a newborn dies under her supervision, she is accused of wrongdoings. Despite the risks, Nina remains devoted to her duty as a doctor."
+    },
+    {
+        "title": "The Great Dictator",
+        "type": "event",
+        "date": "Wednesday April 22, 2026",
+        "time": "7:30 PM",
+        "venue": "Muenzinger Auditorium, CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11493/the-great-dictator",
+        "images": [
+            "https://internationalfilmseries.com/resources.internationalfilmseries.com/photo_full/8349/TheGreatDictator_400.jpg"
+        ],
+        "description": "A Jewish barber (Charles Chaplin) spends years in an army hospital recovering from wounds, unaware of the rise of fascist dictator Adenoid Hynkel (also Chaplin). The barber, who bears a remarkable resemblance to Hynkel, joins a rebellion. (USA, 1940, 125 min)"
+    },
+    {
+        "title": "Labyrinth",
+        "type": "event",
+        "date": "Thursday April 23, 2026",
+        "time": "7:30 PM",
+        "venue": "Muenzinger Auditorium, CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11494/labyrinth",
+        "images": [
+            "https://internationalfilmseries.com/resources.internationalfilmseries.com/photo_full/8349/Labyrinth_400.jpg"
+        ],
+        "description": "Sarah (Jennifer Connelly) summons the Goblins to take her baby stepbrother away. When little Toby disappears, Sarah must follow him into a fantastical world to rescue him from the Goblin King (David Bowie). (UK, USA, 1986, 101 min)"
+    },
+    {
+        "title": "Festival Cultures Shorts Program",
+        "type": "event",
+        "date": "Friday April 24, 2026",
+        "time": "7:30 PM",
+        "venue": "Muenzinger Auditorium, CU Boulder",
+        "link": "https://internationalfilmseries.com/spring-2026/11495/festival-cultures-shorts-program",
+        "images": [
+            "https://internationalfilmseries.com/resources.internationalfilmseries.com/photo_full/_boulder_poster.png"
+        ],
+        "description": "A short film program curated by the film festival cultures class at CU. Free show!",
+        "free": true
     }
 ]
