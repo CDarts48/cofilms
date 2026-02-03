@@ -21,7 +21,7 @@ export default function Scores() {
                 <div style={styles.content}>
                     <section style={styles.section}>
                         <h2 style={styles.sectionTitle}>
-                            Coming Soon
+                            Out Now
                         </h2>
                         <p style={styles.text}>
                             We're compiling an extensive collection of film scores composed

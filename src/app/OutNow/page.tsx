@@ -5,7 +5,7 @@ import BasicHeader from '../../components/BasicHeader';
 import ContactSection from '../../components/ContactSection';
 import axios from 'axios';
 
-interface ComingSoonItem {
+interface OutNowItem {
     title: string;
     instagram?: string;
     youtube?: string;
@@ -23,13 +23,13 @@ interface ComingSoonItem {
     description?: string;
 }
 
-export default function ComingSoonPage(): React.ReactElement {
-    const [items, setItems] = useState<ComingSoonItem[]>([]);
+export default function OutNowPage(): React.ReactElement {
+    const [items, setItems] = useState<OutNowItem[]>([]);
 
     useEffect(() => {
         const fetchData = async (): Promise<void> => {
             try {
-                const res = await axios.get<ComingSoonItem[]>('/comingSoon.json');
+                const res = await axios.get<OutNowItem[]>('/outNow.json');
                 const data = res.data || [];
 
                 const today = new Date();
@@ -66,7 +66,7 @@ export default function ComingSoonPage(): React.ReactElement {
 
                 setItems(upcoming.map((x) => x.item));
             } catch (err) {
-                console.error('Failed to load coming soon data', err);
+                console.error('Failed to load out now data', err);
             }
         };
 
@@ -76,7 +76,7 @@ export default function ComingSoonPage(): React.ReactElement {
     return (
         <div style={styles.page}>
             <style>{`
-                /* ComingSoon responsive helpers */
+                /* OutNow responsive helpers */
                 .cs-card { }
                 .cs-cardInner { }
                 .cs-media { }
@@ -135,12 +135,12 @@ export default function ComingSoonPage(): React.ReactElement {
             <BasicHeader />
 
             <main style={styles.container}>
-                <h1 style={styles.title}>Coming Soon</h1>
+                <h1 style={styles.title}>Out Now</h1>
                 <p style={styles.subtitle}>Films we have on the radar. If you would like your film added please message <a href="mailto:info@coloradofilms.com">info@coloradofilms.com</a></p>
 
                 <div style={styles.list}>
                     {items.length === 0 && (
-                        <div style={styles.empty}>No upcoming titles configured yet. Add entries to <code>/public/comingSoon.json</code>.</div>
+                        <div style={styles.empty}>No upcoming titles configured yet. Add entries to <code>/public/outNow.json</code>.</div>
                     )}
 
                     {items.map((item, idx) => (
@@ -154,7 +154,7 @@ export default function ComingSoonPage(): React.ReactElement {
     );
 }
 
-function MovieCard({ item }: { item: ComingSoonItem }): React.ReactElement {
+function MovieCard({ item }: { item: OutNowItem }): React.ReactElement {
     const images = item.images && item.images.length > 0 ? item.images : [];
     const [index, setIndex] = useState<number>(0);
 
