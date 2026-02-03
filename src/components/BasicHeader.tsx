@@ -36,8 +36,8 @@ export default function BasicHeader(): React.ReactElement {
                 <Link href="/" style={linkStyle}>
                     Home
                 </Link>
-                <Link href="ComingSoon" style={linkStyle}>
-                Coming Soon!</Link>
+                <Link href="/OutNow" style={linkStyle}>
+                Out Now!</Link>
                 <Link href="/FilmFestivals" style={linkStyle}>
                     Festivals
                 </Link>
