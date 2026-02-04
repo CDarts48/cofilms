@@ -185,26 +185,28 @@ function MovieCard({ item }: { item: OutNowItem }): React.ReactElement {
                 </div>
 
                 <div style={styles.info} className="cs-info">
-                    <h2 style={styles.movieTitle} className="cs-movieTitle">{item.title}</h2>
-                    {item.date ? (
-                        <div style={styles.meta} className="cs-meta">{item.date}{item.time ? ` · ${item.time}` : ''}</div>
-                    ) : item.year ? (
-                        <div style={styles.meta} className="cs-meta">{item.year}</div>
-                    ) : null}
-                    {item.venue && (
-                        <h3 style={styles.venue} className="cs-venue">{item.venue}</h3>
-                    )}
-                    {item.description && <p style={styles.description} className="cs-description">{item.description}</p>}
-
-                    <div style={styles.controls}>
-
-                        <div style={{ marginLeft: 'auto' }}>
-                            <a className="cs-visit" href={item.link || '#'} target="_blank" rel="noopener noreferrer" style={styles.visitButton}>Visit film page</a>
-                        </div>
+                    <div style={styles.infoTop}>
+                        <h2 style={styles.movieTitle} className="cs-movieTitle">{item.title}</h2>
+                        {item.date ? (
+                            <div style={styles.meta} className="cs-meta">{item.date}{item.time ? ` · ${item.time}` : ''}</div>
+                        ) : item.year ? (
+                            <div style={styles.meta} className="cs-meta">{item.year}</div>
+                        ) : null}
+                        {item.venue && (
+                            <h3 style={styles.venue} className="cs-venue">{item.venue}</h3>
+                        )}
+                        {item.description && <p style={styles.description} className="cs-description">{item.description}</p>}
                     </div>
 
-                    {/* Social links (SVGs) */}
-                    <div style={styles.socials} className="cs-socials">
+                    <div style={styles.infoBottom}>
+                        <div style={styles.controls}>
+                            <div style={{ marginLeft: 'auto' }}>
+                                <a className="cs-visit" href={item.link || '#'} target="_blank" rel="noopener noreferrer" style={styles.visitButton}>Visit film page</a>
+                            </div>
+                        </div>
+
+                        {/* Social links (SVGs) */}
+                        <div style={styles.socials} className="cs-socials">
                         {item.youtube && (
                             <a href={item.youtube} target="_blank" rel="noopener noreferrer" style={styles.socialButton} aria-label="YouTube">
                                 <svg width="32" height="32" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -249,6 +251,7 @@ function MovieCard({ item }: { item: OutNowItem }): React.ReactElement {
                             </a>
                         )}
                     </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -270,33 +273,26 @@ const styles: { [key: string]: CSSProperties } = {
         fontSize: '2.25rem',
         fontWeight: 800,
         color: '#8B5E3C',
-        marginBottom: '0.5rem',
+        // marginBottom: '0.5rem',
     },
     subtitle: {
         color: '#5C4033',
-        marginBottom: '2rem',
+        // marginBottom: '2rem',
     },
     list: {
         display: 'grid',
-        gap: '2rem',
-    },
-    empty: {
-        padding: '2rem',
-        background: '#fff',
-        borderRadius: 8,
-        color: '#5C4033',
-        border: '1px solid rgba(92,64,51,0.06)',
+        // gap: '2rem',
     },
     card: {
         background: 'linear-gradient(180deg, #ffffff, #f7f1e6)',
         border: '1px solid rgba(92,64,51,0.06)',
         borderRadius: 12,
-        padding: 12,
+        padding: 8,
         color: '#2C1810',
     },
     cardInner: {
         display: 'flex',
-        gap: 18,
+        gap: 12,
         alignItems: 'stretch',
     },
     media: {
@@ -333,35 +329,52 @@ const styles: { [key: string]: CSSProperties } = {
         flex: 1,
         display: 'flex',
         flexDirection: 'column',
-        gap: 12,
         justifyContent: 'space-between',
+    },
+    infoTop: {
+        display: 'flex',
+        flexDirection: 'column',
+        gap: 0,
+    },
+    infoBottom: {
+        display: 'flex',
+        flexDirection: 'column',
+        gap: 0,
     },
     movieTitle: {
         margin: 0,
+        padding: 0,
         color: '#5C4033',
         fontSize: '1.5rem',
         fontWeight: 800,
+        lineHeight: 1.1,
     },
     description: {
         margin: 0,
+        padding: 0,
         color: '#4b3a2f',
+        lineHeight: 1.3,
     },
     meta: {
         margin: 0,
+        padding: 0,
         color: '#6b6b6b',
         fontSize: '0.95rem',
+        lineHeight: 1.2,
     },
     venue: {
         margin: 0,
+        padding: 0,
         color: '#4b3a2f',
         fontSize: '1rem',
         fontWeight: 700,
+        lineHeight: 1.2,
     },
     controls: {
         display: 'flex',
         alignItems: 'center',
         gap: 12,
-        marginTop: 8,
+        marginTop: 0,
     },
     sliderNav: {
         display: 'flex',

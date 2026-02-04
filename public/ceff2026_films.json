@@ -1,0 +1,1019 @@
+{
+    "festival": "Colorado Environmental Film Festival 2026",
+    "dates": "February 20-22, 2026",
+    "location": "Golden, Colorado",
+    "venue": "Green Center at Colorado School of Mines",
+    "website": "https://ceff2026.eventive.org",
+    "films": [
+        {
+            "title": "Bee Wild",
+            "country": "Not Specified",
+            "language": "English",
+            "description": "BEE WILD (55 min) is an inspirational, upbeat, and poetic documentary that explores the foundational role that bees play in sustaining humanity, the reasons for their sharp population decline and how we can regenerate bees worldwide so they are once again part of a thriving ecosystem.",
+            "director": "Josh Tickell, Rebecca Tickell",
+            "producer": "Josh Tickell, Rebecca Tickell, Eva Kruse, Regina K Scully, Susan Rockefeller, Melony Lewis, Adam Lewis",
+            "cast": "Ellie Goulding, Angelina Jolie",
+            "premiere": "US",
+            "poster": "https://static-a.eventive.org/1765920435119temp-1765920435102-poster.jpg",
+            "showings": [
+                {
+                    "date": "Saturday, February 21st",
+                    "time": "3:30 PM",
+                    "venue": "Bunker Auditorium @ Green Center (CSM)"
+                }
+            ],
+            "link": "https://ceff2026.eventive.org/films/6930ad923876fd39d467d185",
+            "onlineEncore": false
+        },
+        {
+            "title": "Binvasion",
+            "country": "United Kingdom",
+            "language": "English",
+            "description": "A mockumentary about recycling bins by a group of young people in Dumfries. A news crew investigate a story of a missing cat and uncover a new life-form!",
+            "director": "DGTV",
+            "producer": "Belle Doyle, Scott McKay",
+            "cast": "Anna Romanyuk, Annie Pickstock, Fraser Duncan",
+            "premiere": "World",
+            "poster": "https://static-a.eventive.org/1765920974415temp-1765920974228-poster.jpg",
+            "showings": [
+                {
+                    "date": "Friday, February 20th",
+                    "time": "10:00 AM",
+                    "venue": "Bunker Auditorium @ Green Center (CSM)"
+                }
+            ],
+            "link": "https://ceff2026.eventive.org/films/6930ad923876fd39d467d187",
+            "onlineEncore": true,
+            "streamingDates": "February 23 - March 1, 2026"
+        },
+        {
+            "title": "Build Better Futures",
+            "country": "United States",
+            "language": "English",
+            "description": "A group of at-risk students compete against college engineers to design a sustainable house in an inspiring story that calls for the transformation of the building industry.",
+            "director": "Nathan J Havey",
+            "producer": "Bill Hayward",
+            "premiere": "Colorado",
+            "poster": "https://static-a.eventive.org/1766091247206temp-1766091247098-poster.jpg",
+            "showings": [
+                {
+                    "date": "Friday, February 20th",
+                    "time": "10:00 AM",
+                    "venue": "Bunker Auditorium @ Green Center (CSM)"
+                },
+                {
+                    "date": "Saturday, February 21st",
+                    "time": "1:00 PM",
+                    "venue": "Bunker Auditorium @ Green Center (CSM)"
+                }
+            ],
+            "link": "https://ceff2026.eventive.org/films/6930ad923876fd39d467d189",
+            "onlineEncore": true,
+            "streamingDates": "February 23 - March 1, 2026",
+            "collection": "Green Building Collection"
+        },
+        {
+            "title": "Building on the Edge",
+            "country": "United States",
+            "language": "English",
+            "description": "A group of architecture students embark on an epic adventure when they set out to design and build a research station on one of the least hospitable places on the planet, Antarctica.",
+            "director": "Mike Scalisi, Bruce Borowsky",
+            "producer": "Mike Scalisi, Bruce Borowsky",
+            "cast": "Rick Sommerfeld, Brandon 'Shaggy' Neahusan",
+            "premiere": "Colorado",
+            "poster": "https://static-a.eventive.org/1766091735071temp-1766091735048-poster.jpg",
+            "showings": [
+                {
+                    "date": "Saturday, February 21st",
+                    "time": "1:00 PM",
+                    "venue": "Bunker Auditorium @ Green Center (CSM)"
+                }
+            ],
+            "link": "https://ceff2026.eventive.org/films/6930ad923876fd39d467d18b",
+            "onlineEncore": true,
+            "streamingDates": "February 23 - March 1, 2026"
+        },
+        {
+            "title": "Catapults to Cameras",
+            "country": "India",
+            "language": "English",
+            "description": "In Catapults to Cameras, Kolkata-born wildlife filmmaker Ashwika Kapur sets out on a deeply personal quest to uncover the roots of an illegal wildlife hunting festival in the forests of her home state West Bengal. The film follows the journey of five children who eventually become conservation ambassadors.",
+            "director": "Ashwika Kapur",
+            "producer": "Roundglass Sustain",
+            "poster": "https://static-a.eventive.org/1767305203280temp-1767305203249-poster.jpg",
+            "showings": [
+                {
+                    "date": "Saturday, February 21st",
+                    "time": "7:30 PM",
+                    "venue": "Lookout Mountain Theater @ Green Center (CSM)"
+                }
+            ],
+            "link": "https://ceff2026.eventive.org/films/6930ad923876fd39d467d18d",
+            "onlineEncore": true,
+            "streamingDates": "February 23 - March 1, 2026",
+            "collection": "Wildlife #1 Collection"
+        },
+        {
+            "title": "Chirp Talker",
+            "country": "Taiwan",
+            "language": "English",
+            "description": "On her city balcony, Audrey delights in the flutter of tiny birds - fluffing their feathers, chattering, and sneaking tangerine bites. Their chirps sound like cheerful hellos and playful spats, inspiring her to invent a bird-language translator that unlocks their secret conversations.",
+            "director": "Audrey He-Qing Cheng",
+            "producer": "Esme Cheng Ying Liu, Chien-Ting Chen",
+            "cast": "Audrey He-Qing Cheng, Matt Su",
+            "premiere": "Colorado",
+            "poster": "https://static-a.eventive.org/1767308395008temp-1767308394989-poster.jpg",
+            "showings": [
+                {
+                    "date": "Friday, February 20th",
+                    "time": "10:00 AM",
+                    "venue": "Bunker Auditorium @ Green Center (CSM)"
+                },
+                {
+                    "date": "Friday, February 20th",
+                    "time": "7:00 PM",
+                    "venue": "Bunker Auditorium @ Green Center (CSM)"
+                }
+            ],
+            "link": "https://ceff2026.eventive.org/films/6930ad923876fd39d467d18f",
+            "onlineEncore": true,
+            "streamingDates": "February 23 - March 1, 2026",
+            "collection": "Reel Women, Real Impact Collection"
+        },
+        {
+            "title": "Chopping Down More Than Trees: The Hidden Impacts of Deforestation",
+            "country": "United States",
+            "language": "English",
+            "description": "Our video covers the basic aspects of deforestation, and inspires viewers to make a change in our world. Including how and why it happens, why trees and forests are important for our economy, effects of deforestation on animals, how deforestation causes natural disasters, the solutions to deforestation, and how solutions have worked in some parts of the world.",
+            "director": "Amelie Anderson, Helen Bierstadt, Eleanor Lovejoy, Liam Wilcox, Josephine Woodruff",
+            "premiere": "World",
+            "poster": "https://static-a.eventive.org/1766257405586temp-1766257405536-poster.jpg",
+            "showings": [
+                {
+                    "date": "Friday, February 20th",
+                    "time": "10:00 AM",
+                    "venue": "Bunker Auditorium @ Green Center (CSM)"
+                }
+            ],
+            "link": "https://ceff2026.eventive.org/films/6930ad923876fd39d467d191",
+            "onlineEncore": true,
+            "streamingDates": "February 23 - March 1, 2026",
+            "collection": "Shorts Collection (US only)"
+        },
+        {
+            "title": "From Sea to Shining Sea: Katharine Lee Bates and the Story of America the Beautiful",
+            "country": "United States",
+            "language": "English",
+            "description": "FROM SEA TO SHINING SEA: KATHARINE LEE BATES AND THE STORY OF AMERICA THE BEAUTIFUL examines the remarkable life of Katharine Lee Bates, poet, professor, and social reformer; an unsung hero best known for authoring America the Beautiful and who was deeply committed to the beauty and principles of our country.",
+            "director": "John E de Graaf",
+            "producer": "Laurence Cotton, Karen Olcott",
+            "cast": "Kate Udall",
+            "poster": "https://static-a.eventive.org/1767718967437temp-1767718967084-poster.jpg",
+            "showings": [
+                {
+                    "date": "Sunday, February 22nd",
+                    "time": "1:00 PM",
+                    "venue": "Lookout Mountain Theater @ Green Center (CSM)"
+                }
+            ],
+            "link": "https://ceff2026.eventive.org/films/6930ad923876fd39d467d1a1",
+            "onlineEncore": true,
+            "streamingDates": "February 23 - March 1, 2026"
+        },
+        {
+            "title": "Gringo Cofán",
+            "country": "Ecuador",
+            "language": "English, Spanish, Other",
+            "description": "GRINGO COFÁN is an intimate portrait of Randy Borman's extraordinary life. Born in 1955 in the Ecuadorian Amazon and raised among the Cofán people, Randy was the son of American missionaries who grew up fully immersed in Cofán culture. The film offers a window into their life before the arrival of oil companies, and the devastating consequences of exploitation, pollution, loss of ancestral land.",
+            "director": "Veronica Moscoso",
+            "producer": "Veronica Moscoso, Deena Lipkies",
+            "poster": "https://static-a.eventive.org/1765929746032temp-1765929746011-poster.jpg",
+            "showings": [
+                {
+                    "date": "Saturday, February 21st",
+                    "time": "7:30 PM",
+                    "venue": "CEFF Theater @ Green Center (CSM)"
+                }
+            ],
+            "link": "https://ceff2026.eventive.org/films/6930ad923876fd39d467d1a5",
+            "onlineEncore": true,
+            "streamingDates": "February 23 - March 1, 2026",
+            "socialMedia": {
+                "facebook": "https://facebook.com/gringocofan",
+                "instagram": "https://instagram.com/gringocofan"
+            }
+        },
+        {
+            "title": "Guardians of the Earth",
+            "country": "United States",
+            "language": "English",
+            "description": "In the wild heart of Kenya, ancient wisdom meets modern conservation in this powerful short documentary about indigenous protectors committed to saving Africa's remaining wildlife and wilderness. We meet the men who have dedicated themselves as rangers, Maasai lion guardians, and Samburu women whose ancestral beadwork carries the stories of their identity.",
+            "director": "Cyril Guyot, Sylvie Chantecaille",
+            "producer": "Sylvie Chantecaille",
+            "premiere": "Colorado",
+            "poster": "https://static-a.eventive.org/1765930194185temp-1765930194159-poster.jpg",
+            "showings": [
+                {
+                    "date": "Friday, February 20th",
+                    "time": "10:00 AM",
+                    "venue": "Bunker Auditorium @ Green Center (CSM)"
+                }
+            ],
+            "link": "https://ceff2026.eventive.org/films/6930ad923876fd39d467d1a7",
+            "onlineEncore": true,
+            "streamingDates": "February 23 - March 1, 2026",
+            "collection": "Shorts Collection (US only)"
+        },
+        {
+            "title": "Guardians of Yellowstone, The Yellowstone Cougar Project",
+            "country": "United States",
+            "language": "English",
+            "description": "For over 35 years, a dedicated team of biologists has quietly shaped one of the most enduring and impactful wildlife research programs in America. Guardians of Yellowstone takes viewers deep into the wild heart of Yellowstone National Park to reveal the hidden lives of cougars as stealthy apex predators.",
+            "director": "Max Freund, Andy Adkins, William Freund",
+            "producer": "Max Freund, Andy Adkins, William Freund",
+            "cast": "Dan Stahler, Kerry Murphy, Toni Ruth, Justin Duffy, F222 Nubs, Baby Nubs",
+            "premiere": "Colorado",
+            "poster": "https://static-a.eventive.org/1765987999645temp-1765987999620-poster.jpg",
+            "showings": [
+                {
+                    "date": "Sunday, February 22nd",
+                    "time": "10:00 AM",
+                    "venue": "Lookout Mountain Theater @ Green Center (CSM)"
+                }
+            ],
+            "link": "https://ceff2026.eventive.org/films/6930ad923876fd39d467d1a9",
+            "onlineEncore": true,
+            "streamingDates": "February 23 - March 1, 2026"
+        },
+        {
+            "title": "The Girl and Her Piano",
+            "country": "Singapore",
+            "language": "English",
+            "description": "High in the remote highlands of Bhutan, 12-year-old pianist and narrator Hillary O'Sullivan traveled with a piano and a message. 'The Girl and Her Piano' is a poetic and urgent short documentary that follows her remarkable journey to 4,000 metres above sea level, where music becomes both witness and voice for a planet in crisis.",
+            "director": "Elaine Lim",
+            "producer": "Elaine Lim",
+            "cast": "Hillary O'Sullivan",
+            "premiere": "US",
+            "poster": "https://static-a.eventive.org/1766873054258temp-1766873054237-poster.jpg",
+            "showings": [
+                {
+                    "date": "Friday, February 20th",
+                    "time": "10:00 AM",
+                    "venue": "Bunker Auditorium @ Green Center (CSM)"
+                }
+            ],
+            "link": "https://ceff2026.eventive.org/films/6930ad933876fd39d467d1cb",
+            "onlineEncore": true,
+            "streamingDates": "February 23 - March 1, 2026",
+            "collection": "Shorts Collection (US only)",
+            "socialMedia": {
+                "facebook": "https://www.facebook.com/thegirlandherpiano",
+                "instagram": "https://www.instagram.com/thegirlandherpiano/"
+            }
+        },
+        {
+            "title": "The HAWK WATCH Documentary",
+            "country": "United States",
+            "language": "English",
+            "description": "Endangered raptors. A dedicated crew of citizen scientists. A fragile desert environment. The HAWK WATCH Documentary follows local conservationists as they attempt to establish a legacy: protecting the Swainson's Hawk migration in Southern California.",
+            "director": "Alicia Wszelaki, Matthew Nothelfer",
+            "premiere": "Colorado",
+            "poster": "https://static-a.eventive.org/1766873275375temp-1766873275351-poster.jpg",
+            "showings": [
+                {
+                    "date": "Sunday, February 22nd",
+                    "time": "10:00 AM",
+                    "venue": "Bunker Auditorium @ Green Center (CSM)"
+                }
+            ],
+            "link": "https://ceff2026.eventive.org/films/6930ad933876fd39d467d1cd",
+            "onlineEncore": true,
+            "streamingDates": "February 23 - March 1, 2026",
+            "socialMedia": {
+                "facebook": "https://www.facebook.com/BorregoSpringsHawkwatch",
+                "instagram": "https://www.instagram.com/borregospringshawkwatch/"
+            }
+        },
+        {
+            "title": "The Human Side of Plastic: Abby Barrows",
+            "country": "United States",
+            "language": "English",
+            "description": "On Deer Isle, Maine, home to one of the world's most productive lobster ports, warming waters and invisible microplastic pollution threaten a centuries-old way of life. As veteran lobsterman, Joel Billings, and his daughter, Hannah, reckon with the possible end of their family's tradition, neighbor and microplastics researcher, Abby Barrows, offers a vision for a more sustainable future.",
+            "director": "Andrew Lynch, Ben Ayers, Rush Sturges",
+            "producer": "Charlie Rollins",
+            "cast": "Abby Barrows, Joel Billings",
+            "premiere": "Colorado",
+            "poster": "https://static-a.eventive.org/1766873392370temp-1766873392350-poster.jpg",
+            "showings": [
+                {
+                    "date": "Sunday, February 22nd",
+                    "time": "10:00 AM",
+                    "venue": "Bunker Auditorium @ Green Center (CSM)"
+                }
+            ],
+            "link": "https://ceff2026.eventive.org/films/6930ad933876fd39d467d1cf",
+            "onlineEncore": true,
+            "streamingDates": "February 23 - March 1, 2026",
+            "collection": "Wildlife #2 Collection"
+        },
+        {
+            "title": "The Invisible Mammal",
+            "country": "United States",
+            "language": "English",
+            "description": "Against the backdrop of the sixth mass extinction, an all-woman team of biologists set out to save bats from a deadly fungal disease. But when the COVID-19 pandemic interrupts their work, they are sent down a path of discovery that illuminates the connections between bat conservation and the spread of infectious disease.",
+            "director": "Kristin Tieche",
+            "producer": "Kristin Tieche, Holly Mosher, Windy Borman, Matthew Podolsky",
+            "poster": "https://static-a.eventive.org/1766873579990temp-1766873579969-poster.jpg",
+            "showings": [
+                {
+                    "date": "Sunday, February 22nd",
+                    "time": "1:00 PM",
+                    "venue": "CEFF Theater @ Green Center (CSM)"
+                }
+            ],
+            "link": "https://ceff2026.eventive.org/films/6930ad933876fd39d467d1d1",
+            "onlineEncore": true,
+            "streamingDates": "February 23 - March 1, 2026",
+            "socialMedia": {
+                "facebook": "https://www.facebook.com/theinvisiblemammal/",
+                "instagram": "https://www.instagram.com/theinvisiblemammal/"
+            }
+        },
+        {
+            "title": "The Light Won't Dim",
+            "country": "United States",
+            "language": "English, Spanish",
+            "description": "The Light Won't Dim is a 30-minute documentary exploring the promise and urgency of solar power in a time of climate crisis. From Puerto Rico's Centro Buen Pastor, where solar panels became a lifeline after Hurricane Maria, to New York City schools and small-town rooftops, the film shows how communities are taking energy into their own hands.",
+            "director": "Jackson Hyland-Lipski",
+            "producer": "Jackson Hyland-Lipski, Jamie Henn, Duncan Meisel, Deirdre Shelly",
+            "cast": "Bernie Sanders, Bill McKibben, Widalys Torres, Jigar Shah, Sandy Nurse",
+            "poster": "https://static-a.eventive.org/1766873790485temp-1766873790460-poster.jpg",
+            "showings": [
+                {
+                    "date": "Saturday, February 21st",
+                    "time": "10:00 AM",
+                    "venue": "Bunker Auditorium @ Green Center (CSM)"
+                }
+            ],
+            "link": "https://ceff2026.eventive.org/films/6930ad933876fd39d467d1d3",
+            "onlineEncore": true,
+            "streamingDates": "February 23 - March 1, 2026",
+            "collection": "Energy Collection"
+        },
+        {
+            "title": "The Little Things that Run the World",
+            "country": "United States",
+            "language": "English",
+            "description": "THE LITTLE THINGS THAT RUN THE WORLD introduces viewers to a diverse group of scientists, nature lovers, gardeners, farmers, and general bug enthusiasts in exploring the importance of flying insects amid rapid declines in their numbers. This most numerous group of animals on the planet by far - three quarters of all species - have also been called the 'glue of life' on Earth.",
+            "director": "Doug Hawes-Davis",
+            "producer": "Doug Hawes-Davis, Dru Carr",
+            "premiere": "Colorado",
+            "poster": "https://static-a.eventive.org/1766873953251temp-1766873953234-poster.jpg",
+            "showings": [
+                {
+                    "date": "Saturday, February 21st",
+                    "time": "1:00 PM",
+                    "venue": "Lookout Mountain Theater @ Green Center (CSM)"
+                }
+            ],
+            "link": "https://ceff2026.eventive.org/films/6930ad933876fd39d467d1d5",
+            "onlineEncore": true,
+            "streamingDates": "February 23 - March 1, 2026",
+            "socialMedia": {
+                "facebook": "https://facebook.com/HighPlainsFilms/"
+            }
+        },
+        {
+            "title": "The Rewilders",
+            "country": "Canada",
+            "language": "English",
+            "description": "The western world has long equated survival with conquering the wild. But now more than ever, humanity's survival depends upon co-existence with the wild. Exploring the restoration of iconic species like jaguar, elephant, bison and Pacific salmon, The Rewilders is an intimate, visually spectacular short documentary that tells the tale of pioneering conservationists on three continents.",
+            "director": "Marlene Rodgers",
+            "producer": "Louise Valgardson, Trish Neufeld, Kyle Gunther, John Ritchie",
+            "cast": "Mark Angelo, Kristine Tompkins, Daniel Kinka, Sarah Tompkins, Isabelle Tompkins, Oswald Schmitz",
+            "premiere": "Colorado",
+            "poster": "https://static-a.eventive.org/1766874128918temp-1766874128895-poster.jpg",
+            "showings": [
+                {
+                    "date": "Saturday, February 21st",
+                    "time": "7:30 PM",
+                    "venue": "Lookout Mountain Theater @ Green Center (CSM)"
+                }
+            ],
+            "link": "https://ceff2026.eventive.org/films/6930ad933876fd39d467d1d7",
+            "onlineEncore": true,
+            "streamingDates": "February 23 - March 1, 2026",
+            "collection": "Wildlife #1 Collection",
+            "socialMedia": {
+                "facebook": "https://facebook.com/rewildersthefilm",
+                "instagram": "https://instagram.com/rewildersthefilm"
+            }
+        },
+        {
+            "title": "The Voice of Plants",
+            "country": "Italy",
+            "language": "English, Italian",
+            "description": "What if nature could speak, and we were finally ready to listen? In this thought-provoking 8-minute mockumentary, visionary scientist Astrid deciphers a hidden language of plants, uncovering a shocking truth that challenges humanity's place in the natural order.",
+            "director": "Daniele Guarnera",
+            "producer": "Alessia Calvani",
+            "cast": "Elena Morando",
+            "premiere": "Colorado",
+            "poster": "https://static-a.eventive.org/1766874386878temp-1766874386857-poster.jpg",
+            "showings": [
+                {
+                    "date": "Sunday, February 22nd",
+                    "time": "1:00 PM",
+                    "venue": "CEFF Theater @ Green Center (CSM)"
+                }
+            ],
+            "link": "https://ceff2026.eventive.org/films/6930ad933876fd39d467d1d9",
+            "onlineEncore": true,
+            "streamingDates": "February 23 - March 1, 2026",
+            "collection": "Plants & Animals Collection (CO only)"
+        },
+        {
+            "title": "CITIZEN RUTH: environmental warrior",
+            "country": "United States",
+            "language": "English",
+            "description": "This 96-year-old environmental warrior has the bruises to show from the battles she fought, and the passion to carry her through the losses and the successes. Called the Mother of Greenbelts, responsible for the Boulder height limit, and persistent defender of open space, Ruth Wright continues to fight for the environment while the rest of us benefit from her lifetime of work.",
+            "director": "Pamela Hoge",
+            "producer": "Pamela Hoge, David Walder",
+            "cast": "Ruth Wright",
+            "poster": "https://static-a.eventive.org/1767311106551temp-1767311106391-poster.jpg",
+            "showings": [
+                {
+                    "date": "Sunday, February 22nd",
+                    "time": "1:00 PM",
+                    "venue": "Bunker Auditorium @ Green Center (CSM)"
+                }
+            ],
+            "link": "https://ceff2026.eventive.org/films/6930ad923876fd39d467d193",
+            "onlineEncore": true,
+            "streamingDates": "February 23 - March 1, 2026"
+        },
+        {
+            "title": "Corals' Last Stand",
+            "country": "Australia",
+            "language": "English",
+            "description": "Perched on the edge of the continental shelf, 300km from the Australian mainland lies Scott Reef. This half hour documentary asks whether Australia can really afford to exploit this gas reserve, examining the unique marine ecosystem and the threats posed by industrial development to one of the world's most pristine coral reef systems.",
+            "poster": "https://static-a.eventive.org/1767315793307temp-1767315793287-poster.jpg",
+            "showings": [
+                {
+                    "date": "February 20-22, 2026",
+                    "venue": "Green Center (CSM)"
+                }
+            ],
+            "link": "https://ceff2026.eventive.org/films/6930ad923876fd39d467d195",
+            "onlineEncore": true,
+            "streamingDates": "February 23 - March 1, 2026"
+        },
+        {
+            "title": "Doesn't Exist in Nature",
+            "language": "English",
+            "description": "In this episode of the popular docu-series 'Doesn't Exist in Nature', naturalist-host Douglas Nottenborough travels the world in search of a non-native, invasive species of Straw. A satirical mockumentary exploring environmental themes through humor.",
+            "poster": "https://static-a.eventive.org/1767317012567temp-1767317012551-poster.jpg",
+            "showings": [
+                {
+                    "date": "February 20-22, 2026",
+                    "venue": "Green Center (CSM)"
+                }
+            ],
+            "link": "https://ceff2026.eventive.org/films/6930ad923876fd39d467d197",
+            "onlineEncore": true,
+            "streamingDates": "February 23 - March 1, 2026"
+        },
+        {
+            "title": "An Eye for the Land",
+            "language": "English",
+            "description": "A documentary exploring the connection between people and land, examining how we see, understand, and protect our natural landscapes.",
+            "poster": "https://static-a.eventive.org/1765918472103temp-1765918472074-poster.jpg",
+            "showings": [
+                {
+                    "date": "February 20-22, 2026",
+                    "venue": "Green Center (CSM)"
+                }
+            ],
+            "link": "https://ceff2026.eventive.org/films/6930ad923876fd39d467d183",
+            "onlineEncore": true,
+            "streamingDates": "February 23 - March 1, 2026"
+        },
+        {
+            "title": "Fish for the Future",
+            "country": "United States",
+            "language": "English",
+            "description": "Multiple agencies and volunteers come together after the Palisades Fire in Los Angeles, CA to rescue an endangered fish population before they are threatened to be completely wiped out by an upcoming mudslide.",
+            "poster": "https://static-a.eventive.org/1767317500955temp-1767317500932-poster.jpg",
+            "showings": [
+                {
+                    "date": "February 20-22, 2026",
+                    "venue": "Green Center (CSM)"
+                }
+            ],
+            "link": "https://ceff2026.eventive.org/films/6930ad923876fd39d467d199",
+            "onlineEncore": true,
+            "streamingDates": "February 23 - March 1, 2026"
+        },
+        {
+            "title": "Fly Chicks",
+            "language": "English",
+            "description": "Fly Chicks explores the practice of fly fishing through a feminist lens. The film follows three fly fisherwomen and their relationship with the river and its inhabitants, the sport, and their identities.",
+            "poster": "https://static-a.eventive.org/1767393798527temp-1767393798458-poster.jpg",
+            "showings": [
+                {
+                    "date": "February 20-22, 2026",
+                    "venue": "Green Center (CSM)"
+                }
+            ],
+            "link": "https://ceff2026.eventive.org/films/6930ad923876fd39d467d19b",
+            "onlineEncore": true,
+            "streamingDates": "February 23 - March 1, 2026"
+        },
+        {
+            "title": "Free to Grow",
+            "country": "United States",
+            "language": "English",
+            "description": "Rural Oregon families have taken up the fight against aerial herbicide spraying by the forestry industry for over 50 years. This documentary chronicles their ongoing battle for environmental justice and the right to protect their communities from toxic chemical exposure.",
+            "poster": "https://static-a.eventive.org/1767394797448temp-1767394797425-poster.jpg",
+            "showings": [
+                {
+                    "date": "February 20-22, 2026",
+                    "venue": "Green Center (CSM)"
+                }
+            ],
+            "link": "https://ceff2026.eventive.org/films/6930ad923876fd39d467d19d",
+            "onlineEncore": true,
+            "streamingDates": "February 23 - March 1, 2026"
+        },
+        {
+            "title": "From Flames to Change",
+            "country": "United States",
+            "language": "English",
+            "description": "How is climate change affecting our future? The 2020 wildfires in Colorado are a reminder of the hurt to come if we don't stop and take a look around. This documentary explores the connection between climate change and increasingly destructive wildfires.",
+            "poster": "https://static-a.eventive.org/1767395801968temp-1767395801885-poster.jpg",
+            "showings": [
+                {
+                    "date": "February 20-22, 2026",
+                    "venue": "Green Center (CSM)"
+                }
+            ],
+            "link": "https://ceff2026.eventive.org/films/6930ad923876fd39d467d19f",
+            "onlineEncore": true,
+            "streamingDates": "February 23 - March 1, 2026"
+        },
+        {
+            "title": "Global Warning",
+            "language": "English",
+            "description": "A documentary examining the urgent realities of climate change and its global impact on communities, ecosystems, and our shared future.",
+            "poster": "https://static-a.eventive.org/1765928995563temp-1765928995540-poster.jpg",
+            "showings": [
+                {
+                    "date": "February 20-22, 2026",
+                    "venue": "Green Center (CSM)"
+                }
+            ],
+            "link": "https://ceff2026.eventive.org/films/6930ad923876fd39d467d1a3",
+            "onlineEncore": true,
+            "streamingDates": "February 23 - March 1, 2026"
+        },
+        {
+            "title": "Hoʻomalu ʻĀina Maui",
+            "country": "United States",
+            "language": "English, Hawaiian",
+            "description": "A documentary exploring the deep connection between the Hawaiian people and their land on Maui, examining traditional stewardship practices and the fight to protect sacred natural places.",
+            "showings": [
+                {
+                    "date": "February 20-22, 2026",
+                    "venue": "Green Center (CSM)"
+                }
+            ],
+            "link": "https://ceff2026.eventive.org/films/6930ad923876fd39d467d1ab",
+            "onlineEncore": true,
+            "streamingDates": "February 23 - March 1, 2026"
+        },
+        {
+            "title": "Homes for Hornbills",
+            "language": "English",
+            "description": "A wildlife conservation documentary following efforts to protect and provide habitat for endangered hornbill species, examining the critical role these birds play in forest ecosystems.",
+            "showings": [
+                {
+                    "date": "February 20-22, 2026",
+                    "venue": "Green Center (CSM)"
+                }
+            ],
+            "link": "https://ceff2026.eventive.org/films/6930ad923876fd39d467d1ad",
+            "onlineEncore": true,
+            "streamingDates": "February 23 - March 1, 2026"
+        },
+        {
+            "title": "Journey Beyond The Grid",
+            "language": "English",
+            "description": "A documentary exploring life off the electrical grid, following individuals and communities who have chosen sustainable, self-sufficient lifestyles and the challenges and rewards of disconnecting from conventional power systems.",
+            "showings": [
+                {
+                    "date": "February 20-22, 2026",
+                    "venue": "Green Center (CSM)"
+                }
+            ],
+            "link": "https://ceff2026.eventive.org/films/6930ad923876fd39d467d1af",
+            "onlineEncore": true,
+            "streamingDates": "February 23 - March 1, 2026"
+        },
+        {
+            "title": "Legion 44",
+            "language": "English",
+            "description": "A documentary following the 44th Legion firefighting crew and their heroic efforts battling wildfires, examining the human cost of increasingly severe fire seasons driven by climate change.",
+            "showings": [
+                {
+                    "date": "February 20-22, 2026",
+                    "venue": "Green Center (CSM)"
+                }
+            ],
+            "link": "https://ceff2026.eventive.org/films/6930ad923876fd39d467d1b1",
+            "onlineEncore": true,
+            "streamingDates": "February 23 - March 1, 2026"
+        },
+        {
+            "title": "Marine Field Station",
+            "language": "English",
+            "description": "A documentary taking viewers inside a marine research station where scientists study ocean ecosystems, marine life, and the impacts of climate change on our seas.",
+            "showings": [
+                {
+                    "date": "February 20-22, 2026",
+                    "venue": "Green Center (CSM)"
+                }
+            ],
+            "link": "https://ceff2026.eventive.org/films/6930ad923876fd39d467d1b3",
+            "onlineEncore": true,
+            "streamingDates": "February 23 - March 1, 2026"
+        },
+        {
+            "title": "Nature. People. Harmony.",
+            "language": "English",
+            "description": "A documentary exploring the essential balance between human civilization and the natural world, featuring stories of communities working to live in harmony with their environment.",
+            "showings": [
+                {
+                    "date": "February 20-22, 2026",
+                    "venue": "Green Center (CSM)"
+                }
+            ],
+            "link": "https://ceff2026.eventive.org/films/6930ad923876fd39d467d1b5",
+            "onlineEncore": true,
+            "streamingDates": "February 23 - March 1, 2026"
+        },
+        {
+            "title": "Oceanbone",
+            "language": "English",
+            "description": "A documentary exploring ocean health and marine ecosystems, examining the vital role oceans play in sustaining life on Earth and the threats they face from human activity and climate change.",
+            "showings": [
+                {
+                    "date": "February 20-22, 2026",
+                    "venue": "Green Center (CSM)"
+                }
+            ],
+            "link": "https://ceff2026.eventive.org/films/6930ad923876fd39d467d1b7",
+            "onlineEncore": true,
+            "streamingDates": "February 23 - March 1, 2026"
+        },
+        {
+            "title": "OUTLIER: Common",
+            "language": "English",
+            "description": "A documentary exploring environmental themes through the lens of what we consider 'common' in nature, examining how overlooked species and ecosystems are essential to our planet's health.",
+            "showings": [
+                {
+                    "date": "February 20-22, 2026",
+                    "venue": "Green Center (CSM)"
+                }
+            ],
+            "link": "https://ceff2026.eventive.org/films/6930ad923876fd39d467d1b9",
+            "onlineEncore": true,
+            "streamingDates": "February 23 - March 1, 2026"
+        },
+        {
+            "title": "Outside The Frame",
+            "language": "English",
+            "description": "A documentary examining environmental issues from unexpected perspectives, challenging viewers to look beyond the obvious and see the interconnected nature of our ecological challenges.",
+            "showings": [
+                {
+                    "date": "February 20-22, 2026",
+                    "venue": "Green Center (CSM)"
+                }
+            ],
+            "link": "https://ceff2026.eventive.org/films/6930ad923876fd39d467d1bb",
+            "onlineEncore": true,
+            "streamingDates": "February 23 - March 1, 2026"
+        },
+        {
+            "title": "Project Deer: Bridging Roads & Wildlife",
+            "language": "English",
+            "description": "A documentary examining innovative solutions to reduce wildlife-vehicle collisions, following efforts to create wildlife crossings that allow deer and other animals to safely navigate human infrastructure.",
+            "showings": [
+                {
+                    "date": "February 20-22, 2026",
+                    "venue": "Green Center (CSM)"
+                }
+            ],
+            "link": "https://ceff2026.eventive.org/films/6930ad923876fd39d467d1bd",
+            "onlineEncore": true,
+            "streamingDates": "February 23 - March 1, 2026"
+        },
+        {
+            "title": "Regenerative Ag in the Northern Great Plains",
+            "country": "United States",
+            "language": "English",
+            "description": "A documentary exploring regenerative agriculture practices in the Northern Great Plains, showcasing farmers and ranchers who are restoring soil health, sequestering carbon, and building resilient food systems.",
+            "showings": [
+                {
+                    "date": "February 20-22, 2026",
+                    "venue": "Green Center (CSM)"
+                }
+            ],
+            "link": "https://ceff2026.eventive.org/films/6930ad923876fd39d467d1bf",
+            "onlineEncore": true,
+            "streamingDates": "February 23 - March 1, 2026"
+        },
+        {
+            "title": "Save the Farm, Save the Future",
+            "language": "English",
+            "description": "A documentary about the fight to preserve family farms and sustainable agriculture in the face of industrial farming, urban sprawl, and climate change.",
+            "showings": [
+                {
+                    "date": "February 20-22, 2026",
+                    "venue": "Green Center (CSM)"
+                }
+            ],
+            "link": "https://ceff2026.eventive.org/films/6930ad923876fd39d467d1c1",
+            "onlineEncore": true,
+            "streamingDates": "February 23 - March 1, 2026"
+        },
+        {
+            "title": "Shaped by Ice",
+            "language": "English",
+            "description": "A documentary exploring how glaciers and ice have shaped our planet's landscapes, ecosystems, and human civilizations, while examining the rapid disappearance of ice in a warming world.",
+            "showings": [
+                {
+                    "date": "February 20-22, 2026",
+                    "venue": "Green Center (CSM)"
+                }
+            ],
+            "link": "https://ceff2026.eventive.org/films/6930ad923876fd39d467d1c3",
+            "onlineEncore": true,
+            "streamingDates": "February 23 - March 1, 2026"
+        },
+        {
+            "title": "Snk'mip Dig Deeper",
+            "language": "English",
+            "description": "A documentary following indigenous-led environmental efforts, exploring traditional ecological knowledge and the fight to protect ancestral lands and waters.",
+            "showings": [
+                {
+                    "date": "February 20-22, 2026",
+                    "venue": "Green Center (CSM)"
+                }
+            ],
+            "link": "https://ceff2026.eventive.org/films/6930ad923876fd39d467d1c5",
+            "onlineEncore": true,
+            "streamingDates": "February 23 - March 1, 2026"
+        },
+        {
+            "title": "SPILLOVER - Planet of Viruses",
+            "language": "English",
+            "description": "A documentary examining the connection between environmental destruction, habitat loss, and the emergence of zoonotic diseases that spill over from wildlife to humans.",
+            "showings": [
+                {
+                    "date": "February 20-22, 2026",
+                    "venue": "Green Center (CSM)"
+                }
+            ],
+            "link": "https://ceff2026.eventive.org/films/6930ad923876fd39d467d1c7",
+            "onlineEncore": true,
+            "streamingDates": "February 23 - March 1, 2026"
+        },
+        {
+            "title": "Stone Biter: Saving the Arctic Sea Forests",
+            "language": "English",
+            "description": "A documentary about efforts to protect Arctic kelp forests, the vital marine ecosystems threatened by climate change, and the scientists working to save them.",
+            "showings": [
+                {
+                    "date": "February 20-22, 2026",
+                    "venue": "Green Center (CSM)"
+                }
+            ],
+            "link": "https://ceff2026.eventive.org/films/6930ad933876fd39d467d1db",
+            "onlineEncore": true,
+            "streamingDates": "February 23 - March 1, 2026"
+        },
+        {
+            "title": "Tipping Points are Irreversible",
+            "language": "English",
+            "description": "A documentary exploring climate tipping points - the critical thresholds beyond which changes become irreversible, and the urgent need to act before we cross them.",
+            "showings": [
+                {
+                    "date": "February 20-22, 2026",
+                    "venue": "Green Center (CSM)"
+                }
+            ],
+            "link": "https://ceff2026.eventive.org/films/6930ad933876fd39d467d1dd",
+            "onlineEncore": true,
+            "streamingDates": "February 23 - March 1, 2026"
+        },
+        {
+            "title": "Trade Secret",
+            "language": "English",
+            "description": "A documentary investigating the hidden environmental costs of global trade, exposing how trade agreements and corporate practices impact communities and ecosystems around the world.",
+            "showings": [
+                {
+                    "date": "February 20-22, 2026",
+                    "venue": "Green Center (CSM)"
+                }
+            ],
+            "link": "https://ceff2026.eventive.org/films/6930ad933876fd39d467d1df",
+            "onlineEncore": true,
+            "streamingDates": "February 23 - March 1, 2026"
+        },
+        {
+            "title": "Transitions",
+            "language": "English",
+            "description": "A documentary exploring the transition from fossil fuels to renewable energy, following communities, industries, and individuals navigating the shift to a sustainable future.",
+            "showings": [
+                {
+                    "date": "February 20-22, 2026",
+                    "venue": "Green Center (CSM)"
+                }
+            ],
+            "link": "https://ceff2026.eventive.org/films/6930ad933876fd39d467d1e1",
+            "onlineEncore": true,
+            "streamingDates": "February 23 - March 1, 2026"
+        },
+        {
+            "title": "Upstream, Downriver: Uniting for Water Justice",
+            "language": "English",
+            "description": "A documentary about communities along rivers fighting for clean water, examining the connections between upstream actions and downstream impacts, and the movements for environmental water justice.",
+            "showings": [
+                {
+                    "date": "February 20-22, 2026",
+                    "venue": "Green Center (CSM)"
+                }
+            ],
+            "link": "https://ceff2026.eventive.org/films/6930ad933876fd39d467d1e3",
+            "onlineEncore": true,
+            "streamingDates": "February 23 - March 1, 2026"
+        },
+        {
+            "title": "Valley Under Fire",
+            "language": "English",
+            "description": "A documentary chronicling the devastating wildfires that swept through a valley community, exploring resilience, recovery, and the increasing threat of extreme fire events in a changing climate.",
+            "showings": [
+                {
+                    "date": "February 20-22, 2026",
+                    "venue": "Green Center (CSM)"
+                }
+            ],
+            "link": "https://ceff2026.eventive.org/films/6930ad933876fd39d467d1e5",
+            "onlineEncore": true,
+            "streamingDates": "February 23 - March 1, 2026"
+        },
+        {
+            "title": "We Are Made from the Land",
+            "language": "English",
+            "description": "A documentary exploring the deep spiritual and cultural connection between indigenous peoples and their ancestral lands, and the fight to protect these sacred places.",
+            "showings": [
+                {
+                    "date": "February 20-22, 2026",
+                    "venue": "Green Center (CSM)"
+                }
+            ],
+            "link": "https://ceff2026.eventive.org/films/6930ad933876fd39d467d1e7",
+            "onlineEncore": true,
+            "streamingDates": "February 23 - March 1, 2026"
+        },
+        {
+            "title": "We Can't See the Sunset",
+            "language": "English",
+            "description": "A documentary examining the effects of air pollution and environmental degradation, exploring communities where smog and haze have made clear skies a distant memory.",
+            "showings": [
+                {
+                    "date": "February 20-22, 2026",
+                    "venue": "Green Center (CSM)"
+                }
+            ],
+            "link": "https://ceff2026.eventive.org/films/6930ad933876fd39d467d1e9",
+            "onlineEncore": true,
+            "streamingDates": "February 23 - March 1, 2026"
+        },
+        {
+            "title": "What The River Knows",
+            "language": "English",
+            "description": "A documentary exploring the wisdom held by rivers - the stories of the communities along their banks, the ecosystems they support, and the lessons they teach about living in balance with nature.",
+            "showings": [
+                {
+                    "date": "February 20-22, 2026",
+                    "venue": "Green Center (CSM)"
+                }
+            ],
+            "link": "https://ceff2026.eventive.org/films/6930ad933876fd39d467d1eb",
+            "onlineEncore": true,
+            "streamingDates": "February 23 - March 1, 2026"
+        },
+        {
+            "title": "Women of Carbon",
+            "language": "English",
+            "description": "A documentary following women leaders in climate science and carbon reduction efforts, highlighting their innovative work to address the climate crisis and inspire the next generation of environmental advocates.",
+            "showings": [
+                {
+                    "date": "February 20-22, 2026",
+                    "venue": "Green Center (CSM)"
+                }
+            ],
+            "link": "https://ceff2026.eventive.org/films/6930ad933876fd39d467d1ed",
+            "onlineEncore": true,
+            "streamingDates": "February 23 - March 1, 2026"
+        }
+    ],
+    "venues": [
+        {
+            "name": "Bunker Auditorium",
+            "fullName": "Bunker Auditorium @ Green Center (CSM)",
+            "location": "Colorado School of Mines, Golden, CO"
+        },
+        {
+            "name": "Lookout Mountain Theater",
+            "fullName": "Lookout Mountain Theater @ Green Center (CSM)",
+            "location": "Colorado School of Mines, Golden, CO"
+        },
+        {
+            "name": "CEFF Theater",
+            "fullName": "CEFF Theater @ Green Center (CSM)",
+            "location": "Colorado School of Mines, Golden, CO"
+        }
+    ],
+    "onlineEncore": {
+        "available": true,
+        "dates": "February 23 - March 1, 2026",
+        "extendedDates": "February 23 - May 31, 2026 (CEFF4 Classrooms)",
+        "url": "https://watch.eventive.org/ceff2026"
+    },
+    "schedule": {
+        "friday": {
+            "date": "February 20, 2026",
+            "events": [
+                {
+                    "time": "10:00 AM",
+                    "event": "CEFF 4 Classrooms Field Trip Film Screening",
+                    "venue": "Bunker Auditorium",
+                    "type": "Free Event, Family & Youth Program"
+                },
+                {
+                    "time": "5:30 PM",
+                    "event": "Eco-Expo Hall (Free!)",
+                    "venue": "Green Center Lobby",
+                    "type": "Free Event, Family & Youth Program"
+                },
+                {
+                    "time": "7:00 PM",
+                    "event": "CEFF Opening Night Reception + Film Screening",
+                    "venue": "Bunker Auditorium",
+                    "type": "Highlights"
+                }
+            ]
+        },
+        "saturday": {
+            "date": "February 21, 2026",
+            "events": [
+                {
+                    "time": "10:00 AM",
+                    "event": "Saturday 10am Film Screening",
+                    "venue": "Bunker Auditorium"
+                },
+                {
+                    "time": "1:00 PM",
+                    "event": "Saturday 1pm Film Screening",
+                    "venue": "Multiple venues"
+                },
+                {
+                    "time": "3:30 PM",
+                    "event": "Saturday 3:30pm Film Screening",
+                    "venue": "Bunker Auditorium"
+                },
+                {
+                    "time": "7:30 PM",
+                    "event": "Saturday 7:30pm Film Screening",
+                    "venue": "Multiple venues"
+                }
+            ]
+        },
+        "sunday": {
+            "date": "February 22, 2026",
+            "events": [
+                {
+                    "time": "10:00 AM",
+                    "event": "Sunday 10am Film Screening",
+                    "venue": "Multiple venues"
+                },
+                {
+                    "time": "1:00 PM",
+                    "event": "Sunday 1pm Film Screening",
+                    "venue": "Multiple venues"
+                }
+            ]
+        }
+    }
+}
