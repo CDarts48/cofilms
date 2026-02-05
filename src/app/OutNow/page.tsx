@@ -21,6 +21,8 @@ interface OutNowItem {
     logo?: string;
     venue?: string;
     description?: string;
+    block?: string;
+    runtime?: string;
 }
 
 export default function OutNowPage(): React.ReactElement {
@@ -45,9 +47,23 @@ export default function OutNowPage(): React.ReactElement {
                     return isNaN(d.getTime()) ? null : d;
                 };
 
+                // helper to parse time string like "7:30 PM" or "1:00 PM" into minutes from midnight
+                const parseTime = (t?: string): number => {
+                    if (!t) return 0;
+                    const match = t.match(/(\d{1,2}):(\d{2})\s*(AM|PM)/i);
+                    if (!match) return 0;
+                    let hours = parseInt(match[1], 10);
+                    const minutes = parseInt(match[2], 10);
+                    const period = match[3].toUpperCase();
+                    if (period === 'PM' && hours !== 12) hours += 12;
+                    if (period === 'AM' && hours === 12) hours = 0;
+                    return hours * 60 + minutes;
+                };
+
                 const annotated = data.map((item) => ({
                     item,
                     sortDate: parseDate(item.date),
+                    sortTime: parseTime(item.time),
                 }));
 
                 // filter out items with a date that has already passed (if a date exists)
@@ -56,9 +72,14 @@ export default function OutNowPage(): React.ReactElement {
                     return sortDate >= startOfToday;
                 });
 
-                // sort: dated items ascending, then undated items
+                // sort: dated items ascending by date, then by time, then undated items
                 upcoming.sort((a, b) => {
-                    if (a.sortDate && b.sortDate) return a.sortDate.getTime() - b.sortDate.getTime();
+                    if (a.sortDate && b.sortDate) {
+                        const dateDiff = a.sortDate.getTime() - b.sortDate.getTime();
+                        if (dateDiff !== 0) return dateDiff;
+                        // same date, sort by time
+                        return a.sortTime - b.sortTime;
+                    }
                     if (a.sortDate && !b.sortDate) return -1;
                     if (!a.sortDate && b.sortDate) return 1;
                     return 0;
@@ -138,14 +159,42 @@ export default function OutNowPage(): React.ReactElement {
                 <h1 style={styles.title}>Out Now</h1>
                 <p style={styles.subtitle}>Films we have on the radar. If you would like your film added please message <a href="mailto:info@coloradofilms.com">info@coloradofilms.com</a></p>
 
+                {/* Jump to Festival Navigation */}
+                <div style={styles.festNav}>
+                    <span style={styles.festNavLabel}>Jump to:</span>
+                    <a href="#ceff-films" style={styles.festNavLink}>
+                        <img src="https://ceff.net/wp-content/uploads/2025/11/CEFF-Logo-2025-Opt-1.png" alt="CEFF" style={styles.festNavLogo} />
+                    </a>
+                    <a href="#scorpius-films" style={styles.festNavLink}>
+                        <img src="https://ml1iawgvqz1y.i.optimole.com/w:210/h:54/q:mauto/ig:avif/https://scorpiusfest.com/wp-content/uploads/2025/06/Colored-Logo-large-site.png" alt="Scorpius Fest" style={styles.festNavLogo} />
+                    </a>
+                </div>
+
                 <div style={styles.list}>
                     {items.length === 0 && (
                         <div style={styles.empty}>No upcoming titles configured yet. Add entries to <code>/public/outNow.json</code>.</div>
                     )}
 
-                    {items.map((item, idx) => (
-                        <MovieCard key={idx} item={item} />
-                    ))}
+                    {items.map((item, idx) => {
+                        // Determine if this is the first film for each festival
+                        const isCEFF = item.link?.includes('ceff2026.eventive.org');
+                        const isScorpiusFest = item.link?.includes('scorpiusfest.com');
+                        const isIFS = item.link?.includes('internationalfilmseries.com');
+                        const isDairy = item.link?.includes('thedairy.org');
+
+                        const isFirstCEFF = isCEFF && !items.slice(0, idx).some(i => i.link?.includes('ceff2026.eventive.org'));
+                        const isFirstScorpius = isScorpiusFest && !items.slice(0, idx).some(i => i.link?.includes('scorpiusfest.com'));
+                        const isFirstIFS = isIFS && !items.slice(0, idx).some(i => i.link?.includes('internationalfilmseries.com'));
+                        const isFirstDairy = isDairy && !items.slice(0, idx).some(i => i.link?.includes('thedairy.org'));
+
+                        let anchorId = undefined;
+                        if (isFirstCEFF) anchorId = 'ceff-films';
+                        else if (isFirstScorpius) anchorId = 'scorpius-films';
+                        else if (isFirstIFS) anchorId = 'ifs-films';
+                        else if (isFirstDairy) anchorId = 'dairy-films';
+
+                        return <MovieCard key={idx} item={item} anchorId={anchorId} />;
+                    })}
                 </div>
             </main>
 
@@ -154,7 +203,7 @@ export default function OutNowPage(): React.ReactElement {
     );
 }
 
-function MovieCard({ item }: { item: OutNowItem }): React.ReactElement {
+function MovieCard({ item, anchorId }: { item: OutNowItem; anchorId?: string }): React.ReactElement {
     const images = item.images && item.images.length > 0 ? item.images : [];
     const [index, setIndex] = useState<number>(0);
 
@@ -167,9 +216,33 @@ function MovieCard({ item }: { item: OutNowItem }): React.ReactElement {
     }, [images]);
 
     const hasImage = images.length > 0;
+    const isCEFF = item.link?.includes('ceff2026.eventive.org');
+    const isScorpiusFest = item.link?.includes('scorpiusfest.com');
+    const isIFS = item.link?.includes('internationalfilmseries.com');
+    const isDairy = item.link?.includes('thedairy.org');
 
     return (
-        <section style={styles.card} className="cs-card">
+        <section id={anchorId} style={styles.card} className="cs-card">
+            {isCEFF && (
+                <a href="https://ceff.net" target="_blank" rel="noopener noreferrer">
+                    <img src="https://ceff.net/wp-content/uploads/2025/11/CEFF-Logo-2025-Opt-1.png" alt="CEFF" style={styles.ceffLogo} />
+                </a>
+            )}
+            {isScorpiusFest && (
+                <a href="https://scorpiusfest.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="https://ml1iawgvqz1y.i.optimole.com/w:210/h:54/q:mauto/ig:avif/https://scorpiusfest.com/wp-content/uploads/2025/06/Colored-Logo-large-site.png" alt="Scorpius Fest" style={styles.scorpiusLogo} />
+                </a>
+            )}
+            {isIFS && (
+                <a href="https://internationalfilmseries.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="https://scontent-den2-1.xx.fbcdn.net/v/t39.30808-6/275544251_10158824633292725_2530749262065144813_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=id_Z8EomwbgQ7kNvwHb5I0n&_nc_oc=AdkvnpVc3WrHMlrabRaDlF9ZcDJ7Be0IwW8neEea97kWpLnR7veyB6KfW9EzQ1vpUHY&_nc_zt=23&_nc_ht=scontent-den2-1.xx&_nc_gid=zKmAhwijD3RtE9z3DtjBYw&oh=00_Afv42vD125gRKR4LmIv_0U2npRBu3cYth3o-tIsMKyS-pw&oe=6989D0BC" alt="International Film Series" style={styles.ifsLogo} />
+                </a>
+            )}
+            {isDairy && (
+                <a href="https://thedairy.org/" target="_blank" rel="noopener noreferrer">
+                    <img src="https://media.thedairy.org/wp-content/uploads/2021/08/02163904/ticketformlogo.png" alt="Dairy Arts Center" style={styles.dairyLogo} />
+                </a>
+            )}
             <div style={styles.cardInner} className="cs-cardInner">
                 <div style={styles.media} className="cs-media">
                     {hasImage ? (
@@ -185,26 +258,37 @@ function MovieCard({ item }: { item: OutNowItem }): React.ReactElement {
                 </div>
 
                 <div style={styles.info} className="cs-info">
-                    <h2 style={styles.movieTitle} className="cs-movieTitle">{item.title}</h2>
-                    {item.date ? (
-                        <div style={styles.meta} className="cs-meta">{item.date}{item.time ? ` · ${item.time}` : ''}</div>
-                    ) : item.year ? (
-                        <div style={styles.meta} className="cs-meta">{item.year}</div>
-                    ) : null}
-                    {item.venue && (
-                        <h3 style={styles.venue} className="cs-venue">{item.venue}</h3>
-                    )}
-                    {item.description && <p style={styles.description} className="cs-description">{item.description}</p>}
-
-                    <div style={styles.controls}>
-
-                        <div style={{ marginLeft: 'auto' }}>
-                            <a className="cs-visit" href={item.link || '#'} target="_blank" rel="noopener noreferrer" style={styles.visitButton}>Visit film page</a>
-                        </div>
+                    <div style={styles.infoTop}>
+                        <h2 style={styles.movieTitle} className="cs-movieTitle">{item.title}</h2>
+                        {item.block && (
+                            <div style={styles.block} className="cs-block">{item.block}</div>
+                        )}
+                        {item.date ? (
+                            <div style={styles.meta} className="cs-meta">{item.date}{item.time ? ` · ${item.time}` : ''}</div>
+                        ) : item.year ? (
+                            <div style={styles.meta} className="cs-meta">{item.year}</div>
+                        ) : null}
+                        {item.block && item.runtime && (
+                            <div style={styles.runtime } className="cs-runtime ">Block Runtime : {item.runtime}</div>
+                        )}
+                        {item.venue && (
+                            <h3 style={styles.venue} className="cs-venue">{item.venue}</h3>
+                        )}
+                        {item.description && <p style={styles.description} className="cs-description">{item.description}</p>}
                     </div>
 
-                    {/* Social links (SVGs) */}
-                    <div style={styles.socials} className="cs-socials">
+                    <div style={styles.infoBottom}>
+                        {isCEFF && (
+                            <div style={styles.discountCode}>Use discount code <strong>PARTNER26</strong> to receive 10% off any single session ticket ($15)</div>
+                        )}
+                        <div style={styles.controls}>
+                            <div style={{ marginLeft: 'auto' }}>
+                                <a className="cs-visit" href={item.link || '#'} target="_blank" rel="noopener noreferrer" style={styles.visitButton}>Visit film page</a>
+                            </div>
+                        </div>
+
+                        {/* Social links (SVGs) */}
+                        <div style={styles.socials} className="cs-socials">
                         {item.youtube && (
                             <a href={item.youtube} target="_blank" rel="noopener noreferrer" style={styles.socialButton} aria-label="YouTube">
                                 <svg width="32" height="32" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -249,6 +333,7 @@ function MovieCard({ item }: { item: OutNowItem }): React.ReactElement {
                             </a>
                         )}
                     </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -270,33 +355,94 @@ const styles: { [key: string]: CSSProperties } = {
         fontSize: '2.25rem',
         fontWeight: 800,
         color: '#8B5E3C',
-        marginBottom: '0.5rem',
+        // marginBottom: '0.5rem',
     },
     subtitle: {
         color: '#5C4033',
-        marginBottom: '2rem',
+        // marginBottom: '2rem',
+    },
+    festNav: {
+        display: 'flex',
+        alignItems: 'center',
+        gap: 16,
+        flexWrap: 'wrap',
+        padding: '16px 20px',
+        marginBottom: 24,
+        background: '#fff',
+        borderRadius: 12,
+        border: '1px solid rgba(92,64,51,0.1)',
+        boxShadow: '0 4px 12px rgba(0,0,0,0.05)',
+    },
+    festNavLabel: {
+        fontSize: '1rem',
+        fontWeight: 700,
+        color: '#5C4033',
+    },
+    festNavLink: {
+        display: 'inline-flex',
+        alignItems: 'center',
+        padding: '8px 12px',
+        background: '#f7f1e6',
+        borderRadius: 8,
+        transition: 'transform 0.15s ease, box-shadow 0.15s ease',
+    },
+    festNavLogo: {
+        height: 50,
+        width: 'auto',
+    },
+    festNavLogoSquare: {
+        height: 50,
+        width: 50,
+        borderRadius: 6,
     },
     list: {
         display: 'grid',
-        gap: '2rem',
-    },
-    empty: {
-        padding: '2rem',
-        background: '#fff',
-        borderRadius: 8,
-        color: '#5C4033',
-        border: '1px solid rgba(92,64,51,0.06)',
+        // gap: '2rem',
     },
     card: {
+        position: 'relative',
         background: 'linear-gradient(180deg, #ffffff, #f7f1e6)',
         border: '1px solid rgba(92,64,51,0.06)',
         borderRadius: 12,
-        padding: 12,
+        padding: 8,
         color: '#2C1810',
+    },
+    ceffLogo: {
+        position: 'absolute',
+        top: 8,
+        right: 8,
+        width: 160,
+        height: 80,
+        zIndex: 10,
+    },
+    scorpiusLogo: {
+        position: 'absolute',
+        top: 8,
+        right: 8,
+        width: 160,
+        height: 'auto',
+        zIndex: 10,
+    },
+    ifsLogo: {
+        position: 'absolute',
+        top: 8,
+        right: 8,
+        width: 80,
+        height: 80,
+        borderRadius: 8,
+        zIndex: 10,
+    },
+    dairyLogo: {
+        position: 'absolute',
+        top: 8,
+        right: 8,
+        width: 120,
+        height: 'auto',
+        zIndex: 10,
     },
     cardInner: {
         display: 'flex',
-        gap: 18,
+        gap: 12,
         alignItems: 'stretch',
     },
     media: {
@@ -333,35 +479,83 @@ const styles: { [key: string]: CSSProperties } = {
         flex: 1,
         display: 'flex',
         flexDirection: 'column',
-        gap: 12,
         justifyContent: 'space-between',
+    },
+    infoTop: {
+        display: 'flex',
+        flexDirection: 'column',
+        gap: 0,
+    },
+    infoBottom: {
+        display: 'flex',
+        flexDirection: 'column',
+        gap: 0,
     },
     movieTitle: {
         margin: 0,
+        padding: 0,
         color: '#5C4033',
         fontSize: '1.5rem',
         fontWeight: 800,
+        lineHeight: 1.1,
+    },
+    block: {
+        margin: 0,
+        marginTop: 15,
+        padding: 0,
+        color: '#8B5E3C',
+        fontSize: '0.9rem',
+        fontWeight: 600,
+        fontStyle: 'italic',
+        lineHeight: 1.2,
     },
     description: {
         margin: 0,
+        padding: 0,
         color: '#4b3a2f',
+        lineHeight: 1.3,
     },
     meta: {
-        margin: 0,
+        marginTop: 8,
+        padding: 0,
         color: '#6b6b6b',
         fontSize: '0.95rem',
+        lineHeight: 1.2,
+    },
+    runtime : {
+        margin: 0,
+        marginTop: 4,
+        marginBottom: 12,
+        padding: 0,
+        color: '#6b6b6b',
+        fontSize: '0.9rem',
+        lineHeight: 1.2,
     },
     venue: {
         margin: 0,
+        marginBottom: 15,
+        padding: 0,
         color: '#4b3a2f',
         fontSize: '1rem',
         fontWeight: 700,
+        lineHeight: 1.2,
     },
     controls: {
         display: 'flex',
         alignItems: 'center',
         gap: 12,
-        marginTop: 8,
+        marginTop: 0,
+    },
+    discountCode: {
+        margin: 0,
+        marginBottom: 10,
+        padding: '8px 12px',
+        background: '#fff3cd',
+        border: '1px solid #ffc107',
+        borderRadius: 6,
+        color: '#856404',
+        fontSize: '0.9rem',
+        lineHeight: 1.3,
     },
     sliderNav: {
         display: 'flex',
