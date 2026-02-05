@@ -120,6 +120,16 @@ export default function OutNowPage(): React.ReactElement {
                         border-radius: 8px !important;
                     }
 
+                    /* Hide absolutely positioned logos on mobile */
+                    .cs-logo-absolute {
+                        display: none !important;
+                    }
+
+                    /* Show inline logos on mobile */
+                    .cs-logo-inline {
+                        display: inline-flex !important;
+                    }
+
                     .cs-image {
                         width: 100% !important;
                         height: auto !important;
@@ -223,23 +233,24 @@ function MovieCard({ item, anchorId }: { item: OutNowItem; anchorId?: string }):
 
     return (
         <section id={anchorId} style={styles.card} className="cs-card">
+            {/* Absolute positioned logos for desktop - hidden on mobile */}
             {isCEFF && (
-                <a href="https://ceff.net" target="_blank" rel="noopener noreferrer">
+                <a href="https://ceff.net" target="_blank" rel="noopener noreferrer" className="cs-logo-absolute">
                     <img src="https://ceff.net/wp-content/uploads/2025/11/CEFF-Logo-2025-Opt-1.png" alt="CEFF" style={styles.ceffLogo} />
                 </a>
             )}
             {isScorpiusFest && (
-                <a href="https://scorpiusfest.com/" target="_blank" rel="noopener noreferrer">
+                <a href="https://scorpiusfest.com/" target="_blank" rel="noopener noreferrer" className="cs-logo-absolute">
                     <img src="https://ml1iawgvqz1y.i.optimole.com/w:210/h:54/q:mauto/ig:avif/https://scorpiusfest.com/wp-content/uploads/2025/06/Colored-Logo-large-site.png" alt="Scorpius Fest" style={styles.scorpiusLogo} />
                 </a>
             )}
             {isIFS && (
-                <a href="https://internationalfilmseries.com/" target="_blank" rel="noopener noreferrer">
+                <a href="https://internationalfilmseries.com/" target="_blank" rel="noopener noreferrer" className="cs-logo-absolute">
                     <img src="https://scontent-den2-1.xx.fbcdn.net/v/t39.30808-6/275544251_10158824633292725_2530749262065144813_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=id_Z8EomwbgQ7kNvwHb5I0n&_nc_oc=AdkvnpVc3WrHMlrabRaDlF9ZcDJ7Be0IwW8neEea97kWpLnR7veyB6KfW9EzQ1vpUHY&_nc_zt=23&_nc_ht=scontent-den2-1.xx&_nc_gid=zKmAhwijD3RtE9z3DtjBYw&oh=00_Afv42vD125gRKR4LmIv_0U2npRBu3cYth3o-tIsMKyS-pw&oe=6989D0BC" alt="International Film Series" style={styles.ifsLogo} />
                 </a>
             )}
             {isDairy && (
-                <a href="https://thedairy.org/" target="_blank" rel="noopener noreferrer">
+                <a href="https://thedairy.org/" target="_blank" rel="noopener noreferrer" className="cs-logo-absolute">
                     <img src="https://media.thedairy.org/wp-content/uploads/2021/08/02163904/ticketformlogo.png" alt="Dairy Arts Center" style={styles.dairyLogo} />
                 </a>
             )}
@@ -259,7 +270,31 @@ function MovieCard({ item, anchorId }: { item: OutNowItem; anchorId?: string }):
 
                 <div style={styles.info} className="cs-info">
                     <div style={styles.infoTop}>
-                        <h2 style={styles.movieTitle} className="cs-movieTitle">{item.title}</h2>
+                        {/* Title row with inline logo for mobile */}
+                        <div style={styles.titleRow} className="cs-titleRow">
+                            <h2 style={styles.movieTitle} className="cs-movieTitle">{item.title}</h2>
+                            {/* Inline logos for mobile - hidden on desktop */}
+                            {isCEFF && (
+                                <a href="https://ceff.net" target="_blank" rel="noopener noreferrer" className="cs-logo-inline" style={styles.logoInline}>
+                                    <img src="https://ceff.net/wp-content/uploads/2025/11/CEFF-Logo-2025-Opt-1.png" alt="CEFF" style={styles.logoInlineImg} />
+                                </a>
+                            )}
+                            {isScorpiusFest && (
+                                <a href="https://scorpiusfest.com/" target="_blank" rel="noopener noreferrer" className="cs-logo-inline" style={styles.logoInline}>
+                                    <img src="https://ml1iawgvqz1y.i.optimole.com/w:210/h:54/q:mauto/ig:avif/https://scorpiusfest.com/wp-content/uploads/2025/06/Colored-Logo-large-site.png" alt="Scorpius Fest" style={styles.logoInlineImg} />
+                                </a>
+                            )}
+                            {isIFS && (
+                                <a href="https://internationalfilmseries.com/" target="_blank" rel="noopener noreferrer" className="cs-logo-inline" style={styles.logoInline}>
+                                    <img src="https://scontent-den2-1.xx.fbcdn.net/v/t39.30808-6/275544251_10158824633292725_2530749262065144813_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=id_Z8EomwbgQ7kNvwHb5I0n&_nc_oc=AdkvnpVc3WrHMlrabRaDlF9ZcDJ7Be0IwW8neEea97kWpLnR7veyB6KfW9EzQ1vpUHY&_nc_zt=23&_nc_ht=scontent-den2-1.xx&_nc_gid=zKmAhwijD3RtE9z3DtjBYw&oh=00_Afv42vD125gRKR4LmIv_0U2npRBu3cYth3o-tIsMKyS-pw&oe=6989D0BC" alt="International Film Series" style={styles.logoInlineImgSquare} />
+                                </a>
+                            )}
+                            {isDairy && (
+                                <a href="https://thedairy.org/" target="_blank" rel="noopener noreferrer" className="cs-logo-inline" style={styles.logoInline}>
+                                    <img src="https://media.thedairy.org/wp-content/uploads/2021/08/02163904/ticketformlogo.png" alt="Dairy Arts Center" style={styles.logoInlineImg} />
+                                </a>
+                            )}
+                        </div>
                         {item.block && (
                             <div style={styles.block} className="cs-block">{item.block}</div>
                         )}
@@ -485,6 +520,25 @@ const styles: { [key: string]: CSSProperties } = {
         display: 'flex',
         flexDirection: 'column',
         gap: 0,
+    },
+    titleRow: {
+        display: 'flex',
+        alignItems: 'flex-start',
+        justifyContent: 'space-between',
+        gap: 12,
+    },
+    logoInline: {
+        display: 'none', // hidden by default (desktop), shown on mobile via CSS
+        flexShrink: 0,
+    },
+    logoInlineImg: {
+        height: 40,
+        width: 'auto',
+    },
+    logoInlineImgSquare: {
+        height: 40,
+        width: 40,
+        borderRadius: 6,
     },
     infoBottom: {
         display: 'flex',
