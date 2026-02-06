@@ -133,7 +133,10 @@ export default function OutNowPage(): React.ReactElement {
                     .cs-image {
                         width: 100% !important;
                         height: auto !important;
+                        min-height: 180px !important;
+                        max-height: 400px !important;
                         object-fit: contain !important;
+                        display: block !important;
                     }
 
                     .cs-info {
