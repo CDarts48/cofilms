@@ -54,13 +54,13 @@ function PodCastSection(): React.ReactElement {
                 <div style={styles.freshestEpisodeContainer}>
                     <h3 style={styles.freshestEpisodeTitle}>Most Recent Episode</h3>
                     <div style={styles.episodeCard}>
-                        <h4 style={styles.episodeTitle}>Conversation with Scott Crady</h4>
+                        <h4 style={styles.episodeTitle}>Conversation with Justin McClure</h4>
                         <p style={styles.episodeDescription}>
-                            Scott Crady details his career shift from graphic design to filmmaking, now balancing photography and filmmaking. Scott discussed his work in outdoor adventure filmmaking, including a two-year documentary project for HBO Max, Here to Climb, about athlete Sasha DiGiulian. As well as the technical aspects of filming extreme climbing, as well as their pivot from action sports to outdoor cooking and wild food, with an upcoming dream project focused on gaucho cooking. Scott shared his advice for pricing creative work, emphasized business literacy for filmmakers, and addressed the impact of short-form content, maintaining that AI will not replace human storytelling due to the enduring value of human narratives.
+                            Justin McClure, a filmmaker from South Carolina and a veteran of the United States Air Force who served in Turkey and in Okinawa, Japan. Justin separated from the military to pursue film, graduated summa cum laude from CU Boulder in cinema studies, and recently released their first independently funded film, Mad Man Maddox, about a Colorado pro wrestler named Dorian Richard. Justin McClure expressed enthusiasm for discussing films and the projects they have created.
                         </p>
                         <div style={styles.buttonGroup}>
                             <a
-                                href="https://open.spotify.com/episode/7s0xdSwIZvKEU09Y5q6ULm?si=JYosHjDxTKyRPL45EMPlXA"
+                                href="https://open.spotify.com/episode/0yBdHFniOhnH7F8MUVo7zg"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 style={styles.iconButton}
