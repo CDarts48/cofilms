@@ -54,13 +54,13 @@ function PodCastSection(): React.ReactElement {
                 <div style={styles.freshestEpisodeContainer}>
                     <h3 style={styles.freshestEpisodeTitle}>Most Recent Episode</h3>
                     <div style={styles.episodeCard}>
-                        <h4 style={styles.episodeTitle}>Conversation with Justin McClure</h4>
+                        <h4 style={styles.episodeTitle}>Conversation with Shawna Crocker & Dave Steinke - Cofounders of CEFF</h4>
                         <p style={styles.episodeDescription}>
-                            Justin McClure, a filmmaker from South Carolina and a veteran of the United States Air Force who served in Turkey and in Okinawa, Japan. Justin separated from the military to pursue film, graduated summa cum laude from CU Boulder in cinema studies, and recently released their first independently funded film, Mad Man Maddox, about a Colorado pro wrestler named Dorian Richard. Justin McClure expressed enthusiasm for discussing films and the projects they have created.
+                            Shawna Crocker and Dave Steinke, cofounders of the Colorado Environmental Film Festival (CEFF), discuss the festival entering its 20th year! They detailed the festival's origins, current electronic submission and screening process for between 250-350 films each year. CEFF is an all-volunteer operation and has launched many educational initiatives like the CEFF for Kids program. Key films recommended include Citizen Ruth, Women of Carbon, and Be Wild, with retired chief meteorologist Mike Nelson serving as the keynote speaker. February 20-22, 2026 at the Green Center @ Colorado School of Mines (Golden, CO). Use discount code PARTNER26 for 10% off!
                         </p>
                         <div style={styles.buttonGroup}>
                             <a
-                                href="https://open.spotify.com/episode/0yBdHFniOhnH7F8MUVo7zg"
+                                href="https://open.spotify.com/episode/02F7atrpapAXg30RJcubbX"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 style={styles.iconButton}
@@ -82,7 +82,7 @@ function PodCastSection(): React.ReactElement {
                                 </svg>
                             </a>
                             <a
-                                href="https://youtu.be/AWIw6NQAxDw"
+                                href="https://youtu.be/XubVgedCAVs"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 style={styles.iconButton}
