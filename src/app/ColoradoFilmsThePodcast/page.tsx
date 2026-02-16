@@ -60,14 +60,23 @@ export default function ColoradoFilmsThePodcast() {
                         </p>
 
                         <div style={styles.episodeCard}>
-                            <h3 style={styles.episodeTitle}>Episode 7: Conversation with Shawna Crocker & Dave Steinke - Cofounders of CEFF</h3>
+                            <h3 style={styles.episodeTitle}>Colorado Films Conversation with Darla Rae</h3>
                             <p style={styles.episodeDescription}>
-                                Shawna Crocker and Dave Steinke, cofounders of the Colorado Environmental Film Festival (CEFF), discuss the festival entering its 20th year! They detailed the festival's origins, current electronic submission and screening process for between 250-350 films each year. CEFF is an all-volunteer operation and has launched many educational initiatives like the CEFF for Kids program. Key films recommended include <i>Citizen Ruth</i>, <i>Women of Carbon</i>, and <i>Be Wild</i>, with retired chief meteorologist Mike Nelson serving as the keynote speaker. February 20-22, 2026 at the Green Center @ Colorado School of Mines (Golden, CO). Use discount code PARTNER26 for 10% off!
+                                I recently had the privilege of sitting down with Darla Rae—award-winning filmmaker, actress, and CEO of Film It Productions.<br/>
+                                Darla has built her career around telling stories that matter—stories rooted in resilience, healing, faith, and the strength of the human spirit. From documentaries that have screened before the U.S. Congress to powerful projects like <i>Courageous Warriors: Beauty from the Ashes</i>, her work consistently shines a light on people who transform adversity into purpose.<br/>
+                                But what also stood out in our conversation was her heart for community-building through film.<br/>
+                                <br/>
+                                Her most recent project <b>Pool Ladies</b> is an improvisational filmmaking experience, which is having a huge impact on communities across the US. Pool Ladies is designed to bring women together—not just as performers, but as collaborators. It’s less about rigid scripts and more about connection, creativity, and shared storytelling. Through improv, laughter, and vulnerability, the project creates real bonds between participants while building something artistic and meaningful.<br/>
+                                <br/>
+                                Darla doesn’t just make films—she creates spaces where people feel seen, supported, and empowered.<br/>
+                                <br/>
+                                This was a heartwarming and impactful conversation.<br/>
+                                Check out Darla's work here:
                             </p>
                             <p style={styles.listenLabel}>Listen here:</p>
                             <div style={styles.buttonGroup}>
                                 <a
-                                    href="https://open.spotify.com/episode/02F7atrpapAXg30RJcubbX"
+                                    href="https://open.spotify.com/episode/6kQmT0bhUNiVFm3Fcm6EiG?si=qLeZm05oRCOkcWIgEvUPGw"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     style={styles.iconButton}
@@ -78,7 +87,7 @@ export default function ColoradoFilmsThePodcast() {
                                     </svg>
                                 </a>
                                 <a
-                                    href="https://podcasts.apple.com/us/podcast/colorado-films-the-podcast/id1860422839"
+                                    href="https://podcastsconnect.apple.com/my-podcasts/show/colorado-films-the-podcast/a6028231-db54-4975-bcaf-6ecb507c7cea/episode/a-conversation-with-darla-rae-film-it-productions/9ecc392f-e756-49d5-ab84-6bf52fba9a34"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     style={styles.iconButton}
@@ -89,7 +98,7 @@ export default function ColoradoFilmsThePodcast() {
                                     </svg>
                                 </a>
                                 <a
-                                    href="https://youtu.be/XubVgedCAVs"
+                                    href="https://youtu.be/LqyN2EZlvoQ"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     style={styles.iconButton}
