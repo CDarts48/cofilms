@@ -15,6 +15,7 @@ interface Festival {
 
 const festivals: Festival[] = [
     { name: 'Colorado Environmental Film Festival', url: 'https://ceff.net/', location: 'Location: Golden', date: 'February 20th-22nd 2026', blocksIframe: true, previewImage: '/CEFF.png' },
+    // { name: 'Royal Gorge Film Fest', url: 'https://www.royalgorgefilmfest.com/', location: 'Canon City', date: "Feb 13th-15th (Canon City)" },
     { name: 'Scorpius Fest', url: 'https://scorpiusfest.com/', location: 'Boulder', date: 'Feb 28th-March 1st' },
     { name: 'Durango Independent Film Festival', url: 'https://www.durangofilm.org/', location: 'Durango', date: 'March', blocksIframe: true, previewImage: '/diff.png' },
     { name: 'Boulder International Film Festival', url: 'https://biff1.com/', location: 'Boulder', date: 'April 9th-12th' },
