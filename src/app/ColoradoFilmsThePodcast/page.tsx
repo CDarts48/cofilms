@@ -60,7 +60,7 @@ export default function ColoradoFilmsThePodcast() {
                         </p>
 
                         <div style={styles.episodeCard}>
-                            <h3 style={styles.episodeTitle}>Colorado Films Conversation with Darla Rae</h3>
+                            <h3 style={styles.episodeTitle}>Episode 7: Conversation with Darla Rae</h3>
                             <p style={styles.episodeDescription}>
                                 I recently had the privilege of sitting down with Darla Rae—award-winning filmmaker, actress, and CEO of Film It Productions.<br/>
                                 <br/>
