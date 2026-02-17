@@ -63,7 +63,9 @@ export default function ColoradoFilmsThePodcast() {
                             <h3 style={styles.episodeTitle}>Colorado Films Conversation with Darla Rae</h3>
                             <p style={styles.episodeDescription}>
                                 I recently had the privilege of sitting down with Darla Rae—award-winning filmmaker, actress, and CEO of Film It Productions.<br/>
+                                <br/>
                                 Darla has built her career around telling stories that matter—stories rooted in resilience, healing, faith, and the strength of the human spirit. From documentaries that have screened before the U.S. Congress to powerful projects like <i>Courageous Warriors: Beauty from the Ashes</i>, her work consistently shines a light on people who transform adversity into purpose.<br/>
+                                <br/>
                                 But what also stood out in our conversation was her heart for community-building through film.<br/>
                                 <br/>
                                 Her most recent project <b>Pool Ladies</b> is an improvisational filmmaking experience, which is having a huge impact on communities across the US. Pool Ladies is designed to bring women together—not just as performers, but as collaborators. It’s less about rigid scripts and more about connection, creativity, and shared storytelling. Through improv, laughter, and vulnerability, the project creates real bonds between participants while building something artistic and meaningful.<br/>
@@ -71,7 +73,7 @@ export default function ColoradoFilmsThePodcast() {
                                 Darla doesn’t just make films—she creates spaces where people feel seen, supported, and empowered.<br/>
                                 <br/>
                                 This was a heartwarming and impactful conversation.<br/>
-                                Check out Darla's work here:
+                                Check out Darla's work here: <a href="https://film-itproductions.com/" target="_blank" rel="noopener noreferrer" style={{ color: '#fff', textDecoration: 'underline' }}>https://film-itproductions.com/</a>
                             </p>
                             <p style={styles.listenLabel}>Listen here:</p>
                             <div style={styles.buttonGroup}>
