@@ -175,9 +175,6 @@ export default function OutNowPage(): React.ReactElement {
                 {/* Jump to Festival Navigation */}
                 <div style={styles.festNav}>
                     <span style={styles.festNavLabel}>Jump to:</span>
-                    <a href="#ceff-films" style={styles.festNavLink}>
-                        <img src="https://ceff.net/wp-content/uploads/2025/11/CEFF-Logo-2025-Opt-1.png" alt="CEFF" style={styles.festNavLogo} />
-                    </a>
                     <a href="#scorpius-films" style={styles.festNavLink}>
                         <img src="https://ml1iawgvqz1y.i.optimole.com/w:210/h:54/q:mauto/ig:avif/https://scorpiusfest.com/wp-content/uploads/2025/06/Colored-Logo-large-site.png" alt="Scorpius Fest" style={styles.festNavLogo} />
                     </a>
