@@ -54,22 +54,13 @@ function PodCastSection(): React.ReactElement {
                 <div style={styles.freshestEpisodeContainer}>
                     <h3 style={styles.freshestEpisodeTitle}>Most Recent Episode</h3>
                     <div style={styles.episodeCard}>
-                        <h4 style={styles.episodeTitle}>Colorado Films Conversation with Darla Rae</h4>
+                        <h4 style={styles.episodeTitle}>Episode 8: Conversation with Evan Cannon & Tyson Kroening of ScorpiusFest</h4>
                         <p style={styles.episodeDescription}>
-                            I recently had the privilege of sitting down with Darla Rae—award-winning filmmaker, actress, and CEO of Film It Productions.<br/>
-                            Darla has built her career around telling stories that matter—stories rooted in resilience, healing, faith, and the strength of the human spirit. From documentaries that have screened before the U.S. Congress to powerful projects like <i>Courageous Warriors: Beauty from the Ashes</i>, her work consistently shines a light on people who transform adversity into purpose.<br/>
-                            But what also stood out in our conversation was her heart for community-building through film.<br/>
-                            <br/>
-                            Her most recent project <b>Pool Ladies</b> is an improvisational filmmaking experience, which is having a huge impact on communities across the US. Pool Ladies is designed to bring women together—not just as performers, but as collaborators. It’s less about rigid scripts and more about connection, creativity, and shared storytelling. Through improv, laughter, and vulnerability, the project creates real bonds between participants while building something artistic and meaningful.<br/>
-                            <br/>
-                            Darla doesn’t just make films—she creates spaces where people feel seen, supported, and empowered.<br/>
-                            <br/>
-                            This was a heartwarming and impactful conversation.<br/>
-                            Check out Darla's work here:
+                            In this episode, we sit down with Evan Cannon and Tyson Kroening, the creative minds behind ScorpiusFest. We discuss the festival's origins, its unique approach to showcasing independent films, and the challenges and triumphs of building a new film festival in Colorado. Hear about their vision for the future, advice for aspiring filmmakers, and what makes ScorpiusFest a must-attend event for film lovers in the region.
                         </p>
                         <div style={styles.buttonGroup}>
                             <a
-                                href="https://open.spotify.com/episode/6kQmT0bhUNiVFm3Fcm6EiG?si=qLeZm05oRCOkcWIgEvUPGw"
+                                href="https://open.spotify.com/episode/0MbOq8okzWWB1CLRyuFR6x?si=K0lRao2wTY6vPo08kcCWeg"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 style={styles.iconButton}
@@ -80,7 +71,7 @@ function PodCastSection(): React.ReactElement {
                                 </svg>
                             </a>
                             <a
-                                href="https://podcastsconnect.apple.com/my-podcasts/show/colorado-films-the-podcast/a6028231-db54-4975-bcaf-6ecb507c7cea/episode/a-conversation-with-darla-rae-film-it-productions/9ecc392f-e756-49d5-ab84-6bf52fba9a34"
+                                href="https://podcastsconnect.apple.com/my-podcasts/show/colorado-films-the-podcast/a6028231-db54-4975-bcaf-6ecb507c7cea/episode/episode-8-of-colorado-films-the-podcast-a-conversation-with-evan-cannon-and-tyson-kroening-of-scorpiusfest/f3d357d4-1777-4c43-a7c1-89662938c16b"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 style={styles.iconButton}
@@ -91,7 +82,7 @@ function PodCastSection(): React.ReactElement {
                                 </svg>
                             </a>
                             <a
-                                href="https://youtu.be/LqyN2EZlvoQ"
+                                href="https://studio.youtube.com/video/SFAX-qsBfy4/edit"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 style={styles.iconButton}
