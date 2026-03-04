@@ -54,13 +54,14 @@ function PodCastSection(): React.ReactElement {
                 <div style={styles.freshestEpisodeContainer}>
                     <h3 style={styles.freshestEpisodeTitle}>Most Recent Episode</h3>
                     <div style={styles.episodeCard}>
-                        <h4 style={styles.episodeTitle}>Episode 8: Conversation with Evan Cannon & Tyson Kroening of ScorpiusFest</h4>
+                        <h4 style={styles.episodeTitle}>Episode 9: Conversation with Ron Meyer</h4>
                         <p style={styles.episodeDescription}>
-                            In this episode, we sit down with Evan Cannon and Tyson Kroening, the creative minds behind ScorpiusFest. We discuss the festival's origins, its unique approach to showcasing independent films, and the challenges and triumphs of building a new film festival in Colorado. Hear about their vision for the future, advice for aspiring filmmakers, and what makes ScorpiusFest a must-attend event for film lovers in the region.
+                            Ron Meyer has spent decades working at the intersection of storytelling, science, and the unexplained as the founder of Center Communications and a longtime resident of Louisville, Colorado. Arriving in the state in the mid-1980s during the rapid expansion of cable television, Meyer's career illustrates how Colorado filmmakers have consistently contributed to national and international media. His films, including <i>Legend of the Spirit Dog</i>, <i>Chasing Bigfoot</i>, and <i>The Bigfoot Alien Connection Revealed</i>, have reached international audiences through television broadcast and streaming platforms. Ron also had a role in helping launch Colorado's top two media stars in Trey Parker & Matt Stone.
                         </p>
+                        <p style={styles.listenLabel}>Listen here:</p>
                         <div style={styles.buttonGroup}>
                             <a
-                                href="https://open.spotify.com/episode/0MbOq8okzWWB1CLRyuFR6x?si=K0lRao2wTY6vPo08kcCWeg"
+                                href="https://open.spotify.com/episode/42bfLzWaLg5mUss2XDzOaW?si=dX0HHnypR8e-D0DbWj7Pig"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 style={styles.iconButton}
@@ -71,7 +72,7 @@ function PodCastSection(): React.ReactElement {
                                 </svg>
                             </a>
                             <a
-                                href="https://podcastsconnect.apple.com/my-podcasts/show/colorado-films-the-podcast/a6028231-db54-4975-bcaf-6ecb507c7cea/episode/episode-8-of-colorado-films-the-podcast-a-conversation-with-evan-cannon-and-tyson-kroening-of-scorpiusfest/f3d357d4-1777-4c43-a7c1-89662938c16b"
+                                href="https://podcasts.apple.com/us/podcast/episode-9-of-colorado-films-the-podcast-a/id1860422839?i=1000752690804"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 style={styles.iconButton}
@@ -82,7 +83,7 @@ function PodCastSection(): React.ReactElement {
                                 </svg>
                             </a>
                             <a
-                                href="https://studio.youtube.com/video/SFAX-qsBfy4/edit"
+                                href="https://www.youtube.com/watch?v=yymojzbWpa0"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 style={styles.iconButton}

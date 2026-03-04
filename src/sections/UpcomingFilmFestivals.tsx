@@ -12,7 +12,6 @@ interface Festival {
 }
 
 const festivals: Festival[] = [
-    { name: 'Scorpius Fest', url: 'https://scorpiusfest.com/', location: 'Boulder', date: 'February 28th-March 1st' },
     { name: 'Durango Independent Film Festival', url: 'https://durangofilm.org/', location: 'Durango', date: 'March' },
     { name: 'Boulder International Film Festival', url: 'https://biff1.com/', location: 'Boulder', date: 'April 9th-12th' },
     { name: "Aspen Short's Fest", url: 'https://aspenfilm.org/our-festivals/shortsfest/', location: 'Aspen', date: 'April' },
