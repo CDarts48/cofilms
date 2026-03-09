@@ -12,7 +12,8 @@ interface Festival {
 }
 
 const festivals: Festival[] = [
-    { name: 'Durango Independent Film Festival', url: 'https://durangofilm.org/', location: 'Durango', date: 'March' },
+    // { name: 'Durango Independent Film Festival', url: 'https://durangofilm.org/', location: 'Durango', date: 'March' },
+    { name: 'Dragon Boat Film Festival', url: 'https://www.cdfilm.org/', location: 'Denver Sie FilmCenter', date: 'March 20th-22nd', blocksIframe: true, previewImage: '/Dragon boat.webp' },
     { name: 'Boulder International Film Festival', url: 'https://biff1.com/', location: 'Boulder', date: 'April 9th-12th' },
     { name: "Aspen Short's Fest", url: 'https://aspenfilm.org/our-festivals/shortsfest/', location: 'Aspen', date: 'April' },
     { name: 'Indie Spirit Film Festival', url: 'https://www.indiespiritfilmfestival.org/', location: 'Colorado Springs', date: 'April' },

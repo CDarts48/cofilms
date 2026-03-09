@@ -54,14 +54,14 @@ function PodCastSection(): React.ReactElement {
                 <div style={styles.freshestEpisodeContainer}>
                     <h3 style={styles.freshestEpisodeTitle}>Most Recent Episode</h3>
                     <div style={styles.episodeCard}>
-                        <h4 style={styles.episodeTitle}>Episode 9: Conversation with Ron Meyer</h4>
+                        <h4 style={styles.episodeTitle}>Episode 10: Conversation with Justin Hunt</h4>
                         <p style={styles.episodeDescription}>
-                            Ron Meyer has spent decades working at the intersection of storytelling, science, and the unexplained as the founder of Center Communications and a longtime resident of Louisville, Colorado. Arriving in the state in the mid-1980s during the rapid expansion of cable television, Meyer's career illustrates how Colorado filmmakers have consistently contributed to national and international media. His films, including <i>Legend of the Spirit Dog</i>, <i>Chasing Bigfoot</i>, and <i>The Bigfoot Alien Connection Revealed</i>, have reached international audiences through television broadcast and streaming platforms. Ron also had a role in helping launch Colorado's top two media stars in Trey Parker & Matt Stone.
+                            Award-winning filmmaker Justin Hunt, founder of White Whale Pictures, joined us while in Boulder for ScorpiusFest where his latest film <i>Rotten Apple</i> premiered. With seven films over 20 years collectively earning more than 80 awards, Justin has built a career tackling difficult social issues through powerful documentaries like <i>American Meth</i> and <i>Addicted to Porn: Chasing the Cardboard Butterfly</i>. We discuss the making of <i>Rotten Apple</i>, a docu-drama examining grooming and sexual abuse within schools, the emotional challenge of filming difficult subject matter, advice for filmmakers starting out, and the evolving world of independent film distribution.
                         </p>
                         <p style={styles.listenLabel}>Listen here:</p>
                         <div style={styles.buttonGroup}>
                             <a
-                                href="https://open.spotify.com/episode/42bfLzWaLg5mUss2XDzOaW?si=dX0HHnypR8e-D0DbWj7Pig"
+                                href="https://open.spotify.com/episode/3NFlIkQ562mXAtBSaJpvdl?si=nBzQa-dOTcGZr9wv6zdtVQ"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 style={styles.iconButton}
@@ -72,7 +72,7 @@ function PodCastSection(): React.ReactElement {
                                 </svg>
                             </a>
                             <a
-                                href="https://podcasts.apple.com/us/podcast/episode-9-of-colorado-films-the-podcast-a/id1860422839?i=1000752690804"
+                                href="https://podcasts.apple.com/us/podcast/colorado-films-then-podcast-conversation-with-justin-hunt/id1860422839?i=1000754086773"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 style={styles.iconButton}
@@ -83,7 +83,7 @@ function PodCastSection(): React.ReactElement {
                                 </svg>
                             </a>
                             <a
-                                href="https://www.youtube.com/watch?v=yymojzbWpa0"
+                                href="https://youtu.be/oAAwvo9sIHM"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 style={styles.iconButton}
