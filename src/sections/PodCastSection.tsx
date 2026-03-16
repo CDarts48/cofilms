@@ -54,14 +54,14 @@ function PodCastSection(): React.ReactElement {
                 <div style={styles.freshestEpisodeContainer}>
                     <h3 style={styles.freshestEpisodeTitle}>Most Recent Episode</h3>
                     <div style={styles.episodeCard}>
-                        <h4 style={styles.episodeTitle}>Episode 10: Conversation with Justin Hunt</h4>
+                        <h4 style={styles.episodeTitle}>Episode 11: Conversation with Sara Moore</h4>
                         <p style={styles.episodeDescription}>
-                            Award-winning filmmaker Justin Hunt, founder of White Whale Pictures, joined us while in Boulder for ScorpiusFest where his latest film <i>Rotten Apple</i> premiered. With seven films over 20 years collectively earning more than 80 awards, Justin has built a career tackling difficult social issues through powerful documentaries like <i>American Meth</i> and <i>Addicted to Porn: Chasing the Cardboard Butterfly</i>. We discuss the making of <i>Rotten Apple</i>, a docu-drama examining grooming and sexual abuse within schools, the emotional challenge of filming difficult subject matter, advice for filmmakers starting out, and the evolving world of independent film distribution.
+                            On this episode of Colorado Films: The Podcast, I sat down with Sara Moore, Executive Director of Colorado Dragon Boat, to talk about the upcoming Colorado Dragon Boat Film Festival and the incredible work her organization is doing to uplift Asian American, Native Hawaiian, and Pacific Islander (AANHPI) voices in Colorado. Since launching in 2016, the film festival has grown into the only all-Asian and Asian American film festival in Colorado, bringing powerful stories from across Asia and the U.S. to local audiences. Through film, conversations, and community events, the festival creates a space where storytelling becomes a bridge between cultures. Sara also shared how the broader organization celebrates culture year-round—from the massive Colorado Dragon Boat Festival at Sloan's Lake (the largest dragon boat festival in the United States) to leadership programs, cultural markets, and new events across Colorado. One of the most exciting parts of the festival? The local filmmaker showcases, where Colorado filmmakers get the chance to screen their work and connect with audiences. At its heart, the festival is about connection. As Sara put it, film allows us to experience cultures, histories, and perspectives we might not otherwise encounter—and sometimes realize we're more alike than we think. Colorado Dragon Boat Film Festival: March 20th–22nd at Sie FilmCenter.
                         </p>
                         <p style={styles.listenLabel}>Listen here:</p>
                         <div style={styles.buttonGroup}>
                             <a
-                                href="https://open.spotify.com/episode/3NFlIkQ562mXAtBSaJpvdl?si=nBzQa-dOTcGZr9wv6zdtVQ"
+                                href="https://open.spotify.com/episode/0o8NIorGVCifR1iQTAqLcy?si=eXoNkf99TLe1tx-PD5xElA"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 style={styles.iconButton}
@@ -72,7 +72,7 @@ function PodCastSection(): React.ReactElement {
                                 </svg>
                             </a>
                             <a
-                                href="https://podcasts.apple.com/us/podcast/colorado-films-then-podcast-conversation-with-justin-hunt/id1860422839?i=1000754086773"
+                                href="https://podcasts.apple.com/us/podcast/colorad-films-conversation-with-sara-moore-colorado/id1860422839?i=1000755641673"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 style={styles.iconButton}
@@ -83,7 +83,7 @@ function PodCastSection(): React.ReactElement {
                                 </svg>
                             </a>
                             <a
-                                href="https://youtu.be/oAAwvo9sIHM"
+                                href="https://youtu.be/T8CQd9gz0t0"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 style={styles.iconButton}
